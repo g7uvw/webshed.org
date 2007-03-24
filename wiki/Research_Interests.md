@@ -1,0 +1,11 @@
+---
+title: Research Interests
+permalink: wiki/Research_Interests/
+layout: wiki
+---
+
+My PhD was in the area of laser - surface interactions and structure
+formation, with applications in as diverse fields as photovoltaics,
+cellular scaffolds and transdermal drug delivery. Much of my work
+involved optimising the experimental conditions and devising new
+techniques to control the formation of nano- and meso-structures.

@@ -4,17 +4,7 @@ permalink: wiki/Main_Page/
 layout: wiki
 ---
 
-<big>**MediaWiki has been successfully installed.**</big>
+Webshed.org (now version 4). One of Dave's homes on the internet.
 
-Consult the [User's Guide](http://meta.wikimedia.org/wiki/Help:Contents)
-for information on using the wiki software.
-
-Getting started
----------------
-
--   [Configuration settings
-    list](http://www.mediawiki.org/wiki/Help:Configuration_settings)
--   [MediaWiki FAQ](http://www.mediawiki.org/wiki/Help:FAQ)
--   [MediaWiki release mailing
-    list](http://mail.wikimedia.org/mailman/listinfo/mediawiki-announce)
-
+Welcome to webshed.org. Much of what was here before has now gone, new
+stuff will end up here eventually.

@@ -1,9 +1,3 @@
-<big>'''MediaWiki has been successfully installed.'''</big>
+Webshed.org (now version 4). One of Dave's homes on the internet.
 
-Consult the [http://meta.wikimedia.org/wiki/Help:Contents User's Guide] for information on using the wiki software.
-
-== Getting started ==
-
-* [http://www.mediawiki.org/wiki/Help:Configuration_settings Configuration settings list]
-* [http://www.mediawiki.org/wiki/Help:FAQ MediaWiki FAQ]
-* [http://mail.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]
+Welcome to webshed.org. Much of what was here before has now gone, new stuff will end up here eventually.

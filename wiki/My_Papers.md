@@ -37,3 +37,10 @@ David Mills, Mona Nahidi and Kurt W. Kolasinski, *Stain etching of
 silicon pillars and macropores*, phys. stat. sol. (a) 202, 1422–1426
 (2005).
 [<doi:10.1002/pssa.200461119>](http://dx.doi.org/doi:10.1002/pssa.200461119)
+
+2004
+----
+
+David Mills and Kurt W. Kolasinski, *Laser-etched silicon pillars and
+their porosification*, J. Vac. Sci. Technol. A 22, 1647-1651 (2004)
+[<doi:10.1116/1.1690253>](http://dx.doi.org/doi:10.1116/1.1690253)

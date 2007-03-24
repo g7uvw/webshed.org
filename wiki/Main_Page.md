@@ -4,10 +4,12 @@ permalink: wiki/Main_Page/
 layout: wiki
 ---
 
-Webshed.org (now version 4). One of Dave's homes on the internet.
+Welcome to webshed.org. One of Dave's homes on the internet.
 
-Welcome to webshed.org. Much of what was here before has now gone, new
-stuff will end up here eventually.
+Friends & family that have ended up here are probably lost, anyone
+looking for my photos probably wants to be at
+[Flickr](http://www.flickr.com/photos/dtl/) instead. Accademic visitors
+are directed to my research pages.
 
 Who am I ?
 ----------

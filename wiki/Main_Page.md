@@ -19,7 +19,8 @@ I'm working on several electronics projects at the present time:
 
 -   An Epiphyte 80m transceiver.
 -   I'm designing a PCB for the Warbler PSK31 transceiver.
--   A debugging interface for a Z80 computer.
+-   A [USB-ZX](/wiki/USB-ZX "wikilink") debugging interface for the Z80 based
+    Sinclair Spectrum computer.
 
 I also have a half dozen or so other projects that are currently in
 limbo due to lack of attention. As the above projects are completed,

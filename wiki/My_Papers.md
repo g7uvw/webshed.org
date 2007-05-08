@@ -15,14 +15,15 @@ laser ablation*, Appl. Surf. Sci. (In Press)
 2006
 ----
 
-David Mills and Kurt W. Kolasinski, *Solidification driven extrusion of
-spikes during laser melting of silicon pillars*, Nanotechnology 17,
-2741-2744 (2006).
+David Mills and [Kurt W.
+Kolasinski](http://courses.wcupa.edu/kkolasinski/), *Solidification
+driven extrusion of spikes during laser melting of silicon pillars*,
+Nanotechnology 17, 2741-2744 (2006).
 [<doi:10.1088/0957-4484/17/11/005>](http://dx.doi.org/doi:10.1088/0957-4484/17/11/005)
 
-Kurt W. Kolasinski, David Mills and Mona Nahidi, *Laser assisted and wet
-chemical etching of silicon nanostructures*, J. Vac. Sci. Technol. A 24,
-1474-1479 (2006).
+[Kurt W. Kolasinski](http://courses.wcupa.edu/kkolasinski/), David Mills
+and Mona Nahidi, *Laser assisted and wet chemical etching of silicon
+nanostructures*, J. Vac. Sci. Technol. A 24, 1474-1479 (2006).
 [<doi:10.1116/1.2188414>](http://dx.doi.org/doi:10.1116/1.2188414)
 
 2005

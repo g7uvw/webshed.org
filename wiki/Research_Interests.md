@@ -16,6 +16,7 @@ observed growth modes of the pillars and the first simple,
 non-lithographic technique to produce large area ordered arrays of
 pillars.
 
-Myself and Kurt Kolasinski were the first to describe [Solidification
-Driven Extrusion](/wiki/Solidification_Driven_Extrusion "wikilink") and how it
-forms nano-spikes on textured silicon surfaces.
+Myself and [Kurt Kolasinski](http://courses.wcupa.edu/kkolasinski/) were
+the first to describe [Solidification Driven
+Extrusion](/wiki/Solidification_Driven_Extrusion "wikilink") and how it forms
+nano-spikes on textured silicon surfaces.

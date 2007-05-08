@@ -2,4 +2,4 @@ My PhD was in the area of laser - surface interactions and structure formation, 
 
 My achievements in this field include the first production of large areas of silicon micro pillars (black-Si), explanations of the various observed growth modes of the pillars and the first simple, non-lithographic technique to produce large area ordered arrays of pillars. 
 
-Myself and  Kurt Kolasinski were the first to describe [[Solidification Driven Extrusion]] and how it forms nano-spikes on textured silicon surfaces.
+Myself and [http://courses.wcupa.edu/kkolasinski/ Kurt Kolasinski] were the first to describe [[Solidification Driven Extrusion]] and how it forms nano-spikes on textured silicon surfaces.

@@ -1,5 +1,5 @@
 == 2007 ==
-D. Mills, T. Kreouzis, A. Sapelkin, B. Unal, N. Zyuzikov and K.W. Kolasinski, ''Surface texturing of Si, porous Si and TiO<sub>2</sub> by laser ablation'', Appl. Surf. Sci. (In Press)  [http://dx.doi.org/10.1016/j.apsusc.2007.01.078 doi:10.1016/j.apsusc.2007.01.078]
+D. Mills, T. Kreouzis, A. Sapelkin, B. Unal, N. Zyuzikov and [http://courses.wcupa.edu/kkolasinski/ K.W. Kolasinski], ''Surface texturing of Si, porous Si and TiO<sub>2</sub> by laser ablation'', Appl. Surf. Sci. (In Press)  [http://dx.doi.org/10.1016/j.apsusc.2007.01.078 doi:10.1016/j.apsusc.2007.01.078]
 
 == 2006 ==
 David Mills and [http://courses.wcupa.edu/kkolasinski/ Kurt W. Kolasinski], ''Solidification driven extrusion of spikes during laser melting of silicon pillars'', Nanotechnology 17, 2741-2744 (2006). [http://dx.doi.org/doi:10.1088/0957-4484/17/11/005 doi:10.1088/0957-4484/17/11/005]

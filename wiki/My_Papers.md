@@ -7,9 +7,10 @@ layout: wiki
 2007
 ----
 
-D. Mills, T. Kreouzis, A. Sapelkin, B. Unal, N. Zyuzikov and K.W.
-Kolasinski, *Surface texturing of Si, porous Si and TiO<sub>2</sub> by
-laser ablation*, Appl. Surf. Sci. (In Press)
+D. Mills, T. Kreouzis, A. Sapelkin, B. Unal, N. Zyuzikov and [K.W.
+Kolasinski](http://courses.wcupa.edu/kkolasinski/), *Surface texturing
+of Si, porous Si and TiO<sub>2</sub> by laser ablation*, Appl. Surf.
+Sci. (In Press)
 [<doi:10.1016/j.apsusc.2007.01.078>](http://dx.doi.org/10.1016/j.apsusc.2007.01.078)
 
 2006

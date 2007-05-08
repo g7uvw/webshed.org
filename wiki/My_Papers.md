@@ -30,12 +30,14 @@ nanostructures*, J. Vac. Sci. Technol. A 24, 1474-1479 (2006).
 2005
 ----
 
-David Mills and Kurt W. Kolasinski, *Non-lithographic method to form
-ordered arrays of silicon pillars and macropores*, J. Phys D. 38,
-632-636 (2005).
+David Mills and [Kurt W.
+Kolasinski](http://courses.wcupa.edu/kkolasinski/), *Non-lithographic
+method to form ordered arrays of silicon pillars and macropores*, J.
+Phys D. 38, 632-636 (2005).
 [<http://www.iop.org/EJ/abstract/0022-3727/38/4/017/>](http://www.iop.org/EJ/abstract/0022-3727/38/4/017/)
 
-David Mills, Mona Nahidi and Kurt W. Kolasinski, *Stain etching of
+David Mills, Mona Nahidi and [Kurt W.
+Kolasinski](http://courses.wcupa.edu/kkolasinski/), *Stain etching of
 silicon pillars and macropores*, phys. stat. sol. (a) 202, 1422–1426
 (2005).
 [<doi:10.1002/pssa.200461119>](http://dx.doi.org/doi:10.1002/pssa.200461119)

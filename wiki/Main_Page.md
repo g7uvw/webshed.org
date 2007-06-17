@@ -21,6 +21,7 @@ I'm working on several electronics projects at the present time:
 -   I'm designing a PCB for the Warbler PSK31 transceiver.
 -   A [USB-ZX](/wiki/USB-ZX "wikilink") debugging interface for the Z80 based
     Sinclair Spectrum computer.
+-   An accurate amateur level [L-C meter](/wiki/L-C_meter "wikilink")
 
 I also have a half dozen or so other projects that are currently in
 limbo due to lack of attention. As the above projects are completed,

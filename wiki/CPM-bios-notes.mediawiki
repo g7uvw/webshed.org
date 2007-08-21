@@ -1,7 +1,7 @@
 Some notes on the +3 Spectrum CP/M BIOS
 
 There are two jump tables in RAM, the first resides at 0xf968. It mainly points to the later table.
-
+<code><pre>
 f968: c3 03 fa          jp $fa03    ;jump to WBOOT
 
 f96b: c3 83 f5 	        jp $f583		 
@@ -21,9 +21,9 @@ f97d: c3 83 f5	        jp $f583
 f980: c3 0f fa	        jp $fa0f	;jumps to LIST	   
 
 f983: c3 83 f5	        jp $f583		   
-
+</pre></code>
 The second table starts at 0xfa00. CP/M 3 lables are in brackets. Proven jumps have an asterisk.
-
+<code><pre>
 fa00: c3 0f ba          jp $ba0f    ;(BOOT)
 
 fa03: c3 63 fa          jp $fa63    ;(WBOOT)
@@ -89,5 +89,5 @@ fa5a: c3 2c fb          jp $fb2c    ;(USERF)
 fa5d: c3 00 00          jp $0000    ;(RESERVED1)
 
 fa60: c3 00 00          jp $0000    ;(RESERVED2)
-
+</pre></code>
 It can be seen that this table contains entries for all the specified CP/M3 system calls. The reason for the first jump table is not immediately clear - it is used by the system as a breakpoint on 0xf97a will trigger when a character is to be written to the screen.

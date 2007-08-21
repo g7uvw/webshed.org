@@ -22,6 +22,8 @@ I'm working on several electronics projects at the present time:
 -   A [USB-ZX](/wiki/USB-ZX "wikilink") debugging interface for the Z80 based
     Sinclair Spectrum computer.
 -   An accurate amateur level [LC meter](/wiki/LC_meter "wikilink")
+-   Poking round the guts of [CP/M](/wiki/CP/M "wikilink") on the Sinclair
+    Spectrum
 
 I also have a half dozen or so other projects that are currently in
 limbo due to lack of attention. As the above projects are completed,

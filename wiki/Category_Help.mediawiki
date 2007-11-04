@@ -1,0 +1,12 @@
+[[Image:PD-Help icon.png|right|100px|Your help is welcomed. Writers needed.]]
+
+[[:Category:Help]] is for MediaWiki generic site user help. Only pages in namespace "Help:" should be in this category. Note that all pages in namespace "Help:" are released into the [http://en.wikipedia.org/wiki/Public_domain Public domain] so that they can be easily imported into any MediaWiki instance regardless of the specific wiki's own license. See '''[http://www.mediawiki.com/wiki/Project:PD_Help Project:PD Help]''' if you want to help us.
+
+''Every single English-language page within the set of public domain Help pages should directly be categorized <nowiki>[[Category:Help]]</nowiki> (additionally putting pages in other categories to provide further sorting is possible). This is needed because of later half-automated creation of the PD Help package from this category.''
+
+The front page is '''[[Help:Contents]]'''
+
+{{Languages}}
+
+[[Category:Top level]]
+[[Category:Documentation]]

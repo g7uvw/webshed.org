@@ -32,5 +32,5 @@ then some of the others will join the list of the active.
 Useful(?) Information
 ---------------------
 
-Some information on various \[\[TOKO Coils\]inductors\] and
+Some information on various [TOKO Coils](/wiki/TOKO_Coils "wikilink") and
 transformers.

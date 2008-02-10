@@ -1,16 +1,9 @@
-Welcome to webshed.org.  One of [[About Me|my]] homes on the internet.
+<big>'''MediaWiki has been successfully installed.'''</big>
 
-Friends & family that have ended up here are probably lost, anyone looking for my photos probably wants to be at [http://www.flickr.com/photos/dtl/ Flickr] instead. Accademic visitors are directed to my research pages.
+Consult the [http://meta.wikimedia.org/wiki/Help:Contents User's Guide] for information on using the wiki software.
 
+== Getting started ==
 
-== Current Projects ==
-I'm working on several electronics projects at the present time:
-* An Epiphyte 80m transceiver.
-* I'm designing a PCB for the Warbler PSK31 transceiver.
-* A [[USB-ZX]] debugging interface for the Z80 based Sinclair Spectrum computer.
-* An accurate amateur level [[LC meter]]
-* Poking round the guts of [[CPM|CP/M]] on the Sinclair Spectrum
-I also have a half dozen or so other projects that are currently in limbo due to lack of attention. As the above projects are completed, then some of the others will join the list of the active.
-
-== Useful(?) Information ==
-Some information on various [[TOKO Coils]] and transformers.
+* [http://www.mediawiki.org/wiki/Help:Configuration_settings Configuration settings list]
+* [http://www.mediawiki.org/wiki/Help:FAQ MediaWiki FAQ]
+* [http://mail.wikimedia.org/mailman/listinfo/mediawiki-announce MediaWiki release mailing list]

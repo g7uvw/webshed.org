@@ -15,6 +15,8 @@ are directed to my research pages.
 Current Projects
 ----------------
 
+------------------------------------------------------------------------
+
 I'm working on several electronics projects at the present time:
 
 -   An Epiphyte 80m transceiver.
@@ -31,6 +33,8 @@ then some of the others will join the list of the active.
 
 Useful(?) Information
 ---------------------
+
+------------------------------------------------------------------------
 
 Some information on various [TOKO Coils](/wiki/TOKO_Coils "wikilink") and
 transformers.

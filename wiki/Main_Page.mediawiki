@@ -1,11 +1,10 @@
 Welcome to webshed.org.  One of [[About Me|my]] homes on the internet.
 
-Friends & family that have ended up here are probably lost, anyone looking for my photos probably wants to be at [http://www.flickr.com/photos/dtl/ Flickr] instead. Accademic visitors are directed to my research pages.
+Friends & family that have ended up here are probably lost, anyone looking for my photos probably wants to be at [http://www.flickr.com/photos/dtl/ Flickr] instead. Academic visitors are directed to my research pages.
 
 
 
 == Current Projects ==
-
 ----
 
 I'm working on several electronics projects at the present time:
@@ -17,7 +16,22 @@ I'm working on several electronics projects at the present time:
 I also have a half dozen or so other projects that are currently in limbo due to lack of attention. As the above projects are completed, then some of the others will join the list of the active.
 
 == Useful(?) Information ==
-
 ----
 
 Some information on various [[TOKO Coils]] and transformers.
+
+== Recent Photographs ==
+----
+A few of the more recent photographs I've taken<br><br>
+[[Image:7spot-small.jpg]]
+<br>'''A 7-spot ladybird'''
+''Nikon D50 / Sigma 50mm DG Macro''
+----
+[[Image:Look-small.jpg]]
+<br>'''A grasshopper about to become lunch'''
+''Nikon D50 / Nikon 18-55mm ''
+----
+[[Image:Ester-small.jpg]]
+<br>'''A friend'''
+''Nikon D50 / Sigma 50mm DG Macro''
+----

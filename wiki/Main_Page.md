@@ -9,7 +9,7 @@ internet.
 
 Friends & family that have ended up here are probably lost, anyone
 looking for my photos probably wants to be at
-[Flickr](http://www.flickr.com/photos/dtl/) instead. Accademic visitors
+[Flickr](http://www.flickr.com/photos/dtl/) instead. Academic visitors
 are directed to my research pages.
 
 Current Projects
@@ -38,3 +38,25 @@ Useful(?) Information
 
 Some information on various [TOKO Coils](/wiki/TOKO_Coils "wikilink") and
 transformers.
+
+Recent Photographs
+------------------
+
+------------------------------------------------------------------------
+
+A few of the more recent photographs I've taken  
+  
+![](7spot-small.jpg "fig:7spot-small.jpg")  
+**A 7-spot ladybird** *Nikon D50 / Sigma 50mm DG Macro*
+
+------------------------------------------------------------------------
+
+![](Look-small.jpg "fig:Look-small.jpg")  
+**A grasshopper about to become lunch** ''Nikon D50 / Nikon 18-55mm ''
+
+------------------------------------------------------------------------
+
+![](Ester-small.jpg "fig:Ester-small.jpg")  
+**A friend** *Nikon D50 / Sigma 50mm DG Macro*
+
+------------------------------------------------------------------------

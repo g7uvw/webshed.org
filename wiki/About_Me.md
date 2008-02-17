@@ -4,7 +4,7 @@ permalink: wiki/About_Me/
 layout: wiki
 ---
 
-`Who am I ?`
+*' Who am I ?*'
 
 Hello, I'm David Mills. Pleased to meet you.
 
@@ -16,11 +16,11 @@ sciences and obsolete computers. I read a lot. I have a PhD.
 
 I like beer, aniseed balls, curry, red wine, computers and cats. I
 dislike religious fundamentalists, children, cucumber, sprouts and
-milipeeds.
+millipedes.
 
 I've worked as a barman, an accountant, a bank clerk, a double glazing
 salesman, a road sweeper, an embedded systems developer, a network
-installer and I've manned the helldesk. Now I blow things up with a big
+installer and I've manned the hell-desk. Now I blow things up with a big
 laser.
 
 I have zero musical skills despite owning at least 10 CDs and having

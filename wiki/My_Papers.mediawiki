@@ -1,5 +1,7 @@
 == My recent papers and publications ==
+Some of my recent published work, I can only provide journal links here due to copyright of these publications being assigned to the publishers.
 __TOC__
+
 == 2007 ==
 D. Mills, T. Kreouzis, A. Sapelkin, B. Unal, N. Zyuzikov and [http://courses.wcupa.edu/kkolasinski/ K.W. Kolasinski], ''Surface texturing of Si, porous Si and TiO<sub>2</sub> by laser ablation'', Appl. Surf. Sci. (In Press)  [http://dx.doi.org/10.1016/j.apsusc.2007.01.078 doi:10.1016/j.apsusc.2007.01.078]
 

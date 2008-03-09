@@ -7,6 +7,9 @@ layout: wiki
 My recent papers and publications
 ---------------------------------
 
+Some of my recent published work, I can only provide journal links here
+due to copyright of these publications being assigned to the publishers.
+
 2007
 ----
 

@@ -52,3 +52,9 @@ swap of the OC71 for the 2N3906 did not work. Silicon transistors need
 about 0.6 Volts to turn on compared to germanium's 0.3-0.4 Volts. The
 easiest fudge for this is to replace R35, a 47K Ohm part, by a 22K Ohm
 resistor.
+
+------------------------------------------------------------------------
+
+Next up will be to re-align the set and perhaps switch out all the
+germanium transistors in the RF and IF sections for their silicon
+counterparts.

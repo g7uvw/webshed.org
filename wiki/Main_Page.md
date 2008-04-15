@@ -17,6 +17,7 @@ Current Projects
 
 I'm working on several electronics projects at the present time:
 
+-   Repair of an [Eddystone EC10](/wiki/Eddystone_EC10 "wikilink") radio.
 -   An Epiphyte 80m transceiver.
 -   I'm designing a PCB for the Warbler PSK31 transceiver.
 -   A [USB-ZX](/wiki/USB-ZX "wikilink") debugging interface for the Z80 based

@@ -50,7 +50,7 @@ want to listen to more than AM stations. An attempt to use an OC71 (more
 of an audio transistor than anything) in place of the purloined OC171
 failed. Zero oscillation. Having no other germanium transistors to hand,
 I dug into the spares bin for a PNP Silicon transistor instead. The
-2N3906 is a pretty general purpose part, sibling the the 2n3904 (NPN)
+2N3906 is a pretty general purpose part, sibling to the 2n3904 (NPN)
 beloved of QRP constructors. A straight forward swap of the OC71 for the
 2N3906 did not work. Silicon transistors need about 0.6 Volts to turn on
 compared to germanium's 0.3-0.4 Volts. The easiest fudge for this is to

@@ -36,4 +36,5 @@ pits and conical pillars). A significant discovery during the period of
 my Ph.D was that of solidification driven extrusion, whereby ultra-sharp
 spikes grow from sub-millimeter droplets of molten silicon.
 
-I have a CV and a less formal biography also available online.
+I have a CV and [a less formal biography](/wiki/Bio2 "wikilink") also
+available online.

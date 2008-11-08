@@ -7,9 +7,9 @@ The BitX 20 is a 20m band SSB transeiver originally designed in India by Ashar F
 ----
 
 The BitX bp-filter is simply constructed from three Toko coils and a handfull of NPO capacitors.
-[[Image:Bp-filter_001.jpg|thumb|200px|Bandpass filter under test]]
+[[Image:Bp-filter_001.jpg|thumb|300px|center|Bandpass filter under test]]
 <br clear="all" />
 Quickly peaking up the filter response using the variable cores on the Toko coils give the following filter plots.
 <br clear="all" />
-[[image:20m-bp-filter-full.png|thumb|200px|Bandpass response 7 - 24 Mhz]]
-[[image:20m-bp-filter.png|thumb|200px|Bandpass response around 14 Mhz]]
+[[image:20m-bp-filter-full.png|thumb|300px|center|Bandpass response 7 - 24 Mhz]]
+[[image:20m-bp-filter.png|thumb|300px|center|Bandpass response around 14 Mhz]]

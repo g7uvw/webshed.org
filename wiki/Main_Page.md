@@ -17,6 +17,7 @@ Current Projects
 
 I'm working on several electronics projects at the present time:
 
+-   A 10.140Mhz [QRSS beacon](/wiki/QRSS_Beacon "wikilink")
 -   Building a [BitX20](/wiki/BitX20 "wikilink") SSB transeiver
 -   Repair of an [Eddystone EC10](/wiki/Eddystone_EC10 "wikilink") radio.
 -   An Epiphyte 80m transceiver.

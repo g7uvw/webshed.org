@@ -24,4 +24,12 @@ The whole thing is built on a small scrap of veroboard so that it will
 fit inside the aluminum box of my xtal oven. I decided to oven the whole
 oscillator instead of just the xtal for better frequency stability.
 
-\[Image: Qrss-osc-board.jpg|300px\]
+<img src="Qrss-osc-board.jpg" title="fig:Oscillator - click for larger" alt="Oscillator - click for larger" width="300" />
+<img src="Qrss-osc-board-oven.jpg" title="fig:Oscillator - click for larger" alt="Oscillator - click for larger" width="300" />
+
+The white stuff at the bottom of the oven block is white-tak just to
+electrically insulate the board from the metal block and hold the board
+fairly solidly.
+
+**Oven**  
+

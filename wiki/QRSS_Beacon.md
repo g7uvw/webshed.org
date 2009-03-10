@@ -54,3 +54,16 @@ least 3 hours.
 
 The signal from the oscillator isn't a pure sinewave, so there is some
 need for bandpass filtering to remove harmonics before this goes on air.
+
+------------------------------------------------------------------------
+
+*Update 10/03/2009*
+
+I removed the old buffer stage from the Pye frequency standard and
+replaced it with a single 2N2222 buffer. The Pye stage was probably
+better designed, but was also somewhat filtered thus reducing the power
+out at 10.140 Mhz. A simple low pass filter has been fitted to the
+output and I now get something that looks closer to a sinewave.  
+Measured power out into a 50Ohm load is 800uW. Initial startup frequency
+is around 10.140098 Mhz, rapidly rising at the oven heats up to around
+10.3 Mhz before settling down at a steady 10.140031 Mhz.

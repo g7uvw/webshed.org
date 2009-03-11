@@ -65,5 +65,7 @@ better designed, but was also somewhat filtered thus reducing the power
 out at 10.140 Mhz. A simple low pass filter has been fitted to the
 output and I now get something that looks closer to a sinewave.  
 Measured power out into a 50Ohm load is 800uW. Initial startup frequency
-is around 10.140098 Mhz, rapidly rising at the oven heats up to around
-10.3 Mhz before settling down at a steady 10.140031 Mhz.
+is around 6.8 Mhz !, rapidly rising at the oven heats up to around 10.3
+Mhz before settling down at a steady 10.140031 Mhz. No idea why the
+sources starts so low, but you can watch it increase in frequency by
+~100KHz per second until it jumps to 10.139xxx Mhz and then settles.

@@ -69,3 +69,11 @@ is around 6.8 Mhz !, rapidly rising at the oven heats up to around 10.3
 Mhz before settling down at a steady 10.140031 Mhz. No idea why the
 sources starts so low, but you can watch it increase in frequency by
 ~100KHz per second until it jumps to 10.139xxx Mhz and then settles.
+
+------------------------------------------------------------------------
+
+*Update 11/03/2009*
+
+The warmup and settling of the oscillator. The 6MHz startup is omitted
+to allow the scale to show deviations around 10.140 MHz
+<img src="Warmup.png" title="fig:Warmup.png" alt="Warmup.png" width="800" />

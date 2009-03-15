@@ -16,3 +16,5 @@ This is the information I've collected so far:
 
 [Limited info and measured values](/wiki/TOKO_Coils_Measured "wikilink") :
 Bare details on a few coils I've measured and some other random info.
+[Data sheet values and markings](/wiki/TOKO_10K_Series "wikilink") : Datasheet
+information

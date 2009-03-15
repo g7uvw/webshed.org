@@ -1,7 +1,10 @@
-
 == TOKO 10K Series Coils ==
-Some details of the more common (and much less common) TOKO 10K series coils.
+'''Some details of the more common (and much less common) TOKO 10K series coils.'''
 [[Image: Toko10k.png‎ ]]
+
+TOKO 10K coils cover the range 2 - 100MHz and 80nH to 50uH. <br/>
+Temp. Co of inductor 220+/- 150ppm / degree C max.<br/>
+With internal capacitor 0 +/- 150ppm / degree C max <br/>
 
 {| border="1"
 |'''TOKO Ref''' 

@@ -4,6 +4,11 @@ permalink: wiki/Research_Interests/
 layout: wiki
 ---
 
+Research Interests
+------------------
+
+*In need of an update...*
+
 My PhD was in the area of laser - surface interactions and structure
 formation, with applications in as diverse fields as photovoltaics,
 cellular scaffolds and transdermal drug delivery. Much of my work
@@ -23,3 +28,5 @@ nano-spikes on textured silicon surfaces.
 
 [Kurt's textbook](http://courses.wcupa.edu/kkolasinski/surfacescience/)
 is an excellent primer on surface science in general and nanoscience.
+
+A list of [ my publications can be found here](/wiki/My_Papers "wikilink")

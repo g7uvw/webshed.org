@@ -12,6 +12,7 @@ some random TOKO RCL inductor you've found in your junk box. I got fed
 up of searching on partnumbers only to find people asking the same
 questions, trying to ID various parts.
 
-This is the information I've collected so far.
+This is the information I've collected so far:
 
-*Limited info and measured values*
+[Limited info and measured values](/wiki/TOKO_Coils_Measured "wikilink") :
+Bare details on a few coils I've measured and some other random info.

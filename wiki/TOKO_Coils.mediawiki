@@ -4,5 +4,5 @@ If you've ended up here, you are probably looking for information on some random
 
 This is the information I've collected so far:
 
-[[TOKO_Coils_Measured|Limited info and measured values]] : Bare details on a few coils I've measured and some other random info.
-[[TOKO_10K_Series|Data sheet values and markings]] : Datasheet information
+[[TOKO_Coils_Measured|Limited info and measured values]] : Bare details on a few coils I've measured and some other random info.<br/>
+[[TOKO_10K_Series|Data sheet values and markings]] : Datasheet information.<br/>

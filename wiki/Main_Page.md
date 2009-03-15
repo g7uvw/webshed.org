@@ -10,7 +10,7 @@ internet.
 Friends & family that have ended up here are probably lost, anyone
 looking for my photos probably wants to be at
 [Flickr](http://www.flickr.com/photos/dtl/) instead. Academic visitors
-are directed to my research pages.
+are directed to my [research pages.](/wiki/Research_Interests "wikilink")
 
 Current Projects
 ----------------

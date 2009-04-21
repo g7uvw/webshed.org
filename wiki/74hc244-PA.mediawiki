@@ -1,4 +1,3 @@
-
 == 74HC240 / 74HC244 Buffer / PA stage ==
 
 The 74HC240 Tri-state octal inverting buffer IC has been used as a simple low power buffer amp and PA stage for QRP radios since N7KSB first investigated its use many years ago.  The 74HC244 IC, a non inverting version of the '240 can also be used in this application.
@@ -15,4 +14,4 @@ The output transformer is 5 turns tri-filar wound on a T50-2 or similar toroid.
 
 This PCB mas should be printed at 600x600dpi for accurate sizing.
 
-[[Image:800px-74hc244Pcb.png]]
+[[Image:74hc244Pcb.png|thumb|800px]]

@@ -6,12 +6,12 @@ I needed a small PA stage for my [[QRSS_Beacon |QRSS beacon]] so I designed this
 
 ----
 '''Schematic'''
-[[Image:Sch-small.png]]
+[[Image:Sch-small.png|thumb|800px]]
 
 The output transformer is 5 turns tri-filar wound on a T50-2 or similar toroid.
 ----
 '''PCB'''
 
-This PCB mas should be printed at 600x600dpi for accurate sizing.
+This PCB mas should be printed at 600x600dpi for accurate sizing. Click image to download full sized version for printing.
 
 [[Image:74hc244Pcb.png|thumb|800px]]

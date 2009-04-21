@@ -15,4 +15,4 @@ The output transformer is 5 turns tri-filar wound on a T50-2 or similar toroid.
 
 This PCB mas should be printed at 600x600dpi for accurate sizing.
 
-[[Image:74hc244Pcb.png]]
+[[Image:800px-74hc244Pcb.png]]

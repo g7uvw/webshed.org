@@ -1,4 +1,4 @@
-== G7UVW QRSS Beacon ==
+== G7UVW QRSS 30 Meter Beacon 10.140 MHz==
 After seeing lots of information and designs and grabbed QRSS signals I've decided to have ago at getting a beacon on the air for some tests. The 10.140 MHz xtal was supplied by Chris G8OCV and the xtal oven was a rally find a couple of years ago.
 
 '''Oscillator'''<br/>
@@ -46,3 +46,8 @@ The low start up frequency problem seems to have cured itself, the oscillator no
 The oscillator feeds a small PA to provide about 2.8W into a 50ohm load (with PA supply at 12v). The output of the PA is bandpass filtered with a couple of retuned 10.7 MHz TOKO IF cans which also limit the power output to 13mW into 50ohm (PA supply at 8v).
 Photographs to follow.
 On air test to happen in next day or two.
+
+----
+''Update 21/04/2009''
+
+The onair test occured, but I'm not 100% sure my signal was seen on the QRSS grabbers. A simple [[74hc244-PA|PA stage using a 74HC244 IC]] has been designed to increase the power output of the beacon.

@@ -4,8 +4,8 @@ permalink: wiki/QRSS_Beacon/
 layout: wiki
 ---
 
-G7UVW QRSS Beacon
------------------
+G7UVW QRSS 30 Meter Beacon 10.140 MHz
+-------------------------------------
 
 After seeing lots of information and designs and grabbed QRSS signals
 I've decided to have ago at getting a beacon on the air for some tests.
@@ -92,3 +92,12 @@ The oscillator feeds a small PA to provide about 2.8W into a 50ohm load
 a couple of retuned 10.7 MHz TOKO IF cans which also limit the power
 output to 13mW into 50ohm (PA supply at 8v). Photographs to follow. On
 air test to happen in next day or two.
+
+------------------------------------------------------------------------
+
+*Update 21/04/2009*
+
+The onair test occured, but I'm not 100% sure my signal was seen on the
+QRSS grabbers. A simple [PA stage using a 74HC244
+IC](74hc244-PA "wikilink") has been designed to increase the power
+output of the beacon.

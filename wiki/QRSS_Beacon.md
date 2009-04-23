@@ -89,7 +89,7 @@ oscillator now starts around 10.139 MHz and shortly settles at
 
 The oscillator feeds a small PA to provide about 2.8W into a 50ohm load
 (with PA supply at 12v). The output of the PA is bandpass filtered with
-a couple of retuned 10.7 MHz TOKO IF cans which also limit the power
+a couple of re-tuned 10.7 MHz TOKO IF cans which also limit the power
 output to 13mW into 50ohm (PA supply at 8v). Photographs to follow. On
 air test to happen in next day or two.
 
@@ -97,8 +97,8 @@ air test to happen in next day or two.
 
 *Update 21/04/2009*
 
-The onair test occured, but I'm not 100% sure my signal was seen on the
-QRSS grabbers. A simple [PA stage using a 74HC244
+The on-air test occurred, but I'm not 100% sure my signal was seen on
+the QRSS grabbers. A simple [PA stage using a 74HC244
 IC](74hc244-PA "wikilink") has been designed to increase the power
 output of the beacon.
 

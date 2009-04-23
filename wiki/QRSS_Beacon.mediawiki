@@ -43,14 +43,14 @@ The warm up and settling of the oscillator. The 6MHz start up is omitted to allo
 
 The low start up frequency problem seems to have cured itself, the oscillator now starts around 10.139 MHz and shortly settles at 10.1400035 MHz.
 
-The oscillator feeds a small PA to provide about 2.8W into a 50ohm load (with PA supply at 12v). The output of the PA is bandpass filtered with a couple of retuned 10.7 MHz TOKO IF cans which also limit the power output to 13mW into 50ohm (PA supply at 8v).
+The oscillator feeds a small PA to provide about 2.8W into a 50ohm load (with PA supply at 12v). The output of the PA is bandpass filtered with a couple of re-tuned 10.7 MHz TOKO IF cans which also limit the power output to 13mW into 50ohm (PA supply at 8v).
 Photographs to follow.
 On air test to happen in next day or two.
 
 ----
 ''Update 21/04/2009''
 
-The onair test occured, but I'm not 100% sure my signal was seen on the QRSS grabbers. A simple [[74hc244-PA|PA stage using a 74HC244 IC]] has been designed to increase the power output of the beacon.
+The on-air test occurred, but I'm not 100% sure my signal was seen on the QRSS grabbers. A simple [[74hc244-PA|PA stage using a 74HC244 IC]] has been designed to increase the power output of the beacon.
 
 ----
 ''Update 23/04/2009''

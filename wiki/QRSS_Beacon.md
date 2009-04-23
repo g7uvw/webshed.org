@@ -101,3 +101,15 @@ The onair test occured, but I'm not 100% sure my signal was seen on the
 QRSS grabbers. A simple [PA stage using a 74HC244
 IC](74hc244-PA "wikilink") has been designed to increase the power
 output of the beacon.
+
+------------------------------------------------------------------------
+
+*Update 23/04/2009*
+
+Success! Had a play with the filters on the output last night with the
+help of Chris G8OCV. Now putting about 200mW into a known crap antenna.
+Spotted signal on I2NDT's grabber in Bergamo Italy.
+<img src="I2ndt144318.jpg" title="fig:I2ndt144318.jpg" alt="I2ndt144318.jpg" width="800" />
+
+The sawtooth pattern in the middle of the screen with some faint Morse
+either side is my signal.

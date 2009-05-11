@@ -7,8 +7,6 @@ layout: wiki
 A simple amplified GPS antenna
 ------------------------------
 
-------------------------------------------------------------------------
-
 I was in need of an external antenna for my Trimble GPS Disciplined
 frequency standard. This design is based on the N7KKQ design from the
 October 2002 issue of QST. The Trimble needs &gt;25dB of gain to lock to

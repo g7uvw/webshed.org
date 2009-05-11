@@ -1,6 +1,5 @@
 == A simple amplified GPS antenna ==
 
-----
 I was in need of an external antenna for my Trimble GPS Disciplined frequency standard. This design is based on the N7KKQ design from the October 2002 issue of QST.  The Trimble needs >25dB of gain to lock to the GPS data, so I added a single stage MMIC amp. This was mounted as close as possible to the antenna (actually on the microstrip down lead) and can be seen in the photograph below.
 
 [[Image:2009-05-11_at_19-34-21.jpg|thumb|400px|Base of GPS antenna showing MMIC amp. Click for bigger & clearer]]

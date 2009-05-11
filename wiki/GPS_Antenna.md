@@ -21,8 +21,7 @@ the DC supplied from the Trimble (it only supplies 5V, which is too low
 for this MMIC device). The bright yellow inductor is there to prevent
 our precious amplified signal from vanishing into the power supply.
 
-<img src="2009-05-11_at_19-33-50.jpg" title="Overview of whole GPS antenna prior to boxing up." alt="Overview of whole GPS antenna prior to boxing up." width="400" />
-
+<img src="2009-05-11_at_19-33-50.jpg" title="fig:Overview of whole GPS antenna prior to boxing up." alt="Overview of whole GPS antenna prior to boxing up." width="400" />  
 This version of the amp and antenna does not provide enough gain to
 reliably lock the Trimble unit. Lock is very sporadic. This could be
 fixed by adding another stage of amplification or moving to a higher

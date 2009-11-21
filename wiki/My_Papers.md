@@ -56,3 +56,10 @@ Kolasinski](http://courses.wcupa.edu/kkolasinski/), *Laser-etched
 silicon pillars and their porosification*, J. Vac. Sci. Technol. A 22,
 1647-1651 (2004)
 [<doi:10.1116/1.1690253>](http://dx.doi.org/doi:10.1116/1.1690253)
+
+2003
+----
+
+J. Garvey et al., Use of an FPGA to Identify Electromagnetic Clusters
+and Isolated Hadrons in the ATLAS Level-1 Calorimeter Trigger, Nuclear
+Instruments and Methods A, vol. 512 no. 3, 2003, pp. 506–516.

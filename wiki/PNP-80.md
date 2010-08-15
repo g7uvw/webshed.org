@@ -38,3 +38,17 @@ divider formed from R2 and Q3 acting acting as a diode, this puts about
 <img src="Transformer_coupled_PNP_amp.png" title="fig:Transformer coupled audio amp" alt="Transformer coupled audio amp" width="778" />
 Built on a scrap of Veroboard, it looks something like this.
 <img src="Transformer_coupled_PNP_audio_amp.jpg" title="fig:Veroboard Audio Amp" alt="Veroboard Audio Amp" width="600" />
+
+------------------------------------------------------------------------
+
+**Crystal Filter and Carrier Insertion Oscillator**  
+A hunt through the junk box turned up this 10.7 MHz SSB crystal filter
+and documentation.
+![](Hy-Q_crystal_filter.jpg "fig:Hy-Q_crystal_filter.jpg")  
+It requires a 10.70165 MHz carrier insertion crystal for LSB; another
+hunt through the junk produced a 10.8 MHz crystal and an old Pye
+Westminster crystal oscillator board. The BC108 on the oscillator board
+was replaced with one of the PNP transistors and the crystal was
+swapped. A bit of inductance added in series with the crystal brought
+the frequency down to 10.702MHz - close enough for the moment.
+<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal osc hacked for the project." alt="Pye Westminster crystal osc hacked for the project." width="500" />

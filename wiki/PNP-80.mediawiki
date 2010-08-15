@@ -15,3 +15,10 @@ L1 is an LT700
 [[Image:Transformer_coupled_PNP_amp.png|thumb|778px|Transformer coupled audio amp]]
 Built on a scrap of Veroboard, it looks something like this.
 [[Image:Transformer_coupled_PNP_audio_amp.jpg|thumb|600px|center|Veroboard Audio Amp]]
+----
+'''Crystal Filter and Carrier Insertion Oscillator'''<br>
+A hunt through the junk box turned up this 10.7 MHz SSB crystal filter and documentation. 
+[[Image:Hy-Q_crystal_filter.jpg]]
+<br>It requires a 10.70165 MHz carrier insertion crystal for LSB; another hunt through the junk produced a 10.8 MHz crystal and an old Pye Westminster crystal oscillator board.
+The BC108 on the oscillator board was replaced with one of the PNP transistors and the crystal was swapped. A bit of inductance added in series with the crystal brought the frequency down to 10.702MHz - close enough for the moment.
+[[Image:PNP-BFO.jpg|thumb|500px|Pye Westminster crystal osc hacked for the project.]]

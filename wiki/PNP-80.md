@@ -51,4 +51,6 @@ Westminster crystal oscillator board. The BC108 on the oscillator board
 was replaced with one of the PNP transistors and the crystal was
 swapped. A bit of inductance added in series with the crystal brought
 the frequency down to 10.702MHz - close enough for the moment.
-<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal osc hacked for the project." alt="Pye Westminster crystal osc hacked for the project." width="500" />
+<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal osc hacked for the project." alt="Pye Westminster crystal osc hacked for the project." width="500" />  
+---- **VFO & Buffer**  
+<img src="PNP-80-vfo-buffer.png" title="fig:A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />

@@ -21,4 +21,7 @@ A hunt through the junk box turned up this 10.7 MHz SSB crystal filter and docum
 [[Image:Hy-Q_crystal_filter.jpg]]
 <br>It requires a 10.70165 MHz carrier insertion crystal for LSB; another hunt through the junk produced a 10.8 MHz crystal and an old Pye Westminster crystal oscillator board.
 The BC108 on the oscillator board was replaced with one of the PNP transistors and the crystal was swapped. A bit of inductance added in series with the crystal brought the frequency down to 10.702MHz - close enough for the moment.
-[[Image:PNP-BFO.jpg|thumb|500px|Pye Westminster crystal osc hacked for the project.]]
+[[Image:PNP-BFO.jpg|thumb|500px|Pye Westminster crystal osc hacked for the project.]]<br>
+----
+'''VFO & Buffer'''<br>
+[[Image:PNP-80-vfo-buffer.png|thumb|600px|center|A variant on VK2ZAY's VFO with my buffer]]

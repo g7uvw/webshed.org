@@ -18,10 +18,13 @@ Built on a scrap of Veroboard, it looks something like this.
 ----
 '''Crystal Filter and Carrier Insertion Oscillator'''<br>
 A hunt through the junk box turned up this 10.7 MHz SSB crystal filter and documentation. 
-[[Image:Hy-Q_crystal_filter.jpg]]
+[[Image:Hy-Q_crystal_filter.jpg|thumb|200px|left|HyQ 10.7 MHz SSB filter]]
 <br>It requires a 10.70165 MHz carrier insertion crystal for LSB; another hunt through the junk produced a 10.8 MHz crystal and an old Pye Westminster crystal oscillator board.
+[[Image:PNP-BFO.jpg|thumb|300px|Pye Westminster crystal osc hacked for the project.]]<br>
 The BC108 on the oscillator board was replaced with one of the PNP transistors and the crystal was swapped. A bit of inductance added in series with the crystal brought the frequency down to 10.702MHz - close enough for the moment.
-[[Image:PNP-BFO.jpg|thumb|500px|Pye Westminster crystal osc hacked for the project.]]<br>
+
 ----
 '''VFO & Buffer'''<br>
+The first attempt at a VFO was a Vackar type design, with which I had only minor success (it briefly oscillated once). Alan Yates offered up this [http://www.vk2zay.net/article/file/1187 design]. I changed the buffer for a two transistor job and replaced the coupling capacitors with trimmers to enable signal purity and level adjustments. Output is about 1v peak to peak into 50 Ohms.
+
 [[Image:PNP-80-vfo-buffer.png|thumb|600px|center|A variant on VK2ZAY's VFO with my buffer]]

@@ -44,13 +44,24 @@ Built on a scrap of Veroboard, it looks something like this.
 **Crystal Filter and Carrier Insertion Oscillator**  
 A hunt through the junk box turned up this 10.7 MHz SSB crystal filter
 and documentation.
-![](Hy-Q_crystal_filter.jpg "fig:Hy-Q_crystal_filter.jpg")  
+<img src="Hy-Q_crystal_filter.jpg" title="fig:HyQ 10.7 MHz SSB filter" alt="HyQ 10.7 MHz SSB filter" width="200" />  
 It requires a 10.70165 MHz carrier insertion crystal for LSB; another
 hunt through the junk produced a 10.8 MHz crystal and an old Pye
-Westminster crystal oscillator board. The BC108 on the oscillator board
-was replaced with one of the PNP transistors and the crystal was
-swapped. A bit of inductance added in series with the crystal brought
-the frequency down to 10.702MHz - close enough for the moment.
-<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal osc hacked for the project." alt="Pye Westminster crystal osc hacked for the project." width="500" />  
----- **VFO & Buffer**  
-<img src="PNP-80-vfo-buffer.png" title="fig:A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />
+Westminster crystal oscillator board.
+<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal osc hacked for the project." alt="Pye Westminster crystal osc hacked for the project." width="300" />  
+The BC108 on the oscillator board was replaced with one of the PNP
+transistors and the crystal was swapped. A bit of inductance added in
+series with the crystal brought the frequency down to 10.702MHz - close
+enough for the moment.
+
+------------------------------------------------------------------------
+
+**VFO & Buffer**  
+The first attempt at a VFO was a Vackar type design, with which I had
+only minor success (it briefly oscillated once). Alan Yates offered up
+this [design](http://www.vk2zay.net/article/file/1187). I changed the
+buffer for a two transistor job and replaced the coupling capacitors
+with trimmers to enable signal purity and level adjustments. Output is
+about 1v peak to peak into 50 Ohms.
+
+<img src="PNP-80-vfo-buffer.png" title="A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />

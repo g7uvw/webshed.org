@@ -41,6 +41,18 @@ Built on a scrap of Veroboard, it looks something like this.
 
 ------------------------------------------------------------------------
 
+**VFO & Buffer**  
+The first attempt at a VFO was a Vackar type design, with which I had
+only minor success (it briefly oscillated once). Alan Yates offered up
+this [design](http://www.vk2zay.net/article/file/1187). I changed the
+buffer for a two transistor job and replaced the coupling capacitors
+with trimmers to enable signal purity and level adjustments. Output is
+about 1v peak to peak into 50 Ohms.
+
+<img src="PNP-80-vfo-buffer.png" title="A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />
+
+------------------------------------------------------------------------
+
 **Crystal Filter and Carrier Insertion Oscillator**  
 A hunt through the junk box turned up this 10.7 MHz SSB crystal filter
 and documentation.
@@ -53,15 +65,3 @@ The BC108 on the oscillator board was replaced with one of the PNP
 transistors and the crystal was swapped. A bit of inductance added in
 series with the crystal brought the frequency down to 10.702MHz - close
 enough for the moment.
-
-------------------------------------------------------------------------
-
-**VFO & Buffer**  
-The first attempt at a VFO was a Vackar type design, with which I had
-only minor success (it briefly oscillated once). Alan Yates offered up
-this [design](http://www.vk2zay.net/article/file/1187). I changed the
-buffer for a two transistor job and replaced the coupling capacitors
-with trimmers to enable signal purity and level adjustments. Output is
-about 1v peak to peak into 50 Ohms.
-
-<img src="PNP-80-vfo-buffer.png" title="A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />

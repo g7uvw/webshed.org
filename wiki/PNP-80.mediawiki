@@ -4,8 +4,7 @@ The idea for this project came when I bought 200 unknown transistors for £1 at 
 
 They have a Motorola logo and part number, but no datasheet I've found seems to match these parts. Barring more information, I've decided to use these parts as essentially plastic cased PNP BC108 companions.
 
-The 80m band is pretty active at any time and the low frequency requires very little from components in a receiver, this is especially suited when you know almost nothing about the parts you've set out to build with.
-
+The 80m band is pretty active at any time and the low frequency requires very little from components in a receiver, this is especially suited when you know almost nothing about the parts you've set out to build with.<br>
 ----
 '''Audio Amp'''<br>
 If you build a radio backwards, starting at the audio end and working back towards the antenna, then even if nothing else works, you should at least have a working audio amplifier; and many of the other radio stages can be tested by listening to the output and tuning for maximum noise.
@@ -14,13 +13,22 @@ L2 is an LT44
 L1 is an LT700
 [[Image:Transformer_coupled_PNP_amp.png|thumb|778px|Transformer coupled audio amp]]
 Built on a scrap of Veroboard, it looks something like this.
-[[Image:Transformer_coupled_PNP_audio_amp.jpg|thumb|600px|center|Veroboard Audio Amp]]
+[[Image:Transformer_coupled_PNP_audio_amp.jpg|thumb|600px|center|Veroboard Audio Amp]]<br>
 ----
 '''VFO & Buffer'''<br>
 The first attempt at a VFO was a Vackar type design, with which I had only minor success (it briefly oscillated once). Alan Yates offered up this [http://www.vk2zay.net/article/file/1187 design]. I changed the buffer for a two transistor job and replaced the coupling capacitors with trimmers to enable signal purity and level adjustments. Output is about 1v peak to peak into 50 Ohms.
 
 [[Image:PNP-80-vfo-buffer.png|thumb|600px|center|A variant on VK2ZAY's VFO with my buffer]]
+[[Image:Pnp80-vfo.jpg|thumb|600px|center|VFO with added low pass filter not shown in schematic.]]<br>
 ----
+
+'''Mixer'''<br>
+The mixer is just a simple bipolar transistor mixer, nothing fancy. It requires only low signal levels from the local oscillator, and will be swamped by large signals on the RF port. This type of mixer also offers 10 dB+ of conversion gain; how well it performs will depend on the specifications of the transistor (unknown in this case).
+[[Image:Pnp80-mixer.png|thumb|400px|left|Bipolar mixer schematic]]
+[[Image:Pnp80-mixer.jpg|thumb|400px|Bipolar mixer]]<br>
+
+----
+
 '''Crystal Filter and Carrier Insertion Oscillator'''<br>
 A hunt through the junk box turned up this 10.7 MHz SSB crystal filter and documentation. 
 [[Image:Hy-Q_crystal_filter.jpg|thumb|200px|left|HyQ 10.7 MHz SSB filter]]

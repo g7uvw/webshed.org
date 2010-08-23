@@ -22,16 +22,9 @@ The first attempt at a VFO was a Vackar type design, with which I had only minor
 [[Image:Pnp80-vfo.jpg|thumb|600px|center|VFO with added low pass filter not shown in schematic.]]<br>
 ----
 
-'''Mixer'''<br>
+<br>'''Mixer'''<br>
 The mixer is just a simple bipolar transistor mixer, nothing fancy. It requires only low signal levels from the local oscillator, and will be swamped by large signals on the RF port. This type of mixer also offers 10 dB+ of conversion gain; how well it performs will depend on the specifications of the transistor (unknown in this case).
 [[Image:Pnp80-mixer.png|thumb|400px|left|Bipolar mixer schematic]]
-[[Image:Pnp80-mixer.jpg|thumb|400px|Bipolar mixer]]<br>
-
+[[Image:Pnp80-mixer.jpg|thumb|400px|Bipolar mixer]]
+<br>
 ----
-
-'''Crystal Filter and Carrier Insertion Oscillator'''<br>
-A hunt through the junk box turned up this 10.7 MHz SSB crystal filter and documentation. 
-[[Image:Hy-Q_crystal_filter.jpg|thumb|200px|left|HyQ 10.7 MHz SSB filter]]
-<br>It requires a 10.70165 MHz carrier insertion crystal for LSB; another hunt through the junk produced a 10.8 MHz crystal and an old Pye Westminster crystal oscillator board.
-[[Image:PNP-BFO.jpg|thumb|300px|Pye Westminster crystal osc hacked for the project.]]<br>
-The BC108 on the oscillator board was replaced with one of the PNP transistors and the crystal was swapped. A bit of inductance added in series with the crystal brought the frequency down to 10.702MHz - close enough for the moment.

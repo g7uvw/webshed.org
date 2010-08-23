@@ -47,6 +47,7 @@ about 1v peak to peak into 50 Ohms.
 <img src="Pnp80-vfo.jpg" title="fig:VFO with added low pass filter not shown in schematic." alt="VFO with added low pass filter not shown in schematic." width="600" />  
 ----
 
+  
 **Mixer**  
 The mixer is just a simple bipolar transistor mixer, nothing fancy. It
 requires only low signal levels from the local oscillator, and will be
@@ -55,18 +56,4 @@ swamped by large signals on the RF port. This type of mixer also offers
 specifications of the transistor (unknown in this case).
 <img src="Pnp80-mixer.png" title="fig:Bipolar mixer schematic" alt="Bipolar mixer schematic" width="400" />
 <img src="Pnp80-mixer.jpg" title="fig:Bipolar mixer" alt="Bipolar mixer" width="400" />  
-
-------------------------------------------------------------------------
-
-**Crystal Filter and Carrier Insertion Oscillator**  
-A hunt through the junk box turned up this 10.7 MHz SSB crystal filter
-and documentation.
-<img src="Hy-Q_crystal_filter.jpg" title="fig:HyQ 10.7 MHz SSB filter" alt="HyQ 10.7 MHz SSB filter" width="200" />  
-It requires a 10.70165 MHz carrier insertion crystal for LSB; another
-hunt through the junk produced a 10.8 MHz crystal and an old Pye
-Westminster crystal oscillator board.
-<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal osc hacked for the project." alt="Pye Westminster crystal osc hacked for the project." width="300" />  
-The BC108 on the oscillator board was replaced with one of the PNP
-transistors and the crystal was swapped. A bit of inductance added in
-series with the crystal brought the frequency down to 10.702MHz - close
-enough for the moment.
+----

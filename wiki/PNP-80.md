@@ -22,7 +22,9 @@ The 80m band is pretty active at any time and the low frequency requires
 very little from components in a receiver, this is especially suited
 when you know almost nothing about the parts you've set out to build
 with.  
----- **Audio Amp**  
+
+### Audio Amp
+
 If you build a radio backwards, starting at the audio end and working
 back towards the antenna, then even if nothing else works, you should at
 least have a working audio amplifier; and many of the other radio stages
@@ -35,7 +37,9 @@ divider formed from R2 and Q3 acting acting as a diode, this puts about
 <img src="Transformer_coupled_PNP_amp.png" title="fig:Transformer coupled audio amp" alt="Transformer coupled audio amp" width="778" />
 Built on a scrap of Veroboard, it looks something like this.
 <img src="Transformer_coupled_PNP_audio_amp.jpg" title="fig:Veroboard Audio Amp" alt="Veroboard Audio Amp" width="600" />  
----- **VFO & Buffer**  
+
+### VFO & Buffer
+
 The first attempt at a VFO was a Vackar type design, with which I had
 only minor success (it briefly oscillated once). Alan Yates offered up
 this [design](http://www.vk2zay.net/article/file/1187). I changed the
@@ -45,15 +49,27 @@ about 1v peak to peak into 50 Ohms.
 
 <img src="PNP-80-vfo-buffer.png" title="fig:A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />
 <img src="Pnp80-vfo.jpg" title="fig:VFO with added low pass filter not shown in schematic." alt="VFO with added low pass filter not shown in schematic." width="600" />  
-----
 
-  
-**Mixer**  
+### Mixer
+
 The mixer is just a simple bipolar transistor mixer, nothing fancy. It
 requires only low signal levels from the local oscillator, and will be
 swamped by large signals on the RF port. This type of mixer also offers
 10 dB+ of conversion gain; how well it performs will depend on the
 specifications of the transistor (unknown in this case).
 <img src="Pnp80-mixer.png" title="fig:Bipolar mixer schematic" alt="Bipolar mixer schematic" width="400" />
-<img src="Pnp80-mixer.jpg" title="fig:Bipolar mixer" alt="Bipolar mixer" width="400" />  
-----
+<img src="Pnp80-mixer.jpg" title="fig:Bipolar mixer" alt="Bipolar mixer" width="400" />
+
+### Crystal Filter and Carrier Insertion Oscillator
+
+A hunt through the junk box turned up this 10.7 MHz SSB crystal filter
+and documentation. It requires a 10.70165 MHz carrier insertion crystal
+for LSB; another hunt through the junk produced a 10.8 MHz crystal and
+an old Pye Westminster crystal oscillator board. The BC108 on the
+oscillator board was replaced with one of the PNP transistors and the
+crystal was swapped. A bit of inductance added in series with the
+crystal brought the frequency down to 10.702MHz - close enough for the
+moment.
+<img src="Hy-Q_crystal_filter.jpg" title="fig:HyQ 10.7 MHz SSB filter" alt="HyQ 10.7 MHz SSB filter" width="200" />
+<img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal oscillator hacked for the project." alt="Pye Westminster crystal oscillator hacked for the project." width="300" />  
+

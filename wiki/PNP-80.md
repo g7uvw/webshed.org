@@ -87,3 +87,4 @@ Funster 40m project](http://www.qrp.pops.net/funster.asp). A couple of
 alterations were made to suit components on hand and the lower voltage
 (8V vs 13.8V).
 <img src="Pnp80-productdet.png" title="fig:Simple bipolar transistor product detector" alt="Simple bipolar transistor product detector" width="600" />
+<img src="Pnp80-productdetector.jpg" title="fig:Pnp80-productdetector.jpg" alt="Pnp80-productdetector.jpg" width="600" />

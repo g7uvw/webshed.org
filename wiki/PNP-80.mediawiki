@@ -16,7 +16,7 @@ Built on a scrap of Veroboard, it looks something like this.
 [[Image:Transformer_coupled_PNP_audio_amp.jpg|thumb|600px|center|Veroboard Audio Amp]]<br>
 
 ===VFO & Buffer===
-The first attempt at a VFO was a Vackar type design, with which I had only minor success (it briefly oscillated once). Alan Yates offered up this [http://www.vk2zay.net/article/file/1187 design]. I changed the buffer for a two transistor job and replaced the coupling capacitors with trimmers to enable signal purity and level adjustments. Output is about 1v peak to peak into 50 Ohms.
+The first attempt at a VFO was a Vackar type design, with which I had only minor success (it briefly oscillated once). Alan Yates offered up this [http://www.vk2zay.net/article/file/1187 design]. I changed the buffer for a two transistor job and replaced the coupling capacitors with trimmers to enable signal purity and level adjustments. Output is about 1v peak to peak into 50 Ohms. I also later added a low pass filter (cut off at ~10 MHz) to clean up the output a bit more. Now the second and third harmonics are at about -40 and -45db.
 
 [[Image:PNP-80-vfo-buffer.png|thumb|600px|center|A variant on VK2ZAY's VFO with my buffer]]
 [[Image:Pnp80-vfo.jpg|thumb|600px|center|VFO with added low pass filter not shown in schematic.]]<br>

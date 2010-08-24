@@ -45,7 +45,9 @@ only minor success (it briefly oscillated once). Alan Yates offered up
 this [design](http://www.vk2zay.net/article/file/1187). I changed the
 buffer for a two transistor job and replaced the coupling capacitors
 with trimmers to enable signal purity and level adjustments. Output is
-about 1v peak to peak into 50 Ohms.
+about 1v peak to peak into 50 Ohms. I also later added a low pass filter
+(cut off at ~10 MHz) to clean up the output a bit more. Now the second
+and third harmonics are at about -40 and -45db.
 
 <img src="PNP-80-vfo-buffer.png" title="fig:A variant on VK2ZAY&#39;s VFO with my buffer" alt="A variant on VK2ZAY&#39;s VFO with my buffer" width="600" />
 <img src="Pnp80-vfo.jpg" title="fig:VFO with added low pass filter not shown in schematic." alt="VFO with added low pass filter not shown in schematic." width="600" />  

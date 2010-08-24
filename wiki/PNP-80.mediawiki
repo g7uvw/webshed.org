@@ -35,3 +35,8 @@ The mixer is just a simple bipolar transistor mixer, nothing fancy. It requires 
 A hunt through the junk box turned up this 10.7 MHz SSB crystal filter and documentation. It requires a 10.70165 MHz carrier insertion crystal for LSB; another hunt through the junk produced a 10.8 MHz crystal and an old Pye Westminster crystal oscillator board. The BC108 on the oscillator board was replaced with one of the PNP transistors and the crystal was swapped. A bit of inductance added in series with the crystal brought the frequency down to 10.702MHz - close enough for the moment.
 [[Image:Hy-Q_crystal_filter.jpg|thumb|200px|HyQ 10.7 MHz SSB filter]]
 [[Image:PNP-BFO.jpg|thumb|300px|Pye Westminster crystal oscillator hacked for the project.]]<br>
+<br style="clear: both" />
+===Product Detector===
+A product detector is basically a mixer - a three port device. Two of the ports are Radio Frequency inputs, and the third is an output consisting of recovered audio, higher harmonics of the audio frequencies and various radio frequencies and harmonics. The RF in the output is filtered out and the higher audio harmonics are (usually) beyond the range of human hearing anyway.
+A brief search of the common literature provided no guide to designing a product detector using only bipolar transistors, so I cheated and "borrowed" the design from [http://www.qrp.pops.net/funster.asp the Funster 40m project].  A couple of alterations were made to suit components on hand and the lower voltage (8V vs 13.8V).
+[[Image:Pnp80-productdet.png|thumb|600px|Simple bipolar transistor product detector]]

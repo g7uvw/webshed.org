@@ -74,4 +74,16 @@ swapped. A bit of inductance added in series with the crystal brought
 the frequency down to 10.702MHz - close enough for the moment.
 <img src="Hy-Q_crystal_filter.jpg" title="fig:HyQ 10.7 MHz SSB filter" alt="HyQ 10.7 MHz SSB filter" width="200" />
 <img src="PNP-BFO.jpg" title="fig:Pye Westminster crystal oscillator hacked for the project." alt="Pye Westminster crystal oscillator hacked for the project." width="300" />  
-
+  
+===Product Detector=== A product detector is basically a mixer - a three
+port device. Two of the ports are Radio Frequency inputs, and the third
+is an output consisting of recovered audio, higher harmonics of the
+audio frequencies and various radio frequencies and harmonics. The RF in
+the output is filtered out and the higher audio harmonics are (usually)
+beyond the range of human hearing anyway. A brief search of the common
+literature provided no guide to designing a product detector using only
+bipolar transistors, so I cheated and “borrowed” the design from [the
+Funster 40m project](http://www.qrp.pops.net/funster.asp). A couple of
+alterations were made to suit components on hand and the lower voltage
+(8V vs 13.8V).
+<img src="Pnp80-productdet.png" title="fig:Simple bipolar transistor product detector" alt="Simple bipolar transistor product detector" width="600" />

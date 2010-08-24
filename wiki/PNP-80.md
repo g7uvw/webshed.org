@@ -62,8 +62,8 @@ fancy. It requires only low signal levels from the local oscillator, and
 will be swamped by large signals on the RF port. This type of mixer also
 offers 10 dB+ of conversion gain; how well it performs will depend on
 the specifications of the transistor (unknown in this case).
-<img src="Pnp80-mixer.png" title="fig:Bipolar mixer schematic" alt="Bipolar mixer schematic" width="400" />
-<img src="Pnp80-mixer.jpg" title="fig:Bipolar mixer" alt="Bipolar mixer" width="400" />  
+<img src="Pnp80-mixer.png" title="fig:Bipolar mixer schematic" alt="Bipolar mixer schematic" width="330" />
+<img src="Pnp80-mixer.jpg" title="fig:Bipolar mixer" alt="Bipolar mixer" width="350" />  
 ===Crystal Filter and Carrier Insertion Oscillator=== A hunt through the
 junk box turned up this 10.7 MHz SSB crystal filter and documentation.
 It requires a 10.70165 MHz carrier insertion crystal for LSB; another

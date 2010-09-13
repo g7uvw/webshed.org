@@ -19,6 +19,7 @@ I'm working on several electronics projects at the present time:
 
 -   Yaseu FT290R Audio Fix (dead uPC575C2)
     [FT290-Audio](/wiki/FT290-Audio "wikilink")
+-   80m band RX using only PNP transistors [PNP-80](/wiki/PNP-80 "wikilink")
 -   A simple, amplified external [GPS antenna](/wiki/GPS_Antenna "wikilink")
 -   A 10.140Mhz [QRSS beacon](/wiki/QRSS_Beacon "wikilink")
 -   Building a [BitX20](/wiki/BitX20 "wikilink") SSB transeiver

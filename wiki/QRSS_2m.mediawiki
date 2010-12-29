@@ -11,3 +11,15 @@ The RF section of the board has four connections to the digital section. These i
 Conversion to 144 MHz was surprisingly easy; the oscillator crystal was swapped for a 12 MHz computer grade part and wired in series with a 10-60pF trimmer cap to allow fine frequency adjustment. From then on it was just a case of peaking the sections of the frequency multiplier and adjusting the filter for lowest harmonic levels.
 
 The initial power output was rather low (<10mW into 50Ohm), so I took advantage of the separate PA supply and increased the PA transistor voltage to 8v; this brought the output up to a more respectable 100mW at the expense of increased harmonics. Adjustment for minimum harmonics brought the signal at 144 MHz down to 75mW with all but the 3rd harmonics at least 30dB below this.
+
+For initial tests, the carrier is just keyed on and off (5s on, 3s off) with a 555 timer on the tripper control line.
+
+[[Image:144MEPT.jpg|thumb|800px|The boxed 144MHz QRSS MEPT with 555 timer controller ]]
+
+== First Light ==
+
+First on-air signal report was from M1GEO at the astounding distance of 2.5 miles.
+[[Image:M1geo1.jpg|thumb|617px|First copy by M1GEO ]]
+
+Later on, Colin G6AVK had a listen and captured my signal drifting a little.
+[[Image:G6avk-2m.jpg|thumb|617px|First copy by G6AVK ]]

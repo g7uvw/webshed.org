@@ -34,3 +34,19 @@ voltage to 8v; this brought the output up to a more respectable 100mW at
 the expense of increased harmonics. Adjustment for minimum harmonics
 brought the signal at 144 MHz down to 75mW with all but the 3rd
 harmonics at least 30dB below this.
+
+For initial tests, the carrier is just keyed on and off (5s on, 3s off)
+with a 555 timer on the tripper control line.
+
+<img src="144MEPT.jpg" title="The boxed 144MHz QRSS MEPT with 555 timer controller " alt="The boxed 144MHz QRSS MEPT with 555 timer controller " width="800" />
+
+First Light
+-----------
+
+First on-air signal report was from M1GEO at the astounding distance of
+2.5 miles.
+<img src="M1geo1.jpg" title="fig:First copy by M1GEO " alt="First copy by M1GEO " width="617" />
+
+Later on, Colin G6AVK had a listen and captured my signal drifting a
+little.
+<img src="G6avk-2m.jpg" title="fig:First copy by G6AVK " alt="First copy by G6AVK " width="617" />

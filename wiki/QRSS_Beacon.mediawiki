@@ -59,3 +59,4 @@ Success! Had a play with the filters on the output last night with the help of C
 [[Image:I2ndt144318.jpg|thumb|800px]]
 
 The sawtooth pattern in the middle of the screen with some faint Morse either side is my signal.
+[[Category:QRSS]]

@@ -2,6 +2,8 @@
 title: QRSS Beacon
 permalink: wiki/QRSS_Beacon/
 layout: wiki
+tags:
+ - QRSS
 ---
 
 G7UVW QRSS 30 Meter Beacon 10.140 MHz

@@ -7,6 +7,7 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 == Current Projects ==
 
 I'm working on several electronics projects at the present time:
+* 144 MHz low power QRSS transmitter [[QRSS_2m]]
 * Yaseu FT290R Audio Fix (dead uPC575C2) [[FT290-Audio]]
 * 80m band RX using only PNP transistors [[PNP-80]]
 * A simple, amplified external [[GPS_Antenna|GPS antenna]]

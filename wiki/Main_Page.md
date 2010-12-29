@@ -17,6 +17,7 @@ Current Projects
 
 I'm working on several electronics projects at the present time:
 
+-   144 MHz low power QRSS transmitter [QRSS\_2m](/wiki/QRSS_2m "wikilink")
 -   Yaseu FT290R Audio Fix (dead uPC575C2)
     [FT290-Audio](/wiki/FT290-Audio "wikilink")
 -   80m band RX using only PNP transistors [PNP-80](/wiki/PNP-80 "wikilink")

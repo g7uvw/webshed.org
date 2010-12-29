@@ -20,6 +20,7 @@ For initial tests, the carrier is just keyed on and off (5s on, 3s off) with a 5
 
 First on-air signal report was from M1GEO at the astounding distance of 2.5 miles.
 [[Image:M1geo1.jpg|thumb|617px|right|First copy by M1GEO ]]
-
+<br style="clear: both" />
 Later on, Colin G6AVK had a listen and captured my signal drifting a little.
 [[Image:G6avk-2m.jpg|thumb|617px|right|First copy by G6AVK ]]
+<br style="clear: both" />

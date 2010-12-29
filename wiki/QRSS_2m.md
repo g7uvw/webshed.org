@@ -45,8 +45,8 @@ First Light
 
 First on-air signal report was from M1GEO at the astounding distance of
 2.5 miles.
-<img src="M1geo1.jpg" title="fig:First copy by M1GEO " alt="First copy by M1GEO " width="617" />
-
+<img src="M1geo1.jpg" title="fig:First copy by M1GEO " alt="First copy by M1GEO " width="617" />  
 Later on, Colin G6AVK had a listen and captured my signal drifting a
 little.
-<img src="G6avk-2m.jpg" title="fig:First copy by G6AVK " alt="First copy by G6AVK " width="617" />
+<img src="G6avk-2m.jpg" title="fig:First copy by G6AVK " alt="First copy by G6AVK " width="617" />  
+

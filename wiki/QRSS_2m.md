@@ -11,12 +11,16 @@ A rally purchase earlier in 2010 turned out to be a telemetry or data
 transmitter on 160-ish MHz. The interesting part of the board was the
 12x frequency multiplier and PA.
 
+<img src="Tele-tx.jpg" title="Transmitter with RF shield off and 12 MHz crystal tacked on" alt="Transmitter with RF shield off and 12 MHz crystal tacked on" width="800" />
+
 The RF section of the board has four connections to the digital section.
 These include +5v for the oscillator and frequency multiplier, a second
 +5v supply for the PA transistor, a modulation input and a signal to
 switch on or off the first frequency tripper to kill the RF output
 without stopping the oscillator. Ground is common to both sections of
 the board.
+
+<img src="RF-stage.jpg" title="RF stage of the transmitter. Comprised of an Oscillator, frequency multiplier stage and a PA " alt="RF stage of the transmitter. Comprised of an Oscillator, frequency multiplier stage and a PA " width="800" />
 
 Conversion to 144 MHz was surprisingly easy; the oscillator crystal was
 swapped for a 12 MHz computer grade part and wired in series with a

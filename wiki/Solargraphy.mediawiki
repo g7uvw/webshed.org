@@ -1,4 +1,5 @@
 == Solargraphy ==
+''This is a work in progress article''<br/>
 Some time ago, Make Magazine featured an [http://blog.makezine.com/archive/2010/02/lovely_solargraphy_photos.html article] regarding pinhole photography of the path of the sun over a six month period. The article introduced the work of [http://www.solargraphy.com/ Tarja Trygg], having an interest in photography I decided to have a go myself.
 
 I had planned to have the cameras ready and in place for the winter solstice, so I could capture an entire half period of the sun, from lowest (21 December) to highest (21 June); however I didn't quite manage to get everything ready in time. The first cameras will hopefully be in position by the second week of January.
@@ -35,3 +36,12 @@ You need four things:
 7. As soon as the camera is loaded, cover up the open end with gaffer tape. You want it light tight. Don't be afraid to use more tape.
 
 [[Image: Solar-1-loaded.jpg|thumb|200px|6. The loaded beer can pinhole camera. The pinhole is under the blue tape. The open end is sealed up with gaffer tape]]
+<br style="clear: both" />
+
+== Exposure== 
+Secure the camera to something solid, and in a place where it is unlikely to attract unwanted attention (remember, you want it in the same place for 6 months). Facing south if you want to trace the path of the sun. Pull off the tape covering the pinhole, make a note of the date and time and start waiting and wondering.
+
+If all goes well, then the size of the pinhole and the ludicrous quantities of gaffer tape sealing the camera should work to keep the worst of the weather out of the camera body and away from your photographic paper. If not, well, it's Art and you meant for it, right?
+
+==Developing==
+To be added when I experiment with developing my cameras.

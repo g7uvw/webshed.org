@@ -22,3 +22,46 @@ position by the second week of January.
 
 Howto: As far as I understand it...
 -----------------------------------
+
+You need four things:
+
+1.  A beer can - you can start with a full one, but it needs to be empty
+    to make the pinhole camera, so get drinking.
+2.  A tool to cut off the top of the can
+3.  Some positive (lit areas go black) photographic paper.
+4.  Gaffer / Duct tape.
+
+**Here's how you combine them.**  
+1. Empty the beer can. It's worth rinsing it out with clean water now,
+else you'll probably spill beer dregs over yourself as you cut the top
+off the can.  
+2. Using a rotary cutter or scissors or some other tool, remove the top
+of the beer can.  
+3. It's worth processing several cans at once.
+<img src="Solar-1-can.jpg" title="fig:1. Empty beer can, your taste in beer may vary from mine." alt="1. Empty beer can, your taste in beer may vary from mine." width="200" />
+
+<img src="Solar-1-tool.jpg.jpg" title="fig:2. Rotary cutter for removing the top of the can." alt="2. Rotary cutter for removing the top of the can." width="200" />
+<img src="Solar-1-headless-can.jpg" title="fig:3. Can with top cut off." alt="3. Can with top cut off." width="200" />
+
+<img src="Solar-1-headless-cans.jpg" title="fig:4. You may want to process several cans at once if you plan to make multiple cameras." alt="4. You may want to process several cans at once if you plan to make multiple cameras." width="200" />  
+<img src="Solar-1-matt-black.jpg" title="fig:5. Can given an internal coat of black paint." alt="5. Can given an internal coat of black paint." width="200" />
+
+4. I gave my cans a coat of black spray paint inside, to help kill any
+stray reflections, but this is entirely optional and I've no idea if it
+is worth actually doing.
+
+5. Make a pinhole about half way down the length of the can. I used a
+0.3mm sewing needle, I think this is large enough without being too
+large. I'll find out in six months... You'll need to cover the hole with
+opaque tape.
+
+6. In a dark room load the paper into the camera. Matt side against the
+can walls, shiny side facing in to the can. The paper should be opposite
+the pinhole. Don't let the paper cover the pinhole. I did this step in
+my dark bathroom with just a red LED on a half dead battery as the only
+light. Let your eyes adjust to the light before you start this step.
+
+7. As soon as the camera is loaded, cover up the open end with gaffer
+tape. You want it light tight. Don't be afraid to use more tape.
+
+<img src="Solar-1-loaded.jpg" title="6. The loaded beer can pinhole camera. The pinhole is under the blue tape. The open end is sealed up with gaffer tape" alt="6. The loaded beer can pinhole camera. The pinhole is under the blue tape. The open end is sealed up with gaffer tape" width="200" />

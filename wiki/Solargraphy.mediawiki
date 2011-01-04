@@ -16,13 +16,13 @@ You need four things:
 1. Empty the beer can. It's worth rinsing it out with clean water now, else you'll probably spill beer dregs over yourself as you cut the top off the can.<br/>
 2. Using a rotary cutter or scissors or some other tool, remove the top of the beer can.<br/>
 3. It's worth processing several cans at once.
-[[Image: Solar-1-can.jpg|thumb|left|200px|1. Empty beer can, your taste in beer may vary from mine.]]
+{|
+|[[Image: Solar-1-can.jpg|thumb|left|150px|1. Empty beer can, your taste in beer may vary from mine.]]
+|[[Image: Solar-1-tool.jpg.jpg|thumb|center|200px|2. Rotary cutter for removing the top of the can.]]
+|[[Image: Solar-1-headless-can.jpg|right|thumb|150px|3. Can with top cut off.]]
+|[[Image: Solar-1-headless-cans.jpg|center|thumb|200px|4. You may want to process several cans at once if you plan to make multiple cameras.]]
+|}
 
-[[Image: Solar-1-tool.jpg.jpg|thumb|center|200px|2. Rotary cutter for removing the top of the can.]]
-[[Image: Solar-1-headless-can.jpg|right|thumb|200px|3. Can with top cut off.]]
-
-
-[[Image: Solar-1-headless-cans.jpg|left|thumb|200px|4. You may want to process several cans at once if you plan to make multiple cameras.]]
 <br style="clear: both" />
 
 [[Image: Solar-1-matt-black.jpg|thumb|200px|5. Can given an internal coat of black paint.]]

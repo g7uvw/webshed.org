@@ -39,12 +39,12 @@ off the can.
 2. Using a rotary cutter or scissors or some other tool, remove the top
 of the beer can.  
 3. It's worth processing several cans at once.
-<img src="Solar-1-can.jpg" title="fig:1. Empty beer can, your taste in beer may vary from mine." alt="1. Empty beer can, your taste in beer may vary from mine." width="200" />
 
-<img src="Solar-1-tool.jpg.jpg" title="fig:2. Rotary cutter for removing the top of the can." alt="2. Rotary cutter for removing the top of the can." width="200" />
-<img src="Solar-1-headless-can.jpg" title="fig:3. Can with top cut off." alt="3. Can with top cut off." width="200" />
+|                                                                                                                                                                             |                                                                                                                                                                  |                                                                                                                    |                                                                                                                                                                                                                                               |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="Solar-1-can.jpg" title="1. Empty beer can, your taste in beer may vary from mine." alt="1. Empty beer can, your taste in beer may vary from mine." width="150" /> | <img src="Solar-1-tool.jpg.jpg" title="2. Rotary cutter for removing the top of the can." alt="2. Rotary cutter for removing the top of the can." width="200" /> | <img src="Solar-1-headless-can.jpg" title="3. Can with top cut off." alt="3. Can with top cut off." width="150" /> | <img src="Solar-1-headless-cans.jpg" title="4. You may want to process several cans at once if you plan to make multiple cameras." alt="4. You may want to process several cans at once if you plan to make multiple cameras." width="200" /> |
 
-<img src="Solar-1-headless-cans.jpg" title="fig:4. You may want to process several cans at once if you plan to make multiple cameras." alt="4. You may want to process several cans at once if you plan to make multiple cameras." width="200" />  
+  
 <img src="Solar-1-matt-black.jpg" title="fig:5. Can given an internal coat of black paint." alt="5. Can given an internal coat of black paint." width="200" />
 
 4. I gave my cans a coat of black spray paint inside, to help kill any

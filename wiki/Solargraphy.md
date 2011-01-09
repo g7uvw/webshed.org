@@ -86,7 +86,7 @@ Developing
 
 To be added when I experiment with developing my cameras.
 
-Records
+Results
 -------
 
-Home cam 1 : 10:54 2011/01/09
+Cam 1 : 10:54 2011/01/09

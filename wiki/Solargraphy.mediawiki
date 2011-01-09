@@ -47,6 +47,5 @@ If all goes well, then the size of the pinhole and the ludicrous quantities of g
 To be added when I experiment with developing my cameras.
 
 
-== Records ==
-
-Home cam 1 : 10:54 2011/01/09
+== Results ==
+Cam 1 : 10:54 2011/01/09

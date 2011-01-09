@@ -35,8 +35,10 @@ You need four things:
 
 7. As soon as the camera is loaded, cover up the open end with gaffer tape. You want it light tight. Don't be afraid to use more tape.
 '''Update:''' This step is hard to do in the dark, the tape is about the same width as the hole in the can. A better idea would be to use an Aluminium pie case, which pushes in to the hole and makes a snug fit. This is then easily taped into place.
-[[Image: Solar-1-cap.jpg|thumb|200px|Single portion Al pie case]] [[Image: Solar-1-cap-fitted.jpg|thumb|200px|Fits the hole well and is easy to tape over]] 
-
+{|
+|[[Image: Solar-1-cap.jpg|thumb|200px|Single portion Al pie case]] 
+|[[Image: Solar-1-cap-fitted.jpg|thumb|200px|Fits the hole well and is easy to tape over]] 
+|}
 [[Image: Solar-1-loaded.jpg|thumb|200px|6. The loaded beer can pinhole camera. The pinhole is under the blue tape. The open end is sealed up with gaffer tape]]
 <br style="clear: both" />
 

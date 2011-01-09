@@ -68,8 +68,10 @@ tape. You want it light tight. Don't be afraid to use more tape.
 same width as the hole in the can. A better idea would be to use an
 Aluminium pie case, which pushes in to the hole and makes a snug fit.
 This is then easily taped into place.
-<img src="Solar-1-cap.jpg" title="fig:Single portion Al pie case" alt="Single portion Al pie case" width="200" />
-<img src="Solar-1-cap-fitted.jpg" title="fig:Fits the hole well and is easy to tape over" alt="Fits the hole well and is easy to tape over" width="200" />
+
+|                                                                                                               |                                                                                                                                                        |
+|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="Solar-1-cap.jpg" title="Single portion Al pie case" alt="Single portion Al pie case" width="200" /> | <img src="Solar-1-cap-fitted.jpg" title="Fits the hole well and is easy to tape over" alt="Fits the hole well and is easy to tape over" width="200" /> |
 
 <img src="Solar-1-loaded.jpg" title="fig:6. The loaded beer can pinhole camera. The pinhole is under the blue tape. The open end is sealed up with gaffer tape" alt="6. The loaded beer can pinhole camera. The pinhole is under the blue tape. The open end is sealed up with gaffer tape" width="200" />  
 

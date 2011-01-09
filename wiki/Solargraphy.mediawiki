@@ -34,7 +34,7 @@ You need four things:
 6. In a dark room load the paper into the camera. Matt side against the can walls, shiny side facing in to the can. The paper should be opposite the pinhole. Don't let the paper cover the pinhole. I did this step in my dark bathroom with just a red LED on a half dead battery as the only light. Let your eyes adjust to the light before you start this step.
 
 7. As soon as the camera is loaded, cover up the open end with gaffer tape. You want it light tight. Don't be afraid to use more tape.
-'''Update:''' This step is hard to do in the dark, the tape is about the same width as the hole in the can. A better idea would be to use an Aluminium pie case, which pushes in to the hole and makes a snug fit. This is then easily taped into place.
+<br/>'''Update:''' This step is hard to do in the dark, the tape is about the same width as the hole in the can. A better idea would be to use an Aluminium pie case, which pushes in to the hole and makes a snug fit. This is then easily taped into place.
 {|
 |[[Image: Solar-1-cap.jpg|thumb|200px|Single portion Al pie case]] 
 |[[Image: Solar-1-cap-fitted.jpg|thumb|200px|Fits the hole well and is easy to tape over]] 

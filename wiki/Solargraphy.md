@@ -63,7 +63,7 @@ my dark bathroom with just a red LED on a half dead battery as the only
 light. Let your eyes adjust to the light before you start this step.
 
 7. As soon as the camera is loaded, cover up the open end with gaffer
-tape. You want it light tight. Don't be afraid to use more tape.
+tape. You want it light tight. Don't be afraid to use more tape.  
 **Update:** This step is hard to do in the dark, the tape is about the
 same width as the hole in the can. A better idea would be to use an
 Aluminium pie case, which pushes in to the hole and makes a snug fit.

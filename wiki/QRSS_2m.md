@@ -61,9 +61,9 @@ temperature, a few degrees C temperature change can easily translate
 into a hundred Hz or more of frequency shift; indeed, this is the basis
 for some thermometers. In this application I'm multiplying up the
 crystal frequency, so I also multiply up any shifts due to heating or
-cooling of the crystal, 100 Hz shift at 12 MHz becomes 1.2 kHz, which is
-way beyond the nominal 100Hz band claimed by QRSS. A means of keeping
-the crystal at a constant temperature is required.  
+cooling of the crystal, 100 Hz shift at 12 MHz becomes 1.2 kHz at 144
+MHz, which is way beyond the nominal 100Hz band claimed by QRSS. A means
+of keeping the crystal at a constant temperature is required.  
 A trawl around eBay brought up a heating clip for a crystal, this passes
 a small amount of current though a Positive Temp Coefficient Thermistor,
 causing self heating and a positive resistance change that limits the

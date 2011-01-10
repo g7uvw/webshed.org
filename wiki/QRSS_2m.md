@@ -68,4 +68,12 @@ A trawl around eBay brought up a heating clip for a crystal, this passes
 a small amount of current though a Positive Temp Coefficient Thermistor,
 causing self heating and a positive resistance change that limits the
 current though the PTC, the result is a pretty stable temperature for a
-given voltage across the PTC.
+given voltage across the PTC. At 12v, the heater draws approx 75mA and
+settles down to about 65 degrees C.  
+With the heater fitted the frequency drifts upwards quite dramatically
+for about 60s until theater settles down, then the frequency stability
+is +/- 2Hz with the board sitting in the open on the bench.
+
+<img src="Xtal-ptc-clip.jpg" title="fig: Murata BG330N Xtal heater" alt=" Murata BG330N Xtal heater" width="300" />
+<img src="Xtal-ptc-clip-back.jpg" title="fig:Murata BG330N Xtal heater, showing PTC disc." alt="Murata BG330N Xtal heater, showing PTC disc." width="300" />
+<img src="Xtal-ptc-clip-fitted.jpg" title="fig: The heater clip fitted to the crystal in the transmitter and wired into the supply voltage" alt=" The heater clip fitted to the crystal in the transmitter and wired into the supply voltage" width="300" />

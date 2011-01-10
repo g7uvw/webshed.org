@@ -27,6 +27,11 @@ Later on, Colin G6AVK had a listen and captured my signal drifting a little.
 
 == Frequency stability modification ==
 Although crystals are usually considered pretty stable frequency sources, there is a correlation of oscillation frequency with temperature, a few degrees C temperature change can easily translate into a hundred Hz or more of frequency shift; indeed, this is the basis for some thermometers. In this application I'm multiplying up the crystal frequency, so I also multiply up any shifts due to heating or cooling of the crystal, 100 Hz shift at 12 MHz becomes 1.2 kHz, which is way beyond the nominal 100Hz band claimed by QRSS. A means of keeping the crystal at a constant temperature is required. <br/>
-A trawl around eBay brought up a heating clip for a crystal, this passes a small amount of current though a Positive Temp Coefficient Thermistor, causing self heating and a positive resistance change that limits the current though the PTC, the result is a pretty stable temperature for a given voltage across the PTC.
+A trawl around eBay brought up a heating clip for a crystal, this passes a small amount of current though a Positive Temp Coefficient Thermistor, causing self heating and a positive resistance change that limits the current though the PTC, the result is a pretty stable temperature for a given voltage across the PTC. At 12v, the heater draws approx 75mA and settles down to about 65 degrees C. <br/>
+With the heater fitted the frequency drifts upwards quite dramatically for about 60s until theater settles down, then the frequency stability is +/- 2Hz with the board sitting in the open on the bench.
+
+[[Image:Xtal-ptc-clip.jpg|thumb|300px|left| Murata BG330N Xtal heater]] [[Image:Xtal-ptc-clip-back.jpg|thumb|300px|right|Murata BG330N Xtal heater, showing PTC disc.]]
+[[Image:Xtal-ptc-clip-fitted.jpg|thumb|center|300px| The heater clip fitted to the crystal in the transmitter and wired into the supply voltage]]
+
 
 [[Category:QRSS]]

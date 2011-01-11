@@ -33,6 +33,6 @@ With the heater fitted the frequency drifts upwards quite dramatically for about
 [[Image:Xtal-ptc-clip.jpg|thumb|300px|left| Murata BG330N Xtal heater]] [[Image:Xtal-ptc-clip-back.jpg|thumb|300px|right|Murata BG330N Xtal heater, showing PTC disc.]]
 [[Image:Xtal-ptc-clip-fitted.jpg|thumb|center|300px| The heater clip fitted to the crystal in the transmitter and wired into the supply voltage]]
 
-
-[[Category:QRSS]]
 [[Category:Projects]]
+[[Category:Radio]]
+[[Category:QRSS]]

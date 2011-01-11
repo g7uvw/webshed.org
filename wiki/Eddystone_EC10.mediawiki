@@ -1,5 +1,5 @@
 == Repair of an Eddystone Model EC10==
-The EC10 is one of Eddystone's very early solid state communications receivers. Using Germanium transistors throughout, it covers 550 kHz to 30 MHz in five ranges. The radio is a single conversion superhet, with a BFO for SSB and CW reception and a switchable audio filter for CW. I have a mark-2 version, essentially the same as the original, with the addition of a fine tuning control.
+The EC10 is one of Eddystone's very early solid state communications receivers. Using only PNP Germanium transistors, it covers 550 kHz to 30 MHz in five switched ranges. The radio is a single conversion superhet, with a BFO for SSB and CW reception and a switchable audio filter for CW. I have a mark-2 version, essentially the same as the original, with the addition of a fine tuning control.
 
 '''Basic Specs:'''<br/>
 Frequency coverage - 550 kHz to 30 MHz (in five bands)<br/>

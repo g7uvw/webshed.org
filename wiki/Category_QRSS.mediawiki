@@ -1,5 +1,3 @@
 This is an overview of my experiments with low power, low bandwidth radio transmissions commonly called QRSS transmissions. The term QRSS is a derivative of QRS [http://en.wikipedia.org/wiki/Q-code Q-code] meaning Send Slowly (or shall I Send Slowly, if followed by a ?). It is a transmission mode made possible by DSP techniques that can extract very weak signals from noisy channels.
 
-30 meter (10.140 MHz) [[QRSS_Beacon|QRSS Transmitter]]<br/>
-2 meter (144 MHz) low power QRSS transmitter [[QRSS_2m]]
 [[Category:Projects]][[Category:Radio]]

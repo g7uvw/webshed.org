@@ -2,6 +2,9 @@
 title: I-gotU-GT100
 permalink: wiki/I-gotU-GT100/
 layout: wiki
+tags:
+ - Projects
+ - Computer
 ---
 
 i-gotU GT100 GPS Travel Tracker

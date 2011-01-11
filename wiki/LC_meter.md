@@ -2,6 +2,10 @@
 title: LC meter
 permalink: wiki/LC_meter/
 layout: wiki
+tags:
+ - Projects
+ - Electronics
+ - Testgear
 ---
 
 At the start of an RF project design I found myself in need of a

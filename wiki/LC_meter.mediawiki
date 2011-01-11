@@ -5,3 +5,7 @@ At the start of an RF project design I found myself in need of a reasonable Indu
 [http://webshed.org/wiki/upload/2/24/Pcbv1b-overlay.png This links to the component overlay for the PCB]
 
 [http://webshed.org/wiki/upload/0/00/Lc-bom.txt Bill of materials]
+
+[[Category:Projects]]
+[[Category:Electronics]]
+[[Category:Testgear]]

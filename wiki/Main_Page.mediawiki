@@ -7,15 +7,14 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 == Current Projects ==
 
 I'm working on several electronics projects at the present time:
-* 144 MHz low power QRSS transmitter [[QRSS_2m]]
+* A long term pin-hole photography project :[[Solargraphy]]
+* [[QRSS_2m|144 MHz low power QRSS transmitter]]
 * Yaseu FT290R Audio Fix (dead uPC575C2) [[FT290-Audio]]
 * 80m band RX using only PNP transistors [[PNP-80]]
 * A simple, amplified external [[GPS_Antenna|GPS antenna]]
 * A 10.140Mhz [[QRSS_Beacon|QRSS beacon]]
 * Building a [[BitX20|BitX20]] SSB transeiver 
 * Repair of an [[Eddystone_EC10|Eddystone EC10]] radio.
-* An Epiphyte 80m transceiver.
-* I'm designing a PCB for the Warbler PSK31 transceiver.
 * A [[USB-ZX]] debugging interface for the Z80 based Sinclair Spectrum computer.
 * An accurate amateur level [[LC meter]]
 * Poking round the guts of [[CPM|CP/M]] on the Sinclair Spectrum

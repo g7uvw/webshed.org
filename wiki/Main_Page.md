@@ -17,7 +17,9 @@ Current Projects
 
 I'm working on several electronics projects at the present time:
 
--   144 MHz low power QRSS transmitter [QRSS\_2m](/wiki/QRSS_2m "wikilink")
+-   A long term pin-hole photography project
+    :[Solargraphy](/wiki/Solargraphy "wikilink")
+-   [144 MHz low power QRSS transmitter](/wiki/QRSS_2m "wikilink")
 -   Yaseu FT290R Audio Fix (dead uPC575C2)
     [FT290-Audio](/wiki/FT290-Audio "wikilink")
 -   80m band RX using only PNP transistors [PNP-80](/wiki/PNP-80 "wikilink")
@@ -25,8 +27,6 @@ I'm working on several electronics projects at the present time:
 -   A 10.140Mhz [QRSS beacon](/wiki/QRSS_Beacon "wikilink")
 -   Building a [BitX20](/wiki/BitX20 "wikilink") SSB transeiver
 -   Repair of an [Eddystone EC10](/wiki/Eddystone_EC10 "wikilink") radio.
--   An Epiphyte 80m transceiver.
--   I'm designing a PCB for the Warbler PSK31 transceiver.
 -   A [USB-ZX](/wiki/USB-ZX "wikilink") debugging interface for the Z80 based
     Sinclair Spectrum computer.
 -   An accurate amateur level [LC meter](/wiki/LC_meter "wikilink")

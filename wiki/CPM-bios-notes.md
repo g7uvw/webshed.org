@@ -2,6 +2,9 @@
 title: CPM-bios-notes
 permalink: wiki/CPM-bios-notes/
 layout: wiki
+tags:
+ - Projects
+ - Computer
 ---
 
 Some notes on the +3 Spectrum CP/M BIOS

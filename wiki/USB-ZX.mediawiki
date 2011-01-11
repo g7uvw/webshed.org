@@ -35,3 +35,6 @@ Bad idea - too inflexible.
 
 '''Direct memory access from host PC'''
 <br/>TBD
+[[Category:Projects]]
+[[Category:Electronics]]
+[[Category:Computer]]

@@ -2,6 +2,10 @@
 title: USB-ZX
 permalink: wiki/USB-ZX/
 layout: wiki
+tags:
+ - Projects
+ - Electronics
+ - Computer
 ---
 
 What it is

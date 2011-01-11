@@ -2,6 +2,9 @@
 title: Solargraphy
 permalink: wiki/Solargraphy/
 layout: wiki
+tags:
+ - Projects
+ - Photography
 ---
 
 Solargraphy

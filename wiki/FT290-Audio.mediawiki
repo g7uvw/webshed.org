@@ -9,3 +9,9 @@ I sourced a replacement uPC575C2 for my FT290R from ebay, however it arrived dea
 The decoupling capacitors, C8 and C9 are definitely needed, the TBA820m runs incredibly hot without them, but doesn't seem to go into oscillation.
 
 The input signal and power lines are taken from the uPC575C2 chip pads. The internal speaker of the radio was re-wired directly to the amplifier module, losing the external speaker connection (for now). The amplifier module sits in the battery bay, batteries not being used.
+
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]
+[[Category:Repair]]

@@ -2,6 +2,11 @@
 title: FT290-Audio
 permalink: wiki/FT290-Audio/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
+ - Repair
 ---
 
 Yaseu FT290R multimode 2m transceiver audio fix

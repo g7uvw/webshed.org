@@ -2,6 +2,11 @@
 title: GPS Antenna
 permalink: wiki/GPS_Antenna/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Antennas
+ - Testgear
 ---
 
 A simple amplified GPS antenna

@@ -8,6 +8,12 @@ tags:
  - Testgear
 ---
 
+*The links here are broken at the moment - files will be located and
+re-uploaded*
+
+The best source of info for a DIY LC meter is this website
+[1](http://ironbark.bendigo.latrobe.edu.au/~rice/lc/)
+
 At the start of an RF project design I found myself in need of a
 reasonable Inductance and Capacitance meter (L-C meter). There are
 several designs around on the web, mainly based on the design from

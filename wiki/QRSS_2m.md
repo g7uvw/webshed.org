@@ -4,6 +4,7 @@ permalink: wiki/QRSS_2m/
 layout: wiki
 tags:
  - QRSS
+ - Projects
 ---
 
 144 MHz QRSS Beacon / MEPT

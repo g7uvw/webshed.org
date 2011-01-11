@@ -3,6 +3,8 @@ title: QRSS Beacon
 permalink: wiki/QRSS_Beacon/
 layout: wiki
 tags:
+ - Projects
+ - Radio
  - QRSS
 ---
 

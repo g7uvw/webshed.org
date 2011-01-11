@@ -13,3 +13,8 @@ Quickly peaking up the filter response using the variable cores on the Toko coil
 <br clear="all" />
 [[image:20m-bp-filter-full.png|thumb|300px|center|Bandpass response 7 - 24 Mhz]]
 [[image:20m-bp-filter.png|thumb|300px|center|Bandpass response around 14 Mhz]]
+
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]

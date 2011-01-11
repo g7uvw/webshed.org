@@ -2,6 +2,10 @@
 title: BitX20
 permalink: wiki/BitX20/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
 ---
 
 Building a BitX 20 Radio

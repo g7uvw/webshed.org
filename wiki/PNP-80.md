@@ -2,6 +2,10 @@
 title: PNP-80
 permalink: wiki/PNP-80/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
 ---
 
 PNP-80 - An 80m band receiver using only PNP transistors

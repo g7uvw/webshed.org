@@ -41,3 +41,7 @@ A product detector is basically a mixer - a three port device. Two of the ports 
 A brief search of the common literature provided no guide to designing a product detector using only bipolar transistors, so I cheated and "borrowed" the design from [http://www.qrp.pops.net/funster.asp the Funster 40m project].  A couple of alterations were made to suit components on hand and the lower voltage (8V vs 13.8V).
 [[Image:Pnp80-productdet.png|thumb|600px|center|Simple bipolar transistor product detector]]
 [[Image:Pnp80-productdetector.jpg|thumb|600px|center]]
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]

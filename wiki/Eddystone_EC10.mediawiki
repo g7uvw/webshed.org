@@ -23,3 +23,9 @@ The 2N3906 is a pretty general purpose part, sibling to the 2n3904 (NPN) beloved
 ----
 <br/>
 Next up will be to re-align the set and perhaps switch out all the germanium transistors in the RF and IF sections for their silicon counterparts.
+
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Repair]]
+[[Category:Electronics]]

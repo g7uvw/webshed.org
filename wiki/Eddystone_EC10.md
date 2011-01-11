@@ -2,6 +2,11 @@
 title: Eddystone EC10
 permalink: wiki/Eddystone_EC10/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Repair
+ - Electronics
 ---
 
 Repair of an Eddystone Model EC10

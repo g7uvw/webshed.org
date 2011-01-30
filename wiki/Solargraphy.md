@@ -98,5 +98,5 @@ To be added when I experiment with developing my cameras.
 Results
 -------
 
-Cam 1 : 10:54 2011/01/09 Cam 2 : 13:00 2011/01/24
-{{\#display\_map:{51.518264,-0.002607}|zoom={19}|service={googlemaps}}}
+Cam 1 : 10:54 2011/01/09  
+Cam 2 : 13:00 2011/01/24

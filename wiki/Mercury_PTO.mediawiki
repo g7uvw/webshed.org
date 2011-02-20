@@ -35,3 +35,8 @@ With the coil empty, the circuit formed a notch filter at ~14 MHz with a 3dB ban
 
 Filling the coil with mercury raised the centre frequency of the filter to 20.4 MHz and reduced the bandwidth to 390 kHz improving the Q to 22.
 [[Image:Hg_pto.jpg|none]]
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]
+[[Category:Experiments]]

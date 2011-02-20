@@ -2,6 +2,11 @@
 title: Mercury PTO
 permalink: wiki/Mercury_PTO/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
+ - Experiments
 ---
 
 A silly idea - a mercury tuned oscillator!

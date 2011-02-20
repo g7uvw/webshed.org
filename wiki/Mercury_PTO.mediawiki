@@ -7,7 +7,7 @@ At the time I had access to some very finely graduated syringes and I pondered a
 
 I wound a coil on a cheap plastic 5ml syringe from the lab and measured the inductance with the syringe empty and with it full of water, saturated NaCl and saturated CuSO4 solutions. No significant change in inductance was measured, but I made a note to try mercury should I me able to obtain some. Being a metal, mercury should have some noticeable effect and being liquid at normal temperatures it will work nicely in a syringe.
 
-I finally obtained enough mercury from broken thermometers and relays to to out the idea of a mercury PTO.
+I finally obtained enough mercury from broken thermometers and relays to try out the idea of a mercury PTO.
 
 ----
 

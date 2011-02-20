@@ -31,7 +31,7 @@ effect and being liquid at normal temperatures it will work nicely in a
 syringe.
 
 I finally obtained enough mercury from broken thermometers and relays to
-to out the idea of a mercury PTO.
+try out the idea of a mercury PTO.
 
 ------------------------------------------------------------------------
 

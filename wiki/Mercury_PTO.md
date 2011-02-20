@@ -7,10 +7,11 @@ layout: wiki
 A silly idea - a mercury tuned oscillator!
 ------------------------------------------
 
-Some time ago I started to build Steve Webber's MMR40 radio
-(http://kd1jv.qrpradio.com/ARRLHBC/ARRL\_MMR40.html), which uses a PTO
-(permeability tuned oscillator). I got the PTO working and then thought
-about ways to improve it before I finished building the rig.
+Some time ago I started to build Steve Webber's
+[MMR40](http://kd1jv.qrpradio.com/ARRLHBC/ARRL_MMR40.html) radio, which
+uses a PTO (permeability tuned oscillator). I got the PTO working and
+then thought about ways to improve it before I finished building the
+rig.
 
 At the time I had access to some very finely graduated syringes and I
 pondered a plunger type tuning arrangement for the PTO. The frequency
@@ -27,18 +28,29 @@ syringe.
 I finally obtained enough mercury from broken thermometers and relays to
 to out the idea of a mercury PTO.
 
-The Coil:
+------------------------------------------------------------------------
 
-The coil used in all these experiments is 42 turns on a 15mm OD
-polythene syringe body. There is nothing “magic” about these values, the
-number of turns is just enough to fill half the available space, leaving
-some clear viewing space to see how full the syringe is.
+### The Coil
 
-The Oscillator:
+![](Hg_pto_coil.jpg "fig:Hg_pto_coil.jpg") The coil used in all these
+experiments is 42 turns on a 15mm OD polythene syringe body. There is
+nothing “magic” about these values, the number of turns is just enough
+to fill half the available space, leaving some clear viewing space to
+see how full the syringe is.
 
-`A recent article by George Dobbs G3RJV introduced me to the Franklin Oscillator using a pair of J-FETs in astable coupling with a tuned circuit to set the oscillation frequency. It seems a fool proof design, even with my oscillation killing skills I managed to get it to work first try.`
+------------------------------------------------------------------------
 
-Results:
+### The Oscillator
+
+A recent article by George Dobbs G3RJV introduced me to the Franklin
+Oscillator using a pair of J-FETs in astable coupling with a tuned
+circuit to set the oscillation frequency. It seems a fool proof design,
+even with my oscillation killing skills I managed to get it to work
+first try. ![](Franklin-osc.png "fig:")
+
+------------------------------------------------------------------------
+
+### Results
 
 With the syringe empty, the oscillator ran at 4.886 MHz and its
 inductance was 11.8 uH. Half filling the syringe and keeping the mercury
@@ -60,3 +72,4 @@ With the coil empty, the circuit formed a notch filter at ~14 MHz with a
 
 Filling the coil with mercury raised the centre frequency of the filter
 to 20.4 MHz and reduced the bandwidth to 390 kHz improving the Q to 22.
+![](Hg_pto.jpg "fig:Hg_pto.jpg")

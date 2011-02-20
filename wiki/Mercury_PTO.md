@@ -47,11 +47,11 @@ see how full the syringe is.
 
 ### The Oscillator
 
-A recent article by George Dobbs G3RJV introduced me to the Franklin
-Oscillator using a pair of J-FETs in astable coupling with a tuned
-circuit to set the oscillation frequency. It seems a fool proof design,
-even with my oscillation killing skills I managed to get it to work
-first try. ![](Franklin-osc.png "fig:")
+A recent article by [George Dobbs, G3RJV](http://www.g3rjv.org.uk/)
+introduced me to the Franklin Oscillator using a pair of J-FETs in
+astable coupling with a tuned circuit to set the oscillation frequency.
+It seems a fool proof design, even with my oscillation killing skills I
+managed to get it to work first try. ![](Franklin-osc.png "fig:")
 
 ------------------------------------------------------------------------
 

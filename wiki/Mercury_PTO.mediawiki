@@ -19,7 +19,7 @@ The coil used in all these experiments is 42 turns on a 15mm OD polythene syring
 
 ===The Oscillator===
 
-A recent article by George Dobbs G3RJV introduced me to the Franklin Oscillator using a pair of J-FETs in astable coupling with a tuned circuit to set the oscillation frequency. It seems a fool proof design, even with my oscillation killing skills I managed to get it to work first try.
+A recent article by [http://www.g3rjv.org.uk/ George Dobbs, G3RJV] introduced me to the Franklin Oscillator using a pair of J-FETs in astable coupling with a tuned circuit to set the oscillation frequency. It seems a fool proof design, even with my oscillation killing skills I managed to get it to work first try.
 [[Image:Franklin-osc.png|none|]]
 
 ----

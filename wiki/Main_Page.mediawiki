@@ -7,7 +7,8 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 == Current Projects ==
 
 I'm working on several electronics projects at the present time:
-* A long term pin-hole photography project :[[Solargraphy]]
+* [[Mercury_PTO|A mercury tuned oscillator]]
+* [[Solargraphy|A long term pin-hole photography project]]
 * [[QRSS_2m|144 MHz low power QRSS transmitter]]
 * Yaseu FT290R Audio Fix (dead uPC575C2) [[FT290-Audio]]
 * 80m band RX using only PNP transistors [[PNP-80]]

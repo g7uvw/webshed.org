@@ -68,9 +68,9 @@ I don't have any repeatable data for fractional fillings of the coil
 volume, and hence measurements of tuning linearity.
 
 To assess the effect mercury has on the Q of the coil (a question asked
-by VK2ZAY on twitter), I resonated the coil both empty and mercury
-filled with an 11pF ceramic capacitor (bench sweeping) and swept the
-circuit with my mRS miniVNA.
+by [VK2ZAY](http://vk2zay.net) on twitter), I resonated the coil both
+empty and mercury filled with an 11pF ceramic capacitor (bench sweeping)
+and swept the circuit with my mRS miniVNA.
 
 With the coil empty, the circuit formed a notch filter at ~14 MHz with a
 3dB bandwidth of 1363.3 kHz and a Q of 10.

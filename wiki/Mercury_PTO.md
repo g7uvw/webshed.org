@@ -67,14 +67,27 @@ The syringes I used didn't allow for much in the way of fine control, so
 I don't have any repeatable data for fractional fillings of the coil
 volume, and hence measurements of tuning linearity.
 
+### Measurements of Q
+
 To assess the effect mercury has on the Q of the coil (a question asked
 by Alan Yates, [VK2ZAY](http://vk2zay.net) on twitter), I resonated the
 coil both empty and mercury filled with an 11pF ceramic capacitor (bench
 sweeping) and swept the circuit with my mRS miniVNA.
 
-With the coil empty, the circuit formed a notch filter at ~14 MHz with a
-3dB bandwidth of 1363.3 kHz and a Q of 10.
+~~With the coil empty, the circuit formed a notch filter at ~14 MHz with
+a 3dB bandwidth of 1363.3 kHz and a Q of 10. Filling the coil with
+mercury raised the centre frequency of the filter to 20.4 MHz and
+reduced the bandwidth to 390 kHz improving the Q to 22.~~
 
-Filling the coil with mercury raised the centre frequency of the filter
-to 20.4 MHz and reduced the bandwidth to 390 kHz improving the Q to 22.
+I was unhappy with my initial measurements of Q for the coil and Alan
+suggested that the values I obtained were rather low. To improve the
+data, I removed two shorted turns from the ends of the coil and used a
+high quality 390 pF polystyrene RF capacitor instead of a crappy old
+ceramic. I also experimented with partial fills of mercury to see how
+the system behaves as more mercury is introduced to the coil. The
+results are shown in the graph: the mercury lowers the Q of the coil,
+decreases the insertion loss of the filter and moves the centre
+frequency of the filter higher.
+
+![](Hg_PTO_Q.png "fig:Hg_PTO_Q.png")  
 ![](Hg_pto.jpg "fig:Hg_pto.jpg")

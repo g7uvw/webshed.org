@@ -20,7 +20,7 @@ transmitter on 160-ish MHz. The interesting part of the board was the
 The RF section of the board has four connections to the digital section.
 These include +5v for the oscillator and frequency multiplier, a second
 +5v supply for the PA transistor, a modulation input and a signal to
-switch on or off the first frequency tripper to kill the RF output
+switch on or off the first frequency tripler to kill the RF output
 without stopping the oscillator. Ground is common to both sections of
 the board.
 
@@ -40,7 +40,7 @@ brought the signal at 144 MHz down to 75mW with all but the 3rd
 harmonics at least 30dB below this.
 
 For initial tests, the carrier is just keyed on and off (5s on, 3s off)
-with a 555 timer on the tripper control line.
+with a 555 timer on the tripler control line.
 
 <img src="144MEPT.jpg" title="The boxed 144MHz QRSS MEPT with 555 timer controller " alt="The boxed 144MHz QRSS MEPT with 555 timer controller " width="800" />
 

@@ -97,3 +97,8 @@ module provides visual indication of them current transmission mode.
 The controller was prototyped on two small pieces of veroboard and works
 well enough that I'll probably not bother designing a PCB for it.
 ![](Qrss2m-vero.jpg "fig:Qrss2m-vero.jpg")
+
+The source code for the controller can be found
+[here.](http://webshed.org/mediawiki/upload/7/7b/QRSS2m-src.zip) It's a
+bit of a mess due in part to CCS C's “interesting” take on the C
+language and me rushing it to get something working.

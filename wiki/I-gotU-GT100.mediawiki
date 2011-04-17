@@ -1,5 +1,8 @@
 == i-gotU GT100 GPS Travel Tracker ==
 
+'''UPDATE 2011:''' I have not had more time to work on this project, but there is an OpenSource client for talking to the i-gotU GT100 available from [https://launchpad.net/igotu2gpx igotu2gpx]
+
+
 The i-gotU GT100 Travel Tracker is a tiny (47 x 29 x 12 mm) GPS receiver intended as a waypoint logger for geotagging photographs. It can also function as a GPS receiver for use with standard mapping software on a PC.
 
 Only windows software is supplied with the device, plugging the GT100 into an OS X or linux machine does not create a tty entry in /dev for pseudo-rs232 communication.  Connecting to a windows machine and dumping the first 7 frames on the USB bus produces the following, after which the device will start outputting NEMA data when opened as a com-port on windows.

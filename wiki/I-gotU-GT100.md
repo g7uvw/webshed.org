@@ -10,6 +10,10 @@ tags:
 i-gotU GT100 GPS Travel Tracker
 -------------------------------
 
+**UPDATE 2011:** I have not had more time to work on this project, but
+there is an OpenSource client for talking to the i-gotU GT100 available
+from [igotu2gpx](https://launchpad.net/igotu2gpx)
+
 The i-gotU GT100 Travel Tracker is a tiny (47 x 29 x 12 mm) GPS receiver
 intended as a waypoint logger for geotagging photographs. It can also
 function as a GPS receiver for use with standard mapping software on a

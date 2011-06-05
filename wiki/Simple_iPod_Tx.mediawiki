@@ -14,3 +14,5 @@ I built the circuit on a scrap of FR4 PCB material cut to fit a case I planned t
 [[Image:DSC_0345.jpg|center|thumb|640px|The completed transmitter in a case]]
 
 The transmitter draws approx 10mA from a 9v supply, so should run for about 50h from a fresh Zinc Carbon or Alkaline battery. Audio quality is surprisingly good considering the simple nature of the circuit.
+
+[[Image:IPod-Tx-SA.jpg|center|thumb|400px|Transmitter output into a spectrum analyser. Only the large peak is due to the transmitter, the rest are usual broadcast stations. ]]

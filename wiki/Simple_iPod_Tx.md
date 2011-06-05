@@ -43,3 +43,5 @@ transmitter range from 50cm to around 20m.
 The transmitter draws approx 10mA from a 9v supply, so should run for
 about 50h from a fresh Zinc Carbon or Alkaline battery. Audio quality is
 surprisingly good considering the simple nature of the circuit.
+
+<img src="IPod-Tx-SA.jpg" title="Transmitter output into a spectrum analyser. Only the large peak is due to the transmitter, the rest are usual broadcast stations. " alt="Transmitter output into a spectrum analyser. Only the large peak is due to the transmitter, the rest are usual broadcast stations. " width="400" />

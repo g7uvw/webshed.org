@@ -17,8 +17,8 @@ Current Projects
 
 I'm working on several electronics projects at the present time:
 
--   [A mercury tuned oscillator ((permeability tuned
-    oscillator))](/wiki/Mercury_PTO "wikilink")
+-   [A mercury tuned oscillator (permeability tuned
+    oscillator)](/wiki/Mercury_PTO "wikilink")
 -   [A long term pin-hole photography project](/wiki/Solargraphy "wikilink")
 -   [144 MHz low power QRSS transmitter](/wiki/QRSS_2m "wikilink")
 -   Yaseu FT290R Audio Fix (dead uPC575C2)

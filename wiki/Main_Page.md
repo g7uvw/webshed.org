@@ -17,6 +17,8 @@ Current Projects
 
 I'm working on several electronics projects at the present time:
 
+-   [Simple iPod FM
+    transmitter](http://webshed.org/wiki/Simple_iPod_Tx "wikilink")
 -   [A mercury tuned oscillator (permeability tuned
     oscillator)](/wiki/Mercury_PTO "wikilink")
 -   [A long term pin-hole photography project](/wiki/Solargraphy "wikilink")

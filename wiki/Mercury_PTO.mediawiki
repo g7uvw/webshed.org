@@ -1,4 +1,4 @@
-== A silly idea - a mercury tuned oscillator! ==
+== A silly idea - a mercury tuned oscillator! (permeability tuned oscillator) ==
 
 
 Some time ago I started to build Steve Webber's [http://kd1jv.qrpradio.com/ARRLHBC/ARRL_MMR40.html MMR40] radio, which uses a PTO (permeability tuned oscillator). I got the PTO working and then thought about ways to improve it before I finished building the rig.

@@ -9,8 +9,8 @@ tags:
  - Experiments
 ---
 
-A silly idea - a mercury tuned oscillator!
-------------------------------------------
+A silly idea - a mercury tuned oscillator! (permeability tuned oscillator)
+--------------------------------------------------------------------------
 
 Some time ago I started to build Steve Webber's
 [MMR40](http://kd1jv.qrpradio.com/ARRLHBC/ARRL_MMR40.html) radio, which

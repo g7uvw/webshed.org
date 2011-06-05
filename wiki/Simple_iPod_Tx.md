@@ -19,8 +19,8 @@ website.
   
 The circuit really is about as simple as it gets, a single transistor is
 configured as a free-running L-C oscillator somewhere between 88 - 108
-Mhz (the FM broadcast band) and signals on the transistor base change -
-modulate - the oscillator frequency. ![](Ipod-tx.png "fig:Ipod-tx.png")
+Mhz (the FM broadcast band) and signals on the transistor base changes -
+modulates - the oscillator frequency. ![](Ipod-tx.png "fig:Ipod-tx.png")
 
 R4 and R5, the pair of 1k resistors in the schematic are just to
 passively mix the left and right audio channels from the iPod, producing

@@ -2,6 +2,11 @@
 title: Simple iPod Tx
 permalink: wiki/Simple_iPod_Tx/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
+ - Experiments
 ---
 
 A simple FM transmitter for the iPod & other devices

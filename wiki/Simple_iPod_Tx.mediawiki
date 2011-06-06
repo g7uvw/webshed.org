@@ -18,3 +18,8 @@ The transmitter draws approx 10mA from a 9v supply, so should run for about 50h 
 [[Image:IPod-Tx-SA.jpg|center|thumb|400px|Transmitter output into a spectrum analyser]]
 
 Looking at the output of the transmitter on a spectrum analyser only the large peak is due to the transmitter, the rest are usual broadcast stations. There is no evidence of any spurious transmissions or multiple outputs that Mark saw with his version of the circuit.
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]
+[[Category:Experiments]]

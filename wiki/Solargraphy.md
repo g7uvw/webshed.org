@@ -93,7 +93,19 @@ photographic paper. If not, well, it's Art and you meant for it, right?
 Developing
 ----------
 
-To be added when I experiment with developing my cameras.
+After reading around various forums and web posts relating to long-term
+pin-hole photography projects and solargraphy in particular, the general
+consensus is that you use a flatbed scanner and scan your exposed
+photographic paper. This sounds like madness, you'd expect the bright
+light in the scanner to erase and totally darken the paper. The low
+sensitivity of the paper used allows a shortish exposure from the
+scanner without totally destroying the latent image formed by 6-months
+exposure to the sun. It still seems like magic to me.
+
+I scanned my papers in a dim lit room with an **Epson Perfection v200
+Photo** scanner at a resolution of 600DPI, with a total exposure time in
+the scanner of about 90s. The papers were then removed to a light proof
+cardboard folder for storage.
 
 Results
 -------

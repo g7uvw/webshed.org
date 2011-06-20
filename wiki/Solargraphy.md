@@ -106,6 +106,13 @@ I scanned my papers in a dim lit room with an **Epson Perfection v200
 Photo** scanner at a resolution of 600DPI, with a total exposure time in
 the scanner of about 90s. The papers were then removed to a light proof
 cardboard folder for storage.
+<img src="Solar-as-scanned.jpg" title="fig:The just-scanned paper, no idea why it is pink. A faint trace of image is just visible." alt="The just-scanned paper, no idea why it is pink. A faint trace of image is just visible." width="300" />
+
+To really “develop” the image in the scan, I inverted and equalized the
+colours in Gimp 2.6 image editing software. This produces a contrast
+stretched, horribly rainbow coloured image. Desaturating this based on
+luminosity results in a reasonable looking greyscale image.
+<img src="Solar-processed.jpg" title="fig:The result after processing. This is just a low-res version of the final image. Quality is better than this." alt="The result after processing. This is just a low-res version of the final image. Quality is better than this." width="300" />
 
 Results
 -------

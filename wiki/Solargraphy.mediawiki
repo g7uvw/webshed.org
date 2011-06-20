@@ -50,6 +50,10 @@ If all goes well, then the size of the pinhole and the ludicrous quantities of g
 After reading around various forums and web posts relating to long-term pin-hole photography projects and solargraphy in particular, the general consensus is that you use a flatbed scanner and scan your exposed photographic paper. This sounds like madness, you'd expect the bright light in the scanner to erase and totally darken the paper. The low sensitivity of the paper used allows a shortish exposure from the scanner without totally destroying the latent image formed by 6-months exposure to the sun. It still seems like magic to me.
 
 I scanned my papers in a dim lit room with an '''Epson Perfection v200 Photo''' scanner at a resolution of 600DPI, with a total exposure time in the scanner of about 90s. The papers were then removed to a light proof cardboard folder for storage.
+[[Image:Solar-as-scanned.jpg|thumb|300px|left|The just-scanned paper, no idea why it is pink.  A faint trace of image is just visible.]]
+
+To really "develop" the image in the scan, I inverted and equalized the colours in Gimp 2.6 image editing software. This produces a contrast stretched, horribly rainbow coloured image. Desaturating this based on luminosity results in a reasonable looking greyscale image.
+[[Image:Solar-processed.jpg|thumb|300px|center|The result after processing. This is just a low-res version of the final image. Quality is better than this.]]
 
 == Results ==
 Cam 1 : 10:54 2011/01/09<br/>

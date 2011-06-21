@@ -134,8 +134,11 @@ Still to be collected and processed.
 **Cam 3 : Exact time and date unknown, somewhere around early February
 2011 : 2011/06/19** <flickr>5854384908|-|frame|The second camera
 returned, this one was pointing out of a building window towards Tower
-Bridge</flickr>
+Bridge.</flickr>
 
   
   
-**Cam 4 : Some time in mid-March : 2011/06/13** 5853834223
+**Cam 4 : Some time in mid-March : 2011/06/13**
+<flickr>5853834223|-|frame|The first camera that was returned to me, it
+seems to have moved rather a lot during exposure, blurring the
+foreground.</flickr>

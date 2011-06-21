@@ -117,6 +117,25 @@ luminosity results in a reasonable looking greyscale image.
 Results
 -------
 
-Cam 1 : 10:54 2011/01/09  
+  
+**Cam 1 : 10:54 2011/01/09 : 20:10 2011/06/21**  
+<flickr>5857892496|-|frame|left|The third camera processed, this one was
+strapped to a drainpipe outside my house. The dark trails intersecting
+the sun arcs may be airplane contrails, as their position ties in with
+flight paths.</flickr>
 
-Cam 2 : 13:00 2011/01/24
+  
+  
+**Cam 2 : 13:00 2011/01/24**  
+Still to be collected and processed.
+
+  
+  
+**Cam 3 : Exact time and date unknown, somewhere around early February
+2011 : 2011/06/19** <flickr>5854384908|-|frame|The second camera
+returned, this one was pointing out of a building window towards Tower
+Bridge</flickr>
+
+  
+  
+**Cam 4 : Some time in mid-March : 2011/06/13** 5853834223

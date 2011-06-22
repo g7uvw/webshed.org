@@ -121,24 +121,27 @@ Results
 **Cam 1 : 10:54 2011/01/09 : 20:10 2011/06/21**  
 <flickr>5857892496|-|frame|left|The third camera processed, this one was
 strapped to a drainpipe outside my house. The dark trails intersecting
-the sun arcs may be airplane contrails, as their position ties in with
-flight paths.</flickr>
+the sun arcs are probably the wires in my multiband dipole antenna that
+stretches down from the roof and along the garden..</flickr>
 
   
   
-**Cam 2 : 13:00 2011/01/24**  
-Still to be collected and processed.
+**Cam 2 : 13:00 2011/01/24** <flickr>5860522245|-|frame|center|The
+fourth camera processed. This camera was strapped to a fence alongside
+the River Lea in Bow, East London, looking south towards the Thames. The
+camera seems to have moved during the 6 month exposure, causing the
+ghost image half way up the photograph.</flickr>
 
   
   
 **Cam 3 : Exact time and date unknown, somewhere around early February
-2011 : 2011/06/19** <flickr>5854384908|-|frame|The second camera
+2011 : 2011/06/19** <flickr>5854384908|-|frame|right|The second camera
 returned, this one was pointing out of a building window towards Tower
 Bridge.</flickr>
 
   
   
 **Cam 4 : Some time in mid-March : 2011/06/13**
-<flickr>5853834223|-|frame|The first camera that was returned to me, it
-seems to have moved rather a lot during exposure, blurring the
+<flickr>5853834223|-|frame|left|The first camera that was returned to
+me, it seems to have moved rather a lot during exposure, blurring the
 foreground.</flickr>

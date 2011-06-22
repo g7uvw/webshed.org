@@ -32,7 +32,8 @@ You need four things:
 1.  A beer can - you can start with a full one, but it needs to be empty
     to make the pinhole camera, so get drinking.
 2.  A tool to cut off the top of the can
-3.  Some positive (lit areas go black) photographic paper.
+3.  Some positive (lit areas go black) photographic paper. I used Iford
+    Harman Direct Positive Paper
 4.  Gaffer / Duct tape.
 
 **Here's how you combine them.**  

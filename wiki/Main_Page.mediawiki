@@ -4,23 +4,32 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 
 
 
-== Current Projects ==
+{|
+| width="60%" style="padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" valign="top"|
+<span style="font-size:16pt">Featured projects and articles</span>
+<br/>
+<br/>Some of the more recent things I've been working on and documenting here on webshed. From photograph to electronics via wine and cider making, I have a wide range of interests.
 
-I'm working on several electronics projects at the present time:
+
+
+| valign="top" style="padding:1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" |
+
+== Electronics ==
 * [[Simple_iPod_Tx|Simple iPod FM transmitter]]
 * [[Mercury_PTO|A mercury tuned oscillator (permeability tuned oscillator)]]
-* [[Solargraphy|A long term pin-hole photography project]]
+
+== Radio ==
+* [[FUNcube-Dongle-Linux| Setting up and Experiments with a FUNcube Dongle SDR reciever]] 
 * [[QRSS_2m|144 MHz low power QRSS transmitter]]
-* Yaseu FT290R Audio Fix (dead uPC575C2) [[FT290-Audio]]
-* 80m band RX using only PNP transistors [[PNP-80]]
-* A simple, amplified external [[GPS_Antenna|GPS antenna]]
-* A 10.140Mhz [[QRSS_Beacon|QRSS beacon]]
-* Building a [[BitX20|BitX20]] SSB transeiver 
-* Repair of an [[Eddystone_EC10|Eddystone EC10]] radio.
-* A [[USB-ZX]] debugging interface for the Z80 based Sinclair Spectrum computer.
-* An accurate amateur level [[LC meter]]
-* Poking round the guts of [[CPM|CP/M]] on the Sinclair Spectrum
-I also have a half dozen or so other projects that are currently in limbo due to lack of attention. As the above projects are completed, then some of the others will join the list of the active.
+* [[FT290-Audio| Yaseu FT290R Audio Fix]]
+* [[PNP-80| 80m band RX using only PNP transistors]]
+
+== Photography ==
+* [[Solargraphy|A long term pin-hole photography project]]
+|-
+
+|}
+Other projects not actively being worked on at the moment are listed in the [[:Category:Projects| Projects Category]] in the menu bar on each page.
 
 == Useful(?) Information ==
 

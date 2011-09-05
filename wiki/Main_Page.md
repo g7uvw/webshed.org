@@ -12,32 +12,41 @@ looking for my photos probably wants to be at
 [Flickr](http://www.flickr.com/photos/dtl/) instead. Academic visitors
 are directed to my [research pages.](/wiki/Research_Interests "wikilink")
 
-Current Projects
-----------------
+<table>
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><span style="font-size:16pt">Featured projects and articles</span><br />
+<br />
+Some of the more recent things I've been working on and documenting here on webshed. From photograph to electronics via wine and cider making, I have a wide range of interests.</p></td>
+<td><h2 id="electronics">Electronics</h2>
+<ul>
+<li><a href="Simple_iPod_Tx" title="wikilink">Simple iPod FM transmitter</a></li>
+<li><a href="Mercury_PTO" title="wikilink">A mercury tuned oscillator (permeability tuned oscillator)</a></li>
+</ul>
+<h2 id="radio">Radio</h2>
+<ul>
+<li><a href="FUNcube-Dongle-Linux" title="wikilink"> Setting up and Experiments with a FUNcube Dongle SDR reciever</a></li>
+<li><a href="QRSS_2m" title="wikilink">144 MHz low power QRSS transmitter</a></li>
+<li><a href="FT290-Audio" title="wikilink"> Yaseu FT290R Audio Fix</a></li>
+<li><a href="PNP-80" title="wikilink"> 80m band RX using only PNP transistors</a></li>
+</ul>
+<h2 id="photography">Photography</h2>
+<ul>
+<li><a href="Solargraphy" title="wikilink">A long term pin-hole photography project</a></li>
+</ul></td>
+</tr>
+<tr class="even">
+</tr>
+</tbody>
+</table>
 
-I'm working on several electronics projects at the present time:
-
--   [Simple iPod FM transmitter](/wiki/Simple_iPod_Tx "wikilink")
--   [A mercury tuned oscillator (permeability tuned
-    oscillator)](/wiki/Mercury_PTO "wikilink")
--   [A long term pin-hole photography project](/wiki/Solargraphy "wikilink")
--   [144 MHz low power QRSS transmitter](/wiki/QRSS_2m "wikilink")
--   Yaseu FT290R Audio Fix (dead uPC575C2)
-    [FT290-Audio](/wiki/FT290-Audio "wikilink")
--   80m band RX using only PNP transistors [PNP-80](/wiki/PNP-80 "wikilink")
--   A simple, amplified external [GPS antenna](/wiki/GPS_Antenna "wikilink")
--   A 10.140Mhz [QRSS beacon](/wiki/QRSS_Beacon "wikilink")
--   Building a [BitX20](/wiki/BitX20 "wikilink") SSB transeiver
--   Repair of an [Eddystone EC10](/wiki/Eddystone_EC10 "wikilink") radio.
--   A [USB-ZX](/wiki/USB-ZX "wikilink") debugging interface for the Z80 based
-    Sinclair Spectrum computer.
--   An accurate amateur level [LC meter](/wiki/LC_meter "wikilink")
--   Poking round the guts of [CP/M](/wiki/CPM "wikilink") on the Sinclair
-    Spectrum
-
-I also have a half dozen or so other projects that are currently in
-limbo due to lack of attention. As the above projects are completed,
-then some of the others will join the list of the active.
+Other projects not actively being worked on at the moment are listed in
+the [ Projects Category](/wiki/Category%3AProjects "wikilink") in the menu bar
+on each page.
 
 Useful(?) Information
 ---------------------

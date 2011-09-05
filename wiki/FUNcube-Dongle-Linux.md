@@ -5,7 +5,7 @@ layout: wiki
 tags:
  - Projects
  - Radio
- - Category:Funcube_Dongle
+ - Funcube_Dongle
 ---
 
 Getting a FUNcube Dongle running on Linux

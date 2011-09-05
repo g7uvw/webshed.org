@@ -40,4 +40,4 @@ Start quisk
 
 [[Category:Projects]]
 [[Category:Radio]]
-[[Category:Category:Funcube_Dongle]]
+[[Category:Funcube_Dongle]]

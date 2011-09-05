@@ -13,7 +13,7 @@ At this point it is a good idea to download the [https://sourceforge.net/project
 
 [[File:Qthid.png|thumb|750px|QTHID Software running under Linux]]
 
-As long as the software says "FCD is active" then all is well, if it says "FCD not detected" but the FCD is listed by the lsusb command above, then you may need to update the firmware on your FCD. IN which case, get the older 2.2 version of the QTHID software (this can talk to older FCD firmwares) and use it to upload the latest firmware from the main FCD website. The newest QTHID should then work.
+<br style="clear: both" />As long as the software says "FCD is active" then all is well, if it says "FCD not detected" but the FCD is listed by the lsusb command above, then you may need to update the firmware on your FCD. IN which case, get the older 2.2 version of the QTHID software (this can talk to older FCD firmwares) and use it to upload the latest firmware from the main FCD website. The newest QTHID should then work.
 
 
 Next check how ALSA (Advanced Linux Sound Architecture) is identifying the FCD (The FCD pretends to be a soundcard)
@@ -36,4 +36,4 @@ Start quisk
   $ ./quisk.py -c quisk_funcube.py
 [[File:QuiskSDR.png|thumb|750px]]
 
-The Quisk software isn't fully polished or able to control the FCD directly, so you need to run it in conjunction with QTHID to control the FCD. Set Quisk frequency to a nice round number and then it's easy to calculate the offsets needed for tuning with QTHID.
+<br style="clear: both" />The Quisk software isn't fully polished or able to control the FCD directly, so you need to run it in conjunction with QTHID to control the FCD. Set Quisk frequency to a nice round number and then it's easy to calculate the offsets needed for tuning with QTHID.

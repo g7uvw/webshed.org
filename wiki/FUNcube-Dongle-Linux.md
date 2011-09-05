@@ -37,6 +37,7 @@ this is easily achieved
 
 <img src="Qthid.png" title="QTHID Software running under Linux" alt="QTHID Software running under Linux" width="750" />
 
+  
 As long as the software says “FCD is active” then all is well, if it
 says “FCD not detected” but the FCD is listed by the lsusb command
 above, then you may need to update the firmware on your FCD. IN which
@@ -73,6 +74,7 @@ Start quisk
 
 <img src="QuiskSDR.png" title="QuiskSDR.png" alt="QuiskSDR.png" width="750" />
 
+  
 The Quisk software isn't fully polished or able to control the FCD
 directly, so you need to run it in conjunction with QTHID to control the
 FCD. Set Quisk frequency to a nice round number and then it's easy to

@@ -10,9 +10,9 @@ Getting a FUNcube Dongle running on Linux
 <img src="FUNcube-Dongle.jpg" title="My FUNcube Dongle, with an SMA &lt;-&gt; BNC converter attached" alt="My FUNcube Dongle, with an SMA &lt;-&gt; BNC converter attached" width="350" />
 
 This is how I got my FUNcube Dongle (FCD from here on in) working under
-Linux on a Samsung N130 Netbook PC. The Linux distro installed is Ubuntu
-11.04, but instructions should be very similar for any recent Linux
-distro.
+Linux on a Samsung N130 Netbook PC using Quisk SDR software. The Linux
+distro installed is Ubuntu 11.04, but instructions should be very
+similar for any recent Linux distro.
 
 First of all insert the FCD into a USB port and determine that it is
 detected:
@@ -29,6 +29,20 @@ At this point it is a good idea to download the [latest
 version](https://sourceforge.net/projects/qthid/files/) of the [QTHID
 FCD control
 software](http://www.oz9aec.net/index.php/funcube-dongle/qthid-fcd-controller)
+and check this this can communicate with and control the FCD. I found I
+had to start the qthid software with extra permissions to access USB,
+this is easily achieved
+
+`  $ sudo ./qthid`
+
+<img src="Qthid.png" title="QTHID Software running under Linux" alt="QTHID Software running under Linux" width="750" />
+
+As long as the software says “FCD is active” then all is well, if it
+says “FCD not detected” but the FCD is listed by the lsusb command
+above, then you may need to update the firmware on your FCD. IN which
+case, get the older 2.2 version of the QTHID software (this can talk to
+older FCD firmwares) and use it to upload the latest firmware from the
+main FCD website. The newest QTHID should then work.
 
 Next check how ALSA (Advanced Linux Sound Architecture) is identifying
 the FCD (The FCD pretends to be a soundcard)
@@ -38,5 +52,28 @@ the FCD (The FCD pretends to be a soundcard)
 `                         HDA-Intel at 0xf044000 irq 43`  
 ` 1 [default       ]: USB-Audio - FUNcube Dongle V1.0 at usb-0000:00:id.3.1`
 
-Basically this means that ALSA is calling the built in soundcard “hw:0”
-and the FCD “hw:1”, this is all the information we need to
+This means that ALSA is calling the built in soundcard “hw:0” and the
+FCD “hw:1”, this is all the information we need to configure Quisk.
+
+Get and install Quisk as documented
+[here](http://james.ahlstrom.name/quisk/). Quisk requires a
+configuration file to enable it to communicated with the FCD, this is
+mine:
+
+`  #Filename quisk_funcube.py`  
+`  sample_rate = 96000                  #ADC Hardware sample rate`  
+`  name_of_sound_capt = `“`hw:1`”`    #Determined from ALSA`  
+`  name_of_sound_play = `“`hw:0`”`    #Determined from ALSA`  
+`  channel_i = 0`  
+`  channel_q = 1`
+
+Start quisk
+
+` $ ./quisk.py -c quisk_funcube.py`
+
+<img src="QuiskSDR.png" title="QuiskSDR.png" alt="QuiskSDR.png" width="750" />
+
+The Quisk software isn't fully polished or able to control the FCD
+directly, so you need to run it in conjunction with QTHID to control the
+FCD. Set Quisk frequency to a nice round number and then it's easy to
+calculate the offsets needed for tuning with QTHID.

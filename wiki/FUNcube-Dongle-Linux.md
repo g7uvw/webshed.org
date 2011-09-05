@@ -2,6 +2,10 @@
 title: FUNcube-Dongle-Linux
 permalink: wiki/FUNcube-Dongle-Linux/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Category:Funcube_Dongle
 ---
 
 Getting a FUNcube Dongle running on Linux

@@ -37,3 +37,7 @@ Start quisk
 [[File:QuiskSDR.png|thumb|750px]]
 
 <br style="clear: both" />The Quisk software isn't fully polished or able to control the FCD directly, so you need to run it in conjunction with QTHID to control the FCD. Set Quisk frequency to a nice round number and then it's easy to calculate the offsets needed for tuning with QTHID.
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Category:Funcube_Dongle]]

@@ -37,6 +37,10 @@ Some of the more recent things I've been working on and documenting here on webs
 <h2 id="photography">Photography</h2>
 <ul>
 <li><a href="Solargraphy" title="wikilink">A long term pin-hole photography project</a></li>
+</ul>
+<h2 id="useful-information">Useful(?) Information</h2>
+<ul>
+<li>Some information on various <a href="TOKO_Coils" title="wikilink">TOKO Coils</a> and transformers.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -48,28 +52,26 @@ Other projects not actively being worked on at the moment are listed in
 the [ Projects Category](/wiki/Category%3AProjects "wikilink") in the menu bar
 on each page.
 
-Useful(?) Information
----------------------
+<table style="width:10%;">
+<colgroup>
+<col width="10%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><span style="font-size:16pt">Some recent photographs</span><br />
+<br />
+I take photographs from time to time, here are a few I'm particularly pleased with.</p>
+<p>A few of the more recent photographs I've taken<br />
+<br />
+<img src="7spot-small.jpg" title="fig:7spot-small.jpg" alt="7spot-small.jpg" /><br />
+<strong>A 7-spot ladybird</strong> <em>Nikon D50 / Sigma 50mm DG Macro</em></p>
+<p><img src="Look-small.jpg" title="fig:Look-small.jpg" alt="Look-small.jpg" /><br />
+<strong>A grasshopper about to become lunch</strong> ''Nikon D50 / Nikon 18-55mm ''</p>
+<hr />
+<p><img src="Ester-small.jpg" title="fig:Ester-small.jpg" alt="Ester-small.jpg" /><br />
+<strong>A friend</strong> <em>Nikon D50 / Sigma 50mm DG Macro</em></p></td>
+</tr>
+</tbody>
+</table>
 
-Some information on various [TOKO Coils](/wiki/TOKO_Coils "wikilink") and
-transformers.
 
-Recent Photographs
-------------------
-
-A few of the more recent photographs I've taken  
-  
-![](7spot-small.jpg "fig:7spot-small.jpg")  
-**A 7-spot ladybird** *Nikon D50 / Sigma 50mm DG Macro*
-
-------------------------------------------------------------------------
-
-![](Look-small.jpg "fig:Look-small.jpg")  
-**A grasshopper about to become lunch** ''Nikon D50 / Nikon 18-55mm ''
-
-------------------------------------------------------------------------
-
-![](Ester-small.jpg "fig:Ester-small.jpg")  
-**A friend** *Nikon D50 / Sigma 50mm DG Macro*
-
-------------------------------------------------------------------------

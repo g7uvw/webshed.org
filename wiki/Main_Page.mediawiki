@@ -26,22 +26,26 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 
 == Photography ==
 * [[Solargraphy|A long term pin-hole photography project]]
+
+== Useful(?) Information ==
+* Some information on various [[TOKO Coils]] and transformers.
 |-
 
 |}
 Other projects not actively being worked on at the moment are listed in the [[:Category:Projects| Projects Category]] in the menu bar on each page.
 
-== Useful(?) Information ==
+{|
+| width="100%" style="padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" valign="top"|
+<span style="font-size:16pt">Some recent photographs</span>
+<br/>
+<br/>I take photographs from time to time, here are a few I'm particularly pleased with.
 
-Some information on various [[TOKO Coils]] and transformers.
-
-== Recent Photographs ==
 
 A few of the more recent photographs I've taken<br><br>
 [[Image:7spot-small.jpg]]
 <br>'''A 7-spot ladybird'''
 ''Nikon D50 / Sigma 50mm DG Macro''
-----
+
 [[Image:Look-small.jpg]]
 <br>'''A grasshopper about to become lunch'''
 ''Nikon D50 / Nikon 18-55mm ''
@@ -49,4 +53,7 @@ A few of the more recent photographs I've taken<br><br>
 [[Image:Ester-small.jpg]]
 <br>'''A friend'''
 ''Nikon D50 / Sigma 50mm DG Macro''
-----
+
+
+
+|}

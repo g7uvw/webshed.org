@@ -4,6 +4,8 @@ permalink: wiki/Main_Page/
 layout: wiki
 ---
 
+#### David Mills's Internet Shed
+
 Welcome to webshed.org. One of [my](/wiki/About_Me "wikilink") homes on the
 internet.
 
@@ -11,6 +13,9 @@ Friends & family that have ended up here are probably lost, anyone
 looking for my photos probably wants to be at
 [Flickr](http://www.flickr.com/photos/dtl/) instead. Academic visitors
 are directed to my [research pages.](/wiki/Research_Interests "wikilink")
+Radio amateurs may be interested in my [Ham Radio](/wiki/Ham_Radio "wikilink")
+and [Radio Projects](/wiki/Category%3ARadio "wikilink") pages. My radio
+callsign is [G7UVW](/wiki/G7UVW "wikilink").
 
 <table>
 <colgroup>

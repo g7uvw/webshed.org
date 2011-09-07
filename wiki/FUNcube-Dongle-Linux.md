@@ -39,15 +39,55 @@ this is easily achieved
 
 `  $ sudo ./qthid`
 
-<img src="Qthid.png" title="QTHID Software running under Linux" alt="QTHID Software running under Linux" width="750" />
+<img src="Qthid.png" title="QTHID v3 Software running under Linux" alt="QTHID v3 Software running under Linux" width="750" />
 
   
-As long as the software says “FCD is active” then all is well, if it
-says “FCD not detected” but the FCD is listed by the lsusb command
-above, then you may need to update the firmware on your FCD. IN which
-case, get the older 2.2 version of the QTHID software (this can talk to
-older FCD firmwares) and use it to upload the latest firmware from the
-main FCD website. The newest QTHID should then work.
+As long as the software says “FCD is active” then all is well, skip to
+the next step - setting up ALSA. If QTHID says “FCD not detected” but
+the FCD is listed by the lsusb command above, then you may need to
+update the firmware on your FCD. IN which case, get the older 2.2
+version of the QTHID software (this can talk to older FCD firmwares) and
+use it to upload the latest firmware from the main FCD website. The
+following, contributed by **Robin Gape G8DQX** explains how to update
+the FCD firmware.
+
+> **Firmware update from 18b**  
+> This procedure assumes that the procedures above have been performed,
+> and that the FCD is recognised.
+>
+> -   Download the new firmware image (18f) from the FCD website, and
+>     save the file export18f.bin in a known location (right click and
+>     select “Save link as...” or similar in the browser)
+> -   Start QTHID (version 2.1 or 2.2)
+>
+> <img src="GUI_Ubuntu_QTHID.png" title="QTHID v2.2 Software required to upgrade older FCD firmwares" alt="QTHID v2.2 Software required to upgrade older FCD firmwares" width="400" />
+>
+> -   Plug in the FCD whose firmware is to be updated
+> -   Note that the presence of the FCD is acknowledged by QTHID
+>
+> <span style="color:red">Do not proceed if the step above is not
+> successful</span>
+>
+> -   Click the “Switch to bootloader” button
+> -   The presence icon will change colour to orange, with the text “FCD
+>     bootloader”
+> -   Click the “Update firmware” button, and select the firmware image
+>     file saved above
+> -   The firmware will now be updated.
+> -   This takes a long time, several minutes.
+>
+> <span style="color:red">Be very patient, even if nothing appears to be
+> happening</span>
+>
+> -   Eventually a dialogue box appears with the text “Firmware
+>     successfully written”
+> -   Click on the OK button
+> -   And switch back to normal mode with the “Switch to application”
+>     button.
+> -   When this fails, unplug and replug the FCD
+> -   QTHID will now show “FCD is active”
+> -   QTHID version 3 may now be installed & used to control all the
+>     parameters of the FCD
 
 Next check how ALSA (Advanced Linux Sound Architecture) is identifying
 the FCD (The FCD pretends to be a soundcard)

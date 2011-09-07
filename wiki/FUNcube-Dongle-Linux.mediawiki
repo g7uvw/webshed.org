@@ -3,10 +3,14 @@
 
 This is how I got my FUNcube Dongle (FCD from here on in) working under Linux on a Samsung N130 Netbook PC using Quisk SDR software. The Linux distro installed is Ubuntu 11.04, but instructions should be very similar for any recent Linux distro. 
 
+==Check the FCD is detected==
+
 First of all insert the FCD into a USB port and determine that it is detected:
   $ lsusb
   Bus 005 Device 003: ID 04d8:fb56 Microchip Technology, Inc.
 The FCD uses a Microchip PIC to handle USB connectivity, so the lsusb command lists the FCD as a Microchip Technology, Inc. device. As long as the hex identifier, 04d8:fb56, is listed correctly then the FCD is being detected and not confused with some other device also connected to USB.
+
+==Install QTHID FCD control software==
 
 At this point it is a good idea to download the [https://sourceforge.net/projects/qthid/files/ latest version] of the [http://www.oz9aec.net/index.php/funcube-dongle/qthid-fcd-controller QTHID FCD control software] and check this this can communicate with and control the FCD. I found I had to start the qthid software with extra permissions to access USB, this is easily achieved 
    $ sudo ./qthid
@@ -14,6 +18,7 @@ At this point it is a good idea to download the [https://sourceforge.net/project
 [[File:Qthid.png|thumb|750px|QTHID v3 Software running under Linux]]
 
 <br style="clear: both" />As long as the software says "FCD is active" then all is well, skip to the next step - setting up ALSA. If QTHID  says "FCD not detected" but the FCD is listed by the lsusb command above, then you may need to update the firmware on your FCD. IN which case, get the older 2.2 version of the QTHID software (this can talk to older FCD firmwares) and use it to upload the latest firmware from the main FCD website. The following, contributed by '''Robin Gape G8DQX''' explains how to update the FCD firmware.
+===Upgrade FCD firmware if needed===
 <blockquote>
 '''Firmware update from 18b'''<br>
 This procedure assumes that the procedures above have been performed, and that the FCD is recognised.
@@ -36,12 +41,17 @@ This procedure assumes that the procedures above have been performed, and that t
 * QTHID will now show “FCD is active”
 * QTHID version 3 may now be installed & used to control all the parameters of the FCD
 </blockquote>
+
+==Check ALSA configuration==
+
 Next check how ALSA (Advanced Linux Sound Architecture) is identifying the FCD (The FCD pretends to be a soundcard)
   $ cat /proc/asound/cards
   0 [Intel          ]: HDA-Intel - HDA-Intel
                           HDA-Intel at 0xf044000 irq 43
   1 [default       ]: USB-Audio - FUNcube Dongle V1.0 at usb-0000:00:id.3.1
 This means that ALSA is calling the built in soundcard "hw:0" and the FCD "hw:1", this is all the information we need to configure Quisk.
+
+==Install Quisk SDR software==
 
 Get and install Quisk as documented [http://james.ahlstrom.name/quisk/ here]. Quisk requires a configuration file to enable it to communicated with the FCD, this is mine:
    
@@ -51,6 +61,8 @@ Get and install Quisk as documented [http://james.ahlstrom.name/quisk/ here]. Qu
    name_of_sound_play = "hw:0"    #Determined from ALSA
    channel_i = 0
    channel_q = 1
+
+==Enjoy!==
 
 Start quisk
   $ ./quisk.py -c quisk_funcube.py

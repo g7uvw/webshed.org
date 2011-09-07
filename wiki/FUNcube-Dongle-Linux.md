@@ -18,6 +18,9 @@ Linux on a Samsung N130 Netbook PC using Quisk SDR software. The Linux
 distro installed is Ubuntu 11.04, but instructions should be very
 similar for any recent Linux distro.
 
+Check the FCD is detected
+-------------------------
+
 First of all insert the FCD into a USB port and determine that it is
 detected:
 
@@ -28,6 +31,9 @@ The FCD uses a Microchip PIC to handle USB connectivity, so the lsusb
 command lists the FCD as a Microchip Technology, Inc. device. As long as
 the hex identifier, 04d8:fb56, is listed correctly then the FCD is being
 detected and not confused with some other device also connected to USB.
+
+Install QTHID FCD control software
+----------------------------------
 
 At this point it is a good idea to download the [latest
 version](https://sourceforge.net/projects/qthid/files/) of the [QTHID
@@ -50,6 +56,8 @@ version of the QTHID software (this can talk to older FCD firmwares) and
 use it to upload the latest firmware from the main FCD website. The
 following, contributed by **Robin Gape G8DQX** explains how to update
 the FCD firmware.
+
+### Upgrade FCD firmware if needed
 
 > **Firmware update from 18b**  
 > This procedure assumes that the procedures above have been performed,
@@ -89,6 +97,9 @@ the FCD firmware.
 > -   QTHID version 3 may now be installed & used to control all the
 >     parameters of the FCD
 
+Check ALSA configuration
+------------------------
+
 Next check how ALSA (Advanced Linux Sound Architecture) is identifying
 the FCD (The FCD pretends to be a soundcard)
 
@@ -99,6 +110,9 @@ the FCD (The FCD pretends to be a soundcard)
 
 This means that ALSA is calling the built in soundcard “hw:0” and the
 FCD “hw:1”, this is all the information we need to configure Quisk.
+
+Install Quisk SDR software
+--------------------------
 
 Get and install Quisk as documented
 [here](http://james.ahlstrom.name/quisk/). Quisk requires a
@@ -111,6 +125,9 @@ mine:
 `  name_of_sound_play = `“`hw:0`”`    #Determined from ALSA`  
 `  channel_i = 0`  
 `  channel_q = 1`
+
+Enjoy!
+------
 
 Start quisk
 

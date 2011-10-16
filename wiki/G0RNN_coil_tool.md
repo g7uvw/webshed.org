@@ -2,6 +2,11 @@
 title: G0RNN coil tool
 permalink: wiki/G0RNN_coil_tool/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Test-gear
+ - Hosted-designs
 ---
 
 G0RNN's coil winding helper

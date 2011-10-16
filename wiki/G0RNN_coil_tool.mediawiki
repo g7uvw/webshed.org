@@ -9,3 +9,8 @@ There isn't a lot more to say, the design is pretty self-explanatory from the ph
 
 <br style="clear: both" /><br/>'''The G0RNN coil winding helper'''
 <flickr>6250829452|-|frame|left|Various sizes of toroidal formers are accommodated and easily worked with</flickr>
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Test-gear]]
+[[Category:Hosted-designs]]

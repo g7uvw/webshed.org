@@ -8,9 +8,9 @@ G0RNN's coil winding helper
 ---------------------------
 
 This is a fantastically simple and useful tool designed and built by
-Chick G0RNN and described to me by Ray G1OJP. Constructed entirely from
-tinplate from a large tin of baked beans or similar, the tool provides a
-third-hand making toroid coils easy to wind.
+**Chick G0RNN** and described to me by **Ray G1OJP**. Constructed
+entirely from tinplate from a large tin of baked beans or similar, the
+tool provides a third-hand making toroid coils easy to wind.
 
 There isn't a lot more to say, the design is pretty self-explanatory
 from the photographs. The only thing to consider during construction of

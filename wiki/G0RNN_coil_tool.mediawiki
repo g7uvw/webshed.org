@@ -12,5 +12,5 @@ There isn't a lot more to say, the design is pretty self-explanatory from the ph
 
 [[Category:Projects]]
 [[Category:Radio]]
-[[Category:Test-gear]]
+[[Category:Testgear]]
 [[Category:Hosted-designs]]

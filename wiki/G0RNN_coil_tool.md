@@ -5,7 +5,7 @@ layout: wiki
 tags:
  - Projects
  - Radio
- - Test-gear
+ - Testgear
  - Hosted-designs
 ---
 

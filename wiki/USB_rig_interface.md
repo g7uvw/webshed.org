@@ -2,6 +2,10 @@
 title: USB rig interface
 permalink: wiki/USB_rig_interface/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
 ---
 
 A simple USB digi-modes radio interface

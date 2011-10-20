@@ -12,3 +12,8 @@ I want an entirely self contained interface, one USB connection to the computer 
 The USB-serial converter was the first item to arrive, it uses a Prolific chipset instead of the more common FTDI parts. "Carefully" removing the soft plastic enclosure revels a small PCB about 10x15mm. The connections are shown in the next two images. I will de-solder the D-connector and the USB cable to leave a small board that can be integrated into the design with minimal wasted space. When I have all of the parts, I'll probably design a PCB to mount them all on.
 [[File:Usb-serial-internals2.jpg|thumb|600px|The underside of the USB-RS232 interface showing power and data lines and 12MHz resonator]]
 [[File:Usb-serial-internals1.jpg|thumb|600px|The topside of the USB-RS232 interface with the epoxy encapsulated Prolific interface chip]]
+
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]

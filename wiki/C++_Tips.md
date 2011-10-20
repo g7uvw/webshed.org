@@ -2,6 +2,9 @@
 title: C++ Tips
 permalink: wiki/C++_Tips/
 layout: wiki
+tags:
+ - Code
+ - C++
 ---
 
 Some short routines and one-liners in C and C++ that may be useful

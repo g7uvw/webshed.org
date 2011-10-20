@@ -8,3 +8,7 @@
   file.open("filename.bin",ios::in|ios::out|ios::binary|ios::trunc);
   file.write((char*)&*(test_vector.begin()),test_vector.size() * sizeof(float);
   file.close();
+
+
+[[Category:Code]]
+[[Category:C++]]

@@ -1,0 +1,22 @@
+---
+title: ESR meter
+permalink: wiki/ESR_meter/
+layout: wiki
+---
+
+An Equivalent Series Resistance Meter
+-------------------------------------
+
+Some time ago I was trying to repair a switched mode power supply (SMPS)
+in my oscilloscope. I'd been quoted £800 for a new PSU, so trying to fix
+it first was well worth my while. It's pretty common for electrolytic
+capacitors to develop faults in an SMPS; specifically they develop an
+higher than normal internal resistance. So while the capacitor may hold
+a charge and measure as the correct capacitance, it will not behave
+correctly in a filter or PSU circuit. Suspecting the capacitors, and not
+having a way to measure their series resistance, I set out to design and
+build an ESR meter.
+
+The ESR of a large high voltage, high capacity electrolytic capacitor
+should be fractions of an Ohm, smaller capacitors have ESRs of a few
+Ohms typically.

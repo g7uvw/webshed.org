@@ -21,7 +21,7 @@ normal value, while exhibiting no changes to voltage and capacitance
 ratings
 
 Suspecting the capacitors, and not having a way to measure their series
-resistance, I set out to design and build an ESR meter. We can;t measure
+resistance, I set out to design and build an ESR meter. We can't measure
 ESR with a normal DC Ohm meter, because the DC voltage would charge the
 capacitor. An AC signal is used, so that it passes straight though the
 capacitor with minimal reactive losses. As a ball-park figure, I decided

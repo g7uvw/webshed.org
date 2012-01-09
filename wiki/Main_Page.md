@@ -31,6 +31,7 @@ Some of the more recent things I've been working on and documenting here on webs
 <ul>
 <li><a href="Simple_iPod_Tx" title="wikilink">Simple iPod FM transmitter</a></li>
 <li><a href="Mercury_PTO" title="wikilink">A mercury tuned oscillator (permeability tuned oscillator)</a></li>
+<li><a href="ESR_meter" title="wikilink">Equivalent series resistance meter</a></li>
 </ul>
 <h2 id="radio">Radio</h2>
 <ul>

@@ -12,3 +12,11 @@ A three stage inverter RC oscillator starts much more reliably than a two stage 
 C3 provides DC isolation for the opamp, but don't rely on this to save you from a charged mains capacitor in a SMPS - always discharge before you test. You could also put a 10k resistor across the probes to help ensure capacitors are discharged - 10k is a much higher resistance than the meter can detect, so it will not affect ESR readings.
 
 The opamp IC2, provides plenty of amplification for the AC signal passed though the capacitor under test, the output of the opamp is rectified by diodes D1 and D1 and applied to the meter. I use a 4.7k pot in series with the meter to set zero resistance with the probes shorted together for calibration. The exact value of the series pot will depend on the sensitivity of the meter used.
+
+The circuit is powered by 4 AA cells, and draws <10 mA, so the batteries should last a long time.
+[[File:Board.png]]
+[[File:G7UVW-ESRv1-pcb.png|thumb|800px]]
+----
+'''Chops and Changes'''
+
+There isn't anything difficult to obtain to build this meter, no coils or transformers to wind, no crystals to obtain. IC1 really should be a Schmitt trigger device, so the oscillator functions. Rectifier diodes D1&D2 would probably be better replaced with Schottky diodes, so there is less voltage dropped in the rectifier and more left to drive the meter. R8 and R11 set the amplification factor of the opamp, the values suggested work, but are not optimized, if you find you have insufficient gain to zero the meter, here is a good place to look (or use fresh batteries)

@@ -53,3 +53,21 @@ diodes D1 and D1 and applied to the meter. I use a 4.7k pot in series
 with the meter to set zero resistance with the probes shorted together
 for calibration. The exact value of the series pot will depend on the
 sensitivity of the meter used.
+
+The circuit is powered by 4 AA cells, and draws &lt;10 mA, so the
+batteries should last a long time. ![](Board.png "fig:Board.png")
+<img src="G7UVW-ESRv1-pcb.png" title="fig:G7UVW-ESRv1-pcb.png" alt="G7UVW-ESRv1-pcb.png" width="800" />
+
+------------------------------------------------------------------------
+
+**Chops and Changes**
+
+There isn't anything difficult to obtain to build this meter, no coils
+or transformers to wind, no crystals to obtain. IC1 really should be a
+Schmitt trigger device, so the oscillator functions. Rectifier diodes
+D1&D2 would probably be better replaced with Schottky diodes, so there
+is less voltage dropped in the rectifier and more left to drive the
+meter. R8 and R11 set the amplification factor of the opamp, the values
+suggested work, but are not optimized, if you find you have insufficient
+gain to zero the meter, here is a good place to look (or use fresh
+batteries)

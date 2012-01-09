@@ -30,3 +30,7 @@ There isn't anything difficult to obtain to build this meter, no coils or transf
 '''Resources'''
 
 [[media:ESR_Meter.zip |Zip archive containing Eagle CAD files for this project]]
+
+[[Category:Projects]]
+[[Category:Electronics]]
+[[Category:Testgear]]

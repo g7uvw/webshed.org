@@ -60,6 +60,15 @@ batteries should last a long time. ![](Board.png "fig:Board.png")
 
 ------------------------------------------------------------------------
 
+**Calibration** I made a calibration standard from 10x 1Ohm 1% metal
+oxide resistors in series with two 10 Ohm metal oxide 1% resistors. With
+the meter zeroed with the probes shorted together, I measured first 1
+resistor (1 Ohm) and marked the meter scale, then two resistors (2
+Ohms), until I had marked up to 10 Ohms. Then 11 to 30 Ohms by adding 1
+then two 10 Ohm resistors to the measurement.
+
+------------------------------------------------------------------------
+
 **Chops and Changes**
 
 There isn't anything difficult to obtain to build this meter, no coils
@@ -71,3 +80,10 @@ meter. R8 and R11 set the amplification factor of the opamp, the values
 suggested work, but are not optimized, if you find you have insufficient
 gain to zero the meter, here is a good place to look (or use fresh
 batteries)
+
+------------------------------------------------------------------------
+
+**Resources**
+
+[Zip archive containing Eagle CAD files for this
+project](media:ESR_Meter.zip "wikilink")

@@ -51,3 +51,7 @@ The table lists the eBay and Adafruit names together with the pins used for the 
  [[File:1-8TFT-LCD-Back.jpg|thumb|500px|left]]
 
 The eBay module looked to have a few dodgy solder joints when inspected under a magnifier, so I reworked all the joints on the back side of the board to be sure they were good. The board has been tested with the Arduino ST7735R library in fast SPI mode and performs well. My intention is to use this LCD module with a dsPIC part in a project I have in mind.
+
+[[Category:Projects]]
+[[Category:Electronics]]
+[[Category:Experiments]]

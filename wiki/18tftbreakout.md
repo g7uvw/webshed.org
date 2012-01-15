@@ -2,6 +2,10 @@
 title: 18tftbreakout
 permalink: wiki/18tftbreakout/
 layout: wiki
+tags:
+ - Projects
+ - Electronics
+ - Experiments
 ---
 
 1.8" TFT Display - 128x160 pixels in high colour with a microSD socket

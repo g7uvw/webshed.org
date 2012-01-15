@@ -20,6 +20,7 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 * [[Simple_iPod_Tx|Simple iPod FM transmitter]]
 * [[Mercury_PTO|A mercury tuned oscillator (permeability tuned oscillator)]]
 * [[ESR_meter|Equivalent series resistance meter]]
+* [[18tftbreakout|A cheap Chinese 1.8" TFT LCD module]]
 
 == Radio ==
 * [[FUNcube-Dongle-Linux| Setting up and Experiments with a FUNcube Dongle SDR reciever]] 

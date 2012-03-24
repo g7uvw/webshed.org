@@ -14,14 +14,15 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 * [[Simple_iPod_Tx|Simple iPod FM transmitter]]
 * [[Mercury_PTO|A mercury tuned oscillator (permeability tuned oscillator)]]
 * [[ESR_meter|Equivalent series resistance meter]]
-* [[18tftbreakout|A cheap Chinese 1.8" TFT LCD module]]<br><br>
+* [[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module work]]<br><br>
 
 == Photography ==
 * [[Solargraphy|A long term pin-hole photography project]]
 |  align="undefined" valign="undefined" | 
+
 == Radio ==
-* [[FUNcube-Dongle-Linux| Setting up and Experiments with a FUNcube Dongle SDR reciever]] 
-* [[QRSS_2m|144 MHz low power QRSS transmitter]]
+* [[FUNcube-Dongle-Linux| Using a  FUNcube Dongle SDR reciever under Linux]] 
+* [[QRSS_2m|144 MHz QRP QRSS transmitter]]
 * [[FT290-Audio| Yaseu FT290R Audio Fix]]
 * [[PNP-80| 80m band RX using only PNP transistors]]<br><br>
 

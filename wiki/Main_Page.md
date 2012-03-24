@@ -42,7 +42,8 @@ Electronics
 -   [A mercury tuned oscillator (permeability tuned
     oscillator)](/wiki/Mercury_PTO "wikilink")
 -   [Equivalent series resistance meter](/wiki/ESR_meter "wikilink")
--   [A cheap Chinese 1.8" TFT LCD module](18tftbreakout "wikilink")  
+-   [Making a cheap Chinese 1.8" TFT LCD module
+    work](18tftbreakout "wikilink")  
       
 
 Photography
@@ -55,9 +56,9 @@ Photography
 Radio
 -----
 
--   [ Setting up and Experiments with a FUNcube Dongle SDR
-    reciever](/wiki/FUNcube-Dongle-Linux "wikilink")
--   [144 MHz low power QRSS transmitter](/wiki/QRSS_2m "wikilink")
+-   [ Using a FUNcube Dongle SDR reciever under
+    Linux](/wiki/FUNcube-Dongle-Linux "wikilink")
+-   [144 MHz QRP QRSS transmitter](/wiki/QRSS_2m "wikilink")
 -   [ Yaseu FT290R Audio Fix](/wiki/FT290-Audio "wikilink")
 -   [ 80m band RX using only PNP transistors](/wiki/PNP-80 "wikilink")  
       

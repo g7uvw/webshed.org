@@ -26,8 +26,8 @@ callsign is [G7UVW](/wiki/G7UVW "wikilink").
 <tr class="odd">
 <td><p><span style="font-size:16pt">Featured projects and articles</span><br />
 <br />
-Some of the more recent things I've been working on and documenting here on webshed. From photograph to electronics via wine and cider making, I have a wide range of interests.</p></td>
-<td><h2 id="electronics">Electronics</h2>
+Some of the more recent things I've been working on and documenting here on webshed. From photograph to electronics via wine and cider making, I have a wide range of interests.</p>
+<h2 id="electronics">Electronics</h2>
 <ul>
 <li><a href="Simple_iPod_Tx" title="wikilink">Simple iPod FM transmitter</a></li>
 <li><a href="Mercury_PTO" title="wikilink">A mercury tuned oscillator (permeability tuned oscillator)</a></li>
@@ -40,8 +40,8 @@ Some of the more recent things I've been working on and documenting here on webs
 <li><a href="QRSS_2m" title="wikilink">144 MHz low power QRSS transmitter</a></li>
 <li><a href="FT290-Audio" title="wikilink"> Yaseu FT290R Audio Fix</a></li>
 <li><a href="PNP-80" title="wikilink"> 80m band RX using only PNP transistors</a></li>
-</ul>
-<h2 id="photography">Photography</h2>
+</ul></td>
+<td><h2 id="photography">Photography</h2>
 <ul>
 <li><a href="Solargraphy" title="wikilink">A long term pin-hole photography project</a></li>
 </ul>

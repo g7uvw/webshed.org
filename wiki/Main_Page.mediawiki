@@ -12,10 +12,6 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 <br/>
 <br/>Some of the more recent things I've been working on and documenting here on webshed. From photograph to electronics via wine and cider making, I have a wide range of interests.
 
-
-
-| valign="top" style="padding:1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" |
-
 == Electronics ==
 * [[Simple_iPod_Tx|Simple iPod FM transmitter]]
 * [[Mercury_PTO|A mercury tuned oscillator (permeability tuned oscillator)]]
@@ -27,6 +23,11 @@ Friends & family that have ended up here are probably lost, anyone looking for m
 * [[QRSS_2m|144 MHz low power QRSS transmitter]]
 * [[FT290-Audio| Yaseu FT290R Audio Fix]]
 * [[PNP-80| 80m band RX using only PNP transistors]]
+
+
+| valign="top" style="padding:1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" |
+
+
 
 == Photography ==
 * [[Solargraphy|A long term pin-hole photography project]]

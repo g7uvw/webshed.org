@@ -6,4 +6,4 @@ When looking for a good multi-band HF antenna to erect at home, I initially look
 <br/>
 '''The design'''<br/>
 The ZS6BKW uses a section of ladder-line feeder as an impedance transformer to match the centre of the two wire elements to 50 Ohms at the radio end of the feeder. It's the characteristics of this ladder-line section that determine the length of the wire elements. In a coming update to this page I'll put the mathematics behind this antenna, but for now, if you use 450 Ohm ladder-line, then the wire elements need to be 13.75 meters long for a total element length of 27.5 meters.
-[[File:ZS6BKW-antenna.png|thumb|754px|Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder]]
+[[File:ZS6BKW-antenna.png|left|thumb|754px|Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder]]

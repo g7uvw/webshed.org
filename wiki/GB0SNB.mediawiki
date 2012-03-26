@@ -1,3 +1,5 @@
 == GB0'''SNB'''  Special Event Station at Kelvedon Hatch '''S'''ecret '''N'''uclear '''B'''unker==
 
 GB0SNB is the amateur radio callsign for the special event radio station at the [http://www.secretnuclearbunker.com Kelvedon Hatch nuclear bunker], a few miles outside Brentwood in Essex, UK. It is operated and maintained by members of the (now defunct) Barking Radio and Electronics Society. More information about the station can be found on the QRZ.com page [http://www.qrz.com/db/gb0snb GB0SNB on QRZ.com].
+
+The Station currently operates a permanent APRS node on 145 MHz - 2 meters, and a temporary multiband low-power WSPR transmitter on the HF bands; live WSPR 'spots' for this transmitter can be viewed on the [http://wsprnet.org/drupal/wsprnet/map&band=All&callsign=gb0snb&latitude=20&longitude=20&minutes=600 WSPRnet Propagation Map]

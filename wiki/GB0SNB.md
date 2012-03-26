@@ -21,4 +21,9 @@ node on 145 MHz - 2 meters, and a temporary multiband low-power
 [WSPR](http://physics.princeton.edu/pulsar/K1JT/wspr.html) transmitter
 on the HF bands; live WSPR 'spots' for this transmitter can be viewed on
 the [WSPRnet Propagation
-Map](http://wsprnet.org/drupal/wsprnet/map&band=All&callsign=gb0snb&latitude=20&longitude=20&minutes=600)
+Map](http://wsprnet.org/drupal/wsprnet/map&band=All&callsign=gb0snb&latitude=20&longitude=20&minutes=600).
+The HF antenna is a ZS6BKW wire antenna similar to the ever popular
+G5RV, but with better return loss and SWR characteristics over most HF
+bands.
+
+<img src="20120324_165813.jpg" title="The 150 foot main antenna mast at the Bunker site. We have access to the second level" alt="The 150 foot main antenna mast at the Bunker site. We have access to the second level" width="450" />

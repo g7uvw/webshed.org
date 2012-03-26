@@ -29,3 +29,6 @@ coming update to this page I'll put the mathematics behind this antenna,
 but for now, if you use 450 Ohm ladder-line, then the wire elements need
 to be 13.75 meters long for a total element length of 27.5 meters.
 <img src="ZS6BKW-antenna.png" title="fig:Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder" alt="Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder" width="754" />
+
+20:54, 26 March 2012 (UTC)Design and building to come20:54, 26 March
+2012 (UTC)

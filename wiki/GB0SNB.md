@@ -15,8 +15,10 @@ Brentwood in Essex, UK. It is operated and maintained by members of the
 about the station can be found on the QRZ.com page [GB0SNB on
 QRZ.com](http://www.qrz.com/db/gb0snb).
 
-The Station currently operates a permanent APRS node on 145 MHz - 2
-meters, and a temporary multiband low-power WSPR transmitter on the HF
-bands; live WSPR 'spots' for this transmitter can be viewed on the
-[WSPRnet Propagation
+The Station currently operates a permanent
+[APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System)
+node on 145 MHz - 2 meters, and a temporary multiband low-power
+[WSPR](http://physics.princeton.edu/pulsar/K1JT/wspr.html) transmitter
+on the HF bands; live WSPR 'spots' for this transmitter can be viewed on
+the [WSPRnet Propagation
 Map](http://wsprnet.org/drupal/wsprnet/map&band=All&callsign=gb0snb&latitude=20&longitude=20&minutes=600)

@@ -28,8 +28,27 @@ ladder-line section that determine the length of the wire elements. In a
 coming update to this page I'll put the mathematics behind this antenna,
 but for now, if you use 450 Ohm ladder-line, then the wire elements need
 to be 13.75 meters long for a total element length of 27.5 meters.
-<img src="ZS6BKW-antenna.png" title="fig:Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder" alt="Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder" width="754" />
+![centre|thumb|754px|Cartoon sketch of the ZS6BKW antenna with
+dimensions for 450 Ohm
+feeder](ZS6BKW-antenna.png "fig:centre|thumb|754px|Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder")
 
-------------------------------------------------------------------------
+<img src="20120323_134031.jpg" title="fig:The centre of the antenna is made from a plastic chopping board" alt="The centre of the antenna is made from a plastic chopping board" width="500" />
+A semi-flexible plastic chopping board was purchased and cut up and
+drilled to make a strong centre piece for the antenna.  
+The feeder is clamped securely between two sections of chopping board,
+the arms of the antenna are woven though the smaller holes in the
+crosspiece of the centre and then joined to the feeder via soldering.
+The aim is to get a good electrical connection, while also providing
+good mechanical stability - this thing will be anything up to 80 feet in
+the air in strong winds, hot sun and freezing conditions; quite possibly
+all three simultaneously on a typical British summer day.
 
-Design and building to come
+![caption|The 450 Ohm ladder feeder used for the matching section of the
+antenna](450_ohm_feeder.jpg "fig:caption|The 450 Ohm ladder feeder used for the matching section of the antenna")
+The feeder was purchased from [Moonraker UK](http://www.moonraker.eu),
+it is strong copper clad steel wire in tough ABS plastic, with window
+cutouts to reduce wind loading. I've used the same feeder at home for
+the same type of antenna for over two years with excellent results.
+
+At this point there should be a photograph of the constructed centre
+piece with wires and feeder attached, but I forgot to take one.

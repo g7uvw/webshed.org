@@ -56,6 +56,7 @@ Photography
 Radio
 -----
 
+-   [ ZS6BKW Wire antenna](/wiki/ZS6BKW_antenna "wikilink")
 -   [ Kelvedon Hatch Secret Nuclear Bunker amateur radio
     station](/wiki/GB0SNB "wikilink")
 -   [ Using a FUNcube Dongle SDR reciever under

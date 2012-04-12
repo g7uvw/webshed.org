@@ -27,3 +27,9 @@ Once the antenna was constructed it was hoisted into place, with one end up at a
 Measurements of VSWR and return loss were made with an SDR-KITS Vector Network Analyser. The VSWR trace shown displays dips in the VSWR corresponding to the amateur bands and other non-amateur bands. As yet this antenna is not optimised, the VSWR should be rather better than measured, however a decent ATU has no problems tuning from 80m to 10m. 
 
 At construction time, the feeder was cut generously, when time allows I shall return to the bunker and trim the feeder length by a inches at a time while measuring the VSWR again. This should enable a better match to 50 Ohms in the sections of the amateur bands we prefer.
+
+
+[[Category:Projects]]
+[[Category:Radio]]
+[[Category:Electronics]]
+[[Category:Antennas]]

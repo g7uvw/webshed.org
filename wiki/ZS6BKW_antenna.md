@@ -2,6 +2,11 @@
 title: ZS6BKW antenna
 permalink: wiki/ZS6BKW_antenna/
 layout: wiki
+tags:
+ - Projects
+ - Radio
+ - Electronics
+ - Antennas
 ---
 
 ZS6BKW wire antenna

@@ -12,7 +12,7 @@ The ZS6BKW uses a section of ladder-line feeder as an impedance transformer to m
 A semi-flexible plastic chopping board was purchased and cut up and drilled to make a strong centre piece for the antenna. 
 <br>The feeder is clamped securely between two sections of chopping board, the arms of the antenna are woven though the smaller holes in the crosspiece of the centre and then joined to the feeder via soldering. The aim is to get a good electrical connection, while also providing good mechanical stability - this thing will be anything up to 80 feet in the air in strong winds, hot sun and freezing conditions; quite possibly all three simultaneously on a typical British summer day.
 
-[[File:450_ohm_feeder.jpg|left|thumb|800px|The 450 Ohm ladder feeder used for the matching section of the antenna]]
+[[File:450_ohm_feeder.jpg|left|thumb|200px|The 450 Ohm ladder feeder used for the matching section of the antenna]]
 The feeder was purchased from [http://www.moonraker.eu Moonraker UK], it is strong copper clad steel wire in tough ABS plastic, with window cutouts to reduce wind loading. I've used the same feeder at home for the same type of antenna for over two years with excellent results.
 
 At this point there should be a photograph of the constructed centre piece with wires and feeder attached, but I forgot to take one.

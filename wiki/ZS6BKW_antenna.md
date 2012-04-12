@@ -43,7 +43,7 @@ good mechanical stability - this thing will be anything up to 80 feet in
 the air in strong winds, hot sun and freezing conditions; quite possibly
 all three simultaneously on a typical British summer day.
 
-<img src="450_ohm_feeder.jpg" title="fig:The 450 Ohm ladder feeder used for the matching section of the antenna" alt="The 450 Ohm ladder feeder used for the matching section of the antenna" width="800" />
+<img src="450_ohm_feeder.jpg" title="fig:The 450 Ohm ladder feeder used for the matching section of the antenna" alt="The 450 Ohm ladder feeder used for the matching section of the antenna" width="200" />
 The feeder was purchased from [Moonraker UK](http://www.moonraker.eu),
 it is strong copper clad steel wire in tough ABS plastic, with window
 cutouts to reduce wind loading. I've used the same feeder at home for

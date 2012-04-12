@@ -32,6 +32,8 @@ to be 13.75 meters long for a total element length of 27.5 meters.
 dimensions for 450 Ohm
 feeder](ZS6BKW-antenna.png "fig:centre|thumb|754px|Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder")
 
+  
+**The construction**  
 <img src="20120323_134031.jpg" title="fig:The centre of the antenna is made from a plastic chopping board" alt="The centre of the antenna is made from a plastic chopping board" width="300" />
 A semi-flexible plastic chopping board was purchased and cut up and
 drilled to make a strong centre piece for the antenna.  

@@ -4,9 +4,6 @@ permalink: wiki/ZS6BKW_antenna/
 layout: wiki
 tags:
  - Projects
- - Radio
- - Electronics
- - Antennas
 ---
 
 ZS6BKW wire antenna
@@ -33,13 +30,11 @@ ladder-line section that determine the length of the wire elements. In a
 coming update to this page I'll put the mathematics behind this antenna,
 but for now, if you use 450 Ohm ladder-line, then the wire elements need
 to be 13.75 meters long for a total element length of 27.5 meters.
-![centre|thumb|754px|Cartoon sketch of the ZS6BKW antenna with
-dimensions for 450 Ohm
-feeder](ZS6BKW-antenna.png "fig:centre|thumb|754px|Cartoon sketch of the ZS6BKW antenna with dimensions for 450 Ohm feeder")
+<img src="ZS6BKW-antenna.png" title="fig:ZS6BKW-antenna.png" alt="ZS6BKW-antenna.png" width="754" />
 
   
 **The construction**  
-<img src="20120323_134031.jpg" title="fig:The centre of the antenna is made from a plastic chopping board" alt="The centre of the antenna is made from a plastic chopping board" width="300" />
+<img src="20120323_134031.jpg" title="fig:20120323_134031.jpg" alt="20120323_134031.jpg" width="300" />
 A semi-flexible plastic chopping board was purchased and cut up and
 drilled to make a strong centre piece for the antenna.  
 The feeder is clamped securely between two sections of chopping board,
@@ -50,7 +45,10 @@ good mechanical stability - this thing will be anything up to 80 feet in
 the air in strong winds, hot sun and freezing conditions; quite possibly
 all three simultaneously on a typical British summer day.
 
-<img src="450_ohm_feeder.jpg" title="fig:The 450 Ohm ladder feeder used for the matching section of the antenna" alt="The 450 Ohm ladder feeder used for the matching section of the antenna" width="300" />
+<img src="450_ohm_feeder.jpg" title="fig:450_ohm_feeder.jpg" alt="450_ohm_feeder.jpg" width="300" />  
+  
+  
+  
 The feeder was purchased from [Moonraker UK](http://www.moonraker.eu),
 it is strong copper clad steel wire in tough ABS plastic, with window
 cutouts to reduce wind loading. I've used the same feeder at home for
@@ -58,13 +56,18 @@ the same type of antenna for over two years with excellent results.
 
 At this point there should be a photograph of the constructed centre
 piece with wires and feeder attached, but I forgot to take one.  
----- **Results**  
-<img src="Bunker_Screen-1-30.png" title="fig:VSWR Measurements from 1 to 30 MHz" alt="VSWR Measurements from 1 to 30 MHz" width="800" />
+
+------------------------------------------------------------------------
+
+**Results**  
 Once the antenna was constructed it was hoisted into place, with one end
 up at about 80 feet above ground , the other at about 12 feet above
 ground with the feeder hanging directly down. This sloping configuration
 isn't ideal for this type of antenna, but was the best we could manage,
 keeping feeders and elements reasonable distances from the metal tower.
+
+  
+<img src="Bunker_Screen-1-30.png" title="fig:Bunker_Screen-1-30.png" alt="Bunker_Screen-1-30.png" width="800" />
 
 Measurements of VSWR and return loss were made with an SDR-KITS Vector
 Network Analyser. The VSWR trace shown displays dips in the VSWR
@@ -76,3 +79,5 @@ At construction time, the feeder was cut generously, when time allows I
 shall return to the bunker and trim the feeder length by a inches at a
 time while measuring the VSWR again. This should enable a better match
 to 50 Ohms in the sections of the amateur bands we prefer.
+
+<Category:Radio> <Category:Electronics> <Category:Antennas>

@@ -6,25 +6,31 @@
 
 <br> '''The construction'''<br> [[Image:20120323 134031.jpg|thumb|left|300px]] A semi-flexible plastic chopping board was purchased and cut up and drilled to make a strong centre piece for the antenna. <br>The feeder is clamped securely between two sections of chopping board, the arms of the antenna are woven though the smaller holes in the crosspiece of the centre and then joined to the feeder via soldering. The aim is to get a good electrical connection, while also providing good mechanical stability - this thing will be anything up to 80 feet in the air in strong winds, hot sun and freezing conditions; quite possibly all three simultaneously on a typical British summer day. 
 
-[[Image:450 ohm feeder.jpg|thumb|left|300px]] <br>
+[[Image:450 ohm feeder.jpg|thumb|left|300px]] <br> 
 
-<br>
+<br> 
 
-<br>
+<br> 
 
-<br>
+<br> 
 
 The feeder was purchased from [http://www.moonraker.eu Moonraker UK], it is strong copper clad steel wire in tough ABS plastic, with window cutouts to reduce wind loading. I've used the same feeder at home for the same type of antenna for over two years with excellent results. 
 
 At this point there should be a photograph of the constructed centre piece with wires and feeder attached, but I forgot to take one. <br> 
 
+
+
+
+
+
+
 ----
 
-'''Results'''<br>
+'''Results'''<br> 
 
 Once the antenna was constructed it was hoisted into place, with one end up at about 80 feet above ground , the other at about 12 feet above ground with the feeder hanging directly down. This sloping configuration isn't ideal for this type of antenna, but was the best we could manage, keeping feeders and elements reasonable distances from the metal tower. 
 
-<br> [[Image:Bunker Screen-1-30.png|thumb|center|800px]]
+<br> [[Image:Bunker Screen-1-30.png|thumb|center|800px]] 
 
 Measurements of VSWR and return loss were made with an SDR-KITS Vector Network Analyser. The VSWR trace shown displays dips in the VSWR corresponding to the amateur bands and other non-amateur bands. As yet this antenna is not optimised, the VSWR should be rather better than measured, however a decent ATU has no problems tuning from 80m to 10m. 
 

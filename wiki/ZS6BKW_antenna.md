@@ -56,9 +56,13 @@ the same type of antenna for over two years with excellent results.
 
 At this point there should be a photograph of the constructed centre
 piece with wires and feeder attached, but I forgot to take one.  
+  
+  
+  
 
 ------------------------------------------------------------------------
 
+  
 **Results**  
 Once the antenna was constructed it was hoisted into place, with one end
 up at about 80 feet above ground , the other at about 12 feet above

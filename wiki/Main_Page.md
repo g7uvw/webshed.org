@@ -6,7 +6,8 @@ layout: wiki
 
 \_\_NOTOC\_\_
 
-#### David Mills's Internet Shed
+David Mills's Internet Shed
+===========================
 
 Welcome to the webshed One of [my](/wiki/About_Me "wikilink") homes on the
 internet.
@@ -21,8 +22,8 @@ callsign is [G7UVW](/wiki/G7UVW "wikilink").
   
 
   
-Featured projects and articles
-==============================
+Recent projects and articles
+----------------------------
 
 Some of the more recent things I've been working on and documenting here
 on webshed. From photography to electronics via wine and cider making,

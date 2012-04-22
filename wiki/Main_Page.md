@@ -49,4 +49,73 @@ callsign is [G7UVW](/wiki/G7UVW "wikilink").
 </tbody>
 </table>
 
+<table
+ style="text-align: left; width: 60%; background-color: rgb(230, 242, 255);"
+ border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td colspan="2" rowspan="1"
+ align="undefined" valign="undefined">
+<h1>
+Featured projects and articles
+
+</h1>
+`     `  
+`Some of the more recent things I've been working on and documenting`
+
+here on webshed. From photography to electronics via wine and cider
+making, I've a wide range of interests. Mature projects and other
+projects not actively being worked on at the moment are listed in the
+Projects Category in the menu bar on each page.
+
+</td>
+</tr>
+<tr>
+<td align="undefined"
+ valign="undefined">
+== Electronics  ==  
+  
+\*[Simple iPod FM transmitter](/wiki/Simple_iPod_Tx "wikilink")  
+\*[A mercury tuned oscillator (permeability tuned
+oscillator)](/wiki/Mercury_PTO "wikilink")  
+\*[Equivalent series resistance meter](/wiki/ESR_meter "wikilink")  
+\*[Making a cheap Chinese 1.8" TFT LCD module
+work](18tftbreakout "wikilink")  
+  
+
+</td>
+<td align="undefined"
+ valign="undefined">
+== Radio  ==  
+  
+\*[ZS6BKW Wire antenna](/wiki/ZS6BKW_antenna "wikilink")  
+\*[Kelvedon Hatch Secret Nuclear Bunker amateur radio
+station](/wiki/GB0SNB "wikilink")  
+\*[Using a FUNcube Dongle SDR reciever under
+Linux](/wiki/FUNcube-Dongle-Linux "wikilink")  
+\*[144 MHz QRP QRSS transmitter](/wiki/QRSS_2m "wikilink")  
+\*[Yaseu FT290R Audio Fix](/wiki/FT290-Audio "wikilink")  
+\*[80m band RX using only PNP transistors](/wiki/PNP-80 "wikilink")  
+
+</td>
+</tr>
+<tr>
+<td align="undefined"
+ valign="undefined">
+== Photography  ==  
+  
+\*[A long term pin-hole photography project](/wiki/Solargraphy "wikilink")  
+
+</td>
+<td align="undefined"
+ valign="undefined">
+== Useful Information  ==  
+  
+\*Some information on various [TOKO Coils](/wiki/TOKO_Coils "wikilink") and
+transformers.
+
+</td>
+</tr>
+</tbody>
+</table>
 

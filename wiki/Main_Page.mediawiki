@@ -1,6 +1,6 @@
 __NOTOC__ 
 
-==== David Mills's Internet Shed ====
+==== David Mills's Internet Shed  ====
 
 Welcome to webshed.org. One of [[About Me|my]] homes on the internet. 
 
@@ -37,3 +37,59 @@ Friends &amp; family that have ended up here are probably lost, anyone looking f
 *Some information on various [[TOKO Coils]] and transformers.
 
 |}
+
+<table
+ style="text-align: left; width: 60%; background-color: rgb(230, 242, 255);"
+ border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td colspan="2" rowspan="1"
+ align="undefined" valign="undefined">
+      <h1>Featured
+projects and
+articles</h1>
+      <br>
+Some of the more recent things I've been working on and documenting
+here on webshed. From photography to electronics via wine and cider
+making, I've a wide range of interests. Mature projects and other
+projects not actively being worked on at the moment are listed in the
+Projects Category in the menu bar on each page.</td>
+    </tr>
+    <tr>
+      <td align="undefined"
+ valign="undefined">== Electronics&nbsp; ==<br>
+      <br>
+*[[Simple iPod Tx|Simple iPod FM transmitter]] <br>
+*[[Mercury PTO|A mercury tuned oscillator (permeability tuned
+oscillator)]] <br>
+*[[ESR meter|Equivalent series resistance meter]] <br>
+*[[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module
+work]]<br>
+      <br>
+      </td>
+      <td align="undefined"
+ valign="undefined">== Radio&nbsp; ==<br>
+      <br>
+*[[ZS6BKW antenna|ZS6BKW Wire antenna]] <br>
+*[[GB0SNB|Kelvedon Hatch Secret Nuclear Bunker amateur radio station]] <br>
+*[[FUNcube-Dongle-Linux|Using a FUNcube Dongle SDR reciever under
+Linux]] <br>
+*[[QRSS 2m|144 MHz QRP QRSS transmitter]] <br>
+*[[FT290-Audio|Yaseu FT290R Audio Fix]] <br>
+*[[PNP-80|80m band RX using only PNP
+transistors]]<br>
+      </td>
+    </tr>
+    <tr>
+      <td align="undefined"
+ valign="undefined">== Photography&nbsp; ==<br>
+      <br>
+*[[Solargraphy|A long term pin-hole photography project]]<br>
+      </td>
+      <td align="undefined"
+ valign="undefined">== Useful Information&nbsp; ==<br>
+      <br>
+*Some information on various [[TOKO Coils]] and transformers.</td>
+    </tr>
+  </tbody>
+</table>

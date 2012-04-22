@@ -10,6 +10,13 @@ My recent papers and publications
 Some of my recent published work, I can only provide journal links here
 due to copyright of these publications being assigned to the publishers.
 
+2010
+----
+
+Zarbakhsh, A, Campana, M, Mills, D et al. (2010) . Structural studies of
+aliphatic substituted phthalocyanine-lipid multilayers. Langmuir vol.
+26, (19) 15383-15387. 10.1021/la102876r
+
 2007
 ----
 

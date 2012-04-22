@@ -1,56 +1,56 @@
-__NOTOC__
-====David Mills's Internet Shed====
+__NOTOC__ 
 
-Welcome to webshed.org.  One of [[About Me|my]] homes on the internet.
+==== David Mills's Internet Shed ====
 
-Friends & family that have ended up here are probably lost, anyone looking for my photos probably wants to be at [http://www.flickr.com/photos/dtl/ Flickr] instead. Academic visitors are directed to my [[Research_Interests |research pages.]] Radio amateurs may be interested in my [[Ham_Radio|Ham Radio]] and [[:Category:Radio|Radio Projects]] pages. My radio callsign is [[G7UVW]]. 
-<br>
-<br>
-{|  style="width: 80%;padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" valign="top" border="1" cellpadding="2" cellspacing="2"  align="center"
-|  colspan="2" rowspan="1" valign="undefined" | <span style="font-size:16pt">Featured projects and articles</span><br><br><div style="text-align: left;">Some of the more recent things I've been working on and documenting here on webshed. From photography to electronics via wine and cider making, I've a wide range of interests. Mature projects and other projects not actively being worked on at the moment are listed in the [[:Category:Projects| Projects Category]] in the menu bar on each page.<br></div>
-|- 
-| align="undefined" valign="undefined" | 
-== Electronics ==
-* [[Simple_iPod_Tx|Simple iPod FM transmitter]]
-* [[Mercury_PTO|A mercury tuned oscillator (permeability tuned oscillator)]]
-* [[ESR_meter|Equivalent series resistance meter]]
-* [[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module work]]<br><br>
+Welcome to webshed.org. One of [[About Me|my]] homes on the internet. 
 
-== Photography ==
-* [[Solargraphy|A long term pin-hole photography project]]
-|  align="undefined" valign="undefined" | 
+Friends &amp; family that have ended up here are probably lost, anyone looking for my photos probably wants to be at [http://www.flickr.com/photos/dtl/ Flickr] instead. Academic visitors are directed to my [[Research Interests|research pages.]] Radio amateurs may be interested in my [[Ham Radio|Ham Radio]] and [[:Category:Radio|Radio Projects]] pages. My radio callsign is [[G7UVW]]. <br> <br> 
 
-== Radio ==
-* [[ZS6BKW_antenna| ZS6BKW Wire antenna]]
-* [[GB0SNB| Kelvedon Hatch Secret Nuclear Bunker amateur radio station]]
-* [[FUNcube-Dongle-Linux| Using a  FUNcube Dongle SDR reciever under Linux]] 
-* [[QRSS_2m|144 MHz QRP QRSS transmitter]]
-* [[FT290-Audio| Yaseu FT290R Audio Fix]]
-* [[PNP-80| 80m band RX using only PNP transistors]]<br><br>
+{| cellspacing="2" cellpadding="2" border="1" align="center" style="width: 80%;padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;"
+|-
+| valign="undefined" rowspan="1" colspan="2" | <span style="font-size:16pt">Featured projects and articles</span><br><br><div style="text-align: left;">Some of the more recent things I've been working on and documenting here on webshed. From photography to electronics via wine and cider making, I've a wide range of interests. Mature projects and other projects not actively being worked on at the moment are listed in the [[:Category:Projects|Projects Category]] in the menu bar on each page.<br></div>
+|-
+| valign="undefined" align="undefined" | 
+== Electronics  ==
 
-== Useful Information ==
-* Some information on various [[TOKO Coils]] and transformers.
+*[[Simple iPod Tx|Simple iPod FM transmitter]] 
+*[[Mercury PTO|A mercury tuned oscillator (permeability tuned oscillator)]] 
+*[[ESR meter|Equivalent series resistance meter]] 
+*[[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module work]]<br><br>
+
+== Photography  ==
+
+*[[Solargraphy|A long term pin-hole photography project]]
+
+| valign="undefined" align="undefined" | 
+== Radio  ==
+
+*[[ZS6BKW antenna|ZS6BKW Wire antenna]] 
+*[[GB0SNB|Kelvedon Hatch Secret Nuclear Bunker amateur radio station]] 
+*[[FUNcube-Dongle-Linux|Using a FUNcube Dongle SDR reciever under Linux]] 
+*[[QRSS 2m|144 MHz QRP QRSS transmitter]] 
+*[[FT290-Audio|Yaseu FT290R Audio Fix]] 
+*[[PNP-80|80m band RX using only PNP transistors]]<br><br>
+
+== Useful Information  ==
+
+*Some information on various [[TOKO Coils]] and transformers.
+
 |}
 
-
+<br> 
 
 {|
-| width="100%" style="padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" valign="top"|
-<span style="font-size:16pt">Some recent photographs</span>
-<br/>
-<br/>I take photographs from time to time, here are a few I'm particularly pleased with.
+|-
+| width="100%" border="1" align="center"  valign="top" style="padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;" | 
+<span style="font-size:16pt">Some recent photographs</span> <br> <br>I take photographs from time to time, here are a few I'm particularly pleased with. 
 
-<br style="clear: both" />'''Posts on a pier in Barking'''<br/>
-<flickr>481859844|-|frame|center|This photo was runner-up on the 2011 Thames21 photographic competition</flickr>
+<br>'''Posts on a pier in Barking'''<br> <flickr>481859844|-|frame|center|This photo was runner-up on the 2011 Thames21 photographic competition</flickr> 
 
-<br style="clear: both" />'''Cam 1 : 10:54 2011/01/09 : 20:10 2011/06/21'''<br/>
-<flickr>5857892496|-|frame|center|A Solargraph taken over 6-months in my garden</flickr>
+<br>'''Cam 1&nbsp;: 10:54 2011/01/09&nbsp;: 20:10 2011/06/21'''<br> <flickr>5857892496|-|frame|center|A Solargraph taken over 6-months in my garden</flickr> 
 
-<br style="clear: both" /><br/>'''Cam 3 : Exact time and date unknown, somewhere around early February 2011 : 2011/06/19''' 
-<flickr>5854384908|-|frame|center|Another Solargraph, the beer-can camera recording this scene was pointing out of a window towards Tower Bridge in London.</flickr>
-<br/>
+<br><br>'''Cam 3&nbsp;: Exact time and date unknown, somewhere around early February 2011&nbsp;: 2011/06/19''' <flickr>5854384908|-|frame|center|Another Solargraph, the beer-can camera recording this scene was pointing out of a window towards Tower Bridge in London.</flickr> <br> 
 
-[[Image:Look-small.jpg|center|]]
-<br>'''A grasshopper about to become lunch'''
-''Nikon D50 / Nikon 18-55mm ''
+[[Image:Look-small.jpg|center]] <br>'''A grasshopper about to become lunch''' ''Nikon D50 / Nikon 18-55mm '' 
+
 |}

@@ -49,30 +49,4 @@ callsign is [G7UVW](/wiki/G7UVW "wikilink").
 </tbody>
 </table>
 
-  
-
-<table style="width:10%;">
-<colgroup>
-<col width="10%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="center"><p><span style="font-size:16pt">Some recent photographs</span><br />
-<br />
-I take photographs from time to time, here are a few I'm particularly pleased with.</p>
-<p><br />
-<strong>Posts on a pier in Barking</strong><br />
-<flickr>481859844|-|frame|center|This photo was runner-up on the 2011 Thames21 photographic competition</flickr></p>
-<p><br />
-<strong>Cam 1 : 10:54 2011/01/09 : 20:10 2011/06/21</strong><br />
-<flickr>5857892496|-|frame|center|A Solargraph taken over 6-months in my garden</flickr></p>
-<p><br />
-<br />
-<strong>Cam 3 : Exact time and date unknown, somewhere around early February 2011 : 2011/06/19</strong> <flickr>5854384908|-|frame|center|Another Solargraph, the beer-can camera recording this scene was pointing out of a window towards Tower Bridge in London.</flickr><br />
-<img src="Look-small.jpg" title="fig:Look-small.jpg" alt="Look-small.jpg" /><br />
-<strong>A grasshopper about to become lunch</strong> ''Nikon D50 / Nikon 18-55mm ''</p></td>
-</tr>
-</tbody>
-</table>
-
 

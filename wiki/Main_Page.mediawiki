@@ -2,27 +2,23 @@ __NOTOC__
 
 ==== David Mills's Internet Shed  ====
 
-Welcome to webshed.org. One of [[About Me|my]] homes on the internet. 
+Welcome to the webshed One of [[About Me|my]] homes on the internet. 
 
 Friends &amp; family that have ended up here are probably lost, anyone looking for my photos probably wants to be at [http://www.flickr.com/photos/dtl/ Flickr] instead. Academic visitors are directed to my [[Research Interests|research pages.]] Radio amateurs may be interested in my [[Ham Radio|Ham Radio]] and [[:Category:Radio|Radio Projects]] pages. My radio callsign is [[G7UVW]]. <br> <br> 
 
-{| cellspacing="2" cellpadding="2" border="1" align="center" style="width: 80%;padding:1em 1em 1em 1em; border:1px solid #A3B1BF; background-color:#E6F2FF;"
-|-
-| valign="undefined" colspan="2" rowspan="1" | <span style="font-size:16pt">Featured projects and articles</span><br><br><div style="text-align: left;">Some of the more recent things I've been working on and documenting here on webshed. From photography to electronics via wine and cider making, I've a wide range of interests. Mature projects and other projects not actively being worked on at the moment are listed in the [[:Category:Projects|Projects Category]] in the menu bar on each page.<br></div>
-|-
-| valign="undefined" align="undefined" | 
+= <br> Featured projects and articles  =
+
+Some of the more recent things I've been working on and documenting here on webshed. From photography to electronics via wine and cider making, I've a wide range of interests. Mature projects and other projects not actively being worked on at the moment are listed in the [[:Category:Projects|Projects Category]] in the menu bar on each page.<br> 
+
 == Electronics  ==
 
 *[[Simple iPod Tx|Simple iPod FM transmitter]] 
 *[[Mercury PTO|A mercury tuned oscillator (permeability tuned oscillator)]] 
 *[[ESR meter|Equivalent series resistance meter]] 
-*[[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module work]]<br><br>
+*[[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module work]]
 
-== Photography  ==
+<br> 
 
-*[[Solargraphy|A long term pin-hole photography project]]
-
-| valign="undefined" align="undefined" | 
 == Radio  ==
 
 *[[ZS6BKW antenna|ZS6BKW Wire antenna]] 
@@ -32,8 +28,12 @@ Friends &amp; family that have ended up here are probably lost, anyone looking f
 *[[FT290-Audio|Yaseu FT290R Audio Fix]] 
 *[[PNP-80|80m band RX using only PNP transistors]]<br><br>
 
+== Photography  ==
+
+*[[Solargraphy|A long term pin-hole photography project]]
+
 == Useful Information  ==
 
 *Some information on various [[TOKO Coils]] and transformers.
 
-|}
+<br>

@@ -4,7 +4,7 @@ permalink: wiki/Main_Page/
 layout: wiki
 ---
 
-\_\_NOTOC\_\_
+\_\_NOTOC\_\_ \_\_NOTITLE\_\_
 
 David Mills's Internet Shed
 ===========================

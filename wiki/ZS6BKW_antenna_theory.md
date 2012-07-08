@@ -43,10 +43,24 @@ $$\\frac{\\partial}{\\partial x} I(x,t) =
 -C \\frac{\\partial}{\\partial t} V(x,t)$$
 
 It can be shown (but I'm not doing it here) that in the case of a
-sinusoidal signal on a transmission line of length *d* with
-characteristic impedance *Z*<sub>0</sub> terminated with a load
-impedance *Z*<sub>*L*</sub>, the input impedance *Z*<sub>*i**n*</sub> of
-the line is given by:
+sinusoidal signal on a transmission line of length
+<span class="texhtml">*d*</span> with characteristic impedance
+<span class="texhtml">*Z*<sub>0</sub></span> terminated with a load
+impedance <span class="texhtml">*Z*<sub>*L*</sub></span>, the input
+impedance <span class="texhtml">*Z*<sub>*i**'n***</sub></span>*'*of the
+line is given by: ''' ''
 
 $$Z\_{in}(d) = \\frac{Z\_L cos\\beta d + jZ\_0 sin \\beta d}{Z\_0 cos \\beta d + j Z\_L sin \\beta d}$$
- where <math>\\beta = \\frac{2\\pi}{\\lambda}
+
+where $\\beta = \\frac{2\\pi}{\\lambda}$
+
+**A simple example:**
+
+It is commonly known that a λ/4 (quarter-wave) length of feeder presents
+to the radio the same impedance as the antenna it is connected to,
+regardless of the feeder characteristic impedance. Using the the above
+equation for *Z*<sub>*i**n*</sub> we can plot the value of
+*Z*<sub>*i**n*</sub> vs feeder length for a simple monoband dipole.
+Taking λ to be 17m, <span class="texhtml">*Z*<sub>*L*</sub></span> = 73
+Ohm (assuming perfect ideal dipole) and
+<span class="texhtml">*Z*<sub>0</sub></span> = 450 Ohm

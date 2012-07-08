@@ -66,8 +66,8 @@ where $\\beta = \\frac{2\\pi}{\\lambda}$
 It is commonly known that a λ/2 (half-wave) length of feeder presents to
 the radio the same impedance as the antenna it is connected to,
 regardless of the feeder characteristic impedance. Using the the above
-equation for Z<sub>in</sub></span>we can plot the value of
-Z<sub>in</sub> vs feeder length for a simple monoband dipole.
+equation for Z<sub>in</sub> we can plot the value of Z<sub>in</sub> vs
+feeder length for a simple monoband dipole.
 
 We shall take λ to be 40m,
 <span class="texhtml">*Z*<sub>*L*</sub></span> = 73 Ohm (assuming

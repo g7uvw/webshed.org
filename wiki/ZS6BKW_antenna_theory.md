@@ -43,11 +43,11 @@ least a little maths. The Telegrapher's Equations describe the behaviour
 of voltages and current on a transmission line as a function of time and
 distance from the source (for a lossless line)
 
-$$\\frac{\\partial}{\\partial x} V(x,t) =
--L \\frac{\\partial}{\\partial t} I(x,t)$$
-
 $$\\frac{\\partial}{\\partial x} I(x,t) =
 -C \\frac{\\partial}{\\partial t} V(x,t)$$
+
+$$\\frac{\\partial}{\\partial x} V(x,t) =
+-L \\frac{\\partial}{\\partial t} I(x,t)$$
 
 It can be shown (but I'm not doing it here) that in the case of a
 sinusoidal signal on a transmission line of length

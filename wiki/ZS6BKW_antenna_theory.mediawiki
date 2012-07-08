@@ -19,14 +19,15 @@ How does a short length of open wire feeder manage this? Read on.
 Antenna design and analysis really requires mathematics, you can try to short cut the maths by experimentation, but you're never going to really develop anything new or any understanding of what's going on without at least a little maths. The Telegrapher's Equations describe the behaviour of voltages and current on a transmission line as a function of time and distance from the source (for a lossless line) 
 
 :<math>
+\frac{\partial}{\partial x} I(x,t) =
+-C \frac{\partial}{\partial t} V(x,t)
+</math>
+
+:<math>
 \frac{\partial}{\partial x} V(x,t) =
 -L \frac{\partial}{\partial t} I(x,t)
 </math>
 
-:<math>
-\frac{\partial}{\partial x} I(x,t) =
--C \frac{\partial}{\partial t} V(x,t)
-</math>
 
 It can be shown (but I'm not doing it here) that in the case of a sinusoidal signal on a transmission line of length <span class="texhtml">''d''</span> with characteristic impedance <span class="texhtml">''Z''<sub>0</sub></span> terminated with a load impedance <span class="texhtml">''Z''<sub>''L''</sub></span>, the input impedance <span class="texhtml">''Z''<sub>''i''''n'''''</sub></span>of the line is given by: 
 

@@ -71,5 +71,15 @@ perfect ideal dipole) and <span class="texhtml">*Z*<sub>0</sub></span> =
 ![](40mdipole-feeder.png "fig:40mdipole-feeder.png")
 ----------------------------------------------------
 
-  
+The plot clearly shows that when the feeder length is 20m, the impedance
+is 73 Ohm - just as is expected. We can also see that the plot is
+cyclical, we get the same impedance transference at 40m, 60m and 80m
+(though the last two are inferred, not shown). Inspecting the plot, we
+can also see that if the feeder length is 10m (lambda/4) the impedance
+drops to around zero - giving what is commonly known as a “current node”
+where you have to force essentially infinite current into the antenna to
+get any radiation. We can also pick our feeder length to give any
+impedance we like between 0 and 73 Ohms.
 
+TODO : Determine what happens to Inductive / Capacitive reactances in
+the antenna when transformed by the feedline.

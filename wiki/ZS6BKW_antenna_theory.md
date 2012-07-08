@@ -118,3 +118,5 @@ This corresponds to ~45:1 VSWR to a 50 Ohm source, obviously we need to
 transform this down. To simplify the graph, I'll only use the 7.1 MHz
 data - it's the middle of the European band, and the band is narrow
 enough that whatever works midband should be ok at the band edges too.
+
+<img src="Zs6bkw-40m.png" title="Zs6bkw-40m.png" alt="Zs6bkw-40m.png" width="600" height="400" />

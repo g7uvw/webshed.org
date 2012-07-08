@@ -14,6 +14,8 @@ integral part of the design. The feeder forms a transmission line
 transformer, matching the impedance of the antenna's feed point to that
 of the RF source.
 
+  
+
 The ZS6BKW multi-band antenna
 -----------------------------
 
@@ -25,6 +27,8 @@ or 12.2m of 450 Ohm open wire feeder. Good matching to a 50 Ohm RF
 source (SWR &lt; 2) is achieved on the following bands: 40, 20, 17, 12,
 10, and 6 meters. Use of an ATU allows 80m and 15m to be matched too.
 How does a short length of open wire feeder manage this? Read on.
+
+  
 
 Mathematics
 -----------
@@ -59,9 +63,10 @@ where $\\beta = \\frac{2\\pi}{\\lambda}$
 It is commonly known that a λ/2 (half-wave) length of feeder presents to
 the radio the same impedance as the antenna it is connected to,
 regardless of the feeder characteristic impedance. Using the the above
-equation for <span class="texhtml">*Z*<sub>*in*</sub></span> we can plot
-the value of <span class="texhtml">*Z*<sub>*in*</sub></span> vs feeder
-length for a simple monoband dipole.
+equation for <span class="texhtml">*Z*<sub>*i**'n***</sub></span>***we
+can plot the value of
+<span class="texhtml" />***<b>Z*<sub></sub>*i</b>''*'n* vs feeder length
+for a simple monoband dipole. '''
 
 We shall take λ to be 40m,
 <span class="texhtml">*Z*<sub>*L*</sub></span> = 73 Ohm (assuming
@@ -81,5 +86,35 @@ where you have to force essentially infinite current into the antenna to
 get any radiation. We can also pick our feeder length to give any
 impedance we like between 0 and 73 Ohms.
 
-TODO : Determine what happens to Inductive / Capacitive reactances in
+TODO : Determine what happens to Inductive / Capacitive reactances in
 the antenna when transformed by the feedline.
+
+The ZS6BKW analyzed
+===================
+
+To start analaysing this antenna we first need to know
+<span class="texhtml">*Z*<sub>*L*</sub></span> at the frequencies of
+interest. We can't just use 73 Ohm as in the simple 40m dipole example,
+because the dimensions of the ZS6BKW are not those of a simple dipole on
+any of the bands we are interested in. To avoid a lot of mathematics, I
+used CocoaNEC antenna modeling software to compute
+<span class="texhtml">*Z*<sub>*L*</sub></span>. The model assumes the
+antenna is 30 feet high, constructed from 2 mm<sup>2</sup> copper wire
+over a standard NEC ground simulation.
+
+40m
+---
+
+Running the model for the 40m (7 MHz) band, we get the following complex
+impedances at the feed point of the antennna:
+
+Frequency 7.000 MHz - Z: (213.460 + i 650.080)  
+Frequency 7.050 MHz - Z: (221.760 + i 670.960)  
+Frequency 7.100 MHz - Z: (230.400 + i 692.090)  
+Frequency 7.150 MHz - Z: (239.390 + i 713.470)  
+Frequency 7.200 MHz - Z: (248.750 + i 735.100
+
+This corresponds to ~45:1 VSWR to a 50 Ohm source, obviously we need to
+transform this down. To simplify the graph, I'll only use the 7.1 MHz
+data - it's the middle of the European band, and the band is narrow
+enough that whatever works midband should be ok at the band edges too.

@@ -19,8 +19,19 @@ The ZS6BKW multi-band antenna
 
 The ZS6BKW is the multiband antenna I use at home and at the Kelvedon
 Hatch secret nuclear bunker special even station - GB0SNB, so it is the
-one I will investigate a the operation of.
+one I will investigate a the operation of. The antenna is constructed
+from 27.5m of wire (2 x 13.75 elements) fed with either 13.3m of 300 Ohm
+or 12.2m of 450 Ohm open wire feeder. Good matching to a 50 Ohm RF
+source (SWR &lt; 2) is achieved on the following bands: 40, 20, 17, 12,
+10, and 6 meters. Use of an ATU allows 80m and 15m to be matched too.
+How does a short length of open wire feeder manage this? Read on.
 
-The ZS6BKW antenna is 27.5m of wire (2 x 13.75 elements) fed with either
-300 or 450 Ohm open wire feeder around 13m long. A common configuration
-uses 12.2m of 450 Ohm feeder
+Mathematics
+-----------
+
+Antenna design and analysis really requires mathematics, you can try to
+short cut the maths by experimentation, but you're never going to really
+develop anything new or any understanding of what's going on without at
+least a little maths. The Telegrapher's Equations describe the behaviour
+of voltages and current on a transmission line as a function of time and
+distance from the source.

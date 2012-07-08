@@ -48,4 +48,4 @@ sinusoidal signal on a transmission line with characteristic impedance
 input impedance *Z*<sub>*i**n*</sub> of the line is given by:
 
 $$Z\_{in}(d) = \\frac{Z\_L cos\\beta d + jZ\_0 sin \\beta d}{Z\_0 cos \\beta d + j Z\_L sin \\beta d}$$
-
+ where <math>\\beta = \\frac{2\\pi}{\\lambda}

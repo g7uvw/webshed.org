@@ -27,3 +27,4 @@ It can be shown (but I'm not doing it here) that in the case of a sinusoidal sig
 :<math>
 Z_{in}(d) = \frac{Z_L cos\beta d + jZ_0 sin \beta d}{Z_0 cos \beta d + j Z_L sin \beta d}
 </math>
+where <math>\beta = \frac{2\pi}{\lambda}

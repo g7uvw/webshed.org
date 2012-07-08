@@ -120,3 +120,7 @@ data - it's the middle of the European band, and the band is narrow
 enough that whatever works midband should be ok at the band edges too.
 
 <img src="Zs6bkw-40m.png" title="Zs6bkw-40m.png" alt="Zs6bkw-40m.png" width="600" height="400" />
+
+From the plot it is easy to see that we can get 50 Ohm impedance if we
+use a feeder of length either 7.5m or 12.5m. A current node can be seen
+with a feeder length of 10m.

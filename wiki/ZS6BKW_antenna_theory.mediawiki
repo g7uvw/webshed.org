@@ -58,4 +58,6 @@ Frequency 7.000 MHz - Z: (213.460 + i 650.080)<br>Frequency 7.050 MHz - Z: (221.
 
 This corresponds to ~45:1 VSWR to a 50 Ohm source, obviously we need to transform this down. To simplify the graph, I'll only use the 7.1 MHz data - it's the middle of the European band, and the band is narrow enough that whatever works midband should be ok at the band edges too. 
 
-[[Image:Zs6bkw-40m.png|thumb|600x400px]]
+[[Image:Zs6bkw-40m.png|thumb|left|600x400px]]
+
+From the plot it is easy to see that we can get 50 Ohm impedance if we use a feeder of length either 7.5m or 12.5m. A current node can be seen with a feeder length of 10m.

@@ -6,9 +6,13 @@ Wire antennas with open wire feeder matching stubs have interested me for a numb
 
 == The ZS6BKW multi-band antenna  ==
 
-The ZS6BKW is the multiband antenna I use at home and at the Kelvedon Hatch secret nuclear bunker special even station - GB0SNB, so it is the one I will investigate a the operation of. The antenna is constructed from 27.5m of wire (2 x 13.75 elements) fed with either 13.3m of 300 Ohm or 12.2m of 450 Ohm open wire feeder. Good matching to a 50 Ohm RF source (SWR &lt; 2) is achieved on the following bands: 40, 20, 17, 12, 10, and 6 meters. Use of an ATU allows 80m and 15m to be matched too. How does a short length of open wire feeder manage this? Read on. 
+The ZS6BKW is the multiband antenna I use at home and at the Kelvedon Hatch secret nuclear bunker special even station - GB0SNB, so it is the one I will investigate a the operation of. The antenna is constructed from 27.5m of wire (2 x 13.75 elements) fed with either 13.3m of 300 Ohm or 12.2m of 450 Ohm open wire feeder. 
 
-<br> 
+Good matching to a 50 Ohm RF source (SWR &lt; 2) is achieved on the following bands: 40, 20, 17, 12, 10, and 6 meters. Use of an ATU allows 80m and 15m to be matched too. 
+
+How does a short length of open wire feeder manage this? Read on. 
+
+<br>
 
 == Mathematics  ==
 

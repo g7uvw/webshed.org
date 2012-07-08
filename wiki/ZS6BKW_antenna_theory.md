@@ -112,7 +112,7 @@ Frequency 7.000 MHz - Z: (213.460 + i 650.080)
 Frequency 7.050 MHz - Z: (221.760 + i 670.960)  
 Frequency 7.100 MHz - Z: (230.400 + i 692.090)  
 Frequency 7.150 MHz - Z: (239.390 + i 713.470)  
-Frequency 7.200 MHz - Z: (248.750 + i 735.100
+Frequency 7.200 MHz - Z: (248.750 + i 735.100)
 
 This corresponds to ~45:1 VSWR to a 50 Ohm source, obviously we need to
 transform this down. To simplify the graph, I'll only use the 7.1 MHz

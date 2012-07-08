@@ -34,4 +34,18 @@ short cut the maths by experimentation, but you're never going to really
 develop anything new or any understanding of what's going on without at
 least a little maths. The Telegrapher's Equations describe the behaviour
 of voltages and current on a transmission line as a function of time and
-distance from the source.
+distance from the source (for a lossless line)
+
+$$\\frac{\\partial}{\\partial x} V(x,t) =
+-L \\frac{\\partial}{\\partial t} I(x,t)$$
+
+$$\\frac{\\partial}{\\partial x} I(x,t) =
+-C \\frac{\\partial}{\\partial t} V(x,t)$$
+
+It can be shown (but I'm not doing it here) that in the case of a
+sinusoidal signal on a transmission line with characteristic impedance
+*Z*<sub>0</sub> terminated with a load impedance *Z*<sub>*L*</sub>, the
+input impedance *Z*<sub>*i**n*</sub> of the line is given by:
+
+$$Z\_{in}(d) = \\frac{Z\_L cos\\beta d + jZ\_0 sin \\beta d}{Z\_0 cos \\beta d + j Z\_L sin \\beta d}$$
+

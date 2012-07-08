@@ -43,9 +43,10 @@ $$\\frac{\\partial}{\\partial x} I(x,t) =
 -C \\frac{\\partial}{\\partial t} V(x,t)$$
 
 It can be shown (but I'm not doing it here) that in the case of a
-sinusoidal signal on a transmission line with characteristic impedance
-*Z*<sub>0</sub> terminated with a load impedance *Z*<sub>*L*</sub>, the
-input impedance *Z*<sub>*i**n*</sub> of the line is given by:
+sinusoidal signal on a transmission line of length *d* with
+characteristic impedance *Z*<sub>0</sub> terminated with a load
+impedance *Z*<sub>*L*</sub>, the input impedance *Z*<sub>*i**n*</sub> of
+the line is given by:
 
 $$Z\_{in}(d) = \\frac{Z\_L cos\\beta d + jZ\_0 sin \\beta d}{Z\_0 cos \\beta d + j Z\_L sin \\beta d}$$
  where <math>\\beta = \\frac{2\\pi}{\\lambda}

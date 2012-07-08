@@ -22,7 +22,7 @@ The Telegrapher's Equations describe the behaviour of voltages and current on a 
 -C \frac{\partial}{\partial t} V(x,t)
 </math>
 
-It can be shown (but I'm not doing it here) that in the case of a sinusoidal signal on a transmission line with characteristic impedance <math>Z_0</math> terminated with a load impedance <math>Z_L</math>, the input impedance <math>Z_{in}</math> of the line is given by:
+It can be shown (but I'm not doing it here) that in the case of a sinusoidal signal on a transmission line of length <math>d</math> with characteristic impedance <math>Z_0</math> terminated with a load impedance <math>Z_L</math>, the input impedance <math>Z_{in}</math> of the line is given by:
 
 :<math>
 Z_{in}(d) = \frac{Z_L cos\beta d + jZ_0 sin \beta d}{Z_0 cos \beta d + j Z_L sin \beta d}

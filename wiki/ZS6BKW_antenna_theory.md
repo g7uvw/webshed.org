@@ -74,8 +74,7 @@ We shall take λ to be 40m,
 perfect ideal dipole) and <span class="texhtml">*Z*<sub>0</sub></span> =
 450 Ohm
 
-![](40mdipole-feeder.png "fig:40mdipole-feeder.png")
-----------------------------------------------------
+![`40mdipole-feeder.png`](40mdipole-feeder.png "40mdipole-feeder.png")
 
 The plot clearly shows that when the feeder length is 20m, the impedance
 is 73 Ohm - just as is expected. We can also see that the plot is

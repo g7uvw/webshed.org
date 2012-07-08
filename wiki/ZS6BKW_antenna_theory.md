@@ -124,3 +124,9 @@ enough that whatever works midband should be ok at the band edges too.
 From the plot it is easy to see that we can get 50 Ohm impedance if we
 use a feeder of length either 7.5m or 12.5m. A current node can be seen
 with a feeder length of 10m.
+
+In doing this analysis, I did not consider the complex part of the of
+the antenna feedpoint impedance. This is because I am not yet sure
+exactly what happens with regards to transformed complex impedance, and
+because the results I get by ignoring them correspond very well to the
+results measured in real world versions of this antenna.

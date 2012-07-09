@@ -54,8 +54,7 @@ sinusoidal signal on a transmission line of length
 <span class="texhtml">*d*</span> with characteristic impedance
 <span class="texhtml">*Z*<sub>0</sub></span> terminated with a load
 impedance <span class="texhtml">*Z*<sub>*L*</sub></span>, the input
-impedance <span class="texhtml">*Z*<sub>*i**'n***</sub></span>of the
-line is given by:
+impedance Z<sub>in</sub> of the line is given by:
 
 $$Z\_{in}(d) = \\frac{Z\_L cos\\beta d + jZ\_0 sin \\beta d}{Z\_0 cos \\beta d + j Z\_L sin \\beta d}$$
 

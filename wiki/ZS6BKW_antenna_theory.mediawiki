@@ -29,7 +29,7 @@ Antenna design and analysis really requires mathematics, you can try to short cu
 </math>
 
 
-It can be shown (but I'm not doing it here) that in the case of a sinusoidal signal on a transmission line of length <span class="texhtml">''d''</span> with characteristic impedance <span class="texhtml">''Z''<sub>0</sub></span> terminated with a load impedance <span class="texhtml">''Z''<sub>''L''</sub></span>, the input impedance <span class="texhtml">''Z''<sub>''i''''n'''''</sub></span>of the line is given by: 
+It can be shown (but I'm not doing it here) that in the case of a sinusoidal signal on a transmission line of length <span class="texhtml">''d''</span> with characteristic impedance <span class="texhtml">''Z''<sub>0</sub></span> terminated with a load impedance <span class="texhtml">''Z''<sub>''L''</sub></span>, the input impedance Z<sub>in</sub> of the line is given by: 
 
 :<math>
 Z_{in}(d) = \frac{Z_L cos\beta d + jZ_0 sin \beta d}{Z_0 cos \beta d + j Z_L sin \beta d}

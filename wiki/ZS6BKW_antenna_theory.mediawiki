@@ -53,8 +53,27 @@ TODO&nbsp;:&nbsp;Determine what happens to Inductive / Capacitive reactances in 
 
 = The ZS6BKW analyzed  =
 
-To start analaysing this antenna we first need to know <span class="texhtml">''Z''<sub>''L''</sub></span> at the frequencies of interest. We can't just use 73 Ohm as in the simple 40m dipole example, because the dimensions of the ZS6BKW are not those of a simple dipole on any of the bands we are interested in. To avoid a lot of mathematics, I used [http://www.w7ay.net/site/Applications/cocoaNEC/index.html CocoaNEC] antenna modeling software to compute <span class="texhtml">''Z''<sub>''L''</sub></span>. The model assumes the antenna is 30 feet high, constructed from 2 mm<sup>2</sup> copper wire over a standard NEC ground simulation. 
+To start analysing this antenna we first need to know <span class="texhtml">''Z''<sub>''L''</sub></span> at the frequencies of interest. We can't just use 73 Ohm as in the simple 40m dipole example, because the dimensions of the ZS6BKW are not those of a simple dipole on any of the bands we are interested in. To avoid a lot of mathematics, I used [http://www.w7ay.net/site/Applications/cocoaNEC/index.html CocoaNEC] antenna modeling software to compute <span class="texhtml">''Z''<sub>''L''</sub></span>. The model assumes the antenna is 30 feet high, constructed from 2 mm<sup>2</sup> copper wire over a standard NEC ground simulation. 
 
+This is the CocoaNEC code for a simple wire dipole with ZS6BKW&nbsp;dimensions:<br>
+<pre>model ( "dipole" )
+{
+real height, length ;
+element driven ;
+
+height = 30' ;
+length = 27.5/2 ;
+driven = wire( 0, -length, height, 0, length, height, #14, 21 ) ;
+voltageFeed( driven, 1.0, 0.0 ) ;
+
+setFrequency( 7.0 ) ;
+addFrequency( 7.05 ) ;
+addFrequency( 7.1 ) ;
+addFrequency( 7.15) ;
+addFrequency( 7.20) ;
+} 
+
+</pre> 
 == 40m  ==
 
 Running the model for the 40m (7 MHz) band, we get the following complex impedances at the feed point of the antennna: 

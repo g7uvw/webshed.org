@@ -91,7 +91,7 @@ the antenna when transformed by the feedline.
 The ZS6BKW analyzed
 ===================
 
-To start analaysing this antenna we first need to know
+To start analysing this antenna we first need to know
 <span class="texhtml">*Z*<sub>*L*</sub></span> at the frequencies of
 interest. We can't just use 73 Ohm as in the simple 40m dipole example,
 because the dimensions of the ZS6BKW are not those of a simple dipole on
@@ -102,6 +102,26 @@ antenna modeling software to compute
 <span class="texhtml">*Z*<sub>*L*</sub></span>. The model assumes the
 antenna is 30 feet high, constructed from 2 mm<sup>2</sup> copper wire
 over a standard NEC ground simulation.
+
+This is the CocoaNEC code for a simple wire dipole with
+ZS6BKW dimensions:  
+
+    model ( "dipole" )
+    {
+    real height, length ;
+    element driven ;
+
+    height = 30' ;
+    length = 27.5/2 ;
+    driven = wire( 0, -length, height, 0, length, height, #14, 21 ) ;
+    voltageFeed( driven, 1.0, 0.0 ) ;
+
+    setFrequency( 7.0 ) ;
+    addFrequency( 7.05 ) ;
+    addFrequency( 7.1 ) ;
+    addFrequency( 7.15) ;
+    addFrequency( 7.20) ;
+    } 
 
 40m
 ---

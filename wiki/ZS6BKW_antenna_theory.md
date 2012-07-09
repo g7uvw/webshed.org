@@ -96,7 +96,9 @@ To start analaysing this antenna we first need to know
 interest. We can't just use 73 Ohm as in the simple 40m dipole example,
 because the dimensions of the ZS6BKW are not those of a simple dipole on
 any of the bands we are interested in. To avoid a lot of mathematics, I
-used CocoaNEC antenna modeling software to compute
+used
+[CocoaNEC](http://www.w7ay.net/site/Applications/cocoaNEC/index.html)
+antenna modeling software to compute
 <span class="texhtml">*Z*<sub>*L*</sub></span>. The model assumes the
 antenna is 30 feet high, constructed from 2 mm<sup>2</sup> copper wire
 over a standard NEC ground simulation.

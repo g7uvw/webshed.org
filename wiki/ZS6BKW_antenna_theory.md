@@ -49,6 +49,7 @@ $$\\frac{\\partial}{\\partial x} I(x,t) =
 $$\\frac{\\partial}{\\partial x} V(x,t) =
 -L \\frac{\\partial}{\\partial t} I(x,t)$$
 
+  
 It can be shown (but I'm not doing it here) that in the case of a
 sinusoidal signal on a transmission line of length
 <span class="texhtml">*d*</span> with characteristic impedance
@@ -108,19 +109,19 @@ ZS6BKW dimensions:
 
     model ( "dipole" )
     {
-    real height, length ;
-    element driven ;
+    real height, length&nbsp;;
+    element driven&nbsp;;
 
-    height = 30' ;
-    length = 27.5/2 ;
-    driven = wire( 0, -length, height, 0, length, height, #14, 21 ) ;
-    voltageFeed( driven, 1.0, 0.0 ) ;
+    height = 30'&nbsp;;
+    length = 27.5/2&nbsp;;
+    driven = wire( 0, -length, height, 0, length, height, #14, 21 )&nbsp;;
+    voltageFeed( driven, 1.0, 0.0 )&nbsp;;
 
-    setFrequency( 7.0 ) ;
-    addFrequency( 7.05 ) ;
-    addFrequency( 7.1 ) ;
-    addFrequency( 7.15) ;
-    addFrequency( 7.20) ;
+    setFrequency( 7.0 )&nbsp;;
+    addFrequency( 7.05 )&nbsp;;
+    addFrequency( 7.1 )&nbsp;;
+    addFrequency( 7.15)&nbsp;;
+    addFrequency( 7.20)&nbsp;;
     } 
 
 40m
@@ -155,20 +156,40 @@ results measured in real world versions of this antenna.
 Other bands
 -----------
 
-1.80 MHz Z: (1.749 - j1863.800) 1.85 MHz Z: (1.824 - j1802.200) 1.90 MHz
-Z: (1.906 - j1743.500) 1.95 MHz Z: (1.997 - j1687.400) 3.50 MHz Z:
-(11.166 - j641.700) 3.55 MHz Z: (11.761 - j619.460) 3.60 MHz Z: (12.383
-- j597.570) 3.65 MHz Z: (13.033 - j576.020) 3.70 MHz Z: (13.710 -
-j554.790) 3.75 MHz Z: (14.417 - j533.870) 3.80 MHz Z: (15.153 -
-j513.230) 7.00 MHz Z: (213.460 + j650.080) 7.10 MHz Z: (230.400 +
-j692.090) 7.20 MHz Z: (248.750 + j735.100) 10.1 MHz Z: (3435.60 +
-j1707.300) 10.15 MHz Z: (3584.20 + j1604.500) 14.1 MHz Z: (165.200 -
-j741.720) 14.2 MHz Z: (153.960 - j693.450) 14.3 MHz Z: (141.110 -
-j630.290) 18.1 MHz Z: (241.660 + j550.500) 21.1 MHz Z: (2378.40 +
-j2141.700) 21.2 MHz Z: (2694.00 + j2126.700) 21.3 MHz Z: (3047.80 +
-j2056.500) 21.4 MHz Z: (3431.40 + j1910.000) 24.2 MHz Z: (337.690 -
-j1091.900) 28.1 MHz Z: (163.490 + j281.610) 28.2 MHz Z: (169.820 +
-j309.460) 28.5 MHz Z: (192.100 + j394.310) 29.0 MHz Z: (241.890 +
-j541.910) 29.5 MHz Z: (314.230 + j700.970) 50.0 MHz Z: (184.230 +
-j295.520) 50.1 MHz Z: (189.940 + j319.650) 50.2 MHz Z: (196.050 +
-j343.680) 50.3 MHz Z: (202.570 + j367.610)
+    1.80  MHz Z: (1.74900 - j1863.800) 
+    1.85  MHz Z: (1.82400 - j1802.200) 
+    1.90  MHz Z: (1.90600 - j1743.500) 
+    1.95  MHz Z: (1.99700 - j1687.400) 
+    3.50  MHz Z: (11.1660 - j641.700) 
+    3.55  MHz Z: (11.7610 - j619.460) 
+    3.60  MHz Z: (12.3830 - j597.570) 
+    3.65  MHz Z: (13.0330 - j576.020) 
+    3.70  MHz Z: (13.7100 - j554.790) 
+    3.75  MHz Z: (14.4170 - j533.870) 
+    3.80  MHz Z: (15.1530 - j513.230) 
+    7.00  MHz Z: (213.460 + j650.080) 
+    7.10  MHz Z: (230.400 + j692.090) 
+    7.20  MHz Z: (248.750 + j735.100) 
+    10.1  MHz Z: (3435.60 + j1707.300) 
+    10.15 MHz Z: (3584.20 + j1604.500) 
+    14.1  MHz Z: (165.200 - j741.720) 
+    14.2  MHz Z: (153.960 - j693.450) 
+    14.3  MHz Z: (141.110 - j630.290) 
+    18.1  MHz Z: (241.660 + j550.500) 
+    21.1  MHz Z: (2378.40 + j2141.700) 
+    21.2  MHz Z: (2694.00 + j2126.700) 
+    21.3  MHz Z: (3047.80 + j2056.500) 
+    21.4  MHz Z: (3431.40 + j1910.000) 
+    24.2  MHz Z: (337.690 - j1091.900) 
+    28.1  MHz Z: (163.490 + j281.610) 
+    28.2  MHz Z: (169.820 + j309.460) 
+    28.5  MHz Z: (192.100 + j394.310) 
+    29.0  MHz Z: (241.890 + j541.910) 
+    29.5  MHz Z: (314.230 + j700.970) 
+    50.0  MHz Z: (184.230 + j295.520) 
+    50.1  MHz Z: (189.940 + j319.650) 
+    50.2  MHz Z: (196.050 + j343.680) 
+    50.3  MHz Z: (202.570 + j367.610) 
+
+  
+

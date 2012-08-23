@@ -140,6 +140,9 @@ Wiring up & example code download
 <img src="Ardunio-dds.png" title="fig:Ardunio-dds.png" alt="Ardunio-dds.png" width="400" height="300" />
 The code assumes that Arduino pins 8,9,10 & 11 are connected to the DDS
 CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be
-taken from pin 21 of the DDS chip. An example project that just
-initialises the DDS and sets the output frequency to 10 MHz can be
-downloaded [here](/wiki/Media:Dds_test-120823a.zip "wikilink")
+taken from pin 21 of the DDS chip.  
+An example project that just initialises the DDS and sets the output
+frequency to 10 MHz can be downloaded
+[here](/wiki/Media:Dds_test-120823a.zip "wikilink"). Do what you want with the
+code except claim it as your own and try to prevent anyone else using
+it.

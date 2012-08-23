@@ -142,4 +142,4 @@ The code assumes that Arduino pins 8,9,10 & 11 are connected to the DDS
 CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be
 taken from pin 21 of the DDS chip. An example project that just
 initialises the DDS and sets the output frequency to 10 MHz can be
-downloaded ![here](Dds_test-120823a.zip "fig:here")
+downloaded [here](/wiki/Media:Dds_test-120823a.zip "wikilink")

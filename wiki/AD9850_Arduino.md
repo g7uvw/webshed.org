@@ -16,12 +16,12 @@ having an internal multiplier means that code written for the AD9851
 will not work directly on the AD9850 - the code will attempt to set
 registers that do not exist in the AD9850.
 
+<img src="Ebay-dds.png" title="Cheap AD9850 DDS module from eBay" alt="Cheap AD9850 DDS module from eBay" width="200" height="150" />
+
 A no-frills AD9850 DDS module can be obtained from eBay for around £4 at
 the time of writing (August 2012) and will produce a decent signal from
 a few Hz to over 30 MHz. A read of the datasheet provides all the
 information needed to drive the DDS chip and get some RF out.
-
-  
 
 Initialising and Resetting the AD9850
 -------------------------------------

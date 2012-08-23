@@ -115,4 +115,20 @@ using integer maths. In theory, integer maths should be slightly faster
 and more accurate as the required frequency increases, in practice I
 find either method fast enough and accurate enough up to 30MHz,
 frequency errors are due to the poor stability of the reference
-oscillator on the DDS module.
+oscillator on the DDS module. Calculating the turning word and writing
+it to the DDS module can them be wrapped up in a single function taking
+the required frequency as its sole parameter
+
+    void SetFrequency(unsigned long frequency)
+    {
+      unsigned long tuning_word = (frequency * pow(2, 32)) / DDS_CLOCK;
+      digitalWrite (LOAD, LOW); 
+
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word);
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 8);
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 16);
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 24);
+      shiftOut(DATA, CLOCK, LSBFIRST, 0x0);
+      
+      digitalWrite (LOAD, HIGH); 
+    }

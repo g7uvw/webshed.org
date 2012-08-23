@@ -2,6 +2,8 @@
 title: AD9850 Arduino
 permalink: wiki/AD9850_Arduino/
 layout: wiki
+tags:
+ - C++
 ---
 
 Using the Analog Devices AD9850 DDS with an Arduino board
@@ -147,3 +149,6 @@ frequency to 10 MHz can be downloaded
 [here](/wiki/Media:Dds_test-120823a.zip "wikilink"). Do what you want with the
 code except claim it as your own and try to prevent anyone else using
 it.
+
+<Category:Experiments> <Category:Projects> <Category:Radio>
+<Category:Arduino>

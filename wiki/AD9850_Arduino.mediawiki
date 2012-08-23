@@ -92,6 +92,9 @@ using integer maths. In theory, integer maths should be slightly faster and more
 }
 </pre> 
 == Wiring up &amp; example code download  ==
-[[Image:Ardunio-dds.png|border|right|400x300px]]
-The code assumes that Arduino pins 8,9,10 &amp; 11 are connected to the DDS CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be taken from pin 21 of the DDS chip.<br/><br/>
-An example project that just initialises the DDS and sets the output frequency to 10 MHz can be downloaded [[Media:Dds_test-120823a.zip|here]]. Do what you want with the code except claim it as your own and try to prevent anyone else using it.
+
+[[Image:Ardunio-dds.png|border|right|400x300px]] The code assumes that Arduino pins 8,9,10 &amp; 11 are connected to the DDS CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be taken from pin 21 of the DDS chip.<br><br> An example project that just initialises the DDS and sets the output frequency to 10 MHz can be downloaded [[Media:Dds_test-120823a.zip|here]]. Do what you want with the code except claim it as your own and try to prevent anyone else using it. 
+
+
+
+[[Category:C++]][[Category:Experiments]][[Category:Projects]][[Category:Radio]][[Category:Arduino]]

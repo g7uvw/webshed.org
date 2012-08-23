@@ -1,6 +1,6 @@
 == Using the Analog Devices AD9850 DDS with an Arduino board  ==
-[[Image:Ebay-dds.png|thumb|200x150px|right|Cheap AD9850 DDS module from eBay]]
-There is a fair bit of information regarding the AD9851 DDS (as used on the NJQRP DDS-60 daughter card) chip with Microchip PICs and Arduino development boards, but not much for the slightly cheaper and lower spec (but still good) AD9850. The AD9850 has no internal reference clock multiplier, so it requires a faster reference clock then the AD9851. Not having an internal multiplier means that code written for the AD9851 will not work directly on the AD9850 - the code will attempt to set registers that do not exist in the AD9850. 
+
+[[Image:Ebay-dds.png|thumb|right|200x150px]] There is a fair bit of information regarding the AD9851 DDS (as used on the NJQRP DDS-60 daughter card) chip with Microchip PICs and Arduino development boards, but not much for the slightly cheaper and lower spec (but still good) AD9850. The AD9850 has no internal reference clock multiplier, so it requires a faster reference clock then the AD9851. Not having an internal multiplier means that code written for the AD9851 will not work directly on the AD9850 - the code will attempt to set registers that do not exist in the AD9850. 
 
 A no-frills AD9850 DDS module can be obtained from eBay for around £4 at the time of writing (August 2012) and will produce a decent signal from a few Hz to over 30 MHz. A read of the datasheet provides all the information needed to drive the DDS chip and get some RF out. 
 
@@ -70,27 +70,27 @@ All so far so simple, pretty much the same as you'd see with AD9851 drivers. I'm
 
 == Setting the output frequency  ==
 
-The output frequency is set by calculating a 40-bit turning word and loading it to the DDS, either via a 3-wire serial bus or an 8-bit parallel bus. The 40-bit word is comprised of 32-bits of phase and frequency information and a further 5-bit that set specific operating (and factory test) modes of the DDS; it is these 5-bits that cause problems when trying to use AD9851 code with the AD9850. For simplicity, I set the each of the 5 mode bits to 0. The datasheet gives the following equation to calculate the turning word
+The output frequency is set by calculating a 40-bit turning word and loading it to the DDS, either via a 3-wire serial bus or an 8-bit parallel bus. The 40-bit word is comprised of 32-bits of phase and frequency information and a further 8-bit, 3-bits that set specific operating (and factory test) modes of the DDS - it is these 3-bits that cause problems when trying to use AD9851 code with the AD9850- and 5-bits of phase information. For simplicity, I set all of these bits to 0. The datasheet gives the following equation to calculate the turning word 
 
-[[Image:Dds-math.png|center]]<br>
-This translates into C++ as
-<pre>unsigned long tuning_word = (frequency * pow(2, 32)) / DDS_CLOCK;</pre>
-using floating point maths. Or as
-<pre>Unsigned long tuning_word = (frequency * 4294967296LL) / DDS_CLOCK;</pre>
-using integer maths. In theory, integer maths should be slightly faster and more accurate as the required frequency increases, in practice I find either method fast enough and accurate enough up to 30MHz, frequency errors are due to the poor stability of the reference oscillator on the DDS module.
-Calculating the turning word and writing it to the DDS module can them be wrapped up in a single function taking the required frequency as its sole parameter
-<pre>
-void SetFrequency(unsigned long frequency)
+[[Image:Dds-math.png|center]]<br> This translates into C++ as 
+<pre>unsigned long tuning_word = (frequency * pow(2, 32)) / DDS_CLOCK;</pre> 
+using floating point maths. Or as 
+<pre>Unsigned long tuning_word = (frequency * 4294967296LL) / DDS_CLOCK;</pre> 
+using integer maths. In theory, integer maths should be slightly faster and more accurate as the required frequency increases, in practice I find either method fast enough and accurate enough up to 30MHz, frequency errors are due to the poor stability of the reference oscillator on the DDS module. Calculating the turning word and writing it to the DDS module can them be wrapped up in a single function taking the required frequency as its sole parameter 
+<pre>void SetFrequency(unsigned long frequency)
 {
   unsigned long tuning_word = (frequency * pow(2, 32)) / DDS_CLOCK;
   digitalWrite (LOAD, LOW); 
 
   shiftOut(DATA, CLOCK, LSBFIRST, tuning_word);
-  shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 8);
-  shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 16);
-  shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 24);
+  shiftOut(DATA, CLOCK, LSBFIRST, tuning_word &gt;&gt; 8);
+  shiftOut(DATA, CLOCK, LSBFIRST, tuning_word &gt;&gt; 16);
+  shiftOut(DATA, CLOCK, LSBFIRST, tuning_word &gt;&gt; 24);
   shiftOut(DATA, CLOCK, LSBFIRST, 0x0);
   
   digitalWrite (LOAD, HIGH); 
 }
-</pre>
+</pre> 
+== Wiring up &amp; example code download  ==
+[[Image:Ardunio-dds.png|border|right|400x300px]]
+The code assumes that Arduino pins 8,9,10 &amp; 11 are connected to the DDS CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be taken from pin 21 of the DDS chip.

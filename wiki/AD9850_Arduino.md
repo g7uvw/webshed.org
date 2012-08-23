@@ -7,7 +7,7 @@ layout: wiki
 Using the Analog Devices AD9850 DDS with an Arduino board
 ---------------------------------------------------------
 
-<img src="Ebay-dds.png" title="fig:Cheap AD9850 DDS module from eBay" alt="Cheap AD9850 DDS module from eBay" width="200" height="150" />
+<img src="Ebay-dds.png" title="fig:Ebay-dds.png" alt="Ebay-dds.png" width="200" height="150" />
 There is a fair bit of information regarding the AD9851 DDS (as used on
 the NJQRP DDS-60 daughter card) chip with Microchip PICs and Arduino
 development boards, but not much for the slightly cheaper and lower spec
@@ -96,11 +96,12 @@ Setting the output frequency
 The output frequency is set by calculating a 40-bit turning word and
 loading it to the DDS, either via a 3-wire serial bus or an 8-bit
 parallel bus. The 40-bit word is comprised of 32-bits of phase and
-frequency information and a further 5-bit that set specific operating
-(and factory test) modes of the DDS; it is these 5-bits that cause
-problems when trying to use AD9851 code with the AD9850. For simplicity,
-I set the each of the 5 mode bits to 0. The datasheet gives the
-following equation to calculate the turning word
+frequency information and a further 8-bit, 3-bits that set specific
+operating (and factory test) modes of the DDS - it is these 3-bits that
+cause problems when trying to use AD9851 code with the AD9850- and
+5-bits of phase information. For simplicity, I set all of these bits to
+0. The datasheet gives the following equation to calculate the turning
+word
 
 ![](Dds-math.png "fig:Dds-math.png")  
 This translates into C++ as
@@ -125,10 +126,18 @@ the required frequency as its sole parameter
       digitalWrite (LOAD, LOW); 
 
       shiftOut(DATA, CLOCK, LSBFIRST, tuning_word);
-      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 8);
-      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 16);
-      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word >> 24);
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word &gt;&gt; 8);
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word &gt;&gt; 16);
+      shiftOut(DATA, CLOCK, LSBFIRST, tuning_word &gt;&gt; 24);
       shiftOut(DATA, CLOCK, LSBFIRST, 0x0);
       
       digitalWrite (LOAD, HIGH); 
     }
+
+Wiring up & example code download
+---------------------------------
+
+<img src="Ardunio-dds.png" title="fig:Ardunio-dds.png" alt="Ardunio-dds.png" width="400" height="300" />
+The code assumes that Arduino pins 8,9,10 & 11 are connected to the DDS
+CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be
+taken from pin 21 of the DDS chip.

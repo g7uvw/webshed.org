@@ -98,5 +98,21 @@ loading it to the DDS, either via a 3-wire serial bus or an 8-bit
 parallel bus. The 40-bit word is comprised of 32-bits of phase and
 frequency information and a further 5-bit that set specific operating
 (and factory test) modes of the DDS; it is these 5-bits that cause
-problems when trying to use AD9851 code with the AD9850. For simplicty,
-I set the each of the 5 mode bits to 0.
+problems when trying to use AD9851 code with the AD9850. For simplicity,
+I set the each of the 5 mode bits to 0. The datasheet gives the
+following equation to calculate the turning word
+
+![](Dds-math.png "fig:Dds-math.png")  
+This translates into C++ as
+
+    unsigned long tuning_word = (frequency * pow(2, 32)) / DDS_CLOCK;
+
+using floating point maths. Or as
+
+    Unsigned long tuning_word = (frequency * 4294967296LL) / DDS_CLOCK;
+
+using integer maths. In theory, integer maths should be slightly faster
+and more accurate as the required frequency increases, in practice I
+find either method fast enough and accurate enough up to 30MHz,
+frequency errors are due to the poor stability of the reference
+oscillator on the DDS module.

@@ -94,3 +94,4 @@ using integer maths. In theory, integer maths should be slightly faster and more
 == Wiring up &amp; example code download  ==
 [[Image:Ardunio-dds.png|border|right|400x300px]]
 The code assumes that Arduino pins 8,9,10 &amp; 11 are connected to the DDS CLOCK, DATA, LOAD and RESET lines respectively. Signal output can be taken from pin 21 of the DDS chip.
+An example project that just initialises the DDS and sets the output frequency to 10 MHz can be downloaded [[File:Dds_test-120823a.zip]]here

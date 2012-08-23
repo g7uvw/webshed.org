@@ -7,6 +7,7 @@ layout: wiki
 Using the Analog Devices AD9850 DDS with an Arduino board
 ---------------------------------------------------------
 
+<img src="Ebay-dds.png" title="fig:Cheap AD9850 DDS module from eBay" alt="Cheap AD9850 DDS module from eBay" width="200" height="150" />
 There is a fair bit of information regarding the AD9851 DDS (as used on
 the NJQRP DDS-60 daughter card) chip with Microchip PICs and Arduino
 development boards, but not much for the slightly cheaper and lower spec
@@ -15,8 +16,6 @@ multiplier, so it requires a faster reference clock then the AD9851. Not
 having an internal multiplier means that code written for the AD9851
 will not work directly on the AD9850 - the code will attempt to set
 registers that do not exist in the AD9850.
-
-<img src="Ebay-dds.png" title="Cheap AD9850 DDS module from eBay" alt="Cheap AD9850 DDS module from eBay" width="200" height="150" />
 
 A no-frills AD9850 DDS module can be obtained from eBay for around £4 at
 the time of writing (August 2012) and will produce a decent signal from
@@ -88,15 +87,16 @@ development board uses.
 
 All so far so simple, pretty much the same as you'd see with AD9851
 drivers. I'm still not sure why the datasheet suggests you only need to
-pulse RESET and CLOCK to reset the chip, when I find in practice I need
-to pulse the LOAD line too.  
+pulse RESET and CLOCK to reset the chip, when I find in practice I need
+to pulse the LOAD line too.  
 
 Setting the output frequency
 ----------------------------
 
 The output frequency is set by calculating a 40-bit turning word and
 loading it to the DDS, either via a 3-wire serial bus or an 8-bit
-parallel bus.
-
-Using the Analog Devices AD9850 DDS with an Arduino board
----------------------------------------------------------
+parallel bus. The 40-bit word is comprised of 32-bits of phase and
+frequency information and a further 5-bit that set specific operating
+(and factory test) modes of the DDS; it is these 5-bits that cause
+problems when trying to use AD9851 code with the AD9850. For simplicty,
+I set the each of the 5 mode bits to 0.

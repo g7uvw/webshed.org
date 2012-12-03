@@ -1,5 +1,15 @@
-== How to use the DS1820 / DS18s20 / DS18b20 with the Raspberry PI ==
-So you've got a shiny new rPI and want to connect it to some sensors - the 1-wire bus is a good way to do so. A bunch of devices can be connected to just three pins on the rPI GPIO connector.
+== How to use the DS1820 / DS18s20 / DS18b20 with the Raspberry PI  ==
 
-For this example I'm connecting a temperature sensor, a DS1820 (but the configuration is identical for other parts in the same series: DS18s20 & DS18b20) to the +3.3V, GND and GPIO-4 pins on the GPIO connector.
-[[File:GPIOs.png|right|thumb|200px|Pinout of the Raspberry PI GPIO connector]]
+So you've got a shiny new rPI and want to connect it to some sensors - the 1-wire bus is a good way to do so. A bunch of devices can be connected to just three pins on the rPI GPIO connector. 
+
+For this example I'm connecting a temperature sensor, a DS1820 (but the configuration is identical for other parts in the same series: DS18s20 &amp; DS18b20). The DS1820 VDD and GND pins are connected to the rPI 3.3V and GND pins respectively. The DQ pin is connected to GPIO-4, a 4k7 resistor connected between DQ and VDD is required to enable the sensor. <br>
+
+<br>
+
+I&nbsp;built my breakout interface directly onto a plastic pin header for testing purposes, but this is hardly the best way to do it.<br>
+
+<br>
+
+28 modprobe wire<br> 29 sudo modprobe wire<br> 31 sudo modprobe w1-therm<br> 55 modprobe w1-gpio<br> 56 sudo modprobe w1-gpio<br> 63 history |grep mod<br><br>
+
+[[Image:GPIOs.png|thumb|right|200px]] [[Image:DS1820.png|thumb|200px]]

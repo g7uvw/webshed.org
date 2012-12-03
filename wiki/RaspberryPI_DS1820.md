@@ -19,13 +19,19 @@ connected between DQ and VDD is required to enable the sensor.
   
 I built my breakout interface directly onto a plastic pin header for
 testing purposes, but this is hardly the best way to do it.  
+
+------------------------------------------------------------------------
+
+Commands:  
+-----------
+
+sudo modprobe wire  
+sudo modprobe w1-therm  
+ls /sys/bus/w1/devices/w1\_bus\_master1/  
   
-28 modprobe wire  
-29 sudo modprobe wire  
-31 sudo modprobe w1-therm  
-55 modprobe w1-gpio  
-56 sudo modprobe w1-gpio  
-63 history |grep mod  
+cat /sys/bus/w1/devices/w1\_bus\_master1/10-00080234149b/w1\_slave  
+34 00 4b 46 ff ff 0f 10 ad : crc=ad YES  
+34 00 4b 46 ff ff 0f 10 ad t=25812  
   
 <img src="GPIOs.png" title="fig:GPIOs.png" alt="GPIOs.png" width="200" />
 <img src="DS1820.png" title="fig:DS1820.png" alt="DS1820.png" width="200" />

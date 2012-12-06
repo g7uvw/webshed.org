@@ -32,21 +32,37 @@ work the same way (and offer more features and more precise temperature
 readings).  
 Software: The 1-Wire drivers are not loaded by default when the rPI
 boots. You can load them with the following commands from a command
-prompt sudo modprobe wire sudo modprobe w1-gpio sudo modprobe w1-therm
+prompt:  
+
+    pi@raspberrypi:~$ sudo modprobe wire
+
+    pi@raspberrypi:~$ sudo modprobe w1-gpio
+
+    pi@raspberrypi:~$ sudo modprobe w1-therm 
 
 Connect the sensor hardware to the rPI and check it is detected by
-seeing if a device is listed on the 1-Wire bus. pi@raspberrypi:~$ cat
-/sys/bus/w1/devices/w1\_bus\_master1/w1\_master\_slave\_count 1 This
-will print the number of sensors detected, 1 - for my hardware at the
-moment. You can get the sensor ID (a hexadecimal string stored in ROM on
-the sensor chip) by reading the w1\_master\_slaves file:
-pi@raspberrypi:~$ cat
-/sys/bus/w1/devices/w1\_bus\_master1/w1\_master\_slaves 10-00080234149b
+seeing if a device is listed on the 1-Wire bus.
+
+    pi@raspberrypi:~$ cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slave_count
+
+    1 
+
+This will print the number of sensors detected, 1 - for my hardware at
+the moment. You can get the sensor ID (a hexadecimal string stored in
+ROM on the sensor chip) by reading the w1\_master\_slaves file:
+
+    pi@raspberrypi:~$ cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slaves
+
+    10-00080234149b 
 
 A quick check for correct operation of the sensor is to “read” the
 sensor file, you'll need the hex ID of the sensor from earlier commands
-pi@raspberrypi:~$ cat /sys/bus/w1/devices/10-00080234149b/w1\_slave 37
-00 4b 46 ff ff 07 10 1e : crc=1e YES 37 00 4b 46 ff ff 07 10 1e t=27312
+
+    pi@raspberrypi:~$ cat /sys/bus/w1/devices/10-00080234149b/w1_slave
+
+    37 00 4b 46 ff ff 07 10 1e : crc=1e YES
+
+    37 00 4b 46 ff ff 07 10 1e t=27312 
 
 The number after 't=' is the tempreature in mili-degrees Celcius.
 

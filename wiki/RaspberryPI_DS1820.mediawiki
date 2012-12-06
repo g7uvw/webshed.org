@@ -6,28 +6,32 @@ I built my breakout interface directly onto a plastic pin header for testing pur
 
 ----
 
-== Hardware ==
+== Hardware  ==
+
 <br>To interface a DS18x20 sensor to the rPI, the bare minimum hardware you need is a single 4.7K resistor, the DS18x20 sensor and a plug that will fit the rPI GPIO pins. The wiring diagram is show below, along with a some photographs of the parts I soldered together for this experiment. I used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will work the same way (and offer more features and more precise temperature readings).<br> 
 
-Software:
-The 1-Wire drivers are not loaded by default when the rPI boots. You can load them with the following commands from a command prompt
-sudo modprobe wire
-sudo modprobe w1-gpio
-sudo modprobe w1-therm
+Software: The 1-Wire drivers are not loaded by default when the rPI boots. You can load them with the following commands from a command prompt:<br>
+<pre>pi@raspberrypi:~$ sudo modprobe wire
 
-Connect the sensor hardware to the rPI and check it is detected by seeing if a device is listed on the 1-Wire bus.
-pi@raspberrypi:~$ cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slave_count 
-1
-This will print the number of sensors detected, 1 - for my hardware at the moment. You can get the sensor ID (a hexadecimal string stored in ROM on the sensor chip) by reading the w1_master_slaves file:
-pi@raspberrypi:~$ cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slaves
-10-00080234149b
+pi@raspberrypi:~$ sudo modprobe w1-gpio
 
-A quick check for correct operation of the sensor is to "read" the sensor file, you'll need the hex ID of the sensor from earlier commands
-pi@raspberrypi:~$ cat /sys/bus/w1/devices/10-00080234149b/w1_slave 
+pi@raspberrypi:~$ sudo modprobe w1-therm </pre>
+Connect the sensor hardware to the rPI and check it is detected by seeing if a device is listed on the 1-Wire bus. 
+<pre>pi@raspberrypi:~$ cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slave_count
+
+1 
+</pre>
+This will print the number of sensors detected, 1 - for my hardware at the moment. You can get the sensor ID (a hexadecimal string stored in ROM on the sensor chip) by reading the w1_master_slaves file: 
+<pre>pi@raspberrypi:~$ cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slaves
+
+10-00080234149b </pre>
+A quick check for correct operation of the sensor is to "read" the sensor file, you'll need the hex ID of the sensor from earlier commands 
+<pre>pi@raspberrypi:~$ cat /sys/bus/w1/devices/10-00080234149b/w1_slave
+
 37 00 4b 46 ff ff 07 10 1e : crc=1e YES
-37 00 4b 46 ff ff 07 10 1e t=27312
 
-The number after 't=' is the tempreature in mili-degrees Celcius.
+37 00 4b 46 ff ff 07 10 1e t=27312 </pre>
+The number after 't=' is the tempreature in mili-degrees Celcius. 
 
 Unfortunately, at the time of wiring this article (December 2012) the very useful OWFS (OneWire File System) software is incompatible with the w1-gpio kernal drivers, so you can't yet use the nice owfs tools to explore and retrive data from sensors connected to the rPI this way. 
 

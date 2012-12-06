@@ -3,7 +3,7 @@ title: RaspberryPI DS1820
 permalink: wiki/RaspberryPI_DS1820/
 layout: wiki
 tags:
- - Experiments
+ - Projects
 ---
 
 How to use DS18x20 1-wire temperature sensors with the Raspberry PI
@@ -94,5 +94,5 @@ Extra stuff
 
 <img src="DS1820.png" title="DS1820.png" alt="DS1820.png" width="200" />
 
-<Category:Computer> <Category:Electronics> <Category:RaspberryPI>
-<Category:HowTo>
+<Category:Experiments> <Category:Computer> <Category:Electronics>
+<Category:RaspberryPI> <Category:HowTo>

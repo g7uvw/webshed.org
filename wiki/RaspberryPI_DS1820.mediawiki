@@ -14,13 +14,13 @@ I built my breakout interface directly onto a plastic pin header for testing pur
 
 <br> 
 
-<gallery widths="200px" perrow="3" caption="DS1820 1-wire sensor on Raspberry PI - Click Image for larger version">
+<gallery caption="DS1820 1-wire sensor on Raspberry PI - Click Image for larger version" perrow="3" widths="200px">
 File:Fritzing_rPI_DS1820.png|Cartoon schematic of DS1820 connections to a Raspberry PI. 
 File:RPI-ds1820.jpg|1-Wire interface for Raspberry PI build on a pin-header. 
 File:RPI-DS1820.jpg|Interface mounted on Raspberry PI GPIO pins
 </gallery> 
 
-== Software ==
+== Software  ==
 
 The 1-Wire drivers are not loaded by default when the rPI boots. You can load them with the following commands from a command prompt:<br> 
 <pre>pi@raspberrypi:~$ sudo modprobe wire
@@ -49,8 +49,8 @@ Unfortunately, at the time of wiring this article (December 2012) the very usefu
 
 &nbsp; 
 
-== Extra stuff ==
+== Extra stuff  ==
 
 [[Image:DS1820.png|thumb|200px]] 
 
-[[Category:Experiments]][[Category:Computer]][[Category:Electronics]][[Category:RaspberryPI]][[Category:HowTo]]
+[[Category:Projects]] [[Category:Experiments]] [[Category:Computer]] [[Category:Electronics]] [[Category:RaspberryPI]] [[Category:HowTo]]

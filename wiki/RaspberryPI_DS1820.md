@@ -11,9 +11,10 @@ The Raspberry PI (rPI)has several different serial buses brought out on
 its GPIO (General Purpose Input/Output) pins, including SPI and I2C,
 however there is no 1-Wire interface. Luckily, in modern Linux Kernels
 there is a driver module for bit-banging a 1-Wire interface on a single
-GPIO pin. In recent Raspbian “wheezy” releases GPIO-4 is the pi used.
-The rest of this article will describe how to use this module and
-connect some 1-Wire temperature sensors to the rPI.  
+GPIO pin. In recent [Raspbian “wheezy”](http://www.raspbian.org/)
+releases GPIO-4 is the pi used. The rest of this article will describe
+how to use this module and connect some 1-Wire temperature sensors to
+the rPI.  
 I built my breakout interface directly onto a plastic pin header for
 testing purposes, but this is hardly the best way to do it.  
 

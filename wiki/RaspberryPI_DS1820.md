@@ -72,12 +72,13 @@ sensor file, you'll need the hex ID of the sensor from earlier commands
 
     37 00 4b 46 ff ff 07 10 1e t=27312 
 
-The number after 't=' is the tempreature in mili-degrees Celcius.
+The number after 't=' is the temperature in mili-degrees Celsius.
 
 Unfortunately, at the time of wiring this article (December 2012) the
-very useful OWFS (OneWire File System) software is incompatible with the
-w1-gpio kernal drivers, so you can't yet use the nice owfs tools to
-explore and retrive data from sensors connected to the rPI this way.
+very useful [OWFS](http://owfs.org/) (OneWire File System) software is
+incompatible with the w1-gpio kernel drivers, so you can't yet use the
+nice owfs tools to explore and retrieve data from sensors connected to
+the rPI this way.
 
  
 

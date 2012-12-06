@@ -31,7 +31,8 @@ used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will
 work the same way (and offer more features and more precise temperature
 readings).
 
-<img src="Fritzing_rPI_DS1820.png" title="fig:Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" alt="Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" width="400" /><img src="DS1820.png" title="fig:DS1820 / DS18s20 / DS18b20 pinouts" alt="DS1820 / DS18s20 / DS18b20 pinouts" width="200" />
+<img src="Fritzing_rPI_DS1820.png" title="fig:Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" alt="Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" width="400" />
+<img src="RPI-ds1820.jpg" title="fig:1-Wire interface for Raspberry PI build on a pin-header. Click for bigger" alt="1-Wire interface for Raspberry PI build on a pin-header. Click for bigger" width="400" />
 
 Software
 --------
@@ -77,3 +78,8 @@ w1-gpio kernal drivers, so you can't yet use the nice owfs tools to
 explore and retrive data from sensors connected to the rPI this way.
 
  
+
+Extra stuff
+-----------
+
+<img src="DS1820.png" title="DS1820 / DS18s20 / DS18b20 pinouts" alt="DS1820 / DS18s20 / DS18b20 pinouts" width="200" />

@@ -29,7 +29,12 @@ fit the rPI GPIO pins. The wiring diagram is show below, along with a
 some photographs of the parts I soldered together for this experiment. I
 used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will
 work the same way (and offer more features and more precise temperature
-readings).<img src="DS1820.png" title="fig:DS1820.png" alt="DS1820.png" width="200" />
+readings).
+
+![Cartoon schematic of DS1820 connections to a Raspberry
+PI](Fritzing_rPI_DS1820.png "Cartoon schematic of DS1820 connections to a Raspberry PI")
+
+<img src="DS1820.png" title="DS1820.png" alt="DS1820.png" width="200" />
 
 Software
 --------

@@ -31,10 +31,7 @@ used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will
 work the same way (and offer more features and more precise temperature
 readings).
 
-![Cartoon schematic of DS1820 connections to a Raspberry
-PI](Fritzing_rPI_DS1820.png "Cartoon schematic of DS1820 connections to a Raspberry PI")
-
-<img src="DS1820.png" title="DS1820.png" alt="DS1820.png" width="200" />
+<img src="Fritzing_rPI_DS1820.png" title="fig:Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" alt="Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" width="400" /><img src="DS1820.png" title="fig:DS1820 / DS18s20 / DS18b20 pinouts" alt="DS1820 / DS18s20 / DS18b20 pinouts" width="200" />
 
 Software
 --------

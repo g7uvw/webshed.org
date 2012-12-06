@@ -10,8 +10,15 @@ I built my breakout interface directly onto a plastic pin header for testing pur
 
 <br>To interface a DS18x20 sensor to the rPI, the bare minimum hardware you need is a single 4.7K resistor, the DS18x20 sensor and a plug that will fit the rPI GPIO pins. The wiring diagram is show below, along with a some photographs of the parts I soldered together for this experiment. I used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will work the same way (and offer more features and more precise temperature readings).
 
-[[Image:Fritzing_rPI_DS1820.png|thumb|400px|Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger]]
-[[Image:RPI-ds1820.jpg|thumb|400px|1-Wire interface for Raspberry PI build on a pin-header. Click for bigger]]
+<gallery>
+File:Fritzing_rPI_DS1820.png|Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger
+File:RPI-ds1820.jpg|1-Wire interface for Raspberry PI build on a pin-header. Click for bigger
+File:RPI-DS1820.jpgInterface mounted on Raspberry PI GPIO pins
+</gallery>
+
+[[Image:Fritzing_rPI_DS1820.png|left|thumb|400px|Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger]]
+[[Image:RPI-ds1820.jpg|thumb|200px|center||1-Wire interface for Raspberry PI build on a pin-header. Click for bigger]]
+[[Image:RPI-DS1820.jpg|thumb|200px|right|Interface mounted on Raspberry PI GPIO pins]]
 
 ==Software== 
 The 1-Wire drivers are not loaded by default when the rPI boots. You can load them with the following commands from a command prompt:<br> 

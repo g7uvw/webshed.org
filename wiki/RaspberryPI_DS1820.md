@@ -34,11 +34,7 @@ readings).
 <File:Fritzing_rPI_DS1820.png%7CCartoon> schematic of DS1820 connections
 to a Raspberry PI. Click for bigger <File:RPI-ds1820.jpg%7C1-Wire>
 interface for Raspberry PI build on a pin-header. Click for bigger
-<File:RPI-DS1820.jpgInterface> mounted on Raspberry PI GPIO pins
-
-<img src="Fritzing_rPI_DS1820.png" title="fig:Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" alt="Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger" width="400" />
-<img src="RPI-ds1820.jpg" title="fig:|1-Wire interface for Raspberry PI build on a pin-header. Click for bigger" alt="|1-Wire interface for Raspberry PI build on a pin-header. Click for bigger" width="200" />
-<img src="RPI-DS1820.jpg" title="fig:Interface mounted on Raspberry PI GPIO pins" alt="Interface mounted on Raspberry PI GPIO pins" width="200" />
+<File:RPI-DS1820.jpg%7CInterface> mounted on Raspberry PI GPIO pins
 
 Software
 --------

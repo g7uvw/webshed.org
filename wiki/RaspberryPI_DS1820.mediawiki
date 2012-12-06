@@ -13,12 +13,8 @@ I built my breakout interface directly onto a plastic pin header for testing pur
 <gallery>
 File:Fritzing_rPI_DS1820.png|Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger
 File:RPI-ds1820.jpg|1-Wire interface for Raspberry PI build on a pin-header. Click for bigger
-File:RPI-DS1820.jpgInterface mounted on Raspberry PI GPIO pins
+File:RPI-DS1820.jpg|Interface mounted on Raspberry PI GPIO pins
 </gallery>
-
-[[Image:Fritzing_rPI_DS1820.png|left|thumb|400px|Cartoon schematic of DS1820 connections to a Raspberry PI. Click for bigger]]
-[[Image:RPI-ds1820.jpg|thumb|200px|center||1-Wire interface for Raspberry PI build on a pin-header. Click for bigger]]
-[[Image:RPI-DS1820.jpg|thumb|200px|right|Interface mounted on Raspberry PI GPIO pins]]
 
 ==Software== 
 The 1-Wire drivers are not loaded by default when the rPI boots. You can load them with the following commands from a command prompt:<br> 

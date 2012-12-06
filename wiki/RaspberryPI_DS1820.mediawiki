@@ -8,9 +8,13 @@ I built my breakout interface directly onto a plastic pin header for testing pur
 
 == Hardware  ==
 
-<br>To interface a DS18x20 sensor to the rPI, the bare minimum hardware you need is a single 4.7K resistor, the DS18x20 sensor and a plug that will fit the rPI GPIO pins. The wiring diagram is show below, along with a some photographs of the parts I soldered together for this experiment. I used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will work the same way (and offer more features and more precise temperature readings).
+<br>To interface a DS18x20 sensor to the rPI, the bare minimum hardware you need is a single 4.7K resistor, the DS18x20 sensor and a plug that will fit the rPI GPIO pins. The wiring diagram is show below, along with a some photographs of the parts I soldered together for this experiment. I used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will work the same way (and offer more features and more precise temperature readings). 
 
-<gallery widths=200px  perrow=3 caption="DS1820 1-wire sensor on Raspberry PI - Click Image for larger version">
+I built my breakout interface directly onto a plastic pin header for testing purposes, but this is hardly the best way to do it.<br>
+
+
+
+<gallery caption="DS1820 1-wire sensor on Raspberry PI - Click Image for larger version" perrow="3" widths="200px">
 File:Fritzing_rPI_DS1820.png|Cartoon schematic of DS1820 connections to a Raspberry PI. 
 File:RPI-ds1820.jpg|1-Wire interface for Raspberry PI build on a pin-header. 
 File:RPI-DS1820.jpg|Interface mounted on Raspberry PI GPIO pins

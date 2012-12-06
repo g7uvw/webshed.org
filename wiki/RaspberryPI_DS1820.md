@@ -2,6 +2,8 @@
 title: RaspberryPI DS1820
 permalink: wiki/RaspberryPI_DS1820/
 layout: wiki
+tags:
+ - Experiments
 ---
 
 How to use DS18x20 1-wire temperature sensors with the Raspberry PI
@@ -34,6 +36,7 @@ readings).
 
 I built my breakout interface directly onto a plastic pin header for
 testing purposes, but this is hardly the best way to do it.  
+  
 
 <File:Fritzing_rPI_DS1820.png%7CCartoon> schematic of DS1820 connections
 to a Raspberry PI. <File:RPI-ds1820.jpg%7C1-Wire> interface for
@@ -89,4 +92,7 @@ the rPI this way.
 Extra stuff
 -----------
 
-<img src="DS1820.png" title="DS1820 / DS18s20 / DS18b20 pinouts" alt="DS1820 / DS18s20 / DS18b20 pinouts" width="200" />
+<img src="DS1820.png" title="DS1820.png" alt="DS1820.png" width="200" />
+
+<Category:Computer> <Category:Electronics> <Category:RaspberryPI>
+<Category:HowTo>

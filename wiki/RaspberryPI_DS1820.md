@@ -32,9 +32,9 @@ work the same way (and offer more features and more precise temperature
 readings).
 
 <File:Fritzing_rPI_DS1820.png%7CCartoon> schematic of DS1820 connections
-to a Raspberry PI. Click for bigger <File:RPI-ds1820.jpg%7C1-Wire>
-interface for Raspberry PI build on a pin-header. Click for bigger
-<File:RPI-DS1820.jpg%7CInterface> mounted on Raspberry PI GPIO pins
+to a Raspberry PI. <File:RPI-ds1820.jpg%7C1-Wire> interface for
+Raspberry PI build on a pin-header. <File:RPI-DS1820.jpg%7CInterface>
+mounted on Raspberry PI GPIO pins
 
 Software
 --------

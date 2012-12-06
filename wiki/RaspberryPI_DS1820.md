@@ -29,10 +29,13 @@ fit the rPI GPIO pins. The wiring diagram is show below, along with a
 some photographs of the parts I soldered together for this experiment. I
 used a now-obsolete DS1820 sensor, but modern Ds18s20 and DS18b20 will
 work the same way (and offer more features and more precise temperature
-readings).  
-Software: The 1-Wire drivers are not loaded by default when the rPI
-boots. You can load them with the following commands from a command
-prompt:  
+readings).<img src="DS1820.png" title="fig:DS1820.png" alt="DS1820.png" width="200" />
+
+Software
+--------
+
+The 1-Wire drivers are not loaded by default when the rPI boots. You can
+load them with the following commands from a command prompt:  
 
     pi@raspberrypi:~$ sudo modprobe wire
 
@@ -60,7 +63,7 @@ sensor file, you'll need the hex ID of the sensor from earlier commands
 
     pi@raspberrypi:~$ cat /sys/bus/w1/devices/10-00080234149b/w1_slave
 
-    37 00 4b 46 ff ff 07 10 1e : crc=1e YES
+    37 00 4b 46 ff ff 07 10 1e&nbsp;: crc=1e YES
 
     37 00 4b 46 ff ff 07 10 1e t=27312 
 
@@ -71,5 +74,4 @@ very useful OWFS (OneWire File System) software is incompatible with the
 w1-gpio kernal drivers, so you can't yet use the nice owfs tools to
 explore and retrive data from sensors connected to the rPI this way.
 
-<img src="GPIOs.png" title="fig:GPIOs.png" alt="GPIOs.png" width="200" />
-<img src="DS1820.png" title="fig:DS1820.png" alt="DS1820.png" width="200" />
+ 

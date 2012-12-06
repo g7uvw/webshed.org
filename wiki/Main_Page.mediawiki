@@ -12,12 +12,13 @@ Some of the more recent things I've been working on and documenting here on webs
 
 == Electronics  ==
 
+*[[RaspberryPI_DS1820|DS18s20 DS18b20 1-Wire Temperature senors on the Raspberry PI]]
 *[[Simple iPod Tx|Simple iPod FM transmitter]] 
 *[[Mercury PTO|A mercury tuned oscillator (permeability tuned oscillator)]] 
 *[[ESR meter|Equivalent series resistance meter]] 
 *[[18tftbreakout|Making a cheap Chinese 1.8" TFT LCD module work]]
 
-<br> 
+<br>
 
 == Radio  ==
 

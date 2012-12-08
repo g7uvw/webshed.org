@@ -111,11 +111,9 @@ use this perl script
     if ($sensor_temp&nbsp;!~ /NO/)
     {
             $sensor_temp =~ /t=(\d+)/i;
-            $tempreature = (($1/1000)-6);
-            $rrd_out = `/usr/bin/rrdtool update  /home/pi/temperature/rPItemp.rrd N:$tempreature`;
-
-
-            print "rPI temp = $tempreature\n";
+            $tempreature = (($1/1000)-6); # My sensor seems to read about 6 degrees high, so quick fudge to fix value
+          
+            print "rPI temp = $tempreature\n"; 
             exit;
     }
     die "Error locating sensor file or sensor CRC was invalid";

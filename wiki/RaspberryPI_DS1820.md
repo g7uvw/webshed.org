@@ -87,7 +87,39 @@ incompatible with the w1-gpio kernel drivers, so you can't yet use the
 nice owfs tools to explore and retrieve data from sensors connected to
 the rPI this way.
 
- 
+  
+
+Archiving and graphing temperature readings with RRDtool
+--------------------------------------------------------
+
+To make the sensors useful you really want more than a single reading,
+you want a time series, and some way to investigate the data you
+collect. RRDtool is designed for just this type of thing. It's a
+database you can put temperature readings into, and a graphing program
+that can present the readings in interesting ways.
+
+This is how Ive set up RRDtool to log the temperature every five minutes
+and produce hourly, daily, weekly, monthly and yearly graphs.
+
+First off you need RRDtool installed:  
+
+    sudo apt-get install rrdtool
+
+Then create the initial database to store readings in  
+
+    pi@raspberrypi:~/rrdtool create rPItemp.rrd --step 300 \
+    DS:temp:GAUGE:600:-30:50 \
+    RRA:AVERAGE:0.5:1:12 \
+    RRA:AVERAGE:0.5:1:288 \
+    RRA:AVERAGE:0.5:12:168 \
+    RRA:AVERAGE:0.5:12:720 \
+    RRA:AVERAGE:0.5:288:365
+
+This creates a database with a base data interval of 5m (300s), with a
+data range of -30 to +50 (degrees C), and some calculated averages for
+hour, day, week, month and year. The [RRDtool documentation
+& examples](http://oss.oetiker.ch/rrdtool/doc/rrdcreate.en.html) was my
+source for this.  
 
 Extra stuff
 -----------

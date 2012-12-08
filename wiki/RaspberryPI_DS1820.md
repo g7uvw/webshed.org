@@ -161,6 +161,84 @@ data range of -30 to +50 (degrees C), and some calculated averages for
 hour, day, week, month and year. The [RRDtool documentation
 & examples](http://oss.oetiker.ch/rrdtool/doc/rrdcreate.en.html) was my
 source for this.  
+A shell script then interrogates the database and produces some
+graphs.  
+
+    #!/bin/bash
+    RRDPATH="/home/pi/temperature/"
+    COLOUR="#FF0000"
+    #hour
+    rrdtool graph $RRDPATH/hour.png --start -6h \
+    DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
+    LINE2:temp$COLOUR:"Raspberry PI temperature" \
+
+    #day
+    rrdtool graph $RRDPATH/day.png --start -1d \
+    DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
+    LINE2:temp$COLOUR:"Raspberry PI temperature" \
+
+    #week
+    rrdtool graph $RRDPATH/week.png --start -1w \
+    DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
+    LINE2:temp$COLOUR:"Raspberry PI temperature" \
+
+    #month
+    rrdtool graph $RRDPATH/month.png --start -1m \
+    DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
+    LINE1:temp$COLOUR:"Raspberry PI temperature" \
+
+    #year
+    rrdtool graph $RRDPATH/year.png --start -1y \
+    DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
+    LINE1:temp$COLOUR:"Raspberry PI temperature" \
+
+The perl sensor reading code is modified to send the tempreature reading
+to the database as well as to the screen.  
+
+    #!/usr/bin/perl
+    $mods = `cat /proc/modules`;
+    if ($mods =~ /w1_gpio/ &amp;&amp; $mods =~ /w1_therm/)
+    {
+     print "w1 modules already loaded \n";
+    }
+    else 
+    {
+    print "loading w1 modules \n";
+    $mod_gpio = `sudo modprobe w1-gpio`;
+    $mod_them = `sudo modprobe w1-therm`;
+    }
+
+    $sensor_temp = `cat /sys/bus/w1/devices/10-*/w1_slave 2&gt;&amp;1`;
+    if ($sensor_temp !~ /No such file or directory/)
+    {
+    if ($sensor_temp !~ /NO/)
+    {
+            $sensor_temp =~ /t=(\d+)/i;
+            $tempreature = (($1/1000)-6);
+            $rrd_out = `/usr/bin/rrdtool update  /home/pi/temperature/rPItemp.rrd N:$tempreature`;
+
+
+            print "rPI temp = $tempreature\n";
+            exit;
+    }
+    die "Error locating sensor file or sensor CRC was invalid";
+
+    }
+
+  
+All that's needed is to run the perl sensor reading code and the graph
+generating script every five minutes from a cron job. My contab looks
+like this:
+
+    # For more information see the manual pages of crontab(5) and cron(8)
+    #
+    # m h dom mon dow command
+    */5 * * * * /home/pi/temperature/get_temp.pl
+    */5 * * * * /home/pi/temperature/graph_temp.sh 
+
+Where get\_temp.pl is the perl sensor code, and graph\_temp.sh plots the
+graphs.  
+  
 
 Extra stuff
 -----------

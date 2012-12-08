@@ -85,9 +85,50 @@ Unfortunately, at the time of wiring this article (December 2012) the
 very useful [OWFS](http://owfs.org/) (OneWire File System) software is
 incompatible with the w1-gpio kernel drivers, so you can't yet use the
 nice owfs tools to explore and retrieve data from sensors connected to
-the rPI this way.
+the rPI this way.  
 
-  
+### Perl  
+
+Reading the sensors on the command line with cat isn't very useful, so I
+use this perl script  
+
+    #!/usr/bin/perl
+    $mods = `cat /proc/modules`;
+    if ($mods =~ /w1_gpio/ &amp;&amp; $mods =~ /w1_therm/)
+    {
+     print "w1 modules already loaded \n";
+    }
+    else 
+    {
+    print "loading w1 modules \n";
+    $mod_gpio = `sudo modprobe w1-gpio`;
+    $mod_them = `sudo modprobe w1-therm`;
+    }
+
+    $sensor_temp = `cat /sys/bus/w1/devices/10-*/w1_slave 2&gt;&amp;1`;
+    if ($sensor_temp&nbsp;!~ /No such file or directory/)
+    {
+    if ($sensor_temp&nbsp;!~ /NO/)
+    {
+            $sensor_temp =~ /t=(\d+)/i;
+            $tempreature = (($1/1000)-6);
+            $rrd_out = `/usr/bin/rrdtool update  /home/pi/temperature/rPItemp.rrd N:$tempreature`;
+
+
+            print "rPI temp = $tempreature\n";
+            exit;
+    }
+    die "Error locating sensor file or sensor CRC was invalid";
+
+    }
+
+This script doesn't really do any sensible error checking. It does look
+to make sure the needed driver modules are loaded, and it does try to
+make sure it can read the sensor data file, however if the sensor
+becomes unavailable, or disconnected, the script fails. It only logs
+data for a single sensor, and is hard-coded to only log data from DS1820
+parts (for DS18s20 or DS18b20, the script needs the first part of these
+sensors' ID).  
 
 Archiving and graphing temperature readings with RRDtool
 --------------------------------------------------------

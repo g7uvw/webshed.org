@@ -172,7 +172,11 @@ All that's needed is to run the perl sensor reading code and the graph generatin
 */5 * * * * /home/pi/temperature/graph_temp.sh </pre> 
 Where get_temp.pl is the perl sensor code, and graph_temp.sh plots the graphs. <br> 
 
-<br>
+[[Image:RPI Hour.png|frame|center]] 
+
+<br> 
+
+[[Image:RPI_Day.png|frame|center]]<br>
 
 == Extra stuff  ==
 

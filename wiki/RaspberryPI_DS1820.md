@@ -236,7 +236,10 @@ like this:
 
 Where get\_temp.pl is the perl sensor code, and graph\_temp.sh plots the
 graphs.  
+![](RPI_Hour.png "fig:RPI_Hour.png")
+
   
+![](RPI_Day.png "fig:RPI_Day.png")  
 
 Extra stuff
 -----------

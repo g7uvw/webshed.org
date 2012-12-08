@@ -207,12 +207,12 @@ to the database as well as to the screen.
     }
 
     $sensor_temp = `cat /sys/bus/w1/devices/10-*/w1_slave 2&gt;&amp;1`;
-    if ($sensor_temp !~ /No such file or directory/)
+    if ($sensor_temp&nbsp;!~ /No such file or directory/)
     {
-    if ($sensor_temp !~ /NO/)
+    if ($sensor_temp&nbsp;!~ /NO/)
     {
             $sensor_temp =~ /t=(\d+)/i;
-            $tempreature = (($1/1000)-6);
+            $tempreature = (($1/1000)-6); # My sensor seems to read about 6 degrees high, so quick fudge to fix value
             $rrd_out = `/usr/bin/rrdtool update  /home/pi/temperature/rPItemp.rrd N:$tempreature`;
 
 

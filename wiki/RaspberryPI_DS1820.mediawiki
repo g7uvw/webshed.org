@@ -103,31 +103,37 @@ This creates a database with a base data interval of 5m (300s), with a data rang
 A shell script then interrogates the database and produces some graphs.<br> 
 <pre>#!/bin/bash
 RRDPATH="/home/pi/temperature/"
-COLOUR="#FF0000"
+RAWCOLOUR="#FF0000"
+TRENDCOLOUR="#0000FF"
+
 #hour
 rrdtool graph $RRDPATH/hour.png --start -6h \
 DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
-LINE2:temp$COLOUR:"Raspberry PI temperature" \
+CDEF:trend=temp,1800,TREND \
+LINE2:temp$RAWCOLOUR:"Hourly Raspberry PI temperature" \
+LINE1:trend$TRENDCOLOUR:"30 min average"
 
 #day
 rrdtool graph $RRDPATH/day.png --start -1d \
 DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
-LINE2:temp$COLOUR:"Raspberry PI temperature" \
+CDEF:trend=temp,21600,TREND \
+LINE2:temp$RAWCOLOUR:"Daily Raspberry PI temperature" \
+LINE1:trend$TRENDCOLOUR:"6h average"
 
 #week
 rrdtool graph $RRDPATH/week.png --start -1w \
 DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
-LINE2:temp$COLOUR:"Raspberry PI temperature" \
+LINE2:temp$RAWCOLOUR:"Weekly Raspberry PI temperature" \
 
 #month
 rrdtool graph $RRDPATH/month.png --start -1m \
 DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
-LINE1:temp$COLOUR:"Raspberry PI temperature" \
+LINE1:temp$RAWCOLOUR:"Monthly Raspberry PI temperature" \
 
 #year
 rrdtool graph $RRDPATH/year.png --start -1y \
 DEF:temp=$RRDPATH/rPItemp.rrd:temp:AVERAGE \
-LINE1:temp$COLOUR:"Raspberry PI temperature" \
+LINE1:temp$RAWCOLOUR:"Yearly Raspberry PI temperature" \
 
 </pre> 
 The perl sensor reading code is modified to send the tempreature reading to the database as well as to the screen.<br> 

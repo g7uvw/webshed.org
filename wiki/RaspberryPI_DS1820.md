@@ -252,7 +252,9 @@ graphs.
 Extra stuff
 -----------
 
-<img src="DS1820.png" title="DS18x20 pinouts" alt="DS18x20 pinouts" width="200" />
+All the perl and shell scripts used in this article can be downloaded
+![](Temperature.tar.bz2_here "fig:Temperature.tar.bz2_here").
+<img src="DS1820.png" title="fig:DS18x20 pinouts" alt="DS18x20 pinouts" width="200" />
 
 <Category:Experiments> <Category:Computer> <Category:Electronics>
 <Category:RaspberryPI> <Category:HowTo>

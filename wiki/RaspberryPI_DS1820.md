@@ -252,7 +252,7 @@ graphs.
 Extra stuff
 -----------
 
-<img src="DS1820.png" title="DS1820.png" alt="DS1820.png" width="200" />
+<img src="DS1820.png" title="DS18x20 pinouts" alt="DS18x20 pinouts" width="200" />
 
 <Category:Experiments> <Category:Computer> <Category:Electronics>
 <Category:RaspberryPI> <Category:HowTo>

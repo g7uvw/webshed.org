@@ -188,6 +188,6 @@ Where get_temp.pl is the perl sensor code, and graph_temp.sh plots the graphs. <
 
 == Extra stuff  ==
 
-[[Image:DS1820.png|thumb|200px]] 
+[[Image:DS1820.png|thumb|200px|DS18x20 pinouts]] 
 
 [[Category:Projects]] [[Category:Experiments]] [[Category:Computer]] [[Category:Electronics]] [[Category:RaspberryPI]] [[Category:HowTo]]

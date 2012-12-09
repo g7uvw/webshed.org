@@ -253,8 +253,7 @@ Extra stuff
 -----------
 
 All the perl and shell scripts used in this article can be downloaded
-[here
-File:Temperature.tar.bz2](here_File:Temperature.tar.bz2 "wikilink")
+[here ](/wiki/Media:Temperature.tar.bz2 "wikilink")
 <img src="DS1820.png" title="fig:DS18x20 pinouts" alt="DS18x20 pinouts" width="200" />
 
 <Category:Experiments> <Category:Computer> <Category:Electronics>

@@ -187,7 +187,7 @@ Where get_temp.pl is the perl sensor code, and graph_temp.sh plots the graphs. <
 [[Image:RPI_Day.png|frame|center]]<br>
 
 == Extra stuff  ==
-All the perl and shell scripts used in this article can be downloaded [[here File:Temperature.tar.bz2 ]]
+All the perl and shell scripts used in this article can be downloaded [[Media:Temperature.tar.bz2|here ]]
 [[Image:DS1820.png|thumb|200px|DS18x20 pinouts]] 
 
 [[Category:Projects]] [[Category:Experiments]] [[Category:Computer]] [[Category:Electronics]] [[Category:RaspberryPI]] [[Category:HowTo]]

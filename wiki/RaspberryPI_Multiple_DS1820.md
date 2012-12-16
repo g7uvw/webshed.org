@@ -17,7 +17,7 @@ The perl code developed for the previous article can only access a
 single sensor. To read multiple sensors we need to fist get the device
 IDs of all sensors on the bus, then read each sensor's data.  
 On the rPI using the w1 kernel drivers, the file
-“/sys/bus/w1/devices/w1\_bus\_master1/w1\_master\_slaves” contains a
+“**/sys/bus/w1/devices/w1\_bus\_master1/w1\_master\_slaves**” contains a
 list of all the device IDs detected on the 1-wire bus. We can read this
 to get a list of IDs to iterate over, requesting data from each of
 them.  
@@ -118,5 +118,54 @@ The RRD database is created with this script
     RRA:AVERAGE:0.5:12:720 \
     RRA:AVERAGE:0.5:288:365
 
-  
+The graphs are generated every five minutes from a cron job with with
+this script  
 
+    #!/bin/bash
+    RRDPATH="/home/pi/temperature/"
+    RAWCOLOUR="#FF0000"
+    TRENDCOLOUR="#0000FF"
+    #hour
+    rrdtool graph $RRDPATH/mhour.png --start -6h \
+    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
+    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
+    CDEF:intrend=intemp,1200,TREND \
+    CDEF:outtrend=outtemp,1200,TREND \
+    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
+    LINE1:intrend$TRENDCOLOUR:"20 min average" \
+    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+    LINE1:outtrend$TRENDCOLOUR:"20 min average"
+
+    #day
+    rrdtool graph $RRDPATH/mday.png --start -1d \
+    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
+    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
+    CDEF:intrend=intemp,1800,TREND \
+    CDEF:outtrend=outtemp,1800,TREND \
+    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
+    LINE1:intrend$TRENDCOLOUR:"1h min average" \
+    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+    LINE1:outtrend$TRENDCOLOUR:"1h min average"
+
+    #week
+    rrdtool graph $RRDPATH/mweek.png --start -1w \
+    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
+    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
+    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
+    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+
+
+
+    #month
+    rrdtool graph $RRDPATH/mmonth.png --start -1m \
+    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
+    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
+    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
+    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+
+    #year
+    rrdtool graph $RRDPATH/myear.png --start -1y \
+    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
+    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
+    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
+    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \

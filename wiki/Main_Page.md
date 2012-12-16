@@ -35,6 +35,8 @@ page.
 Electronics
 -----------
 
+-   [Multiple 1-wire sensors on the Raspberry
+    PI](/wiki/RaspberryPI_Multiple_DS1820 "wikilink")
 -   [DS18s20 DS18b20 1-Wire Temperature senors on the Raspberry
     PI](/wiki/RaspberryPI_DS1820 "wikilink")
 -   [Simple iPod FM transmitter](/wiki/Simple_iPod_Tx "wikilink")

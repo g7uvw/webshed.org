@@ -2,17 +2,19 @@
 title: RaspberryPI Multiple DS1820
 permalink: wiki/RaspberryPI_Multiple_DS1820/
 layout: wiki
+tags:
+ - Code
 ---
 
 Multiple DS18x20 1-wire sensors on the Raspberry PI  
 =====================================================
 
-In a previous article I showed how to use a 1-wire tempreature sensor
-with the Raspberry PI with minimal interface requirements. The nice
-thing with 1-wire sensors in that multiple devices can share the same
-bus. You just wire the sensors in parallel - all GND pins tired
-together, all DQ pins tied together and all VCC pins (if you use them)
-tired together.  
+In a [previous article](/wiki/RaspberryPI_DS1820 "wikilink") I showed how to
+use a 1-wire tempreature sensor with the Raspberry PI with minimal
+interface requirements. The nice thing with 1-wire sensors in that
+multiple devices can share the same bus. You just wire the sensors in
+parallel - all GND pins tired together, all DQ pins tied together and
+all VCC pins (if you use them) tired together.  
 The perl code developed for the previous article can only access a
 single sensor. To read multiple sensors we need to fist get the device
 IDs of all sensors on the bus, then read each sensor's data.  
@@ -169,3 +171,8 @@ this script
     DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
     LINE2:intemp$RAWCOLOUR:"Inside temperature" \
     LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+
+;
+
+<Category:Experiments> <Category:HowTo> <Category:RaspberryPI>
+<Category:Projects> <Category:Electronics>

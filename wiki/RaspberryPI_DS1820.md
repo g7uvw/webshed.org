@@ -254,7 +254,10 @@ Extra stuff
 
 All the perl and shell scripts used in this article can be downloaded
 [here ](/wiki/Media:Temperature.tar.bz2 "wikilink")
-<img src="DS1820.png" title="fig:DS18x20 pinouts" alt="DS18x20 pinouts" width="200" />
+
+A [second article](/wiki/RaspberryPI_Multiple_DS1820 "wikilink") with code to
+read and graph multiple sensors is now
+available.<img src="DS1820.png" title="fig:DS1820.png" alt="DS1820.png" width="200" />
 
 <Category:Experiments> <Category:Computer> <Category:Electronics>
 <Category:RaspberryPI> <Category:HowTo>

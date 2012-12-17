@@ -50,7 +50,7 @@ $$\\frac{\\partial}{\\partial x} V(x,t) =
 -L \\frac{\\partial}{\\partial t} I(x,t)$$
 
   
-It can be shown (but I'm not doing it here) that in the case of a
+It can be shown (but I'm not doing the maths here) that in the case of a
 sinusoidal signal on a transmission line of length
 <span class="texhtml">*d*</span> with characteristic impedance
 <span class="texhtml">*Z*<sub>0</sub></span> terminated with a load

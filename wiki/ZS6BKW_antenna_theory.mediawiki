@@ -28,7 +28,7 @@ Antenna design and analysis really requires mathematics, you can try to short cu
 -L \frac{\partial}{\partial t} I(x,t)
 </math>
 
-<br> It can be shown (but I'm not doing it here) that in the case of a sinusoidal signal on a transmission line of length <span class="texhtml">''d''</span> with characteristic impedance <span class="texhtml">''Z''<sub>0</sub></span> terminated with a load impedance <span class="texhtml">''Z''<sub>''L''</sub></span>, the input impedance Z<sub>in</sub> of the line is given by: 
+<br> It can be shown (but I'm not doing the maths here) that in the case of a sinusoidal signal on a transmission line of length <span class="texhtml">''d''</span> with characteristic impedance <span class="texhtml">''Z''<sub>0</sub></span> terminated with a load impedance <span class="texhtml">''Z''<sub>''L''</sub></span>, the input impedance Z<sub>in</sub> of the line is given by: 
 
 :<math>
 Z_{in}(d) = \frac{Z_L cos\beta d + jZ_0 sin \beta d}{Z_0 cos \beta d + j Z_L sin \beta d}
@@ -48,7 +48,7 @@ We shall take λ to be 40m, <span class="texhtml">''Z''<sub>''L''</sub></span> =
 
 The plot clearly shows that when the feeder length is 20m, the impedance is 73 Ohm - just as is expected. We can also see that the plot is cyclical, we get the same impedance transference at 40m, 60m and 80m (though the last two are inferred, not shown). Inspecting the plot, we can also see that if the feeder length is 10m (lambda/4) the impedance drops to around zero - giving what is commonly known as a "current node" where you have to force essentially infinite current into the antenna to get any radiation. We can also pick our feeder length to give any impedance we like between 0 and 73 Ohms. 
 
-TODO&nbsp;:&nbsp;Determine what happens to Inductive / Capacitive reactances in the antenna when transformed by the feedline. 
+TODO&nbsp;:&nbsp;Determine what happens to Inductive / Capacitive reactances in the antenna when transformed by the feedline.
 
 = The ZS6BKW analyzed  =
 

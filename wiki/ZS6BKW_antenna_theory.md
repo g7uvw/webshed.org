@@ -83,11 +83,12 @@ cyclical, we get the same impedance transference at 40m, 60m and 80m
 can also see that if the feeder length is 10m (lambda/4) the impedance
 drops to around zero - giving what is commonly known as a “current node”
 where you have to force essentially infinite current into the antenna to
-get any radiation. We can also pick our feeder length to give any
-impedance we like between 0 and 73 Ohms.
+get any radiation. We can also pick our feeder length to give any real
+impedance we like between 0 and 73 Ohms (We can only change the real
+part of the impedance with this transformer - any inductive or
+capacitive reactance in the antenna isn't transformed away).
 
-TODO : Determine what happens to Inductive / Capacitive reactances in
-the antenna when transformed by the feedline.
+  
 
 The ZS6BKW analyzed
 ===================
@@ -147,11 +148,13 @@ From the plot it is easy to see that we can get 50 Ohm impedance if we
 use a feeder of length either 7.5m or 12.5m. A current node can be seen
 with a feeder length of 10m.
 
-In doing this analysis, I did not consider the complex part of the of
-the antenna feedpoint impedance. This is because I am not yet sure
-exactly what happens with regards to transformed complex impedance, and
-because the results I get by ignoring them correspond very well to the
-results measured in real world versions of this antenna.
+In doing this analysis, I did not consider the reactive part of the of
+the antenna feedpoint impedance.  As long as the magnitude of the
+reactive part of the antenna's impedance is small enough, it is swamped
+by the resitive part of the reactance, and full power is delivered to
+the antenna and rediated away with insignificant reflections (SWR).  
+In cases where there is a large reactive component to the antenna
+impedance, an ATU will be required to match the reactive miss-match.
 
 Other bands
 -----------

@@ -6,8 +6,10 @@ tags:
  - Code
 ---
 
-Multiple DS18x20 1-wire sensors on the Raspberry PI  
-=====================================================
+Multiple DS18x20 1-wire sensors on the Raspberry PI
+===================================================
+
+*Edited 1/1/2013 to fix buggy code, etc*
 
 In a [previous article](/wiki/RaspberryPI_DS1820 "wikilink") I showed how to
 use a 1-wire tempreature sensor with the Raspberry PI with minimal
@@ -25,33 +27,46 @@ to get a list of IDs to iterate over, requesting data from each of
 them.  
 
     #!/usr/bin/perl
+    use strict;
     use warnings;
-    &amp;check_modules;
-    &amp;get_device_IDs;
 
+    &check_modules;
+    &get_device_IDs;
+
+    my $in_correction = 6.0;
+    my $out_correction = 2.1;
+    my $count = 0;
+    my $reading = -1;
+    my $device = -1;
+    my @deviceIDs;
+    my @temp_readings;
 
     foreach $device (@deviceIDs)
     {
-        $reading = &amp;read_device($device);
-            if ($reading&nbsp;!= "9999")
-        {
-            push(@temp_readings,$reading);
+        $reading = &read_device($device);
+        if ($reading == 9999) {
+           $reading = "U";
         }
+                
+        push(@temp_readings,$reading);
+              
     }
+
+
+    if ($temp_readings[0] ne 'U') {$temp_readings[0] -= $in_correction;}
+    if ($temp_readings[1] ne 'U') {$temp_readings[1] -= $out_correction;}
 
     #update the database
     `/usr/bin/rrdtool update  /home/pi/temperature/multirPItemp.rrd N:$temp_readings[0]:$temp_readings[1]`;
-
     print "Temp 1 = $temp_readings[0]    Temp 2 = $temp_readings[1]\n";
-
 
 
     sub check_modules
     {
-       $mods = `cat /proc/modules`;
-    if ($mods =~ /w1_gpio/ &amp;&amp; $mods =~ /w1_therm/)
+       my $mods = `cat /proc/modules`;
+    if ($mods =~ /w1_gpio/ && $mods =~ /w1_therm/)
     {
-     print "w1 modules already loaded \n";
+     #print "w1 modules already loaded \n";
     }
     else 
     {
@@ -71,7 +86,7 @@ them.
     open(FILE, "/sys/bus/w1/devices/w1_bus_master1/w1_master_slaves") or die("Unable to open file");
      
     # read file into an array
-     @deviceIDs = &lt;FILE&gt;;
+     @deviceIDs = <FILE>;
      
      # close file 
      close(FILE);
@@ -82,27 +97,27 @@ them.
         #takes one parameter - a device ID
         #returns the temperature if we have something like valid conditions
         #else we return "9999" for undefined
-        
-        $readcommand = "cat /sys/bus/w1/devices/".$_[0]."/w1_slave 2&gt;&amp;1";
-        $readcommand =~ s/\R//g;
-        $sensor_temp = `$readcommand`;
 
-        if ($sensor_temp&nbsp;!~ /No such file or directory/)
-        {
-            if ($sensor_temp&nbsp;!~ /NO/)
-            {
-               $sensor_temp =~ /t=(\d+)/i;
-               $temperature = (($1/1000));
-            }
-            else
-            {
-                $ret = "9999";
-            }
-        }
-        else
-        {
-            $ret = "9999"
-        }
+        my $deviceID = $_[0];
+        $deviceID =~ s/\R//g;
+     
+        my $ret = 9999; # default to return 9999 (fail)
+       
+        my $sensordata = `cat /sys/bus/w1/devices/${deviceID}/w1_slave 2>&1`;
+        print "Read: $sensordata";
+
+
+       if(index($sensordata, 'YES') != -1) {
+          #fix for negative temps from http://habrahabr.ru/post/163575/
+          $sensordata =~ /t=(\D*\d+)/i;
+          #$sensor_temp =~ /t=(\d+)/i;
+          $sensordata = (($1/1000));
+          $ret = $sensordata;
+       } else {
+          print ("CRC Invalid for device $deviceID.\n");
+       }
+
+       return ($ret);
     }
 
 This perl code writes data to a RRD database with two sensors - it
@@ -172,7 +187,27 @@ this script
     LINE2:intemp$RAWCOLOUR:"Inside temperature" \
     LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
 
-;
+The perl code as originally written didn't deal with bus drop-out
+glitches at all (sometimes the 1-wire driver can't read the device, or
+the device doesn't respond in time) so the graphs would end up corrupt
+with invalid data. The graph below shows the sort of thing you'd see
+when corrupt data was stored.
+
+![Corrupt data in the temperature
+database.](Outday_copy.png "Corrupt data in the temperature database.")
+
+George Smart was kind enough to allow himself to be volunteered into
+fixing my, frankly terrible, perl code. It has been about a decade since
+I'd writtten anything in perl, and had forgotten most of what I knew. He
+kept the basic outline of my original code and just made it work as
+I intended it. He is a bloody decent chap!
+
+The new code is now what is gracing the top of this page.
+
+Now the results look more like this.
+
+![Non-glitchy data thanks to George Smart's re-workign of my
+code.](Outday.png "Non-glitchy data thanks to George Smart's re-workign of my code.")
 
 <Category:Experiments> <Category:HowTo> <Category:RaspberryPI>
 <Category:Projects> <Category:Electronics>

@@ -30,8 +30,8 @@ them.
     use strict;
     use warnings;
 
-    &check_modules;
-    &get_device_IDs;
+    &amp;check_modules;
+    &amp;get_device_IDs;
 
     my $in_correction = 6.0;
     my $out_correction = 2.1;
@@ -43,7 +43,7 @@ them.
 
     foreach $device (@deviceIDs)
     {
-        $reading = &read_device($device);
+        $reading = &amp;read_device($device);
         if ($reading == 9999) {
            $reading = "U";
         }
@@ -64,7 +64,7 @@ them.
     sub check_modules
     {
        my $mods = `cat /proc/modules`;
-    if ($mods =~ /w1_gpio/ && $mods =~ /w1_therm/)
+    if ($mods =~ /w1_gpio/ &amp;&amp; $mods =~ /w1_therm/)
     {
      #print "w1 modules already loaded \n";
     }
@@ -86,7 +86,7 @@ them.
     open(FILE, "/sys/bus/w1/devices/w1_bus_master1/w1_master_slaves") or die("Unable to open file");
      
     # read file into an array
-     @deviceIDs = <FILE>;
+     @deviceIDs = &lt;FILE&gt;;
      
      # close file 
      close(FILE);
@@ -103,11 +103,11 @@ them.
      
         my $ret = 9999; # default to return 9999 (fail)
        
-        my $sensordata = `cat /sys/bus/w1/devices/${deviceID}/w1_slave 2>&1`;
+        my $sensordata = `cat /sys/bus/w1/devices/${deviceID}/w1_slave 2&gt;&amp;1`;
         print "Read: $sensordata";
 
 
-       if(index($sensordata, 'YES') != -1) {
+       if(index($sensordata, 'YES')&nbsp;!= -1) {
           #fix for negative temps from http://habrahabr.ru/post/163575/
           $sensordata =~ /t=(\D*\d+)/i;
           #$sensor_temp =~ /t=(\d+)/i;
@@ -193,21 +193,19 @@ the device doesn't respond in time) so the graphs would end up corrupt
 with invalid data. The graph below shows the sort of thing you'd see
 when corrupt data was stored.
 
-![Corrupt data in the temperature
-database.](Outday_copy.png "Corrupt data in the temperature database.")
+![](Outday_copy.png "Outday_copy.png")
 
-George Smart was kind enough to allow himself to be volunteered into
-fixing my, frankly terrible, perl code. It has been about a decade since
-I'd writtten anything in perl, and had forgotten most of what I knew. He
-kept the basic outline of my original code and just made it work as
-I intended it. He is a bloody decent chap!
+[George Smart](http://george-smart.co.uk)was kind enough to allow
+himself to be volunteered into fixing my, frankly terrible, perl code.
+It has been about a decade since I'd writtten anything in perl, and had
+forgotten most of what I knew. He kept the basic outline of my original
+code and just made it work as I intended it. He is a bloody decent chap!
 
 The new code is now what is gracing the top of this page.
 
 Now the results look more like this.
 
-![Non-glitchy data thanks to George Smart's re-workign of my
-code.](Outday.png "Non-glitchy data thanks to George Smart's re-workign of my code.")
+![](Outday.png "Outday.png")
 
 <Category:Experiments> <Category:HowTo> <Category:RaspberryPI>
 <Category:Projects> <Category:Electronics>

@@ -11,8 +11,8 @@ On the rPI using the w1 kernel drivers, the file "'''/sys/bus/w1/devices/w1_bus_
 use strict;
 use warnings;
 
-&check_modules;
-&get_device_IDs;
+&amp;check_modules;
+&amp;get_device_IDs;
 
 my $in_correction = 6.0;
 my $out_correction = 2.1;
@@ -24,7 +24,7 @@ my @temp_readings;
 
 foreach $device (@deviceIDs)
 {
-    $reading = &read_device($device);
+    $reading = &amp;read_device($device);
     if ($reading == 9999) {
        $reading = "U";
     }
@@ -45,7 +45,7 @@ print "Temp 1 = $temp_readings[0]    Temp 2 = $temp_readings[1]\n";
 sub check_modules
 {
    my $mods = `cat /proc/modules`;
-if ($mods =~ /w1_gpio/ && $mods =~ /w1_therm/)
+if ($mods =~ /w1_gpio/ &amp;&amp; $mods =~ /w1_therm/)
 {
  #print "w1 modules already loaded \n";
 }
@@ -67,7 +67,7 @@ sub get_device_IDs
 open(FILE, "/sys/bus/w1/devices/w1_bus_master1/w1_master_slaves") or die("Unable to open file");
  
 # read file into an array
- @deviceIDs = <FILE>;
+ @deviceIDs = &lt;FILE&gt;;
  
  # close file 
  close(FILE);
@@ -84,11 +84,11 @@ sub read_device
  
     my $ret = 9999; # default to return 9999 (fail)
    
-    my $sensordata = `cat /sys/bus/w1/devices/${deviceID}/w1_slave 2>&1`;
+    my $sensordata = `cat /sys/bus/w1/devices/${deviceID}/w1_slave 2&gt;&amp;1`;
     print "Read: $sensordata";
 
 
-   if(index($sensordata, 'YES') != -1) {
+   if(index($sensordata, 'YES')&nbsp;!= -1) {
       #fix for negative temps from http://habrahabr.ru/post/163575/
       $sensordata =~ /t=(\D*\d+)/i;
       #$sensor_temp =~ /t=(\d+)/i;
@@ -166,16 +166,16 @@ LINE2:intemp$RAWCOLOUR:"Inside temperature" \
 LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
 
 </pre> 
-The perl code as originally written didn't deal with bus drop-out glitches at all (sometimes the 1-wire driver can't read the device, or the device doesn't respond in time) so the graphs would end up corrupt with invalid data. The graph below shows the sort of thing you'd see when corrupt data was stored.
+The perl code as originally written didn't deal with bus drop-out glitches at all (sometimes the 1-wire driver can't read the device, or the device doesn't respond in time) so the graphs would end up corrupt with invalid data. The graph below shows the sort of thing you'd see when corrupt data was stored. 
 
-[[Image:Outday_copy.png|frame|center|Corrupt data in the temperature database.]]
+[[Image:Outday copy.png|frame|center]] 
 
-George Smart was kind enough to allow himself to be volunteered into fixing my, frankly terrible, perl code. It has been about a decade since I'd writtten anything in perl, and had forgotten most of what I knew. He kept the basic outline of my original code and just made it work as I&nbsp;intended it. He is a bloody decent chap!
+[http://george-smart.co.uk George Smart ]was kind enough to allow himself to be volunteered into fixing my, frankly terrible, perl code. It has been about a decade since I'd writtten anything in perl, and had forgotten most of what I knew. He kept the basic outline of my original code and just made it work as I&nbsp;intended it. He is a bloody decent chap! 
 
-The new code is now what is gracing the top of this page.
+The new code is now what is gracing the top of this page. 
 
-Now the results look more like this.
+Now the results look more like this. 
 
-[[Image:Outday.png|frame|center|Non-glitchy data thanks to George Smart's re-workign of my code.]]
+[[Image:Outday.png|frame|center]] 
 
 [[Category:Code]] [[Category:Experiments]] [[Category:HowTo]] [[Category:RaspberryPI]] [[Category:Projects]] [[Category:Electronics]]

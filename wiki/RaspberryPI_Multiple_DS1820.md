@@ -12,7 +12,7 @@ Multiple DS18x20 1-wire sensors on the Raspberry PI
 *Edited 1/1/2013 to fix buggy code, etc*
 
 In a [previous article](/wiki/RaspberryPI_DS1820 "wikilink") I showed how to
-use a 1-wire tempreature sensor with the Raspberry PI with minimal
+use a 1-wire temperature sensor with the Raspberry PI with minimal
 interface requirements. The nice thing with 1-wire sensors in that
 multiple devices can share the same bus. You just wire the sensors in
 parallel - all GND pins tired together, all DQ pins tied together and

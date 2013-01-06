@@ -21,4 +21,13 @@ Current temperature:
 
 </center>
 </html>
+Hourly
+======
+
+<html>
+<center>
+<img src="http://webshed.org/box/outhour.png">
+
+</center>
+</html>
 

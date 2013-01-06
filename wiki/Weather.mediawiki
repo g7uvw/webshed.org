@@ -7,3 +7,9 @@ This page is more for my own general interest then anything else, it's just a co
 Current temperature:<br><br> <img src="http://webshed.org/box/outday.png">
 </center>
 </html>
+
+
+= Hourly =
+<html><center>
+<img src="http://webshed.org/box/outhour.png">
+</center></html>

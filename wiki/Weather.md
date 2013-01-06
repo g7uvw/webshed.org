@@ -13,20 +13,48 @@ just a collection of weather data from
 home. For now it's just logging temperature, but I hope to add other
 measurements in the future.
 
-<html>
-<center>
-Current temperature:  
-  
-<img src="http://webshed.org/box/outday.png">
-
-</center>
-</html>
 Hourly
 ======
 
 <html>
 <center>
 <img src="http://webshed.org/box/outhour.png">
+
+</center>
+</html>
+Daily
+=====
+
+<html>
+<center>
+<img src="http://webshed.org/box/outday.png">
+
+</center>
+</html>
+Weekly
+======
+
+<html>
+<center>
+<img src="http://webshed.org/box/outweek.png">
+
+</center>
+</html>
+Monthly
+=======
+
+<html>
+<center>
+<img src="http://webshed.org/box/outmonth.png">
+
+</center>
+</html>
+Yearly
+======
+
+<html>
+<center>
+<img src="http://webshed.org/box/outyear.png">
 
 </center>
 </html>

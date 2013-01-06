@@ -13,12 +13,12 @@ just a collection of weather data from
 home. For now it's just logging temperature, but I hope to add other
 measurements in the future.
 
-&lt;html&gt;
-
+<html>
 <center>
 Current temperature:  
   
-&lt;img src=“<http://webshed.org/box/outday.png>”&gt;
+<img src="http://webshed.org/box/outday.png">
 
 </center>
-&lt;/html&gt;
+</html>
+

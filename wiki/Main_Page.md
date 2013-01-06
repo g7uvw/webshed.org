@@ -35,6 +35,7 @@ page.
 Electronics
 -----------
 
+-   [Weather](/wiki/Weather "wikilink") Graphs based on Raspberry PI 
 -   [Multiple 1-wire sensors on the Raspberry
     PI](/wiki/RaspberryPI_Multiple_DS1820 "wikilink")
 -   [DS18s20 DS18b20 1-Wire Temperature senors on the Raspberry

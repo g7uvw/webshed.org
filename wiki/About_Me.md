@@ -38,3 +38,15 @@ spikes grow from sub-millimeter droplets of molten silicon.
 
 I have a CV and [a less formal biography](/wiki/Bio2 "wikilink") also
 available online.
+
+<html>
+<iframe src="/cgi-bin/email.cgi" width="100%" height="175px" frameborder="0">
+
+Your browser does not seem to support iframes. Go to
+<http://www.george-smart.co.uk/cgi-bin/email.cgi> and fill out the
+capcha. Sorry.
+
+</iframe>
+
+</html>
+

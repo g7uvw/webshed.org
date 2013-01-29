@@ -2,6 +2,8 @@
 title: FT50-43 and FT50-26 Transformers
 permalink: wiki/FT50-43_and_FT50-26_Transformers/
 layout: wiki
+tags:
+ - Experiments
 ---
 
 Testing low frequency losses in broadband transformers materials
@@ -59,3 +61,8 @@ I'll make my transformer from 43-mix material unless I can get some
 75-mix soon. I'll post up measurements of the transformer I end up
 using. It may also be instructive to try other common cores powdered
 iron and see how they compare.
+
+  
+
+<Category:Projects> <Category:Radio> <Category:Testgear>
+<Category:Electronics>

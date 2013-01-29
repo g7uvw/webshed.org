@@ -8,10 +8,10 @@ Construct a tri-filiar winding of 5 turns on both FT50-43 and FT50-26 cores, kee
 
 Loss will be measured from 10 kHz to 100 MHz and plotted on a log frequency scale. A spot measurement of S21 at 473kHz will also be made. 
 
-<gallery caption="Broadband transformers under test - Click Image for larger version" perrow="3" widths="250px">
+<gallery caption="Broadband transformers under test - Click Image for larger version" perrow="2" widths="400px" heights="400px">
 File:Ft50-43.jpg|FT50-43 Transformer 
 File:Ft50-26.jpg|FT50-26 Transformer 
-</gallery><br> 
+</gallery><br>
 
 == Results  ==
 

@@ -23,8 +23,8 @@ Some of the more recent things I've been working on and documenting here on webs
 <br>
 
 == Radio  ==
-
-*[[AD9850_Arduino |AD9850 DDS controlled by Arduino]]
+*[[FT50-43_and_FT50-26_Transformers|Testing ferrite broadband transformers]]
+*[[AD9850 Arduino|AD9850 DDS controlled by Arduino]] 
 *[[ZS6BKW antenna|ZS6BKW Wire antenna]] 
 *[[GB0SNB|Kelvedon Hatch Secret Nuclear Bunker amateur radio station]] 
 *[[FUNcube-Dongle-Linux|Using a FUNcube Dongle SDR reciever under Linux]] 

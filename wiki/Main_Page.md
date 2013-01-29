@@ -52,6 +52,8 @@ Electronics
 Radio
 -----
 
+-   [Testing ferrite broadband
+    transformers](/wiki/FT50-43_and_FT50-26_Transformers "wikilink")
 -   [AD9850 DDS controlled by Arduino](/wiki/AD9850_Arduino "wikilink")
 -   [ZS6BKW Wire antenna](/wiki/ZS6BKW_antenna "wikilink")
 -   [Kelvedon Hatch Secret Nuclear Bunker amateur radio

@@ -15,10 +15,10 @@ I built my breakout interface directly onto a plastic pin header for testing pur
 <br> 
 
 <gallery caption="DS1820 1-wire sensor on Raspberry PI - Click Image for larger version" perrow="3" widths="200px">
-File:Fritzing_rPI_DS1820.png|Cartoon schematic of DS1820 connections to a Raspberry PI. 
+File:Fritzing_rPI_DS1820.png|Cartoon schematic of DS1820 connections to a Raspberry PI. -- Corrected DS18B20 connections no, thanks Jens.
 File:RPI-ds1820.jpg|1-Wire interface for Raspberry PI build on a pin-header. 
 File:RPI-DS1820.jpg|Interface mounted on Raspberry PI GPIO pins
-</gallery> 
+</gallery>
 
 == Software  ==
 

@@ -39,9 +39,10 @@ testing purposes, but this is hardly the best way to do it.
   
 
 <File:Fritzing_rPI_DS1820.png%7CCartoon> schematic of DS1820 connections
-to a Raspberry PI. <File:RPI-ds1820.jpg%7C1-Wire> interface for
-Raspberry PI build on a pin-header. <File:RPI-DS1820.jpg%7CInterface>
-mounted on Raspberry PI GPIO pins
+to a Raspberry PI. -- Corrected DS18B20 connections no, thanks Jens.
+<File:RPI-ds1820.jpg%7C1-Wire> interface for Raspberry PI build on a
+pin-header. <File:RPI-DS1820.jpg%7CInterface> mounted on Raspberry PI
+GPIO pins
 
 Software
 --------

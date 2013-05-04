@@ -14,14 +14,24 @@ My British Gas supplied carbon monoxide sensor started bleeping at me, not the u
 
 The whole of the alarm is implemented on a single PCB, the two most obvious parts being the electrochemical sensor and the piezo sounder. Just peaking out from under the sensor is something that looks rather like a Microchip PIC ISCP port header. <br> [[Image:Co-alarm-pcb-front.jpg|thumb|left|400px]][[Image:Co-alarm-ICSP-port.jpg|thumb|center]] 
 
-== The Sensor ==
+== The Sensor  ==
 
-The carbon monoxide sensor is a [http://www.figarosensor.com/products/5042Dtl.pdf Figaro TGS5042], this is an electrochemical device that generates an electrical current that depends upon the concentration of carbon monoxide that defuses into the body of the device. As with all sensors of this type, the device has a limited working life - failure being sure to the liquid electrolytes drying out.
+The carbon monoxide sensor is a [http://www.figarosensor.com/products/5042Dtl.pdf Figaro TGS5042], this is an electrochemical device that generates an electrical current that depends upon the concentration of carbon monoxide that defuses into the body of the device. As with all sensors of this type, the device has a limited working life - failure being sure to the liquid electrolytes drying out. 
 
-[[Image:Co-alarm-electrochemical-sensor.jpg|thumb|center|300px|Figaro TGS5042]]
+[[Image:Co-alarm-electrochemical-sensor.jpg|thumb|center|300px]] 
 
-The 2-D barcode encodes quite a bit of information about this sensor, but I've not found anything that can read it. The number under the standard barcode is the output current in nano-amps / parts per million (nA/ppm), so this sensor produces 1.697 nA when exposed to 1ppm CO. A pretty high gain current to voltage amplifier is required to turn this tiny current into something a micro-controller or logic device can deal with.
+The 2-D barcode encodes quite a bit of information about this sensor, but I've not found anything that can read it. The number under the standard barcode is the output current in nano-amps / parts per million (nA/ppm), so this sensor produces 1.697 nA when exposed to 1ppm CO. A pretty high gain current to voltage amplifier is required to turn this tiny current into something a micro-controller or logic device can deal with. 
 
-[[Image:Co-alarm-analog-stage.jpg|thumb|center|300px|The analog stage between sensor and alarm logic]]
+[[Image:Co-alarm-analog-stage.jpg|thumb|center|300px]] 
 
-The analog amplification and processing sits right under the sensor.
+The analog amplification and processing sits right under the sensor. The active device is a Microchip [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010444 MCP6042] low power dual operational amplifier, likely wired as a trans-impedance amplifier (not checked the circuit yet). 
+
+== The Processor ==
+
+The presence of an ICSP&nbsp;header is a give away that the alarm uses a Microchip PIC type processor, and when we remove the piezo sounder we spot a [http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf PIC16F688]. There is also a Microchip [http://ww1.microchip.com/downloads/en/devicedoc/22167a.pdf RE46C105] piezo sounder driver. There's no other voltage regulation or voltage dropping on the board, so at first I couldn't see how the pic ran from the 9V battery supply, a closer reading of the datasheet for the piezo driver mentions a built in voltage regulator selectable at either 5V or 3.3V, depending on pin 12 (low = 3.3V, high = 5V).
+
+[[Image:Co-alarm-pic-and-piezo-driver.jpg|thumb|center|300px|Piezo sounder driver - left and PIC16F688 right]]
+
+=== Reading the PIC ===
+
+With my trusty PICkit-2 programmer, I&nbsp;was able to dump out the code from the processor via the ICSP port. There was no code protection and the hex dump doesn't seem to have any encryption or obfuscation. There are no obvious text strings in the code

@@ -34,7 +34,7 @@ upon the concentration of carbon monoxide that defuses into the body of
 the device. As with all sensors of this type, the device has a limited
 working life - failure being sure to the liquid electrolytes drying out.
 
-<img src="Co-alarm-electrochemical-sensor.jpg" title="Figaro TGS5042" alt="Figaro TGS5042" width="300" />
+<img src="Co-alarm-electrochemical-sensor.jpg" title="Co-alarm-electrochemical-sensor.jpg" alt="Co-alarm-electrochemical-sensor.jpg" width="300" />
 
 The 2-D barcode encodes quite a bit of information about this sensor,
 but I've not found anything that can read it. The number under the
@@ -44,6 +44,34 @@ pretty high gain current to voltage amplifier is required to turn this
 tiny current into something a micro-controller or logic device can deal
 with.
 
-<img src="Co-alarm-analog-stage.jpg" title="The analog stage between sensor and alarm logic" alt="The analog stage between sensor and alarm logic" width="300" />
+<img src="Co-alarm-analog-stage.jpg" title="Co-alarm-analog-stage.jpg" alt="Co-alarm-analog-stage.jpg" width="300" />
 
-The analog amplification and processing sits right under the sensor.
+The analog amplification and processing sits right under the sensor. The
+active device is a Microchip
+[MCP6042](http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010444)
+low power dual operational amplifier, likely wired as a trans-impedance
+amplifier (not checked the circuit yet).
+
+The Processor
+-------------
+
+The presence of an ICSP header is a give away that the alarm uses a
+Microchip PIC type processor, and when we remove the piezo sounder we
+spot a
+[PIC16F688](http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf).
+There is also a Microchip
+[RE46C105](http://ww1.microchip.com/downloads/en/devicedoc/22167a.pdf)
+piezo sounder driver. There's no other voltage regulation or voltage
+dropping on the board, so at first I couldn't see how the pic ran from
+the 9V battery supply, a closer reading of the datasheet for the piezo
+driver mentions a built in voltage regulator selectable at either 5V or
+3.3V, depending on pin 12 (low = 3.3V, high = 5V).
+
+<img src="Co-alarm-pic-and-piezo-driver.jpg" title="Piezo sounder driver - left and PIC16F688 right" alt="Piezo sounder driver - left and PIC16F688 right" width="300" />
+
+### Reading the PIC
+
+With my trusty PICkit-2 programmer, I was able to dump out the code from
+the processor via the ICSP port. There was no code protection and the
+hex dump doesn't seem to have any encryption or obfuscation. There are
+no obvious text strings in the code

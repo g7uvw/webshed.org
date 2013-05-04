@@ -80,3 +80,17 @@ and assembly code are in an [archive](/wiki/Media:Co-pic-code.zip "wikilink")
 for downloading - have a play and let me know if you discover how it
 works.  
 
+Wrap-up
+-------
+
+There was rather more in this alarm than I expected. I expected to see
+some kind of electrochemical sensor, but I thought the output would
+either go into a very simple comparator circuit or into a device
+designed specifically for this type of alarm. I wasn't expecting an
+accessible microcontroller in here. All in all, this seems a pretty well
+designed device, good named manufacturer components (not Chinese
+knock-offs) and some thought about the component choice (low power op
+amps and micros); they even use a specific piezo driver rather than just
+pulsing it from a spare pin on the PIC.
+
+I must now buy a replacement carbon monoxide alarm.

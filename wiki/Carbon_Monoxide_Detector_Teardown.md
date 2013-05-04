@@ -76,10 +76,12 @@ the processor via the ICSP port. There was no code protection and the
 hex dump doesn't seem to have any encryption or obfuscation. There are
 no obvious text strings in the code, but this device never interfaces to
 the external world apart from some bleeps and an LED flash, so there's
-no need for any human readable data. I ran the hex though a simple
-disassembler, nothing very odd leaps out, but it is quite a few years
-since I programmed a 16-series PIC in assembler - I could well be
-missing something interesting. The hexdump and assembly code are in an
-[archive](/wiki/Media:Co-pic-code.zip "wikilink") for downloading - have a
-play and let me know if you discover how it works.  
+no need for any human readable data.
+
+I ran the hex though a simple disassembler, nothing very odd leaps out,
+but it is quite a few years since I programmed a 16-series PIC in
+assembler - I could well be missing something interesting. The hexdump
+and assembly code are in an [archive](/wiki/Media:Co-pic-code.zip "wikilink")
+for downloading - have a play and let me know if you discover how it
+works.  
 

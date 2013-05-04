@@ -10,13 +10,8 @@ detector-malfunction bleep code. This makes it fair game for a teardown!
 
 <img src="Co-alarm-before.jpg" title="Co-alarm-before.jpg" alt="Co-alarm-before.jpg" width="200" height="200" />
 
-  
-  
-  
-  
-
-The PCB  
----------
+The PCB
+-------
 
 The whole of the alarm is implemented on a single PCB, the two most
 obvious parts being the electrochemical sensor and the piezo sounder.
@@ -67,7 +62,7 @@ the 9V battery supply, a closer reading of the datasheet for the piezo
 driver mentions a built in voltage regulator selectable at either 5V or
 3.3V, depending on pin 12 (low = 3.3V, high = 5V).
 
-<img src="Co-alarm-pic-and-piezo-driver.jpg" title="Piezo sounder driver - left and PIC16F688 right" alt="Piezo sounder driver - left and PIC16F688 right" width="300" />
+<img src="Co-alarm-pic-and-piezo-driver.jpg" title="Co-alarm-pic-and-piezo-driver.jpg" alt="Co-alarm-pic-and-piezo-driver.jpg" width="300" />
 
 ### Reading the PIC
 

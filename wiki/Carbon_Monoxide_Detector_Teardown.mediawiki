@@ -2,15 +2,7 @@ My British Gas supplied carbon monoxide sensor started bleeping at me, not the u
 
 [[Image:Co-alarm-before.jpg|thumb|center|200x200px]] 
 
-<br> 
-
-<br> 
-
-<br> 
-
-<br> 
-
-== The PCB<br>  ==
+== The PCB  ==
 
 The whole of the alarm is implemented on a single PCB, the two most obvious parts being the electrochemical sensor and the piezo sounder. Just peaking out from under the sensor is something that looks rather like a Microchip PIC ISCP port header. <br> [[Image:Co-alarm-pcb-front.jpg|thumb|left|400px]][[Image:Co-alarm-ICSP-port.jpg|thumb|center]] 
 
@@ -26,11 +18,11 @@ The 2-D barcode encodes quite a bit of information about this sensor, but I've n
 
 The analog amplification and processing sits right under the sensor. The active device is a Microchip [http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010444 MCP6042] low power dual operational amplifier, likely wired as a trans-impedance amplifier (not checked the circuit yet). 
 
-== The Processor ==
+== The Processor  ==
 
-The presence of an ICSP&nbsp;header is a give away that the alarm uses a Microchip PIC type processor, and when we remove the piezo sounder we spot a [http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf PIC16F688]. There is also a Microchip [http://ww1.microchip.com/downloads/en/devicedoc/22167a.pdf RE46C105] piezo sounder driver. There's no other voltage regulation or voltage dropping on the board, so at first I couldn't see how the pic ran from the 9V battery supply, a closer reading of the datasheet for the piezo driver mentions a built in voltage regulator selectable at either 5V or 3.3V, depending on pin 12 (low = 3.3V, high = 5V).
+The presence of an ICSP&nbsp;header is a give away that the alarm uses a Microchip PIC type processor, and when we remove the piezo sounder we spot a [http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf PIC16F688]. There is also a Microchip [http://ww1.microchip.com/downloads/en/devicedoc/22167a.pdf RE46C105] piezo sounder driver. There's no other voltage regulation or voltage dropping on the board, so at first I couldn't see how the pic ran from the 9V battery supply, a closer reading of the datasheet for the piezo driver mentions a built in voltage regulator selectable at either 5V or 3.3V, depending on pin 12 (low = 3.3V, high = 5V). 
 
-[[Image:Co-alarm-pic-and-piezo-driver.jpg|thumb|center|300px|Piezo sounder driver - left and PIC16F688 right]]
+[[Image:Co-alarm-pic-and-piezo-driver.jpg|thumb|center|300px]] 
 
 === Reading the PIC  ===
 

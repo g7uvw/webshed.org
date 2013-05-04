@@ -15,12 +15,11 @@ detector-malfunction bleep code. This makes it fair game for a teardown!
   
   
 
-<img src="Co-alarm-pcb-front.jpg" title="fig:Co-alarm-pcb-front.jpg" alt="Co-alarm-pcb-front.jpg" width="400" /><img src="Co-alarm-ICSP-port.jpg" title="fig:This looks rather like an ICSP port. Hmm." alt="This looks rather like an ICSP port. Hmm." width="400" />The PCB  
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The PCB  
+---------
 
 The whole of the alarm is implemented on a single PCB, the two most
 obvious parts being the electrochemical sensor and the piezo sounder.
 Just peaking out from under the sensor is something that looks rather
 like a Microchip PIC ISCP port header.  
-  
-
+<img src="Co-alarm-pcb-front.jpg" title="fig:Co-alarm-pcb-front.jpg" alt="Co-alarm-pcb-front.jpg" width="400" /><img src="Co-alarm-ICSP-port.jpg" title="fig:Co-alarm-ICSP-port.jpg" alt="Co-alarm-ICSP-port.jpg" width="400" />

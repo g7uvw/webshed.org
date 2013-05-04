@@ -35,6 +35,9 @@ page.
 Electronics
 -----------
 
+-   [Carbon Monoxide Detector
+    Teardown](/wiki/Carbon_Monoxide_Detector_Teardown "wikilink") What's
+    inside a 2010/2011 vintage carbon monoxide sensor.
 -   [Weather](/wiki/Weather "wikilink") Graphs based on Raspberry PI 
 -   [Multiple 1-wire sensors on the Raspberry
     PI](/wiki/RaspberryPI_Multiple_DS1820 "wikilink")

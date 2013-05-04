@@ -2,6 +2,8 @@
 title: Carbon Monoxide Detector Teardown
 permalink: wiki/Carbon_Monoxide_Detector_Teardown/
 layout: wiki
+tags:
+ - Teardowns
 ---
 
 My British Gas supplied carbon monoxide sensor started bleeping at me,
@@ -94,3 +96,5 @@ amps and micros); they even use a specific piezo driver rather than just
 pulsing it from a spare pin on the PIC.
 
 I must now buy a replacement carbon monoxide alarm.
+
+<Category:Experiments> <Category:Electronics>

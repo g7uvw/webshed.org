@@ -15,8 +15,6 @@ A rally purchase earlier in 2010 turned out to be a telemetry or data
 transmitter on 160-ish MHz. The interesting part of the board was the
 12x frequency multiplier and PA.
 
-<img src="Tele-tx.jpg" title="Transmitter with RF shield off and 12 MHz crystal tacked on" alt="Transmitter with RF shield off and 12 MHz crystal tacked on" width="800" />
-
 The RF section of the board has four connections to the digital section.
 These include +5v for the oscillator and frequency multiplier, a second
 +5v supply for the PA transistor, a modulation input and a signal to
@@ -24,13 +22,15 @@ switch on or off the first frequency tripler to kill the RF output
 without stopping the oscillator. Ground is common to both sections of
 the board.
 
-<img src="RF-stage.jpg" title="RF stage of the transmitter. Comprised of an Oscillator, frequency multiplier stage and a PA " alt="RF stage of the transmitter. Comprised of an Oscillator, frequency multiplier stage and a PA " width="800" />
+<img src="Tele-tx.jpg" title="Tele-tx.jpg" alt="Tele-tx.jpg" width="800" />
 
 Conversion to 144 MHz was surprisingly easy; the oscillator crystal was
 swapped for a 12 MHz computer grade part and wired in series with a
 10-60pF trimmer cap to allow fine frequency adjustment. From then on it
 was just a case of peaking the sections of the frequency multiplier and
 adjusting the filter for lowest harmonic levels.
+
+<img src="RF-stage.jpg" title="RF-stage.jpg" alt="RF-stage.jpg" width="800" />
 
 The initial power output was rather low (&lt;10mW into 50Ohm), so I took
 advantage of the separate PA supply and increased the PA transistor
@@ -42,7 +42,7 @@ harmonics at least 30dB below this.
 For initial tests, the carrier is just keyed on and off (5s on, 3s off)
 with a 555 timer on the tripler control line.
 
-<img src="144MEPT.jpg" title="The boxed 144MHz QRSS MEPT with 555 timer controller " alt="The boxed 144MHz QRSS MEPT with 555 timer controller " width="800" />
+<img src="144MEPT.jpg" title="144MEPT.jpg" alt="144MEPT.jpg" width="800" />
 
 First Light
 -----------

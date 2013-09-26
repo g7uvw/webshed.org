@@ -10,8 +10,26 @@ My recent papers and publications
 Some of my recent published work, I can only provide journal links here
 due to copyright of these publications being assigned to the publishers.
 
+2013
+----
+
+MILLS D, Patten K, Kennedy C, Gonzalez L, Davis G, Wess T (2013) Is
+there evidence for change to collagen within parchment samples after
+exposure to an X-ray dose during high contrast X-ray microtomography? A
+multi technique investigation. Heritage Science,
+<http://www.heritagesciencejournal.com/content/1/1/22>
+
+Davis GR, Evershed AN, Mills D (2013). Quantitative high contrast X-ray
+microtomography for dental research. J Dent 41(5):475-482 May 2013
+Author URL <DOI:http://dx.doi.org/10.1016/j.jdent.2013.01.010>
+
 2010
 ----
+
+Davis G, Evershed A, Elliott J, Mills D (2010) Quantitative X-ray
+microtomography with a conventional source Editors: Stock SR.
+DEVELOPMENTS IN X-RAY TOMOGRAPHY VII. 7804: . 2010
+<DOI:http://dx.doi.org/10.1117/12.861355>
 
 Zarbakhsh, A, Campana, M, Mills, D et al. (2010) . Structural studies of
 aliphatic substituted phthalocyanine-lipid multilayers. Langmuir vol.

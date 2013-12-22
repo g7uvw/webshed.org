@@ -9,8 +9,9 @@ tags:
 Multiple DS18x20 1-wire sensors on the Raspberry PI
 ===================================================
 
-“Edited 22/12/2013 to add a link to github” *Edited 1/1/2013 to fix
-buggy code, etc*
+*Edited 22/12/2013 to add a link to github"*
+
+*Edited 1/1/2013 to fix buggy code, etc*
 
 In a [previous article](/wiki/RaspberryPI_DS1820 "wikilink") I showed how to
 use a 1-wire temperature sensor with the Raspberry PI with minimal

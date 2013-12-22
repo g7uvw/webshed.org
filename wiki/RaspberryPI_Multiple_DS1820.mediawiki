@@ -1,6 +1,6 @@
 = Multiple DS18x20 1-wire sensors on the Raspberry PI  =
 
-''Edited 1/1/2013 to fix buggy code, etc'' 
+"Edited 22/12/2013 to add a link to github" ''Edited 1/1/2013 to fix buggy code, etc'' 
 
 In a [[RaspberryPI DS1820|previous article]] I&nbsp;showed how to use a 1-wire temperature sensor with the Raspberry PI&nbsp;with minimal interface requirements. The nice thing with 1-wire sensors in that multiple devices can share the same bus. You just wire the sensors in parallel - all GND pins tired together, all DQ&nbsp;pins tied together and all VCC&nbsp;pins (if you use them) tired together.<br> 
 
@@ -166,6 +166,8 @@ LINE2:intemp$RAWCOLOUR:"Inside temperature" \
 LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
 
 </pre> 
+This code is now maintained at [https://github.com/g7uvw/rPI-multiDS18x20 github] Download it from there, rather then grabbing it by copy &amp;&nbsp;past from this page - that seems to cause errors with HTML&nbsp;codes getting embedded in the perl code. 
+
 The perl code as originally written didn't deal with bus drop-out glitches at all (sometimes the 1-wire driver can't read the device, or the device doesn't respond in time) so the graphs would end up corrupt with invalid data. The graph below shows the sort of thing you'd see when corrupt data was stored. 
 
 [[Image:Outday copy.png|frame|center]] 

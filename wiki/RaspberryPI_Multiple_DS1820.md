@@ -9,7 +9,8 @@ tags:
 Multiple DS18x20 1-wire sensors on the Raspberry PI
 ===================================================
 
-*Edited 1/1/2013 to fix buggy code, etc*
+“Edited 22/12/2013 to add a link to github” *Edited 1/1/2013 to fix
+buggy code, etc*
 
 In a [previous article](/wiki/RaspberryPI_DS1820 "wikilink") I showed how to
 use a 1-wire temperature sensor with the Raspberry PI with minimal
@@ -186,6 +187,11 @@ this script
     DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
     LINE2:intemp$RAWCOLOUR:"Inside temperature" \
     LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+
+This code is now maintained at
+[github](https://github.com/g7uvw/rPI-multiDS18x20) Download it from
+there, rather then grabbing it by copy & past from this page - that
+seems to cause errors with HTML codes getting embedded in the perl code.
 
 The perl code as originally written didn't deal with bus drop-out
 glitches at all (sometimes the 1-wire driver can't read the device, or

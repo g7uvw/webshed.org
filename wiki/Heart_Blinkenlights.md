@@ -26,3 +26,13 @@ back of the heart PCB and will run with no extra parts - that made
 selection of controller easy - use those.
 
 ### LED Placement
+
+<img src="IMG_20140213_202524.jpg" title="fig:IMG_20140213_202524.jpg" alt="IMG_20140213_202524.jpg" width="450" height="600" />
+At the time I soldered the LEDs on the PCB I hadn't though too much
+about how to address them via charlieplexing, so I just had them in
+pairs, anti-paralell. I can always fix the addressing in software -
+however this does make for some odd looking code at times. It would have
+been much nicer to have been consistant with placing the LEDs such that
+the topmost of each pair was always at the lowest (or highest) address.
+The image shows how a few of the LEDs had to have some extreme
+modification with a file to fit the board.

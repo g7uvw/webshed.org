@@ -4,4 +4,6 @@ I wanted to make something for my partner for Valentine's Day 2014. Browsing the
 
 First off, I ditched the 3mm LEDs and plumped for some 5mm ultra high brighness ones, unfortunately I&nbsp;ordered 8mm by mistake so some filing and brute force was needed to get them to fit the PCB. I'd wanted to try [https://en.wikipedia.org/wiki/Charlieplexing charlieplexing]&nbsp; for some time, so this seemed like a good opotunity. I&nbsp;had some PIC16F883 devices in SMT form in the spares bin , these are small enough to fit on the back of the heart PCB and will run with no extra parts - that made selection of controller easy - use those. 
 
-=== LED Placement ===
+=== LED Placement  ===
+
+[[Image:IMG_20140213_202524.jpg|450x600px]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-paralell. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistant with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board.

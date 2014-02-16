@@ -24,3 +24,5 @@ time, so this seemed like a good opotunity. I had some PIC16F883 devices
 in SMT form in the spares bin , these are small enough to fit on the
 back of the heart PCB and will run with no extra parts - that made
 selection of controller easy - use those.
+
+### LED Placement

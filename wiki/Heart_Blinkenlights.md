@@ -36,3 +36,11 @@ been much nicer to have been consistant with placing the LEDs such that
 the topmost of each pair was always at the lowest (or highest) address.
 The image shows how a few of the LEDs had to have some extreme
 modification with a file to fit the board.
+
+To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and
+drawing the conection graph gives the addresses and the data bytes we
+needs to control which LED is on at any given time.
+
+<img src="IMG_20140216_191135.jpg" title="IMG_20140216_191135.jpg" alt="IMG_20140216_191135.jpg" width="521" height="530" />
+
+<img src="IMG_20140216_191145.jpg" title="IMG_20140216_191145.jpg" alt="IMG_20140216_191145.jpg" width="440" height="416" />

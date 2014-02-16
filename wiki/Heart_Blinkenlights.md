@@ -57,5 +57,20 @@ This gives the following mapping:
 | E       | 4,5,9,10,12 | Brown       |
 | F       | 5,8,11,13   | Red         |
 
-  
+### Animation  
 
+I decided I wanted a chasing light animation around the LEDs, speeding
+up each pass followed by a left-right wipe and something else (undecided
+as i fired up the compiler). The initial code I wrote was just to test
+the LEDS, it cycles though each LED pair address and alternates which of
+the pair is on - this was to check the wiring was correct and to form a
+basic program to build upon.
+
+Two have more than one LED apear to be on in a charlieplexing scheme you
+need to flash the LEDs quickly and reply on persistance of vision to
+make them seem on fully.
+
+Thw way I implemented the address and data scheme is far from optimal -
+given more time I'd have written the code in a more sensible style,
+however the microcontroller is running at 8 MHz so ai have CPU sysle to
+spare, there is more than enough program space for the cde as it stands

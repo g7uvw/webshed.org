@@ -313,9 +313,9 @@ The video shows one run through of the code - I may make some edits if I
 get any more time to play with the project before I had it over.
 
 <html>
-<object width="640" height="480"><param name="movie" value="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+<object width="640" height="480"><param name="movie" value="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
 
-<embed src="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true">
+<embed src="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true">
 </embed>
 </object>
 

@@ -308,3 +308,8 @@ Once again - this is very rushed code - there are multiple ways to
 improve this, I just didn't have time.  
 
 ### Result
+
+The video shows one run through of the code - I may make some edits if I
+get any more time to play with the project before I had it over.
+
+<iframe width="640" height="480" src="//www.youtube.com/embed/f-aoteLzW70" frameborder="0" allowfullscreen></iframe>

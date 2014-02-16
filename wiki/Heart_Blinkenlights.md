@@ -66,11 +66,12 @@ the LEDS, it cycles though each LED pair address and alternates which of
 the pair is on - this was to check the wiring was correct and to form a
 basic program to build upon.
 
-Two have more than one LED apear to be on in a charlieplexing scheme you
-need to flash the LEDs quickly and reply on persistance of vision to
+Two have more than one LED appear to be on in a charlieplexing scheme
+you need to flash the LEDs quickly and reply on persistence of vision to
 make them seem on fully.
 
-Thw way I implemented the address and data scheme is far from optimal -
+The way I implemented the address and data scheme is far from optimal -
 given more time I'd have written the code in a more sensible style,
-however the microcontroller is running at 8 MHz so ai have CPU sysle to
-spare, there is more than enough program space for the cde as it stands
+however the microcontroller is running at 8 MHz so I have CPU cycles to
+spare and there is more than enough program space for the code as it
+stands.

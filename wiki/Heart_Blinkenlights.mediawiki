@@ -53,4 +53,231 @@ I&nbsp;decided I wanted a chasing light animation around the LEDs, speeding up e
 
 Two have more than one LED appear to be on in a charlieplexing scheme you need to flash the LEDs quickly and reply on persistence of vision to make them seem on fully. 
 
-The way I&nbsp;implemented the address and data scheme is far from optimal - given more time I'd have written the code in a more sensible style, however the microcontroller is running at 8 MHz so I have CPU&nbsp;cycles to spare and there is more than enough program space for the code as it stands.
+The way I&nbsp;implemented the address and data scheme is far from optimal - given more time I'd have written the code in a more sensible style, however the microcontroller is running at 8 MHz so I have CPU&nbsp;cycles to spare and there is more than enough program space for the code as it stands. If I wanted to implement flashier animations I'd probably have to compress the the address and data tables to fit the PIC's ROM - or re-wire the LEDs to fit a 'nicer' addressing scheme. 
+
+=== Code<br> ===
+
+The PIC code was compiled with CCS C for the PIC16 series devices. It should port to SDCC or similar or to the Arduino with minimal changes - basically the register that sets the tri-state behavouor of the bus and the data registers are the only thing to change.
+<pre>#case
+#byte   PORTC  =  7
+
+unsigned int a,f;
+
+unsigned char LEDADDR[]  = {3,6,12,24,48,05,10,40,18,20,33,24,17,36,18,40};
+unsigned char LEFT[] = {3,6,12,24,36,17,18,40};
+unsigned char RIGHT[] = {40,18,20,10,5,33,48,24};
+
+unsigned char fcount = 32;
+unsigned char FRAMES[] = { 2,1,
+                           2,4,
+                           8,4,
+                           16,0,
+                           16,32,
+                           4,1,
+                           2,8,
+                           32,0,
+                           2,16,
+                           4,16,
+                           32,1,
+                           8,0,
+                           1,16,
+                           4,32,    
+                           16,2,
+                           8,0
+                           };
+                           
+unsigned char LEFTFRAME[] = { 2,1,
+                              2,4,
+                              8,4,
+                              16,8,
+                              32,4,
+                              16,1,
+                              16,2,
+                              8,0};
+                              
+unsigned char RIGHTFRAME[] = { 22,0,
+                              16,2,
+                              16,4,
+                              2,8,
+                              4,1,
+                              1,32,
+                              16,32,
+                              16,8};
+
+
+void trace()
+{
+  int ff=0,loopcount=500;
+  while (loopcount &gt;0)
+  {
+    for (a=0; a&lt;16; a++)
+    {
+       set_tris_c(~LEDADDR[a]);
+  
+       for (f=0;f &lt; 2; f++)
+        {
+          if (FRAMES[ff] != 0)
+            {
+              PORTC = FRAMES[ff];
+              delay_ms(loopcount);
+             }
+          ff++;
+         }
+
+        if (ff == fcount) ff=0;
+  
+      }
+    loopcount -=100;
+  }
+  
+}
+
+void allon(int count)
+{
+  
+  //all on
+int ff=0;
+while (count &gt;0)
+  {
+for (a=0; a&lt;16; a++)
+  {
+      set_tris_c(~LEDADDR[a]);
+  
+    for (f=0;f &lt; 2; f++)
+    {
+      if (FRAMES[ff] != 0)
+      {
+        PORTC = FRAMES[ff];
+          delay_us(50);        // pauses for 50 microseconds      
+       }
+      ff++;
+     }
+
+  if (ff == fcount) ff=0;
+  
+  }
+  count--;
+  }
+}
+
+void left(int count)
+{
+    
+int ff=0;
+while (count &gt;0)
+  {
+  for (a=0; a&lt;8; a++)
+    {
+      set_tris_c(~LEFT[a]);
+  
+      for (f=0;f &lt; 2; f++)
+      {
+        if (LEFTFRAME[ff] != 0)
+          {
+          PORTC = LEFTFRAME[ff];
+            delay_us(50);        // pauses for 50 microseconds      
+           }
+        ff++;
+       }
+
+  if (ff == 16) ff=0;
+  }
+  count--;
+  }
+}
+  
+void right(int count)
+{
+    
+int ff=0;
+while (count &gt;0)
+  {
+  for (a=0; a&lt;8; a++)
+    {
+     set_tris_c(~RIGHT[a]);
+  
+      for (f=0;f &lt; 2; f++)
+      {
+        if (RIGHTFRAME[ff] != 0)
+          {
+          PORTC = RIGHTFRAME[ff];
+           delay_us(50);        // pauses for 50 microseconds      
+           }
+        ff++;
+       }
+
+  if (ff == 16) ff=0;
+  }
+  count--;
+  }
+}
+
+void alloff(int count)
+{
+  PORTC=0;
+  delay_ms(count);
+}
+
+void dash()
+{
+  allon(1000);
+  alloff(300);
+}
+
+void dot()
+{
+  allon(333);
+  alloff(300);
+}
+void space()
+{
+  alloff(700);
+}
+  
+
+void morse()
+{
+ // send some morse here if wanted.
+
+
+ // demo
+dash();
+dot();
+dot();
+space();
+dot();
+}
+
+void main()
+{
+
+   setup_adc_ports(NO_ANALOGS|VSS_VDD);
+   setup_adc(ADC_OFF);
+   setup_spi(SPI_SS_DISABLED);
+   setup_timer_0(RTCC_INTERNAL|RTCC_DIV_1);
+   setup_timer_1(T1_DISABLED);
+   setup_timer_2(T2_DISABLED,0,1);
+   setup_comparator(NC_NC_NC_NC);// This device COMP currently not supported by the PICWizard
+   setup_oscillator(OSC_8MHZ);
+
+while (1)
+{
+  trace();
+  allon(1000);
+  left(1000);
+  right(1000);
+  left(500);
+  right(500);
+  left(250);
+  right(250);
+  allon(500);
+  PORTC=0;
+  morse();
+  delay_ms(1000);}
+  
+}
+
+</pre>
+Once again - this is very rushed code - there are multiple ways to improve this, I&nbsp;just didn't have time.<br>
+
+=== Result ===

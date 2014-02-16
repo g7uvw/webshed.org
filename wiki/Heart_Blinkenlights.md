@@ -30,17 +30,32 @@ selection of controller easy - use those.
 <img src="IMG_20140213_202524.jpg" title="fig:IMG_20140213_202524.jpg" alt="IMG_20140213_202524.jpg" width="450" height="600" />
 At the time I soldered the LEDs on the PCB I hadn't though too much
 about how to address them via charlieplexing, so I just had them in
-pairs, anti-paralell. I can always fix the addressing in software -
+pairs, anti-parallel. I can always fix the addressing in software -
 however this does make for some odd looking code at times. It would have
-been much nicer to have been consistant with placing the LEDs such that
+been much nicer to have been consistent with placing the LEDs such that
 the topmost of each pair was always at the lowest (or highest) address.
 The image shows how a few of the LEDs had to have some extreme
 modification with a file to fit the board.
 
 To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and
-drawing the conection graph gives the addresses and the data bytes we
+drawing the connection graph gives the addresses and the data bytes we
 needs to control which LED is on at any given time.
 
 <img src="IMG_20140216_191135.jpg" title="IMG_20140216_191135.jpg" alt="IMG_20140216_191135.jpg" width="521" height="530" />
 
 <img src="IMG_20140216_191145.jpg" title="IMG_20140216_191145.jpg" alt="IMG_20140216_191145.jpg" width="440" height="416" />
+
+This gives the following mapping:
+
+|         |             |             |
+|---------|-------------|-------------|
+| Wire ID | LEDs        | Wire Colour |
+| A       | 1,6,10,11   | Blue        |
+| B       | 1,2,7,9     | White       |
+| C       | 2,3,6,12,13 | Orange      |
+| D       | 3,4,7,8     | Yellow      |
+| E       | 4,5,9,10,12 | Brown       |
+| F       | 5,8,11,13   | Red         |
+
+  
+

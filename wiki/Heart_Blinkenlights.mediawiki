@@ -6,10 +6,45 @@ First off, I ditched the 3mm LEDs and plumped for some 5mm ultra high brighness 
 
 === LED Placement  ===
 
-[[Image:IMG 20140213 202524.jpg|450x600px]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-paralell. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistant with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board. 
+[[Image:IMG 20140213 202524.jpg|450x600px]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-parallel. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistent with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board. 
 
-To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and drawing the conection graph gives the addresses and the data bytes we needs to control which LED is on at any given time. 
+To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and drawing the connection graph gives the addresses and the data bytes we needs to control which LED is on at any given time. 
 
-[[Image:IMG_20140216_191135.jpg|521x530px]]
+[[Image:IMG 20140216 191135.jpg|521x530px]] 
 
-[[Image:IMG_20140216_191145.jpg|440x416px]]
+[[Image:IMG 20140216 191145.jpg|440x416px]] 
+
+This gives the following mapping: 
+
+{| width="200" cellspacing="1" cellpadding="1" border="1"
+|-
+| Wire ID
+| LEDs
+| Wire Colour
+|-
+| A
+| 1,6,10,11
+| Blue
+|-
+| B
+| 1,2,7,9
+| White
+|-
+| C
+| 2,3,6,12,13
+| Orange
+|-
+| D
+| 3,4,7,8
+| Yellow
+|-
+| E
+| 4,5,9,10,12
+| Brown
+|-
+| F
+| 5,8,11,13
+| Red
+|}
+
+<br>

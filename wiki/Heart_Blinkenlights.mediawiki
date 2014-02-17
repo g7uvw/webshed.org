@@ -6,13 +6,14 @@ First off, I ditched the 3mm LEDs and plumped for some 5mm ultra high brighness 
 
 === LED Placement  ===
 
-[[Image:IMG 20140213 202524.jpg|left|450x600px]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-parallel. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistent with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board. 
+[[Image:IMG 20140213 202524.jpg|thumb|left|450x600px|LEDs mounted on the PCB. Some filing was needed to fit them all.]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-parallel. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistent with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board. 
 
 To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and drawing the connection graph gives the addresses and the data bytes we needs to control which LED is on at any given time. 
 
-[[Image:IMG 20140216 191135.jpg|521x530px]] 
+[[Image:IMG 20140216 191135.jpg|thumb|left|521x530px|The LED numbering map]]
+[[Image:IMG 20140216 191145.jpg|440x416px|LED Connectivity graph]] 
 
-[[Image:IMG 20140216 191145.jpg|440x416px]] 
+
 
 This gives the following mapping: 
 
@@ -55,9 +56,9 @@ Two have more than one LED appear to be on in a charlieplexing scheme you need t
 
 The way I&nbsp;implemented the address and data scheme is far from optimal - given more time I'd have written the code in a more sensible style, however the microcontroller is running at 8 MHz so I have CPU&nbsp;cycles to spare and there is more than enough program space for the code as it stands. If I wanted to implement flashier animations I'd probably have to compress the the address and data tables to fit the PIC's ROM - or re-wire the LEDs to fit a 'nicer' addressing scheme. 
 
-=== Code<br> ===
+=== Code<br>  ===
 
-The PIC code was compiled with CCS C for the PIC16 series devices. It should port to SDCC or similar or to the Arduino with minimal changes - basically the register that sets the tri-state behavouor of the bus and the data registers are the only thing to change.
+The PIC code was compiled with CCS C for the PIC16 series devices. It should port to SDCC or similar or to the Arduino with minimal changes - basically the register that sets the tri-state behavouor of the bus and the data registers are the only thing to change. 
 <pre>#case
 #byte   PORTC  =  7
 
@@ -116,7 +117,7 @@ void trace()
   
        for (f=0;f &lt; 2; f++)
         {
-          if (FRAMES[ff] != 0)
+          if (FRAMES[ff]&nbsp;!= 0)
             {
               PORTC = FRAMES[ff];
               delay_ms(loopcount);
@@ -145,7 +146,7 @@ for (a=0; a&lt;16; a++)
   
     for (f=0;f &lt; 2; f++)
     {
-      if (FRAMES[ff] != 0)
+      if (FRAMES[ff]&nbsp;!= 0)
       {
         PORTC = FRAMES[ff];
           delay_us(50);        // pauses for 50 microseconds      
@@ -172,7 +173,7 @@ while (count &gt;0)
   
       for (f=0;f &lt; 2; f++)
       {
-        if (LEFTFRAME[ff] != 0)
+        if (LEFTFRAME[ff]&nbsp;!= 0)
           {
           PORTC = LEFTFRAME[ff];
             delay_us(50);        // pauses for 50 microseconds      
@@ -198,7 +199,7 @@ while (count &gt;0)
   
       for (f=0;f &lt; 2; f++)
       {
-        if (RIGHTFRAME[ff] != 0)
+        if (RIGHTFRAME[ff]&nbsp;!= 0)
           {
           PORTC = RIGHTFRAME[ff];
            delay_us(50);        // pauses for 50 microseconds      
@@ -277,11 +278,11 @@ while (1)
   
 }
 
-</pre>
-Once again - this is very rushed code - there are multiple ways to improve this, I&nbsp;just didn't have time.<br>
+</pre> 
+Once again - this is very rushed code - there are multiple ways to improve this, I&nbsp;just didn't have time.<br> 
 
 === Result  ===
 
 The video shows one run through of the code - I may make some edits if I get any more time to play with the project before I had it over. 
 
-<html><object width="640" height="480"><param name="movie" value="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object></html>
+<html><object width="640" height="480"><param name="movie" value="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&version=3&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&version=3&rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true"></embed></object></html>

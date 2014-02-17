@@ -27,7 +27,7 @@ selection of controller easy - use those.
 
 ### LED Placement
 
-<img src="IMG_20140213_202524.jpg" title="fig:IMG_20140213_202524.jpg" alt="IMG_20140213_202524.jpg" width="450" height="600" />
+<img src="IMG_20140213_202524.jpg" title="fig:LEDs mounted on the PCB. Some filing was needed to fit them all." alt="LEDs mounted on the PCB. Some filing was needed to fit them all." width="450" height="600" />
 At the time I soldered the LEDs on the PCB I hadn't though too much
 about how to address them via charlieplexing, so I just had them in
 pairs, anti-parallel. I can always fix the addressing in software -
@@ -41,9 +41,8 @@ To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and
 drawing the connection graph gives the addresses and the data bytes we
 needs to control which LED is on at any given time.
 
-<img src="IMG_20140216_191135.jpg" title="IMG_20140216_191135.jpg" alt="IMG_20140216_191135.jpg" width="521" height="530" />
-
-<img src="IMG_20140216_191145.jpg" title="IMG_20140216_191145.jpg" alt="IMG_20140216_191145.jpg" width="440" height="416" />
+<img src="IMG_20140216_191135.jpg" title="fig:The LED numbering map" alt="The LED numbering map" width="521" height="530" />
+<img src="IMG_20140216_191145.jpg" title="fig:LED Connectivity graph" alt="LED Connectivity graph" width="440" height="416" />
 
 This gives the following mapping:
 
@@ -143,7 +142,7 @@ the data registers are the only thing to change.
       
            for (f=0;f &lt; 2; f++)
             {
-              if (FRAMES[ff] != 0)
+              if (FRAMES[ff]&nbsp;!= 0)
                 {
                   PORTC = FRAMES[ff];
                   delay_ms(loopcount);
@@ -172,7 +171,7 @@ the data registers are the only thing to change.
       
         for (f=0;f &lt; 2; f++)
         {
-          if (FRAMES[ff] != 0)
+          if (FRAMES[ff]&nbsp;!= 0)
           {
             PORTC = FRAMES[ff];
               delay_us(50);        // pauses for 50 microseconds      
@@ -199,7 +198,7 @@ the data registers are the only thing to change.
       
           for (f=0;f &lt; 2; f++)
           {
-            if (LEFTFRAME[ff] != 0)
+            if (LEFTFRAME[ff]&nbsp;!= 0)
               {
               PORTC = LEFTFRAME[ff];
                 delay_us(50);        // pauses for 50 microseconds      
@@ -225,7 +224,7 @@ the data registers are the only thing to change.
       
           for (f=0;f &lt; 2; f++)
           {
-            if (RIGHTFRAME[ff] != 0)
+            if (RIGHTFRAME[ff]&nbsp;!= 0)
               {
               PORTC = RIGHTFRAME[ff];
                delay_us(50);        // pauses for 50 microseconds      
@@ -313,9 +312,9 @@ The video shows one run through of the code - I may make some edits if I
 get any more time to play with the project before I had it over.
 
 <html>
-<object width="640" height="480"><param name="movie" value="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+<object width="640" height="480"><param name="movie" value="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&version=3&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
 
-<embed src="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&amp;version=3&amp;rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true">
+<embed src="//www.youtube.com/v/f-aoteLzW70?hl=en_GB&version=3&rel=0" type="application/x-shockwave-flash" width="640" height="480" allowscriptaccess="always" allowfullscreen="true">
 </embed>
 </object>
 

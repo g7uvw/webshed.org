@@ -6,7 +6,7 @@ First off, I ditched the 3mm LEDs and plumped for some 5mm ultra high brighness 
 
 === LED Placement  ===
 
-[[Image:IMG 20140213 202524.jpg|450x600px]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-parallel. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistent with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board. 
+[[Image:IMG 20140213 202524.jpg|left|450x600px]] At the time I&nbsp;soldered the LEDs on the PCB I&nbsp;hadn't though too much about how to address them via charlieplexing, so I&nbsp;just had them in pairs, anti-parallel. I&nbsp;can always fix the addressing in software - however this does make for some odd looking code at times. It would have been much nicer to have been consistent with placing the LEDs such that the topmost of each pair was always at the lowest (or highest) address. The image shows how a few of the LEDs had to have some extreme modification with a file to fit the board. 
 
 To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and drawing the connection graph gives the addresses and the data bytes we needs to control which LED is on at any given time. 
 

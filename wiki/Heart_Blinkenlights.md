@@ -27,7 +27,7 @@ selection of controller easy - use those.
 
 ### LED Placement
 
-<img src="IMG_20140213_202524.jpg" title="fig:LEDs mounted on the PCB. Some filing was needed to fit them all." alt="LEDs mounted on the PCB. Some filing was needed to fit them all." width="450" height="600" />
+<img src="IMG_20140213_202524.jpg" title="fig:IMG_20140213_202524.jpg" alt="IMG_20140213_202524.jpg" width="450" height="600" />
 At the time I soldered the LEDs on the PCB I hadn't though too much
 about how to address them via charlieplexing, so I just had them in
 pairs, anti-parallel. I can always fix the addressing in software -
@@ -41,9 +41,10 @@ To charliplex 26 LEDs requires 6 wires. Numbering the LED pairs and
 drawing the connection graph gives the addresses and the data bytes we
 needs to control which LED is on at any given time.
 
-<img src="IMG_20140216_191135.jpg" title="fig:The LED numbering map" alt="The LED numbering map" width="521" height="530" />
-<img src="IMG_20140216_191145.jpg" title="fig:LED Connectivity graph" alt="LED Connectivity graph" width="440" height="416" />
+<img src="IMG_20140216_191135.jpg" title="fig:IMG_20140216_191135.jpg" alt="IMG_20140216_191135.jpg" width="260" height="265" />
+<img src="IMG_20140216_191145.jpg" title="fig:LED Connectivity graph" alt="LED Connectivity graph" width="220" height="208" />
 
+  
 This gives the following mapping:
 
 |         |             |             |

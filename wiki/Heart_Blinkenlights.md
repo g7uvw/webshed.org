@@ -78,7 +78,7 @@ stands. If I wanted to implement flashier animations I'd probably have
 to compress the the address and data tables to fit the PIC's ROM - or
 re-wire the LEDs to fit a 'nicer' addressing scheme.
 
-### Code  
+### Code
 
 The PIC code was compiled with CCS C for the PIC16 series devices. It
 should port to SDCC or similar or to the Arduino with minimal changes -

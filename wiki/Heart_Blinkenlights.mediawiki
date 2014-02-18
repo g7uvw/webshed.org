@@ -55,7 +55,7 @@ Two have more than one LED appear to be on in a charlieplexing scheme you need t
 
 The way I&nbsp;implemented the address and data scheme is far from optimal - given more time I'd have written the code in a more sensible style, however the microcontroller is running at 8 MHz so I have CPU&nbsp;cycles to spare and there is more than enough program space for the code as it stands. If I wanted to implement flashier animations I'd probably have to compress the the address and data tables to fit the PIC's ROM - or re-wire the LEDs to fit a 'nicer' addressing scheme. 
 
-=== Code<br>  ===
+=== Code ===
 
 The PIC code was compiled with CCS C for the PIC16 series devices. It should port to SDCC or similar or to the Arduino with minimal changes - basically the register that sets the tri-state behavouor of the bus and the data registers are the only thing to change. 
 <pre>#case

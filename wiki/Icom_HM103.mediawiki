@@ -1,0 +1,9 @@
+
+== Icom HM103 microphone ==
+
+Some photographs of the inside of the Icom HM103 microphone for references purposes.
+
+[[File:IMG_20140330_112842.jpg]]
+[[File:Icom-HM103-innards.jpeg]]
+[[File:Icom-HM103-PCB.jpg]]
+[[File:Icom-HM103-reverse-PCB.jpg]]

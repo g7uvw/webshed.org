@@ -10,7 +10,7 @@ Icom HM103 microphone
 Some photographs of the inside of the Icom HM103 microphone for
 references purposes.
 
-![](IMG_20140330_112842.jpg "fig:IMG_20140330_112842.jpg")
-![](Icom-HM103-innards.jpeg "fig:Icom-HM103-innards.jpeg")
-![](Icom-HM103-PCB.jpg "fig:Icom-HM103-PCB.jpg")
-![](Icom-HM103-reverse-PCB.jpg "fig:Icom-HM103-reverse-PCB.jpg")
+<img src="IMG_20140330_112842.jpg" title="fig:IMG_20140330_112842.jpg" alt="IMG_20140330_112842.jpg" width="450" />
+<img src="Icom-HM103-innards.jpeg" title="fig:Icom-HM103-innards.jpeg" alt="Icom-HM103-innards.jpeg" width="450" />
+<img src="Icom-HM103-PCB.jpg" title="fig:Icom-HM103-PCB.jpg" alt="Icom-HM103-PCB.jpg" width="450" />
+<img src="Icom-HM103-reverse-PCB.jpg" title="fig:Icom-HM103-reverse-PCB.jpg" alt="Icom-HM103-reverse-PCB.jpg" width="450" />

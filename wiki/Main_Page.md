@@ -35,7 +35,7 @@ page.
 Electronics
 -----------
 
--   [Heart\_Blinkenlights](/wiki/Heart_Blinkenlights "wikilink") A Valentine's
+-   [Heart Blinkenlights](/wiki/Heart_Blinkenlights "wikilink") A Valentine's
     Day blinkenlight project.
 -   [Carbon Monoxide Detector
     Teardown](/wiki/Carbon_Monoxide_Detector_Teardown "wikilink") What's

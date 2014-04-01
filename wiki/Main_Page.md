@@ -35,6 +35,8 @@ page.
 Electronics
 -----------
 
+-   [Some photographs on the inside of an Icom HM-103
+    Microphone](/wiki/Icom_HM103 "wikilink") for reference purposes.
 -   [Heart Blinkenlights](/wiki/Heart_Blinkenlights "wikilink") A Valentine's
     Day blinkenlight project.
 -   [Carbon Monoxide Detector

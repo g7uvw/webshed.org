@@ -93,5 +93,7 @@ This code is now maintained at
 
 Have fun.
 
+<img src="IMG_20140716_205226.jpg" title="Six DS18s20 connected to a Raspberry Pi" alt="Six DS18s20 connected to a Raspberry Pi" width="800" />
+
 <Category:Experiments> <Category:HowTo> <Category:RaspberryPI>
 <Category:Projects> <Category:Electronics>

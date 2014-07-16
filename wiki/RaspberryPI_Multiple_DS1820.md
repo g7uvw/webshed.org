@@ -9,9 +9,10 @@ tags:
 Multiple DS18x20 1-wire sensors on the Raspberry PI
 ===================================================
 
-*Edited 22/12/2013 to add a link to github"*
+*Edited 16/07/2014 to show how to use new version of the code"*
 
-*Edited 1/1/2013 to fix buggy code, etc*
+“'Edited 22/12/2013 to add a link to github”'' *Edited 1/1/2013 to fix
+buggy code, etc*
 
 In a [previous article](/wiki/RaspberryPI_DS1820 "wikilink") I showed how to
 use a 1-wire temperature sensor with the Raspberry PI with minimal
@@ -27,192 +28,70 @@ On the rPI using the w1 kernel drivers, the file
 list of all the device IDs detected on the 1-wire bus. We can read this
 to get a list of IDs to iterate over, requesting data from each of
 them.  
+There was a “feature” in the previous version of the code (now removed
+from this page), it didn't keep track of the 1-Wire ID of the sensors
+when it queried them for data, it just assumed the first one that
+answered would always be the first one that answered - a poor assumption
+that can lead to data from the wrong sensor being written to the wrong
+database slots. The new code (July 2014) addresses this isse and now
+keep track of the device IDs.
 
-    #!/usr/bin/perl
-    use strict;
-    use warnings;
+To use the new code, you first need to run *detect.pl* this produces a
+plain text file called *sensors.conf*, you can edit this to give the
+sensors nice names and to add any offset or calibration values you need.
+You can change the calibration / offset values any time you like, but
+the names are fixed once you've created the database.
 
-    &amp;check_modules;
-    &amp;get_device_IDs;
+    #SENSORS.CONF example
+    # we read this file, and make a new fixed file with all the device IDs and fixed indexes. You can also put
+    # calibration information into the sensors.conf file after detect.pl has created it.
+    # sensors.conf format is:
+    # 
+    # index , calibration factor    , 1-Wire Device ID
+    # 0             ,0.0                                    , 10-000802b67ffc
+    # 1             ,0.0                                    , 10-000802b65cc2
+    # 2             ,0.0                                    , 10-000802b685ca
+    # 3             ,0.0                                    , 10-000802b6689e
+    # 4             ,0.0                                    , 10-000802b68df3
+    # 5             ,0.0                                    , 10-000802b67687
 
-    my $in_correction = 6.0;
-    my $out_correction = 2.1;
-    my $count = 0;
-    my $reading = -1;
-    my $device = -1;
-    my @deviceIDs;
-    my @temp_readings;
+    # or you can use descriptive names for the device ID, but again you'll have to edit the sensors.conf file to
+    # add them after detect.pl has created sensors.conf for you.
+    #
+    # index             , calibration factor , 1-Wire Device ID
+    # inside            ,0.0                    ,10-000802b67ffc
+    # the sun           ,100.123                ,10-000802b65cc2
+    # deepspace         ,-273.1                 ,10-000802b685ca
+    # earth_core        ,6000                   ,10-000802b6689e
+    # outside           ,-1.2                   ,10-000802b68df3
+    # spare             ,0.0                    ,10-000802b67687
 
-    foreach $device (@deviceIDs)
-    {
-        $reading = &amp;read_device($device);
-        if ($reading == 9999) {
-           $reading = "U";
-        }
-                
-        push(@temp_readings,$reading);
-              
-    }
+Once you've got a nice looking sensors.conf, you need to run
+“makedb.pl”. YOou can edit “makedb.pl” to change the RRDTool database
+settings, but the default values I have in there (collect data every
+5min, make a few averages, collect data for a year) should be fine to
+get started with. My cron job for reading the senors and updating the
+database looks like this
 
+    */5 * * * * cd /home/pi/rPI-multiDS18x20/example && /home/pi/rPI-multiDS18x20/example/gettemp.pl 
+    */6 * * * * cd /home/pi/rPI-multiDS18x20/example && /home/pi/rPI-multiDS18x20/example/graph.sh 
 
-    if ($temp_readings[0] ne 'U') {$temp_readings[0] -= $in_correction;}
-    if ($temp_readings[1] ne 'U') {$temp_readings[1] -= $out_correction;}
+We have to change directory to the place where the scripts and database
+are kept first, then call the “gettemp.pl” script. I also update the
+graphs in the cron-job too, that's the second line.
 
-    #update the database
-    `/usr/bin/rrdtool update  /home/pi/temperature/multirPItemp.rrd N:$temp_readings[0]:$temp_readings[1]`;
-    print "Temp 1 = $temp_readings[0]    Temp 2 = $temp_readings[1]\n";
+I couldn't think of a nice way to automatically generate a graph
+plotting script based on the content of sensors.conf, so you'll have to
+make your own or edit my one in the examples directory.
 
-
-    sub check_modules
-    {
-       my $mods = `cat /proc/modules`;
-    if ($mods =~ /w1_gpio/ &amp;&amp; $mods =~ /w1_therm/)
-    {
-     #print "w1 modules already loaded \n";
-    }
-    else 
-    {
-    print "loading w1 modules \n";
-        `sudo modprobe w1-gpio`;
-        `sudo modprobe w1-therm`;
-    } 
-    }
-
-
-    sub get_device_IDs
-    {
-    # The Hex IDs off all detected 1-wire devices on the bus are stored in the file
-    # "w1_master_slaves"    
-
-    # open file
-    open(FILE, "/sys/bus/w1/devices/w1_bus_master1/w1_master_slaves") or die("Unable to open file");
-     
-    # read file into an array
-     @deviceIDs = &lt;FILE&gt;;
-     
-     # close file 
-     close(FILE);
-    }
-
-    sub read_device
-    {
-        #takes one parameter - a device ID
-        #returns the temperature if we have something like valid conditions
-        #else we return "9999" for undefined
-
-        my $deviceID = $_[0];
-        $deviceID =~ s/\R//g;
-     
-        my $ret = 9999; # default to return 9999 (fail)
-       
-        my $sensordata = `cat /sys/bus/w1/devices/${deviceID}/w1_slave 2&gt;&amp;1`;
-        print "Read: $sensordata";
-
-
-       if(index($sensordata, 'YES')&nbsp;!= -1) {
-          #fix for negative temps from http://habrahabr.ru/post/163575/
-          $sensordata =~ /t=(\D*\d+)/i;
-          #$sensor_temp =~ /t=(\d+)/i;
-          $sensordata = (($1/1000));
-          $ret = $sensordata;
-       } else {
-          print ("CRC Invalid for device $deviceID.\n");
-       }
-
-       return ($ret);
-    }
-
-This perl code writes data to a RRD database with two sensors - it
-should be pretty straightforward to extend this to any number of
-sensors.  
-The RRD database is created with this script  
-
-    #!/bin/bash
-    rrdtool create multirPItemp.rrd  --step 300 \
-    DS:in_temp:GAUGE:600:-30:50 \
-    DS:out_temp:GAUGE:600:-30:50 \
-    RRA:AVERAGE:0.5:1:12 \
-    RRA:AVERAGE:0.5:1:288 \
-    RRA:AVERAGE:0.5:12:168 \
-    RRA:AVERAGE:0.5:12:720 \
-    RRA:AVERAGE:0.5:288:365
-
-The graphs are generated every five minutes from a cron job with with
-this script  
-
-    #!/bin/bash
-    RRDPATH="/home/pi/temperature/"
-    RAWCOLOUR="#FF0000"
-    TRENDCOLOUR="#0000FF"
-    #hour
-    rrdtool graph $RRDPATH/mhour.png --start -6h \
-    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
-    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
-    CDEF:intrend=intemp,1200,TREND \
-    CDEF:outtrend=outtemp,1200,TREND \
-    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
-    LINE1:intrend$TRENDCOLOUR:"20 min average" \
-    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
-    LINE1:outtrend$TRENDCOLOUR:"20 min average"
-
-    #day
-    rrdtool graph $RRDPATH/mday.png --start -1d \
-    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
-    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
-    CDEF:intrend=intemp,1800,TREND \
-    CDEF:outtrend=outtemp,1800,TREND \
-    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
-    LINE1:intrend$TRENDCOLOUR:"1h min average" \
-    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
-    LINE1:outtrend$TRENDCOLOUR:"1h min average"
-
-    #week
-    rrdtool graph $RRDPATH/mweek.png --start -1w \
-    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
-    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
-    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
-    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
-
-
-
-    #month
-    rrdtool graph $RRDPATH/mmonth.png --start -1m \
-    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
-    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
-    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
-    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
-
-    #year
-    rrdtool graph $RRDPATH/myear.png --start -1y \
-    DEF:intemp=$RRDPATH/multirPItemp.rrd:in_temp:AVERAGE \
-    DEF:outtemp=$RRDPATH/multirPItemp.rrd:out_temp:AVERAGE \
-    LINE2:intemp$RAWCOLOUR:"Inside temperature" \
-    LINE2:outtemp$RAWCOLOUR:"Outside temperature" \
+If you've any questions, or problems or just found a ice way to
+programmatically generate a graph plotting script, drop me an email. My
+address can be found under About Me at the top of the page
 
 This code is now maintained at
-[github](https://github.com/g7uvw/rPI-multiDS18x20) Download it from
-there, rather then grabbing it by copy & past from this page - that
-seems to cause errors with HTML codes getting embedded in the perl code.
+[github](https://github.com/g7uvw/rPI-multiDS18x20)
 
-The perl code as originally written didn't deal with bus drop-out
-glitches at all (sometimes the 1-wire driver can't read the device, or
-the device doesn't respond in time) so the graphs would end up corrupt
-with invalid data. The graph below shows the sort of thing you'd see
-when corrupt data was stored.
-
-![](Outday_copy.png "Outday_copy.png")
-
-[George Smart](http://george-smart.co.uk)was kind enough to allow
-himself to be volunteered into fixing my, frankly terrible, perl code.
-It has been about a decade since I'd writtten anything in perl, and had
-forgotten most of what I knew. He kept the basic outline of my original
-code and just made it work as I intended it. He is a bloody decent chap!
-
-The new code is now what is gracing the top of this page.
-
-Now the results look more like this.
-
-![](Outday.png "Outday.png")
+Have fun.
 
 <Category:Experiments> <Category:HowTo> <Category:RaspberryPI>
 <Category:Projects> <Category:Electronics>

@@ -56,6 +56,6 @@ This code is now maintained at [https://github.com/g7uvw/rPI-multiDS18x20 github
 
 Have fun.
 
-[[File:IMG 20140716 205226.jpg|800px|Six DS18s20 connected to a Raspberry Pi]]
+[[File:IMG 20140716 205226.jpg|800px|frame|Six DS18s20 connected to a Raspberry Pi]]
 
 [[Category:Code]] [[Category:Experiments]] [[Category:HowTo]] [[Category:RaspberryPI]] [[Category:Projects]] [[Category:Electronics]]

@@ -34,22 +34,4 @@ Hourly
 
 </center>
 </html>
-Monthly
-=======
-
-<html>
-<center>
-<img src="http://webshed.org/box/outmonth.png">
-
-</center>
-</html>
-Yearly
-======
-
-<html>
-<center>
-<img src="http://webshed.org/box/outyear.png">
-
-</center>
-</html>
 

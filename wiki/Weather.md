@@ -10,8 +10,12 @@ Some weather graphs.
 This page is more for my own general interest then anything else, it's
 just a collection of weather data from
 [sensors](/wiki/RaspberryPI_Multiple_DS1820 "wikilink") I've installed at my
-home. For now it's just logging temperature, but I hope to add other
-measurements in the future.
+home. I've added a DT11 humidity sensor and a BMP085 pressure sensor to
+the data collection system. They are all connected directly to the rPI's
+GPIO pins for now, but I'll soon move them over to a dedicated
+micro-controller, so as to reduce the load on the rPI (bit-banging
+1-wire and the strange encoding the DHT11 sensor uses locks up the rPI
+at times).
 
 Hourly
 ======

@@ -18,25 +18,19 @@ Hourly
 
 <html>
 <center>
-<img src="http://webshed.org/box/outhour.png">
+<img src="http://webshed.org/box/inside-outside.png">
 
 </center>
 </html>
-Daily
-=====
-
 <html>
 <center>
-<img src="http://webshed.org/box/outday.png">
+<img src="http://webshed.org/box/humidity.png">
 
 </center>
 </html>
-Weekly
-======
-
 <html>
 <center>
-<img src="http://webshed.org/box/outweek.png">
+<img src="http://webshed.org/box/pressure.png">
 
 </center>
 </html>

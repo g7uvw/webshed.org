@@ -17242,3 +17242,19 @@ launching the software didn't do much. Trying an un-triggered capture
 also failed to capture any data. The Sniffer runs at 200MHz by default
 and only has 24k of RAM for samples, so it fills up and stops capturing
 pretty quickly.
+
+The trick to a successful capture is to use triggers and an appropriate
+sample rate. I found that 20Mhz gave good signal capture results, you
+really need the sample speed to be several times the rate of the data
+you hope to analyse. Nyquist says the capture rate needs to be at least
+twice, but more is better. ![Settings in the OLS software for I2C
+capture](Ols-i2c-aq-settings.png "fig:Settings in the OLS software for I2C capture")
+
+The Numbering scheme section in the software confused me for a while
+until I took a close look at the OLS board. The inputs seem to be
+accessibel under two different numbering systems, I think this is used
+if you use the other (unpopulated) port by the mounting holes. As I was
+only using two pins, and not using the extra port, I left the OLS
+software set to Inside.
+
+<img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="403" />

@@ -17247,8 +17247,8 @@ The trick to a successful capture is to use triggers and an appropriate
 sample rate. I found that 20Mhz gave good signal capture results, you
 really need the sample speed to be several times the rate of the data
 you hope to analyse. Nyquist says the capture rate needs to be at least
-twice, but more is better. ![Settings in the OLS software for I2C
-capture](Ols-i2c-aq-settings.png "fig:Settings in the OLS software for I2C capture")
+twice, but more is better.
+<img src="Ols-i2c-aq-settings.png" title="fig:Settings in the OLS software for I2C capture" alt="Settings in the OLS software for I2C capture" width="800" />
 
 The Numbering scheme section in the software confused me for a while
 until I took a close look at the OLS board. The inputs seem to be
@@ -17269,8 +17269,7 @@ happen when the pin goes low - exactly what happens with an I2C START
 state. If you were waiting for a pin to go high, then you'd tick the
 position in the Value checkbox.
 
-![OLS Trigger
-settings](Ols-i2c-trigger-settings.png "OLS Trigger settings")
+<img src="Ols-i2c-trigger-settings.png" title="OLS Trigger settings" alt="OLS Trigger settings" width="800" />
 
 ##### Conclusions
 

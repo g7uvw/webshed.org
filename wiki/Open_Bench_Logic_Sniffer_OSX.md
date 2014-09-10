@@ -17269,8 +17269,8 @@ happen when the pin goes low - exactly what happens with an I2C START
 state. If you were waiting for a pin to go high, then you'd tick the
 position in the Value checkbox.
 
-![ OLS Trigger
-settings](Ols-i2c-trigger-settings.png " OLS Trigger settings")
+![OLS Trigger
+settings](Ols-i2c-trigger-settings.png "OLS Trigger settings")
 
 The result of this was a nice capture of my I2C transaction.
 <img src="Ols-i2c.png" title="fig:One I2C transaction captured" alt="One I2C transaction captured" width="800" />

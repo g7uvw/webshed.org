@@ -17224,24 +17224,24 @@ Faraday:OLS_Upgrader dm$
 I found the software quite confusing at first, and not very well documented. Just connecting up the Logic Sniffer to the I2C and launching the software didn't do much. Trying an un-triggered capture also failed to capture any data. The Sniffer runs at 200MHz by default and only has 24k of RAM for samples, so it fills up and stops capturing pretty quickly.
 
 The trick to a successful capture is to use triggers and an appropriate sample rate. I found that 20Mhz gave good signal capture results, you really need the sample speed to be several times the rate of the data you hope to analyse. Nyquist says the capture rate needs to be at least twice, but more is better.
-[[File:Ols-i2c-aq-settings.png|Settings in the OLS software for I2C capture]]
+[[File:Ols-i2c-aq-settings.png|frame|Settings in the OLS software for I2C capture]]
 
 The Numbering scheme section in the software confused me for a while until I took a close look at the OLS board. The inputs seem to be accessibel under two different numbering systems, I think this is used if you use the other (unpopulated) port by the mounting holes. As I was only using two pins, and not using the extra port, I left the OLS software set to Inside.
 
-[[File:OLS_connections.jpg|403px|The input pins number scheme]]
+[[File:OLS_connections.jpg|403px|frame|The input pins number scheme]]
 
 The triggering also confused me (it had already been a long day by this point) until I realised it could be quite simply setup. I had the I2C clock signal on pin 1, and I wanted to trigger on that pin changing state (clock pulses happening). This is done by setting trigger mode to SIMPLE and putting a tick in the Mask check boxes in position 1. If the Value checkbox for position 1 is left un-ticked, then the trigger will happen when the pin goes low - exactly what happens with an I2C START state. If you were waiting for a pin to go high, then you'd tick the position in the Value checkbox.
 
-[[File:Ols-i2c-trigger-settings.png| OLS Trigger settings]]
+[[File:Ols-i2c-trigger-settings.png|frame|OLS Trigger settings]]
 
 The result of this was a nice capture of my I2C transaction.
-[[File:Ols-i2c.png|800px|One I2C transaction captured]]
+[[File:Ols-i2c.png|800px|frame|One I2C transaction captured]]
 
 The I2C analyser in the OLS software can turn this waveform capture into real data.
 [[File:I2c-analysis.png|800px|Analysing the captured waveforms with OLS I2C protocol analyser]]
 
 The software detects which pins are used for clock and data and automatically shows read and writes and data on the bus. It also back annotates the the waveform display with the decoded data and read-write status.
-[[File:I2c-data.png|800px|Analysed data, back annotated with read-write status and data values]]
+[[File:I2c-data.png|800px|frame|Analysed data, back annotated with read-write status and data values]]
 
 This proved useful, as I was able to see I had a dangling write to the device after I'd read data from it. It didn't actually write any data, just set up the conditions for it, enough to sometimes confuse the slave device.
 

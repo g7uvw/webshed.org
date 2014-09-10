@@ -17234,17 +17234,6 @@ The triggering also confused me (it had already been a long day by this point) u
 
 [[File:Ols-i2c-trigger-settings.png|frame|OLS Trigger settings]]
 
-The result of this was a nice capture of my I2C transaction.
-[[File:Ols-i2c.png|frame|800px|One I2C transaction captured]]
-
-The I2C analyser in the OLS software can turn this waveform capture into real data.
-[[File:I2c-analysis.png|frame|800px|Analysing the captured waveforms with OLS I2C protocol analyser]]
-
-The software detects which pins are used for clock and data and automatically shows read and writes and data on the bus. It also back annotates the the waveform display with the decoded data and read-write status.
-[[File:I2c-data.png|frame|800px|Analysed data, back annotated with read-write status and data values]]
-
-This proved useful, as I was able to see I had a dangling write to the device after I'd read data from it. It didn't actually write any data, just set up the conditions for it, enough to sometimes confuse the slave device.
-
 ===== Conclusions =====
 
 I've not had the Logic Sniffer long, but it has already helped me solve a problem. The learning curve is pretty steep, and the documentation is a little lacking, but with perseverance I can see this will be a very useful tool in my collection.

@@ -17248,8 +17248,7 @@ sample rate. I found that 20Mhz gave good signal capture results, you
 really need the sample speed to be several times the rate of the data
 you hope to analyse. Nyquist says the capture rate needs to be at least
 twice, but more is better.
-<img src="Ols-i2c-aq-settings.png" title="fig:Settings in the OLS software for I2C capture" alt="Settings in the OLS software for I2C capture" width="800" />
-
+<img src="Ols-i2c-aq-settings.png" title="fig:Settings in the OLS software for I2C capture" alt="Settings in the OLS software for I2C capture" width="800" />  
 The Numbering scheme section in the software confused me for a while
 until I took a close look at the OLS board. The inputs seem to be
 accessible under two different numbering systems, I think this is used
@@ -17257,8 +17256,7 @@ if you use the other (unpopulated) port by the mounting holes. As I was
 only using two pins, and not using the extra port, I left the OLS
 software set to Inside.
 
-<img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="400" />
-
+<img src="OLS_connections.jpg" title="fig:The input pins number scheme" alt="The input pins number scheme" width="400" />  
 The triggering also confused me (it had already been a long day by this
 point) until I realised it could be quite simply setup. I had the I2C
 clock signal on pin 1, and I wanted to trigger on that pin changing
@@ -17269,20 +17267,17 @@ happen when the pin goes low - exactly what happens with an I2C START
 state. If you were waiting for a pin to go high, then you'd tick the
 position in the Value checkbox.
 
-<img src="Ols-i2c-trigger-settings.png" title="fig:OLS Trigger settings" alt="OLS Trigger settings" width="800" />
+<img src="Ols-i2c-trigger-settings.png" title="fig:OLS Trigger settings" alt="OLS Trigger settings" width="800" />  
 The result of this was a nice capture of my I2C transaction.
-<img src="Ols-i2c.png" title="fig:One I2C transaction captured" alt="One I2C transaction captured" width="800" />
-
+<img src="Ols-i2c.png" title="fig:One I2C transaction captured" alt="One I2C transaction captured" width="800" />  
 The I2C analyser in the OLS software can turn this waveform capture into
 real data.
-<img src="I2c-analysis.png" title="fig:Analysing the captured waveforms with OLS I2C protocol analyser" alt="Analysing the captured waveforms with OLS I2C protocol analyser" width="800" />
-
+<img src="I2c-analysis.png" title="fig:Analysing the captured waveforms with OLS I2C protocol analyser" alt="Analysing the captured waveforms with OLS I2C protocol analyser" width="800" />  
 The software detects which pins are used for clock and data and
 automatically shows read and writes and data on the bus. It also back
 annotates the the waveform display with the decoded data and read-write
 status.
-<img src="I2c-data.png" title="fig:Analysed data, back annotated with read-write status and data values" alt="Analysed data, back annotated with read-write status and data values" width="800" />
-
+<img src="I2c-data.png" title="fig:Analysed data, back annotated with read-write status and data values" alt="Analysed data, back annotated with read-write status and data values" width="800" />  
 This proved useful, as I was able to see I had a dangling write to the
 device after I'd read data from it. It didn't actually write any data,
 just set up the conditions for it, enough to sometimes confuse the slave

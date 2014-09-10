@@ -17252,12 +17252,12 @@ twice, but more is better.
 
 The Numbering scheme section in the software confused me for a while
 until I took a close look at the OLS board. The inputs seem to be
-accessibel under two different numbering systems, I think this is used
+accessible under two different numbering systems, I think this is used
 if you use the other (unpopulated) port by the mounting holes. As I was
 only using two pins, and not using the extra port, I left the OLS
 software set to Inside.
 
-<img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="403" />
+<img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="100" />
 
 The triggering also confused me (it had already been a long day by this
 point) until I realised it could be quite simply setup. I had the I2C

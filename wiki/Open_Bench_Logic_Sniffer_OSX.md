@@ -17257,7 +17257,7 @@ if you use the other (unpopulated) port by the mounting holes. As I was
 only using two pins, and not using the extra port, I left the OLS
 software set to Inside.
 
-<img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="100" />
+<img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="400" />
 
 The triggering also confused me (it had already been a long day by this
 point) until I realised it could be quite simply setup. I had the I2C

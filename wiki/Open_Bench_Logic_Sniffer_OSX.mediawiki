@@ -17233,6 +17233,16 @@ The Numbering scheme section in the software confused me for a while until I too
 The triggering also confused me (it had already been a long day by this point) until I realised it could be quite simply setup. I had the I2C clock signal on pin 1, and I wanted to trigger on that pin changing state (clock pulses happening). This is done by setting trigger mode to SIMPLE and putting a tick in the Mask check boxes in position 1. If the Value checkbox for position 1 is left un-ticked, then the trigger will happen when the pin goes low - exactly what happens with an I2C START state. If you were waiting for a pin to go high, then you'd tick the position in the Value checkbox.
 
 [[File:Ols-i2c-trigger-settings.png|frame|800px|OLS Trigger settings]]
+The result of this was a nice capture of my I2C transaction.
+[[File:Ols-i2c.png|thumb|800px|One I2C transaction captured]]
+
+The I2C analyser in the OLS software can turn this waveform capture into real data.
+[[File:I2c-analysis.png|thumb|800px|Analysing the captured waveforms with OLS I2C protocol analyser]]
+
+The software detects which pins are used for clock and data and automatically shows read and writes and data on the bus. It also back annotates the the waveform display with the decoded data and read-write status.
+[[File:I2c-data.png|thumb|800px|Analysed data, back annotated with read-write status and data values]]
+
+This proved useful, as I was able to see I had a dangling write to the device after I'd read data from it. It didn't actually write any data, just set up the conditions for it, enough to sometimes confuse the slave device.
 
 ===== Conclusions =====
 

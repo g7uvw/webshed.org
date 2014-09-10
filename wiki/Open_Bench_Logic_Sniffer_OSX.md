@@ -17258,3 +17258,41 @@ only using two pins, and not using the extra port, I left the OLS
 software set to Inside.
 
 <img src="OLS_connections.jpg" title="The input pins number scheme" alt="The input pins number scheme" width="403" />
+
+The triggering also confused me (it had already been a long day by this
+point) until I realised it could be quite simply setup. I had the I2C
+clock signal on pin 1, and I wanted to trigger on that pin changing
+state (clock pulses happening). This is done by setting trigger mode to
+SIMPLE and putting a tick in the Mask check boxes in position 1. If the
+Value checkbox for position 1 is left un-ticked, then the trigger will
+happen when the pin goes low - exactly what happens with an I2C START
+state. If you were waiting for a pin to go high, then you'd tick the
+position in the Value checkbox.
+
+![ OLS Trigger
+settings](Ols-i2c-trigger-settings.png " OLS Trigger settings")
+
+The result of this was a nice capture of my I2C transaction.
+<img src="Ols-i2c.png" title="fig:One I2C transaction captured" alt="One I2C transaction captured" width="800" />
+
+The I2C analyser in the OLS software can turn this waveform capture into
+real data.
+<img src="I2c-analysis.png" title="fig:Analysing the captured waveforms with OLS I2C protocol analyser" alt="Analysing the captured waveforms with OLS I2C protocol analyser" width="800" />
+
+The software detects which pins are used for clock and data and
+automatically shows read and writes and data on the bus. It also back
+annotates the the waveform display with the decoded data and read-write
+status.
+<img src="I2c-data.png" title="fig:Analysed data, back annotated with read-write status and data values" alt="Analysed data, back annotated with read-write status and data values" width="800" />
+
+This proved useful, as I was able to see I had a dangling write to the
+device after I'd read data from it. It didn't actually write any data,
+just set up the conditions for it, enough to sometimes confuse the slave
+device.
+
+##### Conclusions
+
+I've not had the Logic Sniffer long, but it has already helped me solve
+a problem. The learning curve is pretty steep, and the documentation is
+a little lacking, but with perseverance I can see this will be a very
+useful tool in my collection.

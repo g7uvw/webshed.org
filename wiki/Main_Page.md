@@ -35,6 +35,8 @@ page.
 Electronics
 -----------
 
+-   [Some initial experiments with hollow-state vacuum tube
+    technology]([[Tube_Experiments_1 "wikilink")
 -   [Using the Dangerous Prototypes Open Bench Logic Sniffer on Mac
     OSX](/wiki/Open_Bench_Logic_Sniffer_OSX "wikilink")
 -   [Some photographs on the inside of an Icom HM-103

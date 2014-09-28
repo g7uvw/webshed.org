@@ -30,7 +30,7 @@ current to flow.
 
 The resistor and neon combination limit anode current to around 50 µA.
 The neon starts to glow before the meter needle even starts to move. The
-voltage mesurements at various pints in the circuit look reasonable,
+voltage measurements at various points in the circuit look reasonable,
 though I was surprised with the large voltage drop across the tube, I'd
 expected it to be lower resistance than the anode resistor. This may be
 an effect of the grounded grids.

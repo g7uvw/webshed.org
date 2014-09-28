@@ -10,7 +10,7 @@ The other tube type I had a few new old stock (never used, still in original pac
 
 [[File:Simple-pentode-triode.png|center|thumb|548px|Simple grounded grids pentode-diode]]
 
-The resistor and neon combination limit anode current to around 50 &micro;A. The neon starts to glow before the meter needle even starts to move. The voltage measurements at various points in the circuit look reasonable, though I was surprised with the large voltage drop across the tube, I'd expected it to be lower resistance than the anode resistor. This may be an effect of the grounded grids.
+The resistor and neon combination limit anode current to around 50 &micro;A. If the HT is switched on before the heater voltage, the current slowly climbs as the cathode is heated and begins emitting electrons. The neon starts to glow before the meter needle even starts to move. The voltage measurements at various points in the circuit look reasonable, though I was surprised with the large voltage drop across the tube, I'd expected it to be lower resistance than the anode resistor. This may be an effect of the grounded grids.
 
 {| class="wikitable"
 |-

@@ -29,8 +29,20 @@ current to flow.
 <img src="Simple-pentode-triode.png" title="Simple grounded grids pentode-diode" alt="Simple grounded grids pentode-diode" width="548" />
 
 The resistor and neon combination limit anode current to around 50 µA.
-The neon starts to glow before the meter needle even starts to move.
-This circuit was lased together on the bench with crocodile clips
-connecting to the tube's pins. I'll need some proper bases before I can
+The neon starts to glow before the meter needle even starts to move. The
+voltage mesurements at various pints in the circuit look reasonable,
+though I was surprised with the large voltage drop across the tube, I'd
+expected it to be lower resistance than the anode resistor. This may be
+an effect of the grounded grids.
+
+| Circuit node         | Voltage (V) |
+|----------------------|-------------|
+| V<sub>psu</sub>      | 208         |
+| V<sub>resistor</sub> | 21.3        |
+| V<sub>neon</sub>     | 56.2        |
+| V<sub>tube</sub>     | 123.3       |
+
+This circuit was lashed together on the bench with crocodile clips
+connecting to the tube pins. I'll need some proper bases before I can
 try to make the valves do my bidding - crocodile clips are a bit
 cumbersome to say the least.

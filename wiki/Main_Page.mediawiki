@@ -11,7 +11,7 @@ Friends &amp; family that have ended up here are probably lost, anyone looking f
 Some of the more recent things I've been working on and documenting here on webshed. From photography to electronics via wine and cider making, I've a wide range of interests. Mature projects and other projects not actively being worked on at the moment are listed in the [[:Category:Projects|Projects Category]] in the menu bar on each page.<br> 
 
 == Electronics  ==
-*[[[[Tube Experiments 1 |Some initial experiments with hollow-state vacuum tube technology]]
+*[[Tube Experiments 1 |Some initial experiments with hollow-state vacuum tube technology]]
 *[[Open Bench Logic Sniffer OSX|Using the Dangerous Prototypes Open Bench Logic Sniffer on Mac OSX]]
 *[[Icom HM103|Some photographs on the inside of an Icom HM-103 Microphone]] for reference purposes.
 *[[Heart Blinkenlights]] A Valentine's Day blinkenlight project.

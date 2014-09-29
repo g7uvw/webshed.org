@@ -48,3 +48,26 @@ This circuit was lashed together on the bench with crocodile clips
 connecting to the tube pins. I'll need some proper bases before I can
 try to make the valves do my bidding - crocodile clips are a bit
 cumbersome to say the least.
+
+##### A simple pentode audio amplifier
+
+This circuit is taken directly from the Mullard application notes for
+the EF86. As soon as I get a proper valve base I'll build and test the
+circuit.
+<img src="EF86-audio-amp.png" title="fig:EF86 Audio Amp" alt="EF86 Audio Amp" width="533" />
+
+The application note offers two parts lists, depending if you want high
+gain or lower noise.
+
+| Part Number | High gain | Low Noise |
+|-------------|-----------|-----------|
+| R1          | 390k      | 1.0M      |
+| R2          | 100k      | 220k      |
+| R3          | 1.0k      | 2.2k      |
+| R4          | 330k      | 680k      |
+| C1          | 220nF     | 220nF     |
+| C2          | 1uF       | 1uF       |
+| C3          | 100uF     | 100uF     |
+| C4          | 1uF       | 1uF       |
+
+

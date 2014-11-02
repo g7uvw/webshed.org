@@ -5,7 +5,7 @@ A signal injector is a low power oscillator that generates a signal and lots of 
 ==== The circuit ====
 
 The basic circuit for for signal injector is an Astable Oscillator -  two transistors configured to alternately switch the state of the other transistor.
-[[File:Astable.png]]
+[[File:Astable.png|frame|Basic circuit diagram of astable oscillator]]
 
 The oscillator's operating frequency is set by R2, R3 and C1 & C2. 
 
@@ -22,7 +22,7 @@ where...
 * ''T'' is the period.
 
 The output approximates a square wave with the duty cycle controlled by the values of R2 and R3. In the case where R2 = R3, the duty cycle is very close to 50% and the circuit produces a reasonable square wave - this is not really what we want. A square wave is comprised only of odd harmonics, ideally we'd like both the odd and even harmonics so that there is a signal close to wherever the radio is tuned.
-
+==== Simulation ====
 Some experimentation with the QUCS circuit simulator suggests reasonable values for the resistors and capacitors
 {| class="wikitable"
 |-
@@ -38,3 +38,7 @@ Some experimentation with the QUCS circuit simulator suggests reasonable values 
 |-
 | C2 || 10 nF
 |}
+[[File:Timedomain.png|frame|Simulated oscilloscope output from oscillator]]
+[[File:Frequency_Domain.png|frame|Simulated spectral output of the oscillator]]
+
+You can see from the simulated data that the oscillator output is full of nice fast rising edges (good for harmonic generation) and does indeed contain harmonics out to beyond 20 kHz (that's as far as I plotted, the spectrum continues, but levels are too low to show on this plot).

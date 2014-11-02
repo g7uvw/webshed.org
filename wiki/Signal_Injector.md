@@ -16,7 +16,8 @@ They are very simple to built and every work bench should have one.
 
 The basic circuit for for signal injector is an Astable Oscillator - two
 transistors configured to alternately switch the state of the other
-transistor. ![](Astable.png "fig:Astable.png")
+transistor. ![Basic circuit diagram of astable
+oscillator](Astable.png "fig:Basic circuit diagram of astable oscillator")
 
 The oscillator's operating frequency is set by R2, R3 and C1 & C2.
 
@@ -40,6 +41,8 @@ this is not really what we want. A square wave is comprised only of odd
 harmonics, ideally we'd like both the odd and even harmonics so that
 there is a signal close to wherever the radio is tuned.
 
+#### Simulation
+
 Some experimentation with the QUCS circuit simulator suggests reasonable
 values for the resistors and capacitors
 
@@ -51,4 +54,12 @@ values for the resistors and capacitors
 | C1          | 10n F    |
 | C2          | 10 nF    |
 
+![Simulated oscilloscope output from
+oscillator](Timedomain.png "fig:Simulated oscilloscope output from oscillator")
+![Simulated spectral output of the
+oscillator](Frequency_Domain.png "fig:Simulated spectral output of the oscillator")
 
+You can see from the simulated data that the oscillator output is full
+of nice fast rising edges (good for harmonic generation) and does indeed
+contain harmonics out to beyond 20 kHz (that's as far as I plotted, the
+spectrum continues, but levels are too low to show on this plot).

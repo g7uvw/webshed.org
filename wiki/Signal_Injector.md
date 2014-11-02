@@ -28,11 +28,10 @@ $f = \\frac{1}{T}
 
 where...
 
--   *f* is [frequency](frequency "wikilink") in
-    [hertz](hertz "wikilink").
+-   *f* is frequency in hertz.
 -   *R*<sub>2</sub> and *R*<sub>3</sub> are resistor values in ohms.
 -   *C*<sub>1</sub> and *C*<sub>2</sub> are capacitor values in farads.
--   *T* is the period (In this case, the sum of two period durations).
+-   *T* is the period.
 
 The output approximates a square wave with the duty cycle controlled by
 the values of R2 and R3. In the case where R2 = R3, the duty cycle is

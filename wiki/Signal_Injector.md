@@ -39,3 +39,16 @@ very close to 50% and the circuit produces a reasonable square wave -
 this is not really what we want. A square wave is comprised only of odd
 harmonics, ideally we'd like both the odd and even harmonics so that
 there is a signal close to wherever the radio is tuned.
+
+Some experimentation with the QUCS circuit simulator suggests reasonable
+values for the resistors and capacitors
+
+| Part Number | Value    |
+|-------------|----------|
+| R1 & R4     | 22k Ohm  |
+| R2          | 470k Ohm |
+| R3          | 100k Ohm |
+| C1          | 10n F    |
+| C2          | 10 nF    |
+
+

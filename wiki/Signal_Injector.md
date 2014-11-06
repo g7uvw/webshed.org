@@ -57,9 +57,16 @@ values for the resistors and capacitors
 ![Simulated oscilloscope output from
 oscillator](Timedomain.png "fig:Simulated oscilloscope output from oscillator")
 ![Simulated spectral output of the
-oscillator](Frequency_Domain.png "fig:Simulated spectral output of the oscillator")
-
+oscillator](Frequency_Domain.png "fig:Simulated spectral output of the oscillator")  
 You can see from the simulated data that the oscillator output is full
 of nice fast rising edges (good for harmonic generation) and does indeed
 contain harmonics out to beyond 20 kHz (that's as far as I plotted, the
-spectrum continues, but levels are too low to show on this plot).
+spectrum continues, but levels are too low to show on this plot). The
+low levels at higher frequencies are a good thing, as typically the
+circuit you'll be testing with this generator will be sensitive to
+tens-to-hundereds of micro-volts; you don't need big signals to test
+these circuits.
+
+You can easily prove the circuit generates higher harmonics by building
+it and connecting the output to the antenna of an AM radio - you'll hear
+a buzzing noise repeating as you tunes across the AM band.

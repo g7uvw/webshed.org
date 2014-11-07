@@ -35,6 +35,8 @@ page.
 Electronics
 -----------
 
+-   [Design and building a basic signal injector tool for radio
+    repair](/wiki/Signal_Injector "wikilink")
 -   [Some initial experiments with hollow-state vacuum tube
     technology](/wiki/Tube_Experiments_1 "wikilink")
 -   [Using the Dangerous Prototypes Open Bench Logic Sniffer on Mac

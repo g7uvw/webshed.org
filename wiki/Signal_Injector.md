@@ -75,6 +75,6 @@ a buzzing noise repeating as you tune across the AM band.
 
 The circuit is easily built on a scrap of veroboard.
 
-![](SignalInjector.jpg "SignalInjector.jpg")
+<img src="SignalInjector.jpg" title="SignalInjector.jpg" alt="SignalInjector.jpg" width="800" />
 
 The yellow Xs are where the copper strips are cut on the backside.

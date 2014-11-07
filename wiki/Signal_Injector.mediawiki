@@ -49,6 +49,6 @@ You can easily prove the circuit generates higher harmonics by building it and c
 
 The circuit is easily built on a scrap of veroboard.
 
-[[File:SignalInjector.jpg|frame|center]]
+[[File:SignalInjector.jpg|800px]]
 
 The yellow Xs are where the copper strips are cut on the backside.

@@ -69,4 +69,12 @@ these circuits.
 
 You can easily prove the circuit generates higher harmonics by building
 it and connecting the output to the antenna of an AM radio - you'll hear
-a buzzing noise repeating as you tunes across the AM band.
+a buzzing noise repeating as you tune across the AM band.
+
+#### Building the signal injector
+
+The circuit is easily built on a scrap of veroboard.
+
+![](SignalInjector.jpg "SignalInjector.jpg")
+
+The yellow Xs are where the copper strips are cut on the backside.

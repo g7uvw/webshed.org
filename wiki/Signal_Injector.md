@@ -78,3 +78,16 @@ The circuit is easily built on a scrap of veroboard.
 <img src="SignalInjector.jpg" title="SignalInjector.jpg" alt="SignalInjector.jpg" width="800" />
 
 The yellow Xs are where the copper strips are cut on the backside.
+
+#### Using the signal injector
+
+This circuit is only to be used on battery powered devices, NOT anything
+mains powered. There's no isolation from the mains provided by this
+equipment.
+
+The ground clip is connected to ground on the radio receiver, and the
+output probe touched to the various stages' inputs, usually working back
+towards the antenna from the speaker / headphones. When you stop hearing
+a sound, you've found the non-working stage. From there it's a matter of
+faultfinding in the stage (usually a duff transistor or capacitor or
+broken wire).

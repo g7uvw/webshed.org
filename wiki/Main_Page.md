@@ -35,6 +35,8 @@ page.
 Electronics
 -----------
 
+-   [ A prototype low power sensor platform based on Arduino, DHT22 and
+    SD card](/wiki/Arduino_Low_Power_Temp_Humidity "wikilink")
 -   [Design and building a basic signal injector tool for radio
     repair](/wiki/Signal_Injector "wikilink")
 -   [Some initial experiments with hollow-state vacuum tube

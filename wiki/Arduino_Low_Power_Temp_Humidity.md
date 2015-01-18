@@ -87,3 +87,9 @@ the next reading. There is nothing special in the software, it's really
 a few lines of code gluing library functions together. The software is
 available on my github repo. [Archives
 Logger](https://github.com/g7uvw/drunken-dangerzone/tree/master/archives_logger)
+
+Current consumption is 3.7 mA in sleep mode, mostly due to the SD card,
+DHT22 sensor and USB hardware on the Arduino, rising to ~10 mA during a
+wake period. This should allow around 50 days operation between battery
+changes - long enough to evaluate the performance of the sensor system
+and to design a fully custom low power solution.

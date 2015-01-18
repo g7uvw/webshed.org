@@ -35,3 +35,38 @@ found an [article](http://www.kandrsmith.org/RJS/Misc/hygrometers.html)
 testing their performance - this, along with some testing of my own
 convinced me to use them. The DHT22 includes a temperature sensor,
 removing the need for a DS18B20 and reducing the bill of materials.
+
+### Processor Hardware
+
+For the sake of rapid prototyping and code-reuse, the Arduino platform
+was used to interface the sensors with the recording media (an SD card).
+A PCB was designed and about to be sent for fabrication when I became
+aware of cheaply available clones of both the Arduino UNO platform and a
+combined real-time clock & SD card interface shield. These could be
+purchased for less than the cost of fabricating and stuffing one custom
+PCB; four were ordered for testing.
+
+### Hardware Power Consumption
+
+The clone Arduino UNO and RTC / SD card boards drew ~65 mA at 5V DC when
+programmed to write incrementing numbers to a file on a 4 gigabyte
+Kingston class-4 SDHC card. This level of power consumption gave a
+calculated battery life of ~2 days if powered from three good quality
+alkaline AA cells - dire. Removing the power LEDs from both boards
+reduced the current to 20mA, a big improvement but still an order of
+magnitude higher than I'd like.
+
+As I was injecting power directly into the 5V DC port on the Arduino, I
+didn't require the on-board voltage regulator any more, I could remove
+this and save a few mA of quiescent current - total current draw was
+down to 16mA. I could probably have saved more current by removing the
+USB interface circuitry too, but this was still required.
+
+### Software Power Consumption
+
+The data loggers will only need to record a few times per hour, the rest
+of the time they can power down to save the batteries. It was also
+decided to use the SDFAT library to access the SD card rather than the
+SD library, because the SD library was reported to leave the SPI bus
+clock active after finishing accessing the SD card, this leaves the card
+awake and consuming power.

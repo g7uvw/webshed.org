@@ -96,5 +96,5 @@ and to design a fully custom low power solution.
 
 ### Images
 
-![](2015-01-18_at_20-48-50.jpg "fig:2015-01-18_at_20-48-50.jpg")
-![](2015-01-18_at_20-49-54.jpg "fig:2015-01-18_at_20-49-54.jpg")
+![](800px-2015-01-18_at_20-48-50.jpg "fig:800px-2015-01-18_at_20-48-50.jpg")
+![](800px-2015-01-18_at_20-49-54.jpg "fig:800px-2015-01-18_at_20-49-54.jpg")

@@ -1,0 +1,37 @@
+---
+title: Arduino Low Power Temp Humidity
+permalink: wiki/Arduino_Low_Power_Temp_Humidity/
+layout: wiki
+---
+
+Low Power Arduino Temperature & Humidity Logging Sensor Platform
+----------------------------------------------------------------
+
+I was contacted by a small city archive to provide a temperature and
+humidity logging system for their store rooms. Heritage items are kept
+under standardized conditions in storage to prevent (or at least retard)
+deterioration, pest damage and mold growth; ensuring those conditions
+are maintained over long periods of time is essential. Commercial data
+logging systems exist, but are prohibitively expensive for small
+institutions.
+
+The requirement was for a number of data loggers recording ambient
+temperature & humidity values every 10 minutes (user configurable). A
+low-power RF link on 2.4 GHz was investigated for remote reporting
+sensors, but the RF environment in the archive was inhospitable - thick
+walls, archive spread over several floors and strong co-channel
+interference from building WiFi installation. Instead, it was decided to
+record sensor readings directly on the sensor nodes for periodic
+collection.
+
+### Sensors
+
+I initially planned to use a combination of DS18B20 1-wire temperature
+sensor and SHT21 humidity sensor on the data logger, both parts I'm very
+familiar with. I was unable to source sufficient SHT21s, so had to fall
+back on another humidity sensor - the DHT22. I'd originally considered
+the DHT22 to be too low specification for this application, until I
+found an [article](http://www.kandrsmith.org/RJS/Misc/hygrometers.html)
+testing their performance - this, along with some testing of my own
+convinced me to use them. The DHT22 includes a temperature sensor,
+removing the need for a DS18B20 and reducing the bill of materials.

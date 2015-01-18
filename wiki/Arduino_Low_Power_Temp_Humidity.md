@@ -70,3 +70,13 @@ decided to use the SDFAT library to access the SD card rather than the
 SD library, because the SD library was reported to leave the SPI bus
 clock active after finishing accessing the SD card, this leaves the card
 awake and consuming power.
+
+A sleep routine in the
+[JeeLib](http://jeelabs.net/pub/docs/jeelib/classSleepy.html) library
+was used to power down the microcontroller, only waking up when prompted
+by the watchdog timer. This reduced the current consumption to 2 mA with
+no SD card in the socket, rising to 3.7 mA with the Kingston card.
+
+Upon waking, the sensor and RTC are read, the SD card is activated and
+the data saved to the SD card. The processor then sleeps again until the
+next sample time.

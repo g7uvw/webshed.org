@@ -77,6 +77,10 @@ was used to power down the microcontroller, only waking up when prompted
 by the watchdog timer. This reduced the current consumption to 2 mA with
 no SD card in the socket, rising to 3.7 mA with the Kingston card.
 
-Upon waking, the sensor and RTC are read, the SD card is activated and
-the data saved to the SD card. The processor then sleeps again until the
-next sample time.
+### Software
+
+The main active loop of the software takes around one second to run,
+during which it reads botht he DHT22 sensor and the RTC, activates the
+SD card and appends the date/time and sensor readings to a file on the
+SD card. The microcontroller then sleeps for ten minutes, before making
+the next reading.

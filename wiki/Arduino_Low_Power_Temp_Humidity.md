@@ -93,3 +93,8 @@ DHT22 sensor and USB hardware on the Arduino, rising to ~10 mA during a
 wake period. This should allow around 50 days operation between battery
 changes - long enough to evaluate the performance of the sensor system
 and to design a fully custom low power solution.
+
+### Images
+
+![](2015-01-18_at_20-48-50.jpg "fig:2015-01-18_at_20-48-50.jpg")
+![](2015-01-18_at_20-49-54.jpg "fig:2015-01-18_at_20-49-54.jpg")

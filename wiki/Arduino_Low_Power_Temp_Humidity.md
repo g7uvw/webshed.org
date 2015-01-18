@@ -96,5 +96,5 @@ and to design a fully custom low power solution.
 
 ### Images
 
-[thumb 800px](/wiki/File:2015-01-18_at_20-48-50.jpg "wikilink")
-![](800px-2015-01-18_at_20-49-54.jpg "fig:800px-2015-01-18_at_20-49-54.jpg")
+<img src="2015-01-18_at_20-48-50.jpg" title="fig:2015-01-18_at_20-48-50.jpg" alt="2015-01-18_at_20-48-50.jpg" width="800" />
+<img src="2015-01-18_at_20-49-54.jpg" title="fig:2015-01-18_at_20-49-54.jpg" alt="2015-01-18_at_20-49-54.jpg" width="800" />

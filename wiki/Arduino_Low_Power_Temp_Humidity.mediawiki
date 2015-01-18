@@ -27,5 +27,5 @@ The software is available on my github repo. [https://github.com/g7uvw/drunken-d
 Current consumption is 3.7 mA in sleep mode, mostly due to the SD card, DHT22 sensor and USB hardware on the Arduino, rising to ~10 mA during a wake period. This should allow around 50 days operation between battery changes - long enough to evaluate the performance of the sensor system and to design a fully custom low power solution.
 
 === Images ===
-[[File:2015-01-18_at_20-48-50.jpg|thumb 800px]]
-[[File:800px-2015-01-18_at_20-49-54.jpg]]
+[[File:2015-01-18_at_20-48-50.jpg|thumb|800px]]
+[[File:2015-01-18_at_20-49-54.jpg|thumb|800px]]

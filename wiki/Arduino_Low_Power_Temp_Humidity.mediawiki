@@ -21,4 +21,5 @@ The data loggers will only need to record a few times per hour, the rest of the 
 A sleep routine in the [http://jeelabs.net/pub/docs/jeelib/classSleepy.html JeeLib] library was used to power down the microcontroller, only waking up when prompted by the watchdog timer. This reduced the current consumption to 2 mA with no SD card in the socket, rising to 3.7 mA with the Kingston card.
 
 === Software ===
-The main active loop of the software takes around one second to run, during which it reads botht he DHT22 sensor and the RTC, activates the SD card and appends the date/time and sensor readings to a file on the SD card. The microcontroller then sleeps for ten minutes, before making the next reading.
+The main active loop of the software takes around one second to run, during which it reads both the DHT22 sensor and the RTC, activates the SD card and appends the date/time and sensor readings to a file on the SD card. The microcontroller then sleeps for ten minutes, before making the next reading. There is nothing special in the software, it's really a few lines of code gluing library functions together. 
+The software is available on my github repo. [https://github.com/g7uvw/drunken-dangerzone/tree/master/archives_logger Archives Logger]

@@ -12,6 +12,4 @@ radio - it will not work above 60MHz. The issue is the max frequency is
 set in the XML file to 60000000 Hz.
 
 Here's my working version:
-[IC9100\_RigCat.zip](/wiki/IC-9100.xml.zip "wikilink")
-
-[<File:IC-9100.xml.zip>](/wiki/IC9100.xml.zip "wikilink")
+![IC9100.xml.zip](IC-9100.xml.zip "fig:IC9100.xml.zip")

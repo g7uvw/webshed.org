@@ -67,6 +67,8 @@ Electronics
 Radio
 -----
 
+-   [ Icom 9100 RigCAT file that works for VHF and UHF as well as
+    HF](/wiki/Icom_9100_XML "wikilink")
 -   [Testing ferrite broadband
     transformers](/wiki/FT50-43_and_FT50-26_Transformers "wikilink")
 -   [AD9850 DDS controlled by Arduino](/wiki/AD9850_Arduino "wikilink")

@@ -81,6 +81,8 @@ Radio
 -   [Yaseu FT290R Audio Fix](/wiki/FT290-Audio "wikilink")
 -   [80m band RX using only PNP transistors](/wiki/PNP-80 "wikilink")  
       
+-   [ Super simple and effective toroid winding tool, by Chick
+    G0RNN](/wiki/G0RNN_coil_tool "wikilink")
 
 Photography
 -----------

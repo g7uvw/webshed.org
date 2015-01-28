@@ -38,6 +38,7 @@ Some of the more recent things I've been working on and documenting here on webs
 *[[QRSS 2m|144 MHz QRP QRSS transmitter]] 
 *[[FT290-Audio|Yaseu FT290R Audio Fix]] 
 *[[PNP-80|80m band RX using only PNP transistors]]<br><br>
+*[[G0RNN_coil_tool| Super simple and effective toroid winding tool, by Chick G0RNN]]
 
 == Photography  ==
 

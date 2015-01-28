@@ -37,7 +37,7 @@ Some of the more recent things I've been working on and documenting here on webs
 *[[FUNcube-Dongle-Linux|Using a FUNcube Dongle SDR reciever under Linux]] 
 *[[QRSS 2m|144 MHz QRP QRSS transmitter]] 
 *[[FT290-Audio|Yaseu FT290R Audio Fix]] 
-*[[PNP-80|80m band RX using only PNP transistors]]<br><br>
+*[[PNP-80|80m band RX using only PNP transistors]]
 *[[G0RNN_coil_tool| Super simple and effective toroid winding tool, by Chick G0RNN]]
 
 == Photography  ==

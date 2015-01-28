@@ -4,11 +4,9 @@ This is a fantastically simple and useful tool designed and built by '''Chick G0
 
 There isn't a lot more to say, the design is pretty self-explanatory from the photographs. The only thing to consider during construction of the tool, is that cut tin-plate will have sharp edges, so should be smoothed with emery paper or similar before soldering.
 
-<br style="clear: both" /><br/>'''The G0RNN coil winding helper'''
-<flickr>6250830672|-|frame|left|Three angles of tinplate are soldered to the lid of a tin-can</flickr>
+[[File:G0RNN_Winder.jpg|thumb|600px|Three angles of tinplate are soldered to the lid of a tin-can]]
 
-<br style="clear: both" /><br/>'''The G0RNN coil winding helper'''
-<flickr>6250829452|-|frame|left|Various sizes of toroidal formers are accommodated and easily worked with</flickr>
+[[File:G0RNN_in_use.jpg|thumb|600px|Various sizes of toroidal formers are accommodated and easily worked with]]
 
 [[Category:Projects]]
 [[Category:Radio]]

@@ -22,13 +22,6 @@ from the photographs. The only thing to consider during construction of
 the tool, is that cut tin-plate will have sharp edges, so should be
 smoothed with emery paper or similar before soldering.
 
-  
-  
-**The G0RNN coil winding helper** <flickr>6250830672|-|frame|left|Three
-angles of tinplate are soldered to the lid of a tin-can</flickr>
+<img src="G0RNN_Winder.jpg" title="Three angles of tinplate are soldered to the lid of a tin-can" alt="Three angles of tinplate are soldered to the lid of a tin-can" width="600" />
 
-  
-  
-**The G0RNN coil winding helper**
-<flickr>6250829452|-|frame|left|Various sizes of toroidal formers are
-accommodated and easily worked with</flickr>
+<img src="G0RNN_in_use.jpg" title="Various sizes of toroidal formers are accommodated and easily worked with" alt="Various sizes of toroidal formers are accommodated and easily worked with" width="600" />

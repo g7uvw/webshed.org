@@ -12,7 +12,9 @@ for the Freescale FRDM-KL46Z board using Kinetis Design Studio and
 Processor Expert software as these are freely available from the
 Freescale website.
 
-Creating a new project, I used the settings shown here.
+  
+`Creating a new project, I used the settings shown here.`
+
 ![](KDS_Project_type.jpg "fig:KDS_Project_type.jpg") And select the
 target board on the next screen. I'm assuming that selecting a specific
 development board rather than just a processor will set up some of the

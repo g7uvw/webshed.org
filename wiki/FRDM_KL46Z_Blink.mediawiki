@@ -1,0 +1,10 @@
+== FRDM KL46Z Blink ==
+
+This article is intended to document how I got started with developing for the Freescale FRDM-KL46Z board using Kinetis Design Studio and Processor Expert software as these are freely available from the Freescale website. 
+
+
+[[File:KDS_Project_type.jpg]]
+[[File:KDS_Board_selection.jpg]]
+[[File:KDS_Project_setup.jpg]]
+[[File:KDS_Processor_pin_map.jpg]]
+[[File:KDS_GPIO_components.jpg]]

@@ -67,6 +67,8 @@ Electronics
 Radio
 -----
 
+-   [Decoding license free data transmitters on 70cms with
+    RTL\_433](/wiki/RTL_433 "wikilink")
 -   [ Icom 9100 RigCAT file that works for VHF and UHF as well as
     HF](/wiki/Icom_9100_XML "wikilink")
 -   [Testing ferrite broadband

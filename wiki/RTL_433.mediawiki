@@ -9,3 +9,344 @@ I was interested to see if I could receive these sensors, and any others in the 
 
 ==== The software ====
 I did some experiments with recording a bunch of signals in the band (around 433.820 MHz +/- 30 KHz - the oscillators are not very accurate). Looking at the audio recording in [http://www.baudline.com/ baudline] and [http://audacity.sourceforge.net/ audacity] revealed obvious data bits, but decoding the signals by eye wasn't much fun. Then I found [https://github.com/merbanan/rtl_433 RTL_433], some software that automatically decodes many data transmissions off-air directly with an [http://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/ RTL Dongle].
+
+Building RTL_433 on OSX was just a matter of following the instructions on the website, making sure you had a recent install of the main RTLSDR software first. I've no idea about making this work on MS Windows, sorry.
+
+==== Testing ====
+I connected the RTL dongle to the 2m/70cms colinear on my roof, to get the best RF footprint and receive from as many data senders as possible. 
+
+The command line I used to start of the software is
+<pre>
+rtl_433 -f 433820000 -s 300000 -p 66 -l 50
+</pre>
+
+Which translates as tune to 433.82MHz ('''-f 432820000'''), sample at 300 KHz ('''-s 300000'''), the tuner has 66 PPM error in  frequency ('''-p 66''') and set the discrimination level to 50 ('''-l 50'''). 
+
+These settings worked well for me. Data started arriving almost instantly. I could receive several remote weather sensors from different manufactures and the occasional doorbell notification too. An example capture session is in the collapsed text below.
+
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+RTL_433 half-hour capture here:
+<div class="mw-collapsible-content">
+Faraday:~ dm$ rtl_433 -f 433820000 -s 300000 -p 66 -l 50
+Registering protocol "Silvercrest Remote Control"
+Registering protocol "Rubicson Temperature Sensor"
+Registering protocol "Prologue Temperature Sensor"
+Registering protocol "Waveman Switch Transmitter"
+Registering protocol "Steffen Switch Transmitter"
+Registering protocol "ELV EM 1000"
+Registering protocol "ELV WS 2000"
+Registering protocol "LaCrosse TX Temperature / Humidity Sensor"
+Registering protocol "Acurite 5n1 Weather Station"
+Registering protocol "Acurite 896 Rain Gauge"
+Registering protocol "Acurite Temperature and Humidity Sensor"
+Registering protocol "Oregon Scientific Weather Sensor"
+Registering protocol "Mebus 433"
+Registering protocol "Intertechno 433"
+Registering protocol "KlikAanKlikUit Wireless Switch"
+Registering protocol "AlectoV1 Weather Sensor"
+Registering protocol "Fine Offset Electronics, WH-2 Sensor"
+Found 1 device(s):
+  0:  Realtek, RTL2838UHIDIR, SN: 00000001
+
+Using device 0: Generic RTL2832U OEM
+Found Rafael Micro R820T tuner
+Sample rate set to 300000.
+Sample rate decimation set to 0. 300000->300000
+Bit detection level set to 50.
+Tuner gain set to Auto.
+Reading samples in async mode...
+Tuned to 433820000 Hz.
+AcuRite Rain Gauge Total Rain is 260.0mm
+Raw Message: a4 02 08 00 00
+AcuRite Rain Gauge Total Rain is 520.0mm
+Raw Message: 85 04 10 00 00
+AcuRite Rain Gauge Total Rain is 1088.0mm
+Raw Message: 01 88 80 00 00
+AcuRite Rain Gauge Total Rain is 8.0mm
+Raw Message: 61 20 10 00 00
+AcuRite Rain Gauge Total Rain is 64.0mm
+Raw Message: 04 50 80 00 00
+Detected Acurite 5n1 sensor, 0 bits
+AcuRite Rain Gauge Total Rain is 1161.0mm
+Raw Message: 08 09 12 00 00
+AcuRite Rain Gauge Total Rain is 3.0mm
+Raw Message: 22 80 06 00 00
+AcuRite Rain Gauge Total Rain is 129.0mm
+Raw Message: 04 01 02 00 00
+Message received from unrecognized Oregon Scientific v3 sensor.
+Message: f5 b5 ff f5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Raw: df ff f5 5f fa da ff fa 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+AcuRite Rain Gauge Total Rain is 1.0mm
+Raw Message: 01 40 02 00 00
+AcuRite Rain Gauge Total Rain is 524.0mm
+Raw Message: 20 44 18 00 00
+
+AlectoV1 CRC errorAcuRite Rain Gauge Total Rain is 48.0mm
+Raw Message: 80 10 60 00 00
+AcuRite Rain Gauge Total Rain is 532.0mm
+Raw Message: 94 54 28 00 00
+AcuRite Rain Gauge Total Rain is 1560.0mm
+Raw Message: 1b bc 30 00 00
+AcuRite Rain Gauge Total Rain is 540.0mm
+Raw Message: 04 84 38 00 00
+AcuRite Rain Gauge Total Rain is 4.0mm
+Raw Message: a0 a0 08 00 00
+AcuRite Rain Gauge Total Rain is 304.0mm
+Raw Message: 80 42 60 00 00
+Remote button event:
+model   = Waveman Switch Transmitter, 1 bits
+id      = A
+channel = 1
+button  = 1
+state   = off
+00 00 00
+AcuRite Rain Gauge Total Rain is 37.0mm
+Raw Message: c7 c0 4a 00 00
+AcuRite Rain Gauge Total Rain is 144.0mm
+Raw Message: 08 51 20 00 00
+AcuRite Rain Gauge Total Rain is 16.0mm
+Raw Message: 16 80 20 00 00
+AcuRite Rain Gauge Total Rain is 146.0mm
+Raw Message: 90 01 24 00 00
+Remote button event:
+model   = Waveman Switch Transmitter, 40 bits
+id      = A
+channel = 1
+button  = 1
+state   = off
+00 00 00
+AcuRite Rain Gauge Total Rain is 1038.0mm
+Raw Message: 04 08 1c 00 00
+AcuRite Rain Gauge Total Rain is 57.0mm
+Raw Message: 10 90 72 00 00
+AcuRite Rain Gauge Total Rain is 104.0mm
+Raw Message: 94 30 d0 00 00
+AcuRite Rain Gauge Total Rain is 1056.0mm
+Raw Message: 02 08 40 00 00
+AcuRite Rain Gauge Total Rain is 86.0mm
+Raw Message: 25 b0 ac 00 00
+AcuRite Rain Gauge Total Rain is 592.0mm
+Raw Message: 08 a4 a0 00 00
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 0.0°C
+humidity      = 0%
+
+AcuRite Rain Gauge Total Rain is 644.0mm
+Raw Message: 20 05 08 00 00
+AcuRite Rain Gauge Total Rain is 1161.5mm
+Raw Message: c0 89 13 00 00
+
+AlectoV1 CRC errorAcuRite Rain Gauge Total Rain is 160.0mm
+Raw Message: 80 01 40 00 00
+AcuRite Rain Gauge Total Rain is 288.0mm
+Raw Message: 80 02 40 00 00
+Remote button event:
+model   = Waveman Switch Transmitter, 7 bits
+id      = A
+channel = 1
+button  = 1
+state   = off
+00 00 00
+AcuRite Rain Gauge Total Rain is 1027.0mm
+Raw Message: 82 48 06 00 00
+AcuRite Rain Gauge Total Rain is 1088.0mm
+Raw Message: 83 98 80 00 00
+AcuRite Rain Gauge Total Rain is 1034.0mm
+Raw Message: 20 08 14 00 00
+Message received from unrecognized Oregon Scientific v3 sensor.
+Message: f5 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Raw: df ff df fd 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 0.0°C
+humidity      = 0%
+
+AcuRite Rain Gauge Total Rain is 1040.0mm
+Raw Message: 18 48 20 00 00
+AcuRite Rain Gauge Total Rain is 1328.0mm
+Raw Message: 20 2a 60 00 00
+AcuRite Rain Gauge Total Rain is 928.0mm
+Raw Message: 88 07 40 00 00
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 0.0°C
+humidity      = 0%
+
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 0.0°C
+humidity      = 0%
+
+AcuRite Rain Gauge Total Rain is 1312.0mm
+Raw Message: 88 0a 40 00 00
+AcuRite Rain Gauge Total Rain is 1056.0mm
+Raw Message: 0d 08 40 00 00
+AcuRite Rain Gauge Total Rain is 784.0mm
+Raw Message: 28 06 20 00 00
+AcuRite Rain Gauge Total Rain is 16.0mm
+Raw Message: 20 10 20 00 00
+AcuRite Rain Gauge Total Rain is 416.0mm
+Raw Message: e0 13 40 00 00
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 51.2°C
+humidity      = 0%
+
+AcuRite Rain Gauge Total Rain is 2.0mm
+Raw Message: 24 10 04 00 00
+AcuRite Rain Gauge Total Rain is 272.0mm
+Raw Message: 80 02 20 00 00
+AcuRite Rain Gauge Total Rain is 320.0mm
+Raw Message: 80 02 80 00 00
+AcuRite Rain Gauge Total Rain is 160.0mm
+Raw Message: c0 01 40 00 00
+AcuRite Rain Gauge Total Rain is 544.0mm
+Raw Message: 81 04 40 00 00
+AcuRite Rain Gauge Total Rain is 80.5mm
+Raw Message: 04 80 a1 00 00
+Message received from unrecognized Oregon Scientific v3 sensor.
+Message: f5 b5 ff f5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+    Raw: df ff f5 5f fa da ff fa 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+AcuRite Rain Gauge Total Rain is 224.0mm
+Raw Message: 04 c1 c0 00 00
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 0.0°C
+humidity      = 32%
+
+AcuRite Rain Gauge Total Rain is 1.5mm
+Raw Message: 10 40 03 00 00
+Fine Offset Electronics, WH2:
+ID          = 0xBF
+temperature = -179.1 C
+humidity    = 223 %
+AcuRite Rain Gauge Total Rain is 1154.0mm
+Raw Message: c0 09 04 00 00
+Fine Offset Electronics, WH2:
+ID          = 0xB7
+temperature = -179.1 C
+humidity    = 255 %
+AcuRite Rain Gauge Total Rain is 275.0mm
+Raw Message: 40 42 26 00 00
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: 41 21 80 00 00
+AcuRite Rain Gauge Total Rain is 8.0mm
+Raw Message: 02 40 10 00 00
+AcuRite Rain Gauge Total Rain is 1056.0mm
+Raw Message: 40 08 40 00 00
+AcuRite Rain Gauge Total Rain is 43.0mm
+Raw Message: 80 50 56 00 00
+AcuRite Rain Gauge Total Rain is 800.0mm
+Raw Message: 20 06 40 00 00
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: 08 31 80 00 00
+AcuRite Rain Gauge Total Rain is 32.0mm
+Raw Message: 92 40 40 00 00
+AcuRite Rain Gauge Total Rain is 1568.0mm
+Raw Message: 48 3c 40 00 00
+AcuRite Rain Gauge Total Rain is 320.0mm
+Raw Message: c0 22 80 00 00
+AcuRite Rain Gauge Total Rain is 160.0mm
+Raw Message: 01 01 40 00 00
+AcuRite Rain Gauge Total Rain is 1156.0mm
+Raw Message: 14 19 08 00 00
+Temperature event:
+protocol      = Acurite Temp&Humidity
+temp          = 0.0°C
+humidity      = 0%
+
+AcuRite Rain Gauge Total Rain is 0.5mm
+Raw Message: 01 10 01 00 00
+AcuRite Rain Gauge Total Rain is 832.0mm
+Raw Message: 80 06 80 00 00
+AcuRite Rain Gauge Total Rain is 1028.0mm
+Raw Message: 81 48 08 00 00
+AcuRite Rain Gauge Total Rain is 649.0mm
+Raw Message: 01 a5 12 00 00
+AcuRite Rain Gauge Total Rain is 2.0mm
+Raw Message: 20 10 04 00 00
+AcuRite Rain Gauge Total Rain is 32.0mm
+Raw Message: 2a c0 40 00 00
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: c0 91 80 00 00
+Remote button event:
+model   = Waveman Switch Transmitter, 3 bits
+id      = A
+channel = 1
+button  = 1
+state   = off
+00 00 00
+AcuRite Rain Gauge Total Rain is 336.0mm
+Raw Message: 80 02 a0 00 00
+AcuRite Rain Gauge Total Rain is 32.0mm
+Raw Message: 80 20 40 00 00
+AcuRite Rain Gauge Total Rain is 272.0mm
+Raw Message: 04 02 20 00 00
+Switch event:
+protocol       = Intertechno
+rid            = 56
+rid            = 60
+rid            = 10
+rid            = 40
+rid            = 86
+rid            = 0
+rid            = 0
+rid            = 0
+ADDR Slave     = 0
+ADDR Master    = 0
+command        = 0
+56 60 10 40 86
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: 60 81 80 00 00
+AcuRite Rain Gauge Total Rain is 546.0mm
+Raw Message: 01 84 44 00 00
+AcuRite Rain Gauge Total Rain is 32.0mm
+Raw Message: 01 40 40 00 00
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: 80 01 80 00 00
+AcuRite Rain Gauge Total Rain is 64.0mm
+Raw Message: 02 40 80 00 00
+AcuRite Rain Gauge Total Rain is 1422.0mm
+Raw Message: 68 0b 1c 00 00
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: c0 01 80 00 00
+AcuRite Rain Gauge Total Rain is 192.0mm
+Raw Message: c0 01 80 00 00
+AcuRite Rain Gauge Total Rain is 216.0mm
+Raw Message: c0 01 b0 00 00
+AcuRite Rain Gauge Total Rain is 129.5mm
+Raw Message: a0 41 03 00 00
+Detected Acurite 5n1 sensor, 0 bits
+AcuRite Rain Gauge Total Rain is 8.0mm
+Raw Message: 08 10 10 00 00
+AcuRite Rain Gauge Total Rain is 113.0mm
+Raw Message: 81 c0 e2 00 00
+AcuRite Rain Gauge Total Rain is 132.0mm
+Raw Message: 80 01 08 00 00
+Switch event:
+protocol       = Intertechno
+rid            = 56
+rid            = 40
+rid            = 10
+rid            = 57
+rid            = 0
+rid            = 0
+rid            = 0
+rid            = 0
+ADDR Slave     = 0
+ADDR Master    = 0
+command        = 0
+56 40 10 57 00
+AcuRite Rain Gauge Total Rain is 69.0mm
+Raw Message: 20 a0 8a 00 00
+</div>
+</div>
+
+It's interesting to see how bad many of the weather station readings are. I know I'm making these recordings on a dark and stormy night.. but I really doubt humidity is 200+% with over a meter of rain. This may be because not all the data is backed up by a CRC checksum or other error correcting codes. 
+
+I'll update this page as I figure out more details from the sensors.

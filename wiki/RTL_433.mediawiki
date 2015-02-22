@@ -28,6 +28,7 @@ These settings worked well for me. Data started arriving almost instantly. I cou
 <div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
 RTL_433 half-hour capture here:
 <div class="mw-collapsible-content">
+<pre>
 Faraday:~ dm$ rtl_433 -f 433820000 -s 300000 -p 66 -l 50
 Registering protocol "Silvercrest Remote Control"
 Registering protocol "Rubicson Temperature Sensor"
@@ -344,6 +345,7 @@ command        = 0
 56 40 10 57 00
 AcuRite Rain Gauge Total Rain is 69.0mm
 Raw Message: 20 a0 8a 00 00
+</pre>
 </div>
 </div>
 

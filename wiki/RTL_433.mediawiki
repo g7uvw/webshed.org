@@ -7,7 +7,7 @@ I have a couple of cheap remote temperature sensors located in the garden - they
 
 I was interested to see if I could receive these sensors, and any others in the local area with a RTL SDR dongle.
 
-[[File:IMG_20150225_200521.jpg|thumb|800px|RTL SDR Dongled modified to use an SMA connector]]
+[[File:IMG_20150225_200521.jpg|center|thumb|800px|RTL SDR Dongled modified to use an SMA connector]]
 <div style="clear: both"></div>
 
 ==== The software ====

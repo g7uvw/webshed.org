@@ -1,7 +1,7 @@
 == RTL_433 Data Decoding ==
 
 ==== The motivation ====
-There are lots of low power, license free data transmitters on the 70cms (433 MHz) band. A large number of these are personal weather station sensors - others are tire pressure gauges in car wheels, wireless door bells and car remote locking systems.
+There are lots of low power, license free data transmitters on the 70cms (433 MHz) band. A large number of these are personal weather station sensors - others are [https://github.com/jboone/tpms tire pressure gauges in car wheels], [http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html wireless door bells and car remote locking systems].
 
 I have a couple of cheap remote temperature sensors located in the garden - they feed data back to a clock (the kit was in an end of line sale from Maplin Electronics in the UK). Looking inside them reveled a 433 MHz SAW oscillator block. 
 

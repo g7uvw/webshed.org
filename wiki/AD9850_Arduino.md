@@ -36,10 +36,6 @@ development board uses.
     #define DATA  10
     #define RESET 11
 
-
-
-
-
     void AD9850_init()
     {
       digitalWrite(RESET, LOW);
@@ -47,8 +43,6 @@ development board uses.
       digitalWrite(LOAD, LOW);
       digitalWrite(DATA, LOW);
     }
-
-
 
     void AD9850_reset()
     {
@@ -67,22 +61,22 @@ development board uses.
          digitalWrite(RESET, LOW);
          DelayMicroseconds(5);
          digitalWrite(RESET, HIGH);  //pulse RESET
-        DelayMicroseconds(5);
+         delayMicroseconds(5);
          digitalWrite(RESET, LOW);
-        DelayMicroseconds(5);
+         delayMicroseconds(5);
          
          digitalWrite(CLOCK, LOW);
-         DelayMicroseconds(5);
+         delayMicroseconds(5);
          digitalWrite(CLOCK, HIGH);  //pulse CLOCK
-         DelayMicroseconds(5);
+         delayMicroseconds(5);
          digitalWrite(CLOCK, LOW);
-         DelayMicroseconds(5);
+         delayMicroseconds(5);
          digitalWrite(DATA, LOW);    //make sure DATA pin is LOW
          
          digitalWrite(LOAD, LOW);
-         DelayMicroseconds(5);
+         delayMicroseconds(5);
          digitalWrite(LOAD, HIGH);  //pulse LOAD
-         DelayMicroseconds(5);
+         delayMicroseconds(5);
          digitalWrite(LOAD, LOW);
       // Chip is RESET now
     }

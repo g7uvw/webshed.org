@@ -65,24 +65,24 @@ development board uses.
         digitalWrite(LOAD, LOW);
         
          digitalWrite(RESET, LOW);
-         delay(5);
+         DelayMicroseconds(5);
          digitalWrite(RESET, HIGH);  //pulse RESET
-         delay(5);
+        DelayMicroseconds(5);
          digitalWrite(RESET, LOW);
-         delay(5);
+        DelayMicroseconds(5);
          
          digitalWrite(CLOCK, LOW);
-         delay(5);
+         DelayMicroseconds(5);
          digitalWrite(CLOCK, HIGH);  //pulse CLOCK
-         delay(5);
+         DelayMicroseconds(5);
          digitalWrite(CLOCK, LOW);
-         delay(5);
+         DelayMicroseconds(5);
          digitalWrite(DATA, LOW);    //make sure DATA pin is LOW
          
          digitalWrite(LOAD, LOW);
-         delay(5);
+         DelayMicroseconds(5);
          digitalWrite(LOAD, HIGH);  //pulse LOAD
-         delay(5);
+         DelayMicroseconds(5);
          digitalWrite(LOAD, LOW);
       // Chip is RESET now
     }

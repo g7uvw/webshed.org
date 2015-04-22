@@ -42,31 +42,31 @@ void AD9850_reset()
     digitalWrite(LOAD, LOW);
     
      digitalWrite(RESET, LOW);
-     delay(5);
+     DelayMicroseconds(5);
      digitalWrite(RESET, HIGH);  //pulse RESET
-     delay(5);
+    DelayMicroseconds(5);
      digitalWrite(RESET, LOW);
-     delay(5);
+    DelayMicroseconds(5);
      
      digitalWrite(CLOCK, LOW);
-     delay(5);
+     DelayMicroseconds(5);
      digitalWrite(CLOCK, HIGH);  //pulse CLOCK
-     delay(5);
+     DelayMicroseconds(5);
      digitalWrite(CLOCK, LOW);
-     delay(5);
+     DelayMicroseconds(5);
      digitalWrite(DATA, LOW);    //make sure DATA pin is LOW
      
      digitalWrite(LOAD, LOW);
-     delay(5);
+     DelayMicroseconds(5);
      digitalWrite(LOAD, HIGH);  //pulse LOAD
-     delay(5);
+     DelayMicroseconds(5);
      digitalWrite(LOAD, LOW);
   // Chip is RESET now
 }
 
 
 </pre> 
-All so far so simple, pretty much the same as you'd see with AD9851 drivers. I'm still not sure why the datasheet suggests you only need to pulse RESET and CLOCK to reset the chip, when I find in practice I need to pulse the LOAD line too.<br> 
+All so far so simple, pretty much the same as you'd see with AD9851 drivers. I'm still not sure why the datasheet suggests you only need to pulse RESET and CLOCK to reset the chip, when I find in practice I need to pulse the LOAD line too.<br>
 
 == Setting the output frequency  ==
 

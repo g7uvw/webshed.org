@@ -28,7 +28,10 @@ Initialising and Resetting the AD9850
 -------------------------------------
 
 These code fragments are written in the C++ like language the Arduino
-development board uses.
+development board uses. (Thanks to Robert, VA3ROM for pointing out an
+issue in the code, I had delay(5) not delayMicroseconds(5) so my delays
+were 1000x what they should be! Still worked, just showed the code down
+greatly.)
 
      #define DDS_CLOCK 125000000
     #define CLOCK 8  //pin connections for DDS

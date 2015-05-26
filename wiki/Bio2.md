@@ -20,8 +20,9 @@ millipedes.
 I've worked as a barman, an accountant, a bank clerk, a double glazing
 salesman, a road sweeper, an embedded systems developer, a network
 installer and I've manned the hell-desk. ~~Now I blow things up with a
-big laser.~~ Now I work designing integrated optical sensing technology
-based on Mach-Zehnder interferometers and planar waveguides.
+big laser.~~ ~~Now I work designing integrated optical sensing
+technology based on Mach-Zehnder interferometers and planar
+waveguides.~~. Now, I X-Ray things.
 
 I have zero musical skills despite owning at least 10 CDs and having
 several tens of gigs of MP3s on my computers. I sometimes write. I often

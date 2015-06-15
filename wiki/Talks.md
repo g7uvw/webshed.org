@@ -14,5 +14,5 @@ don't have the time to remake or convert the material.
 
 ### 2015
 
-June - DorkBot 88 at Limeouse Town Hall X-Raying my Lunch and other
+June - DorkBot 88 at Limehouse Town Hall X-Raying my Lunch and other
 things.

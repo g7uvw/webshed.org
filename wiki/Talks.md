@@ -14,5 +14,6 @@ don't have the time to remake or convert the material.
 
 ### 2015
 
-June - DorkBot 88 at Limehouse Town Hall X-Raying my Lunch and other
-things.
+June - DorkBot 88 at Limehouse Town Hall [X-Raying my Lunch and other
+things.](https://www.dropbox.com/sh/m6jguavi28plzii/AADR-i-WwxFcyOvsx6xizJHqa?dl=0)
+(OSX Keynote file)

@@ -1,0 +1,8 @@
+== Talks and Presentations ==
+
+This page is intended to be an index & archive of talks and presentations I've given.
+I'd love to be able to upload the material in open formats, but alas much of it was generated in closed formats and I don't have the time to remake or convert the material.
+
+=== 2015 ===
+June - DorkBot 88 at Limeouse Town Hall
+X-Raying my Lunch and other things.

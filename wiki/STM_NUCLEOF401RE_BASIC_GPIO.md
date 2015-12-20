@@ -6,13 +6,17 @@ layout: wiki
 
 ### A basic guide to how I got an LED to blink on the ST Nucleo F401RE board without using MBED.
 
-Step One - Install PlatformIO - the website will have the latest details
-about how to do this. PlatformIO is a convenient way of installing both
-a tool-chain and the CMSIS framework I want to use.
+Step One - Install [PlatformIO](http://platformio.org/#!/) - the website
+will have the latest details about how to do this. PlatformIO is a
+convenient way of installing both a tool-chain and the
+[CMSIS](http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php)
+framework I want to use.
 
-The GPIO pins on the STMF401RET6 device are arranged into three channels
-A to C, each with a clock entry on the AHB1 bus. The clock must be
-enabled for each channel you wish to use.
+The GPIO pins on the
+[STMF401RET6](http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1810/PF258797)
+device are arranged into three channels A to C, each with a clock entry
+on the AHB1 bus. The clock must be enabled for each channel you wish to
+use.
 
 On the ST Nucleo F401RE development board, a single LED and resistor are
 connected to pin 5 of GPIO channel A. To make it blink on and off (the
@@ -89,3 +93,6 @@ is is from the data sheet for the STMF401RET6 device.
 
       return 0;
     }
+
+You can checkout a copy of the whole project from my [GitHub
+repository](https://github.com/g7uvw/NUCLEOF401RE_Blink)

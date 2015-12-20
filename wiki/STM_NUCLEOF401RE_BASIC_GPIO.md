@@ -74,7 +74,7 @@ is is from the data sheet for the STMF401RET6 device.
                                                                                           
     int main (void)
     {
-        //RCC->AHB1RSTR |= RCC_AHB1RSTR_GPIOARST;    // Reset GPIOA to ensure reset values exist
+        //RCC->AHB1RSTR |= RCC_AHB1RSTR_GPIOARST;    // Reset GPIOA 
         //RCC->AHB1RSTR = 0;                         // Exit reset state
         
         RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;       // Enable GPIOA clock

@@ -11,7 +11,7 @@ Friends &amp; family that have ended up here are probably lost, anyone looking f
 Some of the more recent things I've been working on and documenting here on webshed. From photography to electronics via wine and cider making, I've a wide range of interests. Mature projects and other projects not actively being worked on at the moment are listed in the [[:Category:Projects|Projects Category]] in the menu bar on each page.<br> 
 
 == Electronics  ==
-[[STM_NUCLEOF401RE_BASIC_GPIO|Getting started with the NucleoF401RE development board.]]
+*[[STM_NUCLEOF401RE_BASIC_GPIO|Getting started with the NucleoF401RE development board.]]
 *[[Arduino Low Power Temp Humidity | A prototype low power sensor platform based on Arduino, DHT22 and SD card]]
 *[[Signal_Injector |Design and building a basic signal injector tool for radio repair]]
 *[[Tube Experiments 1 |Some initial experiments with hollow-state vacuum tube technology]]

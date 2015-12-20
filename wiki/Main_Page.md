@@ -35,6 +35,9 @@ page.
 Electronics
 -----------
 
+[Getting started with the NucleoF401RE development
+board.](/wiki/STM_NUCLEOF401RE_BASIC_GPIO "wikilink")
+
 -   [ A prototype low power sensor platform based on Arduino, DHT22 and
     SD card](/wiki/Arduino_Low_Power_Temp_Humidity "wikilink")
 -   [Design and building a basic signal injector tool for radio

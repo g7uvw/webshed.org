@@ -82,7 +82,7 @@ is is from the data sheet for the STMF401RET6 device.
         
         while (1)
         {
-            GPIOA->ODR ^= (1 << (5));   // toggle diode
+            GPIOA->ODR ^= (1 << (5));   // toggle LED pin
             ms_delay(800);
 
         }

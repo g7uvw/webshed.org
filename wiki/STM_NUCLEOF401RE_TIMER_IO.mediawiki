@@ -18,3 +18,15 @@ The timer is clocked from the main system clock, I think on the Nucleo board tha
 When enabled, the timer counts up from zero until it reaches its maximum value (2<sup>16</sup>) then it rolls over back to zero. We can set an auto-reload value that will instead be the value the timer rolls over at when reached, this allows more flexibility in how we use the timer.
 
 There are several possible ways to detect when the timer overflows or auto reloads, the timer will set a flag we can poll for in code, or it can issue an interrupt, or as in this case, we can have it directly interact with another peripheral in the STM32F401 device.
+
+In this example, we set up a hardware comparator to compare the current value of the timer and a pre-set value, on a match this toggles the GPIO pin. The timer is set to auto-reload at the same value as the comparator, but this isn't a requirement. The only requirement is that the auto-reload value is greater or equal to the comparison value (if it isn't, the comparison will ever be met, as the timer will never reach the comparison value).
+
+==== The code ====
+
+The first thing to do is up the GPIO port and enables clocks to the GPIO peripheral and the timer.
+<pre>
+    RCC->AHB1RSTR |= RCC_AHB1RSTR_GPIOARST;              // Reset GPIOA
+    RCC->AHB1RSTR = 0;                                                      // Exit reset state
+    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;                   // Enable GPIOA clock
+    RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;                      // Enable Timer Clock
+</pre>

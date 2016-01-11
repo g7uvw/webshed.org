@@ -76,3 +76,20 @@ change GPIO pins, this value will need re-calculating.
 
         GPIOA->MODER |= GPIO_MODER_MODER5_1;                 // Set GPIOA.5 to Alternate function (Took some digging to find this!)
         GPIOA->AFR[0]|= 0x100000;                            // Set Alternate function AF01 on pin 5 (defines seem to be missing?)
+
+Now we can set up the timer peripheral. The value of the pre-scaler was
+just an initial guess, it worked so I didn't change it. So too were the
+auto-reload and comparison values. I expected to have to watch the GPIO
+toggle with an oscilloscope as it would probably be too fast for the
+LED, but I guessed pretty good values to start with.
+
+    TIM2->PSC = 29999;                                   // I think the counter clock is 84Mhz, divide it down a bit. Prescale = PSC +1
+        TIM2->ARR = 500;                                     // Counter rolls back to zero when it reaches 500
+        TIM2->CCR1 = 500;                                    // Value to compare with, 500 seems a nice number...
+
+The last thing to do it to set the timer to toggle the GPIO on a
+comparison match and enable the timer.
+
+    TIM2->CCMR1 = TIM_CCMR1_OC1M_0 |TIM_CCMR1_OC1M_1;    // Output changes on channel 1 compare match. Also took some finding!
+        TIM2->CCER = TIM_CCER_CC1E;                          // Enable compare
+        TIM2->CR1 |= TIM_CR1_CEN;                            // Start timer

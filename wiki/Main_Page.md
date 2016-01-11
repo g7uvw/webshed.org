@@ -35,6 +35,8 @@ page.
 Electronics
 -----------
 
+-   [Using the hardware timer to flash an LED on NucleoF401RE
+    board.](/wiki/STM_NUCLEOF401RE_TIMER_IO "wikilink")
 -   [Getting started with the NucleoF401RE development
     board.](/wiki/STM_NUCLEOF401RE_BASIC_GPIO "wikilink")
 -   [ A prototype low power sensor platform based on Arduino, DHT22 and

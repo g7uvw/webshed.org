@@ -68,3 +68,11 @@ peripheral and the timer.
         RCC->AHB1RSTR = 0;                                                      // Exit reset state
         RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;                   // Enable GPIOA clock
         RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;                      // Enable Timer Clock
+
+Then we can set up the Alternate Function of the GPIO pin, there didn't
+seem to be any pre-calculated values in the header file, so I had to hit
+the datasheet for the correct value to set the AFR\[0\] register. If you
+change GPIO pins, this value will need re-calculating.
+
+        GPIOA->MODER |= GPIO_MODER_MODER5_1;                 // Set GPIOA.5 to Alternate function (Took some digging to find this!)
+        GPIOA->AFR[0]|= 0x100000;                            // Set Alternate function AF01 on pin 5 (defines seem to be missing?)

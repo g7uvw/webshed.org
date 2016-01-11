@@ -93,3 +93,15 @@ comparison match and enable the timer.
     TIM2->CCMR1 = TIM_CCMR1_OC1M_0 |TIM_CCMR1_OC1M_1;    // Output changes on channel 1 compare match. Also took some finding!
         TIM2->CCER = TIM_CCER_CC1E;                          // Enable compare
         TIM2->CR1 |= TIM_CR1_CEN;                            // Start timer
+
+#### Result and full code
+
+I've put a full project on
+[github](https://github.com/g7uvw/NUCLEOF401RE_Timer_Blink), this builds
+with [PlatformIO](http://platformio.org/#!/) and includes a
+[QTCreator](http://docs.platformio.org/en/latest/ide/qtcreator.html)
+project file.
+
+After building the code, you can flash it to the Nucleo board with
+platfomio, the STM32F401 device will reset and the LED will begin
+blinking at approximately 1 Hz

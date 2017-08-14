@@ -9,6 +9,9 @@ layout: wiki
 David Mills's Internet Shed
 ===========================
 
+Please excuse the lack up updates and the poor layout - this website
+will be changing soon.
+
 Welcome to the webshed One of [my](/wiki/About_Me "wikilink") homes on the
 internet.
 

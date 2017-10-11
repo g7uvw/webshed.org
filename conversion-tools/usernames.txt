@@ -1,0 +1,8 @@
+BrianOregon	dunno <dunno@test.com>
+Dtl	dtl <dave@webshed.org>
+MediaWiki default	mediawiki <dave@webshed.org>
+WikiSysop	wikisysop <dave@webshed.org>
+
+sys	wikisysop <wiki@webshed.org>
+
+
